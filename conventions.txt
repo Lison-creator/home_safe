@@ -56,3 +56,21 @@ FRAMEWORK
 JQuery
 Pas de JQuery :(
 
+------- Pages Qui fait quoi ? -------
+
+Maureen : 
+ • FAQ 
+ • Association
+
+Lison :
+ • Contact
+ • Accueil
+
+Manon :
+ • Connexion / Inscription
+ • Termes et Conditions
+
+
+Question Mélanie: 
+
+Page éditer le profil: Même structure globale pour la page avec des blocs noirs différents. Est-ce qu'il y a moyen de garder une même structure ?
