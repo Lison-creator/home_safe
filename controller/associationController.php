@@ -1,3 +1,3 @@
 <?php 
-    include("views/page/apropos.php");
+    include("views/page/association.php");
 ?>

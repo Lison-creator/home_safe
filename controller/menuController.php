@@ -1,8 +1,8 @@
 <?php 
     if(isset($_SESSION["nom"])){
-        include("views/menu/menu-co.php");
+        include("view/menu/menu-co.php");
     }
     else {
-        include("views/menu/menu-nonco.php");
+        include("view/menu/menu-nonco.php");
     }
 ?>

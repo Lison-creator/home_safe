@@ -6,14 +6,11 @@
                 case 'accueil' :
                     include("controllers/accueilController.php");
                     break;
-                case 'apropos' :
-                    include("controllers/aproposController.php");
+                case 'association' :
+                    include("controllers/associationController.php");
                     break;
                 case 'contact' :
                     include("controllers/contactController.php");
-                    break;
-                case 'cacahuete_doree' :
-                    include("controllers/cacahueteDoreeController.php");
                     break;
                 case 'deconnexion' :
                     include("controllers/deconnexionController.php");
@@ -28,8 +25,8 @@
                 case 'accueil' :
                     include("controllers/accueilController.php");
                     break;
-                case 'apropos' :
-                    include("controllers/aproposController.php");
+                case 'association' :
+                    include("controllers/associationController.php");
                     break;
                 case 'contact' :
                     include("controllers/contactController.php");

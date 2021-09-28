@@ -1,6 +1,8 @@
+<!-- Est-ce qu'on veut faire juste un bouton cliquable pour le menu ou est-ce qu'on le tranforme en page qui est présente sur toutes les autres pages? -->
+
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
-    <a class="navbar-brand" href="/index">Slurp Cacahuètes</a>
+    <a class="navbar-brand" href="/index">Home Safe</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -13,7 +15,7 @@
           </a>
         </li>
         <li class="nav-item">
-            <a href="?section=apropos" class="nav-link" id="apropos">A propos</a>
+            <a href="?section=association" class="nav-link" id="association">L'association</a>
         </li>
         <li class="nav-item">
             <a href="?section=contact" class="nav-link" id="contact">Contact</a>
@@ -21,7 +23,7 @@
       </ul>
       <ul class="navbar-nav d-flex">
         <li class="nav-item">
-            <a href="?section=connexion" class="nav-link" id="connexion">Connexion</a>
+            <a href="?section=connexion" class="nav-link" id="connexion">F.A.Q.</a>
         </li>
       </ul>
     </div>
