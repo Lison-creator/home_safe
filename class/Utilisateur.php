@@ -13,7 +13,7 @@
         protected $genre;
 
         // CONSTRUCTEUR
-        public function __construct($_nom, $_prenom, $_pseudo, $_email, $_localite, $_bio, $motdepasse, $genre) 
+        public function __construct($_nom, $_prenom, $_pseudo, $_email, $_localite, $_bio, $_motdepasse, $_genre) 
         {
             $this->nom = $_nom;
             $this->prenom = $_prenom;
