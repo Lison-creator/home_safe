@@ -40,6 +40,6 @@
     }
 
     // var_dump($_SESSION["count"]);
-    include("views/page/connexion.php");
+    include("view/page/connexion.php");
     
 ?>

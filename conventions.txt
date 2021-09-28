@@ -8,20 +8,39 @@ Variables:
 • commentaires le plus souvent possible
 • TODO en commentaire
 
+Boutons:
+
+• 'btnNomBouton' ex: 'btnConnexion'
+
+
 Orthographe:
 
-• simple quote '' PARTOUT
+• simple quote '' PARTOUT SAUF sur le html (suggéré par Emmet)
 • back tick `{$}`
 • !!! La cocogoose n'a pas de chiffres. Utiliser Ubuntu
 
 PHP
 HTML
 
+• structure: 
+    <section>
+        <aside></aside>
+        <article></article>
+    </section>
+• commentaire descriptif de la session au début de chaque balise englobante.
+
+ex: <div> /* commentaire utilisation */
+
 CSS
 
 • classes en camelCase
 • français 
 • ne pas hésiter à faire des longues classes
+
+• Valeurs relatives et responsive:
+    -> rem (100% de la balise html) 
+    -> em (100% du font-size défini sur le plus proche parent) 
+    -> lg (écran et tablette) (bootstrap): ≥ 992px
 
 SASS 
 Pas de sass :(

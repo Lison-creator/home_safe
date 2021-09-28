@@ -1,3 +1,3 @@
 <?php 
-    include("views/page/contact.php");
+    include("view/page/contact.php");
 ?>

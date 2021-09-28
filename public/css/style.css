@@ -1,9 +1,29 @@
+/* Polices de caractère */
 
-@font-face {
+@font-face { /* ubuntu */
     font-family: 'ubuntu';
-    src: url('');
+    src: url('../fonts/ubuntu/Ubuntu-Regular.ttf');
+}
+@font-face {/* ubuntu bold */
+    font-family: 'ubuntuBold';
+    src: url('../fonts/ubuntu/Ubuntu-Bold.ttf');
+}
+@font-face {/* ubuntu italic */
+    font-family: 'ubuntuItalic';
+    src: url('../fonts/ubuntu/Ubuntu-Italic.ttf');
+}
+@font-face {/* ubuntu light */
+    font-family: 'ubuntuLight';
+    src: url('../fonts/ubuntu/Ubuntu-Light.ttf');
+}
+@font-face {/* cocogoose */
+    font-family: 'coco';
+    src: url('../fonts/cocogoose/Cocogoose\ Pro-trial.ttf');
 }
 
-h1,h2,h3,h4{
+/* ---------------------------- */
 
+/* Question Loïc: est-ce qu'on doit préparer des média querys alors qu'on travaille partiellement en Bootstrap ? */
+@media (min-width:991px) { 
+    
 }

@@ -4,38 +4,38 @@
             // il est connecté
             switch($_GET["section"]){
                 case 'accueil' :
-                    include("controllers/accueilController.php");
+                    include("controller/accueilController.php");
                     break;
                 case 'association' :
-                    include("controllers/associationController.php");
+                    include("controller/associationController.php");
                     break;
                 case 'contact' :
-                    include("controllers/contactController.php");
+                    include("controller/contactController.php");
                     break;
                 case 'deconnexion' :
-                    include("controllers/deconnexionController.php");
+                    include("controller/deconnexionController.php");
                     break;
                 default:
-                    include("views/error/404.php");
+                    include("view/error/404.php");
             }
         }
         else{
             // il n'est pas connecté
             switch($_GET["section"]){
                 case 'accueil' :
-                    include("controllers/accueilController.php");
+                    include("controller/accueilController.php");
                     break;
                 case 'association' :
-                    include("controllers/associationController.php");
+                    include("controller/associationController.php");
                     break;
                 case 'contact' :
-                    include("controllers/contactController.php");
+                    include("controller/contactController.php");
                     break;
                 case 'connexion' :
-                    include("controllers/connexionController.php");
+                    include("controller/connexionController.php");
                     break;
                 default:
-                    include("views/error/404.php");
+                    include("view/error/404.php");
             }
         }
         
