@@ -1,0 +1,39 @@
+Global:
+
+Variables:
+
+• variables longues et détaillées ex: "motDePasse"
+• camel case : ex: "camelCase"
+• français
+• commentaires le plus souvent possible
+• TODO en commentaire
+
+Orthographe:
+
+• simple quote '' PARTOUT
+• back tick `{$}`
+• !!! La cocogoose n'a pas de chiffres. Utiliser Ubuntu
+
+PHP
+HTML
+
+CSS
+
+• classes en camelCase
+• français 
+• ne pas hésiter à faire des longues classes
+
+SASS 
+Pas de sass :(
+
+JS
+
+• points virgules à la fin de chaque ligne
+
+FRAMEWORK
+---> Bootstrap : 
+    • slider pour la page "contact" en bootstrap
+
+JQuery
+Pas de JQuery :(
+
