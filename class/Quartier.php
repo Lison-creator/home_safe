@@ -1,6 +1,9 @@
 <?php 
     class Quartier {
 
+        /* Demander à Mélanie / Loïc */
+        /* Est-ce qu'on doit rendre les noms plus précis ? Ou bien les classes appellées suffisent pour utiliser des propriétés similaires d'une classe à l'autre ? */
+
         /* Propriétés */
 
         protected $nom;
