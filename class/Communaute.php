@@ -7,8 +7,8 @@
         // CONSTRUCTEUR
         public function __construct($_nom, $_membres)
         {
-            $this->$nom = $_nom;
-            $this->$membres = $_membres;
+            $this->nom = $_nom;
+            $this->membres = $_membres;
         }
     }
 ?>
