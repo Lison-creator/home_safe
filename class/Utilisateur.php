@@ -8,12 +8,12 @@
         protected $email;
         protected $localite; // relier à MySQL de type composite (rue, numéro, boite...) ???
         protected $bio;
-        protected $motdepasse;
+        protected $mdp;
         // protected $photoprofil;
         protected $genre;
 
         // CONSTRUCTEUR
-        public function __construct($_nom, $_prenom, $_pseudo, $_email, $_localite, $_bio, $_motdepasse, $_genre) 
+        public function __construct($_nom, $_prenom, $_pseudo, $_email, $_localite, $_bio, $_mdp, $_genre) 
         {
             $this->nom = $_nom;
             $this->prenom = $_prenom;
@@ -21,7 +21,7 @@
             $this->email = $_email;
             $this->localite = $_localite;
             $this->bio = $_bio;
-            $this->motdepasse = $_motdepasse;
+            $this->mdp = $_mdp;
             $this->genre = $_genre;
         }
 
