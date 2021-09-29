@@ -80,7 +80,7 @@ h3 {
 
 
 /* Utiliser la balise <button> */
-
+/*NOTE: si la taille du bouton doit être changer (width/height), rajouter une autre class mais ne pas modifier cette classe-ci*/
 .btnViolet,
 .btnJaune,
 .btnBleu {
