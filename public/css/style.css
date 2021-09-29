@@ -1,29 +1,116 @@
 /* Polices de caractère */
 
-@font-face { /* ubuntu */
+@font-face {
+    /* ubuntu */
     font-family: 'ubuntu';
     src: url('../fonts/ubuntu/Ubuntu-Regular.ttf');
 }
-@font-face {/* ubuntu bold */
+
+@font-face {
+    /* ubuntu bold */
     font-family: 'ubuntuBold';
     src: url('../fonts/ubuntu/Ubuntu-Bold.ttf');
 }
-@font-face {/* ubuntu italic */
+
+@font-face {
+    /* ubuntu italic */
     font-family: 'ubuntuItalic';
     src: url('../fonts/ubuntu/Ubuntu-Italic.ttf');
 }
-@font-face {/* ubuntu light */
+
+@font-face {
+    /* ubuntu light */
     font-family: 'ubuntuLight';
     src: url('../fonts/ubuntu/Ubuntu-Light.ttf');
 }
-@font-face {/* cocogoose */
+
+@font-face {
+    /* cocogoose */
     font-family: 'coco';
     src: url('../fonts/cocogoose/Cocogoose\ Pro-trial.ttf');
 }
 
+
 /* ---------------------------- */
 
+
+/* Responsive  */
+
+
 /* Question Loïc: est-ce qu'on doit préparer des média querys alors qu'on travaille partiellement en Bootstrap ? */
-@media (min-width:991px) { 
-    
+
+@media (min-width:991px) {}
+
+
+/* ---------------------------- */
+
+
+/* Textes */
+
+h1 {
+    font-size: 45px;
+    font-family: 'coco';
+}
+
+h2 {
+    font-size: 30px;
+    font-family: 'ubuntu';
+}
+
+h3 {
+    font-size: 20px;
+    font-family: 'ubuntuBold';
+}
+
+
+/* Boutons */
+
+
+/* Utiliser la balise <button> */
+
+.btnViolet,
+.btnJaune,
+.btnBleu {
+    /* ombre interne & ombre externe */
+    box-shadow: 0px 3px 6px RGBA(0, 0, 0, 0.2) inset, 2px 3px 5px RGBA(19, 19, 19, 0.5);
+    font-family: 'coco';
+    font-size: 1rem;
+    border: 1px solid;
+    border: none;
+    border-radius: 20px 20px 20px 20px;
+    width: 129px;
+    height: 40px;
+}
+
+.btnJaune {
+    background-color: #FAC815;
+    color: #282828;
+}
+
+.btnBleu {
+    background-color: #3F50A7;
+    color: #F1F1F1;
+}
+
+.btnViolet {
+    background-color: #95509B;
+    color: #F1F1F1;
+}
+
+.btnViolet:hover {
+    border: 4px solid #5E2F62;
+}
+
+.btnBleu:hover {
+    border: 4px solid #2A356F;
+}
+
+.btnJaune:hover {
+    border: 4px solid #A27E00;
+}
+
+.btnJaune:focus,
+.btnBleu:focus,
+.btnViolet:focus {
+    outline: none;
 }
