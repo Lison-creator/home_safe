@@ -44,6 +44,19 @@
 
 /* ---------------------------- */
 
+/* Body */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    background-color: #282828;
+    color: #F1F1F1;
+}
+
+* {
+    box-sizing: border-box;
+}
 
 /* Textes */
 
@@ -113,4 +126,51 @@ h3 {
 .btnBleu:focus,
 .btnViolet:focus {
     outline: none;
+}
+
+/* Inputs de lieux et la barre de recherche */
+
+input {
+    background-color: #F1F1F1;
+    border-radius: 20px 20px 20px 20px;
+    border: 4px solid RGBA(255, 255, 255, 0.5);
+    padding: 3px;
+    font-family: 'ubuntuLight';
+    color: #3F50A7;
+    padding: 5px 5px 5px 15px;
+    font-size: 0.85rem;
+}
+
+input:focus-visible {
+    border: 0;
+}
+
+input:hover, input:active, input:focus {
+    border: 4px solid RGBA(112, 112, 112, 0.5);
+}
+
+/* Pour les biographies */
+
+textarea:focus, input:focus {
+    outline: none;
+}
+
+textarea {
+    border: none;
+    outline: none;
+}
+
+/* Input champs formulaire */
+
+.champFormulaire { /* Quand il est vide */
+    height: 48px;
+    width: 327px;
+    border-radius: 25px 25px 25px 25px;
+}
+
+.champFormulaireErreur { /* Quand il y a une erreur */
+    height: 48px;
+    width: 327px;
+    border-radius: 25px 25px 25px 25px;
+    border: 4px solid #FAC815;
 }

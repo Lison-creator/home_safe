@@ -8,7 +8,14 @@
 
     <button class="btnJaune">Coucou</button>
     <button class="btnViolet">Violet</button>
-    <button class="btnBleu">Bleu</button>
+    <button class="btnBleu">Bleu</button><br><br>
+
+    <input type="text" name="" id=""><br><br>
+
+    <form action="">
+        <label for="">Prénom</label><br>
+        <input class="champFormulaireErreur mt-2" type="text" name="" id="">
+    </form>
 </div>
 <p>
 
