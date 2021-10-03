@@ -9,6 +9,9 @@
                 case 'association' :
                     include("controller/associationController.php");
                     break;
+                case 'faq' :
+                    include("controller/faqController.php");
+                    break;
                 case 'contact' :
                     include("controller/contactController.php");
                     break;
@@ -30,6 +33,9 @@
                     break;
                 case 'association' :
                     include("controller/associationController.php");
+                    break;
+                case 'faq' :
+                    include("controller/faqController.php");
                     break;
                 case 'contact' :
                     include("controller/contactController.php");
