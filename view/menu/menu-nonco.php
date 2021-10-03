@@ -20,10 +20,19 @@
         <li class="nav-item">
             <a href="?section=contact" class="nav-link" id="contact">Contact</a>
         </li>
+        <li class="nav-item">
+            <a href="?section=faq" class="nav-link" id="faq">FAQ</a>
+        </li>
+        <li class="nav-item">
+          <a href="?section=termes" class="nav-link" id="termes">Termes et Conditions</a>
+        </li>
       </ul>
       <ul class="navbar-nav d-flex">
         <li class="nav-item">
-            <a href="?section=connexion" class="nav-link" id="connexion">F.A.Q.</a>
+            <a href="?section=connexion" class="nav-link" id="connexion">Se connecter</a><!-- modification ici, anciennement FAQ alors que le href renvoyé à connecxion -->
+        </li>
+        <li class="nav-item">
+            <a href="?section=inscription" class="nav-link" id="inscription">S'inscrire</a>
         </li>
       </ul>
     </div>

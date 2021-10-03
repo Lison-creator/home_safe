@@ -14,13 +14,21 @@
           </a>
         </li>
         <li class="nav-item">
-            <a href="?section=association" class="nav-link" id="association">A propos</a>
+          <a href="?section=association" class="nav-link" id="association">A propos</a>
         </li>
         <li class="nav-item">
-            <a href="?section=contact" class="nav-link" id="contact">Contact</a>
+          <a href="?section=contact" class="nav-link" id="contact">Contact</a>
         </li>
         <li class="nav-item">
-            <a href="?section=cacahuete_doree" class="nav-link" id="cacahuete_doree">F.A.Q.</a>
+          <a href="?section=faq" class="nav-link" id="faq">FAQ</a>
+        </li>
+        <li class="nav-item">
+          <a href="?section=termes" class="nav-link" id="termes">Termes et Conditions</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a href="?section=deconnexion" class="nav-link" id="deconnexion"><?= $_SESSION['nom']; ?>Se déconnecter</a><!-- rajouter le $session pour appeller la page connexion.php -->
         </li>
       </ul>
     </div>

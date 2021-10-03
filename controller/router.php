@@ -12,6 +12,9 @@
                 case 'contact' :
                     include("controller/contactController.php");
                     break;
+                case 'faq' :
+                    include("controller/faqController.php");
+                    break;
                 case 'deconnexion' :
                     include("controller/deconnexionController.php");
                     break;
@@ -31,16 +34,22 @@
                 case 'contact' :
                     include("controller/contactController.php");
                     break;
+                case 'faq' :
+                    include("controller/faqController.php");
+                    break;
                 case 'connexion' :
                     include("controller/connexionController.php");
+                    break;
+                case 'inscription' :
+                    include("controller/inscriptionController.php");
                     break;
                 default:
                     include("view/error/404.php");
             }
         }
-        
     }
     else {
-        include("controllers/accueilController.php");
+        include("controller/accueilController.php");//suppression ici du s
     }
+        
 ?>
