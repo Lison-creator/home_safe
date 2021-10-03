@@ -1,8 +1,8 @@
-/* body{
-    background-image: url ("./../../public/images/vectorised_Map_background_blured_50%.jpg");
-    width: 100vw;
+.imageDeFond{
+    background-image: url("../images/vectorised_Map_background_blured_50%.jpg");
+    background-repeat: no-repeat;
     height: 100vh;
-} */
+}  
 
 .formulaireConnection > h2 {
     font-size: 3.5rem;
@@ -41,9 +41,6 @@ a:hover{
  /* TODO à vérifier si en accord avec Lison et ses formulaires */
 } 
 
-/* #nom, #emailConnection, #motDePasseConnection{
-    margin-bottom: 10px;
-} */
 
 div.fondFormulaire form > input {
     width: 80%;
@@ -53,4 +50,9 @@ div.fondFormulaire form > input {
 .btnConnection{
     width: 155px;
     text-align: center;
+}
+
+.logoConnection{
+    width: 50%;
+    height: 50%;
 }
