@@ -13,7 +13,7 @@
 
 .fondFormulaire {
     border: 2px solid #282828;
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: #282828;
     width: 100%;
 }
@@ -25,7 +25,7 @@ a{/* TODO rajouter les a dans el style général */
   text-decoration: none;
 }
 
-a:hover{
+a:hover{ /* TODO attention! car tout les a ne doivent pas forcément avoir ce style */
     color: #3F50A7;
 }
 
@@ -34,6 +34,8 @@ a:hover{
     height: 3px;
     background-color: #3F50A7;
     border-radius: 1px;
+    margin: auto;
+    margin-top: 3px;
 }
 
 #labelConnectionPrenom, #labelConnectionEmail, #labelConnectionMdp{

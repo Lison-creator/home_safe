@@ -18,9 +18,11 @@
                 <div class="row mt-3">
                     <div class="col-6 text-center mb-5">
                         <!--TODO avec du js: hover de toute la div, changement de couleur pour le a et pour la div - couleurs inversées -->
-                        <a href="">Se connecter</a>
-                        <div class="soulignement d-flex justify-content-center">
-                            <!-- Contient un background-color et une width special pour faire un soulignement -->
+                        <div class="testHover">
+                            <a href="">Se connecter</a>
+                            <div class="soulignement d-flex justify-content-center">
+                                <!-- Contient un background-color et une width special pour faire un soulignement -->
+                            </div>
                         </div>
                     </div>
                     <div class="col-6 text-center mb-5">
