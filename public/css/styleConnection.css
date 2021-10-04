@@ -25,17 +25,21 @@ a{/* TODO rajouter les a dans el style général */
   text-decoration: none;
 }
 
-a:hover{ /* TODO attention! car tout les a ne doivent pas forcément avoir ce style */
-    color: #3F50A7;
-}
-
 .soulignement{
-    width: 40%;
+    width: 80%;
     height: 3px;
     background-color: #3F50A7;
     border-radius: 1px;
     margin: auto;
     margin-top: 3px;
+}
+
+.blockHover:hover a{ /* je mets le hover sur tout le div donc mettre avant le a */
+    color: #3F50A7;
+}
+
+.blockHover:hover .soulignement{ /* je mets le hover sur tout le div donc mettre avant la class soulignement */
+    background-color: #FAC815;
 }
 
 #labelConnectionPrenom, #labelConnectionEmail, #labelConnectionMdp{
