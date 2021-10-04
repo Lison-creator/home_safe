@@ -55,6 +55,9 @@ div.fondFormulaire form > input {
 }
 
 .logoConnection{
-    width: 50%;
-    height: 50%;
+    width: 30%;
+    height: 30%;
+    padding: 0;
+    margin: auto;
+    height: 100vh;
 }
