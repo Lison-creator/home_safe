@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="CGelFds4hoSm13RwAmmO" name="Page-1">
-        <mxGraphModel dx="2244" dy="807" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="1904" dy="600" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -356,8 +356,8 @@
                 <mxCell id="204" value="Question: &lt;br&gt;&lt;br&gt;• à quoi correspondront les champs ? Est-ce que ça sera des trucs à cocher ?&lt;br&gt;• les quartiers et les rues: un quartier contient des rues, comment fonctionnent les extends ?&amp;nbsp; On voudrait pouvoir créer des quartiers et des rues&lt;br&gt;• à quoi servent les classes parents et les classes enfants ?&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
                     <mxGeometry x="-430" y="918" width="290" height="20" as="geometry"/>
                 </mxCell>
-                <mxCell id="205" value="Manon: User&lt;br&gt;Maureen: Commentaire,&amp;nbsp;&lt;br&gt;Lison: Quartier," style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-                    <mxGeometry x="-180" y="780" width="190" height="20" as="geometry"/>
+                <mxCell id="205" value="Manon: User, Commissariat,Rue&lt;br&gt;Maureen: Communauté, Commentaire, Bar&amp;nbsp;&lt;br&gt;Lison: Quartier, Lieu," style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="-180" y="780" width="280" height="20" as="geometry"/>
                 </mxCell>
                 <mxCell id="206" value="Ca marche ?" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
                     <mxGeometry x="-140" y="580" width="350" height="190" as="geometry"/>
