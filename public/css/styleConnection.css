@@ -3,8 +3,16 @@
     background-repeat: no-repeat;
     background-position: fixed;
     height: 100vh;
+    /* mettons nous ici en plus une opacité de 0.7 ??????? */
+}
 
-}  
+.logoConnection{
+    width: 30%;
+    height: 30%;
+    padding: 0;
+    margin: auto;
+    height: 100vh;
+}
 
 .formulaireConnection > h2 {
     font-size: 3.5rem;
@@ -15,15 +23,17 @@
     border: 2px solid #282828;
     border-radius: 10px;
     background-color: #282828;
-    width: 100%;
+    width: 80%;
     box-shadow:2px 3px 5px RGBA(19, 19, 19, 1); /* TODO vérifier si l'ombre est identique chez nous toutes */
+    margin:auto;
 }
 
+
+/************************* liens se connecter et s'inscrire */
 a.lienPageConnection{
   color: #FAC815;
   font-size: 1rem;
   font-family: 'coco';
-  text-decoration: none;
 }
 
 .soulignement{
@@ -35,14 +45,16 @@ a.lienPageConnection{
     margin-top: 3px;
 }
 
-.blockHover:hover a.lienPageConnection{ /* je mets le hover sur tout le div donc mettre avant le a */
+.blockHover:hover a.lienPageConnection, .blockHover:active a.lienPageConnection, .blockHover:focus a.lienPageConnection{ /* je mets le hover sur tout le div donc mettre avant le a */
     color: #3F50A7;
 }
 
-.blockHover:hover .soulignement{ /* je mets le hover sur tout le div donc mettre avant la class soulignement */
+.blockHover:hover .soulignement, .blockHover:active .soulignement, .blockHover:focus .soulignement{ /* je mets le hover sur tout le div donc mettre avant la class soulignement */
     background-color: #FAC815;
 }
 
+
+/************************* inputs du formulaire */
 #labelConnectionPrenom, #labelConnectionEmail, #labelConnectionMdp{
     color: #FAC815;
     font-weight: bold;
@@ -50,9 +62,8 @@ a.lienPageConnection{
  /* TODO à vérifier si en accord avec Lison et ses formulaires */
 } 
 
-
 div.fondFormulaire form > input {
-    width: 80%;
+    width: 90%;
     margin-bottom: 25px;
 }
 
@@ -61,10 +72,19 @@ div.fondFormulaire form > input {
     text-align: center;
 }
 
-.logoConnection{
-    width: 30%;
-    height: 30%;
-    padding: 0;
-    margin: auto;
-    height: 100vh;
+input[type=checkbox]{ /* TODO à voir s'il y ad'autres checkbox ailleurs dans le code */
+    margin: 5px;
+}
+
+
+/************************* lien termes et condition + j'ai oublié mon mdp */
+a.lienTermesEtCondition, a.oublie {
+    color: #FAC815;
+}
+.accepter, .oublie {
+    opacity: 0.5;
+}
+
+.accepter:hover, .oublie:hover {
+    opacity: 1;
 }

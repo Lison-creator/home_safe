@@ -175,3 +175,7 @@ textarea {
     border-radius: 25px 25px 25px 25px;
     border: 4px solid #FAC815;
 }
+
+a{
+    text-decoration:none; /* a giter d'abord dans la main */
+}

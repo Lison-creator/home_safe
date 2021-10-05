@@ -12,7 +12,7 @@
             <!-- Ne prend pas toute la page car l'autre col c'est pour le logo -->
 
             <h2 class="text-uppercase mb-2 mt-5 text-center">Home Safe</h2>
-            <h3 class="text-center">Rejoins Home Safe et ta communauté pour des trajets sécures dans Bruxelles !</h3>
+            <h3 class="text-center mb-5">Rejoins Home Safe et ta communauté <br>pour des trajets sécures dans Bruxelles !</h3>
 
             <div class="fondFormulaire">
                 <div class="row mt-3">
@@ -39,25 +39,25 @@
                         <!-- TODO changer ici car il faut qu tout soit centrer sauf les labels -->
 
                         <label for="nom" id="labelConnectionPrenom">Prénom</label><br> <!-- TODO modifier le name et le for dans php et le routeur pour prénom -->
-                        <input type="text" name="nom" id="nom" class="justify-content-center" placeholder="Chatshimi"><br>
+                        <input type="text" name="nom" id="nom" placeholder="Chatshimi"><br>
 
                         <label for="emailConnection" id="labelConnectionEmail">E-mail</label><br>
-                        <input type="mail" name="emailConnection" id="emailConnection" class="justify-content-center" placeholder="Chatshimi@email.be"><br>
+                        <input type="mail" name="emailConnection" id="emailConnection" placeholder="Chatshimi@email.be"><br>
 
                         <label for="motDePasseConnection" id="labelConnectionMdp">Mot de passe</label><br>
-                        <input type="password" name="motDePasseConnection" id="motDePasseConnection" class="justify-content-center"><br>
+                        <input type="password" name="motDePasseConnection" id="motDePasseConnection"><br>
 
                     </form>
                 </div>
                 <div class="row">
-                    <div class="col-12 justify-content-center">
-                        <input type="checkbox" id="accepter" name="accepter">
-                        <label for="accepter">J'accepte <span><a class="lienTermesEtCondition" href=""></a> les termes et les conditions d'utilisation </span></label> <!-- TODO mettre le lien ici -->
+                    <div class="col-12 d-flex justify-content-center">
+                        <input type="checkbox" id="accepter" name="accepter" >
+                        <label for="accepter" class="accepter">J'accepte <span><a class="lienTermesEtCondition" href="<!-- TODO mettre le lien ici -->">les termes et les conditions d'utilisation </a> </span></label> <!-- TODO  -->
                     </div>
-                    <div class="col-12 text-center">
+                    <div class="col-12 text-center mt-3 mb-4">
                         <input type="submit" value="Se connecter" class="btnJaune btnConnection"> <!-- TODO vérifier le centrage de mon bouton -->
                     </div>
-                    <div> <a href="">J'ai oublié mon mot de passe ?</a> </div><!-- TODO mettre le lien ici -->
+                    <div class="text-center mb-2"> <a href="" class ="oublie">J'ai oublié mon mot de passe ?</a></div><!-- TODO mettre le lien ici -->
                 </div>
             </div>
             <?= $msgError; ?>
