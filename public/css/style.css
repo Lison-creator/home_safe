@@ -39,7 +39,7 @@
 
 /* Question Loïc: est-ce qu'on doit préparer des média querys alors qu'on travaille partiellement en Bootstrap ? */
 
-@media (min-width:991px) {}
+/* @media (min-width:991px) {} */
 
 
 /* ---------------------------- */
@@ -53,6 +53,8 @@ body {
     background-color: #282828;
     background-image: url("../images/vectorised_Map_background_blured_50%.jpg");
     color: #F1F1F1;
+    height: 100vh;
+    width: 100vw;
 }
 
 * {

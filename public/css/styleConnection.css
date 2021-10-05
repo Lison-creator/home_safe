@@ -3,12 +3,12 @@
     background-repeat: no-repeat;
     background-position: fixed;
     height: 100vh;
-    /* mettons nous ici en plus une opacité de 0.7 ??????? */
+    width: 100vw;
+    /* mettons nous ici en plus une opacité de 0.7 ??????? attention se fait sur toute la pagr */
 }
 
 .logoConnection{
     width: 30%;
-    height: 30%;
     padding: 0;
     margin: auto;
     height: 100vh;
@@ -26,6 +26,12 @@
     width: 80%;
     box-shadow:2px 3px 5px RGBA(19, 19, 19, 1); /* TODO vérifier si l'ombre est identique chez nous toutes */
     margin:auto;
+}
+
+/* Texte */
+
+.ombrageText{
+    text-shadow: 2px 2px #131313;
 }
 
 
@@ -73,9 +79,14 @@ div.fondFormulaire form > input {
 }
 
 input[type=checkbox]{ /* TODO à voir s'il y ad'autres checkbox ailleurs dans le code */
-    margin: 5px;
+    /* augmenter la taille des Checkboxes */
+  -ms-transform: scale(1.5); /* IE */
+  -moz-transform: scale(1.5); /* FF */
+  -webkit-transform: scale(1.5); /* Safari et Chrome */
+  -o-transform: scale(1.5); /* Opera */
+  transform: scale(1.5);
+  padding: 15px;
 }
-
 
 /************************* lien termes et condition + j'ai oublié mon mdp */
 a.lienTermesEtCondition, a.oublie {
@@ -85,6 +96,16 @@ a.lienTermesEtCondition, a.oublie {
     opacity: 0.5;
 }
 
+.accepter{
+    font-size: 12px;
+}
+
 .accepter:hover, .oublie:hover {
     opacity: 1;
+}
+
+.checkboxColor{
+    /* Pour changer la couleur de fond de la checkbox */
+    /* couleur difficilement changeable, correspond au mieux au bleu de la charte */
+    filter: hue-rotate(20deg);
 }
