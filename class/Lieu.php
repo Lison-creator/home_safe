@@ -137,12 +137,18 @@ class Lieu
     /* Fonctions */
 
     /** Renvoie les données du lieu sous forme de tableau
-     * @param{text} $_id;
+     * @param{text}$_id;
      * @param{text}$_nom;
      * @param{text}$_adresse;
-     * @param{text}$_localisation;
+     * @param{text}$_contact;
+     * @param{text}$_note;
      * @param{text}$_commentaire;
+     * @param{text}$_horaires;
+     * @param{text}$_queer_friendly;
+     * @param{text}$_racise_friendly;
      * @param{text}$_description;
+     * @param{text}$_note;
+     * @param{text}$_bio;
      * @returns {array} Renvoie un tableau avec les données
      */
 
@@ -159,15 +165,11 @@ class Lieu
     /*     public lieuAjoute(){
             return '<p>'. $this->type . ' ' . $this->adresse . ' ' . $this->description . '</p>';
         } */
-
         /* public lieuModifie(){
 
         }
-
         public lieuPartage(){
-
-        } 
-        
+        }  
         public adresseEntiere(){
             return $this->rue . ' ' . $this->num . ' , boîte ' . $this->boite . '<br />' . $this->zip . ' ' . $this->localite; 
         }
