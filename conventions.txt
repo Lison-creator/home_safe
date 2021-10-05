@@ -73,7 +73,7 @@ Manon :
 
 Question Mélanie: 
 
-Page éditer le profil: Même structure globale pour la page avec des blocs noirs différents. Est-ce qu'il y a moyen de garder une même structure ?
+Quartier et rue sont étroitement liés ?
 
 Question Loïc :
 Est-ce que l'on doit travailler sur différents CSS pour chaque page + mettre un css commun au besoin ?
