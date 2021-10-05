@@ -16,9 +16,10 @@
     border-radius: 10px;
     background-color: #282828;
     width: 100%;
+    box-shadow:2px 3px 5px RGBA(19, 19, 19, 1); /* TODO vérifier si l'ombre est identique chez nous toutes */
 }
 
-a{/* TODO rajouter les a dans el style général */
+a.lienPageConnection{
   color: #FAC815;
   font-size: 1rem;
   font-family: 'coco';
@@ -34,7 +35,7 @@ a{/* TODO rajouter les a dans el style général */
     margin-top: 3px;
 }
 
-.blockHover:hover a{ /* je mets le hover sur tout le div donc mettre avant le a */
+.blockHover:hover a.lienPageConnection{ /* je mets le hover sur tout le div donc mettre avant le a */
     color: #3F50A7;
 }
 

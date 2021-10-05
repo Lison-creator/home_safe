@@ -8,7 +8,7 @@
         <!-- composée de 2 colls -->
 
         <!-- Couper la page en 2 / formualaire et titre à gauche et Logo à droite -->
-        <div class="col-5 offset-1 formulaireConnection">
+        <div class="col-4 offset-2 formulaireConnection">
             <!-- Ne prend pas toute la page car l'autre col c'est pour le logo -->
 
             <h2 class="text-uppercase mb-2 mt-5 text-center">Home Safe</h2>
@@ -19,7 +19,7 @@
                     <div class="col-6 text-center mb-5">
                         <!--TODO avec du js: hover de toute la div, changement de couleur pour le a et pour la div - couleurs inversées -->
                         <div class="blockHover">
-                            <a href="">Se connecter</a>
+                            <a class="lienPageConnection" href="">Se connecter</a>
                             <div class="soulignement d-flex justify-content-center">
                                 <!-- Contient un background-color et une width special pour faire un soulignement -->
                             </div>
@@ -27,7 +27,7 @@
                     </div>
                     <div class="col-6 text-center mb-5">
                         <div class="blockHover">
-                            <a href="">S'inscrire</a>
+                            <a class="lienPageConnection" href="">S'inscrire</a>
                             <div class="soulignement d-flex justify-content-center">
                                 <!-- Contient un background-color et une width special pour faire un soulignement -->
                             </div>
@@ -47,10 +47,17 @@
                         <label for="motDePasseConnection" id="labelConnectionMdp">Mot de passe</label><br>
                         <input type="password" name="motDePasseConnection" id="motDePasseConnection" class="justify-content-center"><br>
 
-                        <div class="text-center">
-                            <input type="submit" value="Se connecter" class="btnJaune btnConnection"> <!-- TODO vérifier le centrage de mon bouton -->
-                        </div>
                     </form>
+                </div>
+                <div class="row">
+                    <div class="col-12 justify-content-center">
+                        <input type="checkbox" id="accepter" name="accepter">
+                        <label for="accepter">J'accepte <span><a class="lienTermesEtCondition" href=""></a> les termes et les conditions d'utilisation </span></label> <!-- TODO mettre le lien ici -->
+                    </div>
+                    <div class="col-12 text-center">
+                        <input type="submit" value="Se connecter" class="btnJaune btnConnection"> <!-- TODO vérifier le centrage de mon bouton -->
+                    </div>
+                    <div> <a href="">J'ai oublié mon mot de passe ?</a> </div><!-- TODO mettre le lien ici -->
                 </div>
             </div>
             <?= $msgError; ?>
