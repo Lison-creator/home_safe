@@ -1,0 +1,19 @@
+/* Barre noire en haut avec le logo + titre de la page */
+
+.barreHaut {
+    height: 85px;
+    background-color: #282828;
+}
+
+.barreHaut .blocTitresAssociation {
+    width: 187px;
+    height: 107px;
+    background-color: #95509B;
+    display: inline-block;
+    border-radius: 17px;
+}
+
+.barreHaut .blocTitresAssociation a {
+    text-decoration: none;
+    color: #f1f1f1;
+}

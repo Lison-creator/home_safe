@@ -1,8 +1,17 @@
+/* Image de fond */
+
+.imageDeFond{
+    background-image: url("../images/vectorised_Map_background_blured_50.jpg");
+    background-repeat: no-repeat;
+    background-position: fixed;
+    height: 100vh;
+}
+
 /* Barre noire en haut avec le logo + titre de la page */
 
 .barreHaut {
     height: 85px;
-    background-color: #282828;
+    background-color: rgba(40, 40, 40, 1);
 }
 
 .barreHaut .titrePages {
@@ -14,7 +23,6 @@
 /* Container */
 
 .container-fluid {
-    display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -23,8 +31,6 @@
 /* Aside */
 
 aside {
-    width: 25%;
-    display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -33,9 +39,9 @@ aside {
 aside .blocCategories {
     width: 314px;
     height: 85px;
-    background-color: #F1F1F1;
+    background-color: rgba(241, 241, 241, 1);
     border-radius: 7px;
-    color: #282828;
+    color: rgba(40, 40, 40, 1);
     font-family: 'ubuntuBold';
     font-size: 16px;
     display: flex;
@@ -45,8 +51,8 @@ aside .blocCategories {
 }
 
 aside .blocCategories:hover {
-    background-color: #95509B;
-    color: #F1F1F1;
+    background-color: rgba(149, 80, 155, 1);
+    color: rgba(241, 241, 241, 1);
 }
 
 /* Sections avec textes */
@@ -72,7 +78,7 @@ section article .titreQuestion {
 section article .reponse {
     margin-left: 40px;
     padding: 7px 0px 7px 15px;
-    border-left: 3px solid #FAC815;
+    border-left: 3px solid rgba(250, 200, 21, 1);
 }
 
 /* Sections cachées */
