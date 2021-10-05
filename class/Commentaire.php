@@ -1,5 +1,7 @@
 <?php 
-    class Commentaire {
+require_once("Utilisateur.php"); // permet d'inclure une fois la classe
+class Commentaire extends Utilisateur { // la femme hérite de la classe Personne via "extends"
+   
         // PROPRIETES
         protected $id;
         protected $date;
@@ -8,12 +10,13 @@
         protected $lieu;
 
         // CONSTRUCTEUR
-        public function __construct($_id, $_date, $_auteur, $_contenu, $_lieu) {
+        public function __construct($_id, $_date, $_auteur, $_contenu, $_lieu, $_prenom) {
             $this->id = $_id;
             $this->date = $_date;
             $this->auteur = $_auteur;
             $this->contenu = $_contenu;
             $this->lieu = $_lieu;
+            $this->prenom = $_prenom;
         }
 
         // SETTER & GETTER
@@ -31,11 +34,11 @@
             return $this->date;
         }
 
-        public function setAuteur($_auteur){
-            $this->auteur = $_auteur;
+        public function setAuteur(Utilisateur $_prenom){//il faut appeler l'autre fonciton programmer dans Utilisateur
+           $_prenom->getPrenom();
         }
-        public function getAuteur(){
-            return $this->auteur;
+        public function getAuteur(Utilisateur $_prenom){ 
+            return $_prenom->prenom; // TODO pourquoi c'est pas $this->
         }
 
         public function setContenu($_contenu){
@@ -76,5 +79,10 @@
         public function deleteCommentaire(){
             $this->id;
         }
+
+       /*  public function test(Utilisateur $_prenom){
+            $prenom = $_prenom->getPrenom();
+            echo $prenom;
+        } */
     }
 ?>
