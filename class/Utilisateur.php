@@ -1,7 +1,8 @@
-<?php 
+ <?php 
     class Utilisateur {
         // PROPRIETES
         // La classe qui englobe toutes les autres classes au niveau du genre
+        protected $id;
         protected $nom;
         protected $prenom;
         protected $pseudo;
