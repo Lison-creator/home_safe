@@ -4,7 +4,8 @@
 <section class="container-flex imageDeFond">
 
     <!-- Un formulaire html complet pour la connection -->
-    <div class="row">
+    <div class="row"><!-- début de la row générale -->
+        
         <!-- composée de 2 colls -->
 
         <!-- Couper la page en 2 / formualaire et titre à gauche et Logo à droite -->
@@ -54,9 +55,9 @@
                 </div>
             </div>
             <?= $msgError; ?>
-        </div>
+        </div><!-- fin de la première div.formulaireConnection de 6 complètement à gauche -->
 
-        <div class="col-6">
+        <div class="col-6"><!-- début de la deuxième div complètement à droite avec le svg -->
             <!-- Deuxième col qui prend l'autre moitié de la page pour le logo qui doit être centré -->
             <div class="container-flex ">
                 <div class="row">
@@ -76,6 +77,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div><!-- fin de la deuxième div qui contient le svg complètement à droite -->
+    </div><!-- Fin de la row générale -->
 
 </section>

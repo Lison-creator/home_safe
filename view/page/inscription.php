@@ -4,10 +4,11 @@
 <section class="container-flex imageDeFond">
 
     <!-- Un formulaire html complet pour la connection -->
-    <div class="row">
+
+    <div class="row"><!-- début de la row générale -->
         <!-- composée de 2 colls -->
 
-        <!-- Couper la page en 2 / formualaire et titre à gauche et Logo à droite -->
+        <!-- Couper la page en 2 / formulaire et titre à gauche et Logo à droite -->
         <div class="col-4 offset-2 formulaireConnection">
             <!-- Ne prend pas toute la page car l'autre col c'est pour le logo -->
 
@@ -55,12 +56,14 @@
                     <div class="col-12 text-center mt-3 mb-4">
                         <input type="submit" value="S'inscrire" class="btnJaune btnConnection">
                     </div>
-            </div>
-            <?= $msgErreurInscription; ?>
-        </div>
-
-        <div class="col-6">
+                </div>
+                <?= $msgErreurInscription; ?>
+            </div><!-- Fin de mon formulaire -->
+        </div><!-- fin de la première div.formulaireConnection de 6 complètement à gauche -->
+        
+        <div class="col-6"><!-- début de la deuxième div complètement à droite avec le svg -->
             <!-- Deuxième col qui prend l'autre moitié de la page pour le logo qui doit être centré -->
+            <div class="container-flex ">
                 <div class="row">
                     <div class="col-12 logoConnection d-flex align-content-center">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 246 378.402">
@@ -78,6 +81,8 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div><!-- fin de la deuxième div qui contient le svg complètement à droite -->
+
+    </div><!-- fin de la row générale -->
 
 </section>
