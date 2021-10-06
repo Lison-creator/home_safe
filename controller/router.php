@@ -15,8 +15,11 @@
                 case 'contact' :
                     include("controller/contactController.php");
                     break;
-                case 'faq' :
-                    include("controller/faqController.php");
+                case 'termes' :
+                    include("controller/termesController.php");
+                    break;
+                case 'profil' :
+                    include("controller/profilController.php");
                     break;
                 case 'deconnexion' :
                     include("controller/deconnexionController.php");
@@ -40,8 +43,8 @@
                 case 'contact' :
                     include("controller/contactController.php");
                     break;
-                case 'faq' :
-                    include("controller/faqController.php");
+                case 'termes' :
+                    include("controller/termesController.php");
                     break;
                 case 'connexion' :
                     include("controller/connexionController.php");

@@ -6,7 +6,7 @@
 <!-- Petit menu vertical: "Nouveautés", "Ma communauté", "Lieux favoris" -->
 <!-- La carte interactive -->
 <!-- Le logo -->
-<link rel="stylesheet" href="profil.css">
+
 
 <div class="container">
     <nav class="d-flex flex-column">

@@ -25,6 +25,9 @@
         <li class="nav-item">
           <a href="?section=termes" class="nav-link" id="termes">Termes et Conditions</a>
         </li>
+        <li class="nav-item">
+          <a href="?section=profil" class="nav-link" id="profil">Profil</a>
+        </li>
       </ul>
       <ul class="navbar-nav me-auto">
         <li class="nav-item">
