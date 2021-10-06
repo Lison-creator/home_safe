@@ -61,7 +61,6 @@
 
         <div class="col-6">
             <!-- Deuxième col qui prend l'autre moitié de la page pour le logo qui doit être centré -->
-            <div class="container-flex ">
                 <div class="row">
                     <div class="col-12 logoConnection d-flex align-content-center">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 246 378.402">
