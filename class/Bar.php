@@ -1,5 +1,6 @@
 <?php 
-    class Bar {
+    require_once("Lieu.php");
+    class Bar extends Lieu {
         // PROPRIETES
         protected $id;
         protected $astuce;
