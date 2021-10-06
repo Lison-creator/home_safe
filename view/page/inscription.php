@@ -19,7 +19,7 @@
                 <div class="row mt-3">
                     <div class="col-6 text-center mb-5">
                         <div class="blockHover">
-                            <a class="lienPageConnection" href="">Se connecter</a>
+                            <a class="lienPageConnection" href="?section=connexion">Se connecter</a>
                             <div class="soulignement d-flex justify-content-center">
                                 <!-- Contient un background-color et une width special pour faire un soulignement -->
                             </div>
@@ -27,7 +27,7 @@
                     </div>
                     <div class="col-6 text-center mb-5">
                         <div class="blockHover">
-                            <a class="lienPageConnection" href="">S'inscrire</a>
+                            <a class="lienPageConnection" href="?section=inscription">S'inscrire</a>
                             <div class="soulignement d-flex justify-content-center">
                                 <!-- Contient un background-color et une width special pour faire un soulignement -->
                             </div>
@@ -46,16 +46,17 @@
                         <label for="motDePasseConnection" id="labelConnectionMdp">Mot de passe</label><br>
                         <input type="password" name="motDePasseConnection" id="motDePasseConnection"><br>
 
+                        <div class="row m-auto">
+                            <div class="col-12">
+                                <input type="checkbox" id="accepter" name="accepter" class="me-3 checkboxColor"><!-- me-3 avec bootstrap pour faire une marge autour mais qui reste alignée/centrée par rapport à l'élément à côté -->
+                                <label for="accepter" class="accepter">J'accepte <span><a class="lienTermesEtCondition" href="?section=termes">les termes et les conditions d'utilisation </a> </span></label>
+                            </div>
+                            <div class="col-12 text-center mt-3 mb-4">
+                                <input type="submit" value="S'inscrire" class="btnJaune btnConnection m-auto">
+                            </div>
+                        </div>
+
                     </form>
-                </div>
-                <div class="row">
-                    <div class="col-12 d-flex justify-content-center">
-                        <input type="checkbox" id="accepter" name="accepter" class="me-3 checkboxColor"><!-- me-3 avec bootstrap pour faire une marge autour mais qui reste alignée/centrée par rapport à l'élément à côté -->
-                        <label for="accepter" class="accepter">J'accepte <span><a class="lienTermesEtCondition" href="<!-- TODO mettre le lien ici -->">les termes et les conditions d'utilisation </a> </span></label> <!-- TODO  -->
-                    </div>
-                    <div class="col-12 text-center mt-3 mb-4">
-                        <input type="submit" value="S'inscrire" class="btnJaune btnConnection">
-                    </div>
                 </div>
                 <?= $msgErreurInscription; ?>
             </div><!-- Fin de mon formulaire -->

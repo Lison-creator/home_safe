@@ -4,8 +4,9 @@
 <section class="container-flex imageDeFond">
 
     <!-- Un formulaire html complet pour la connection -->
-    <div class="row"><!-- début de la row générale -->
-        
+    <div class="row">
+        <!-- début de la row générale -->
+
         <!-- composée de 2 colls -->
 
         <!-- Couper la page en 2 / formualaire et titre à gauche et Logo à droite -->
@@ -19,7 +20,7 @@
                 <div class="row mt-3">
                     <div class="col-6 text-center mb-5">
                         <div class="blockHover">
-                            <a class="lienPageConnection" href="">Se connecter</a>
+                            <a class="lienPageConnection" href="?section=connexion">Se connecter</a>
                             <div class="soulignement d-flex justify-content-center">
                                 <!-- Contient un background-color et une width special pour faire un soulignement -->
                             </div>
@@ -27,7 +28,7 @@
                     </div>
                     <div class="col-6 text-center mb-5">
                         <div class="blockHover">
-                            <a class="lienPageConnection" href="">S'inscrire</a>
+                            <a class="lienPageConnection" href="?section=inscription">S'inscrire</a>
                             <div class="soulignement d-flex justify-content-center">
                                 <!-- Contient un background-color et une width special pour faire un soulignement -->
                             </div>
@@ -44,20 +45,22 @@
 
                         <label for="motDePasseConnection" id="labelConnectionMdp">Mot de passe</label><br>
                         <input type="password" name="motDePasseConnection" id="motDePasseConnection"><br>
-
+                        <div class="row">
+                            <div class="col-12 text-center mt-3 mb-4">
+                                <input type="submit" value="Se connecter" class="btnJaune btnConnection">
+                            </div>
+                        </div>
                     </form>
                 </div>
                 <div class="row">
-                    <div class="col-12 text-center mt-3 mb-4">
-                        <input type="submit" value="Se connecter" class="btnJaune btnConnection">
-                    </div>
                     <div class="text-center mb-2"> <a href="" class="oublie">J'ai oublié mon mot de passe ?</a></div><!-- TODO mettre le lien ici -->
                 </div>
             </div>
             <?= $msgError; ?>
         </div><!-- fin de la première div.formulaireConnection de 6 complètement à gauche -->
 
-        <div class="col-6"><!-- début de la deuxième div complètement à droite avec le svg -->
+        <div class="col-6">
+            <!-- début de la deuxième div complètement à droite avec le svg -->
             <!-- Deuxième col qui prend l'autre moitié de la page pour le logo qui doit être centré -->
             <div class="container-flex ">
                 <div class="row">

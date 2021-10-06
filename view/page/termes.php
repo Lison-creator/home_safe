@@ -5,3 +5,5 @@
 <!-- Titre de la page + logo -->
 <!-- Bloc de texte -->
 <!-- Menu déroulant bas gauche -->
+
+<h2>Termes et conditions</h2>
