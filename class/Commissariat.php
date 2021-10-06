@@ -1,5 +1,5 @@
 <?php 
-    class Commissariat extends Lieu { // est-ce que le commissariat peut aussi extends Quartier ???
+    class Commissariat extends Lieu { // est-ce que le commissariat peut aussi extends Quartier ou alors une sous-classe qui contient extends ???
         // PROPRIETES
         protected $id; // est-ce que ça va poser un problème le fait que id se retrouve dans toutes les autres classes ?
         protected $nom; // même question qu'en haut
@@ -123,8 +123,5 @@
     public function delete_commissariat($_id)
     {
     }
-
-
-
     }
 ?>

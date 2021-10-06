@@ -1,25 +1,25 @@
 <?php
-class Quartier
-{
+class Rue extends Quartier{
+    //mais devrait aussi être relier aux class Commentaire.php + Quartier.php + Utilisateur.php
 
     /* Demander à Mélanie / Loïc */
     /* Est-ce qu'on doit rendre les noms plus précis ? Ou bien les classes appellées suffisent pour utiliser des propriétés similaires d'une classe à l'autre ? */
 
     /* Propriétés */
     protected $id;
-    protected $nom;
-    protected $adresse;
+    protected $type; // boulevard, rue, avenue ...
+    protected $num;
     protected $localisation; /* coordonnées géographiques */
-    protected $commentaire; /* Une note donnée par les utilisateur.ice.s ? */
-    protected $description; /* Texte de description du quartier */
+    protected $commentaire; /* Une note donnée par les utilisateur.ice.s ?  ou est-ce que cela devrait être relier à la classe commentaire ?*/
+    protected $description; /* Texte de description d'une rue en particulier*/
 
     /* CONSTRUCTEUR */
 
-    public function __construct($_id, $_nom, $_adresse, $_localisation, $_commentaire, $_description)
+    public function __construct($_id, $_type, $_num, $_localisation, $_commentaire, $_description)
     {
         $this->id = $_id;
-        $this->nom = $_nom;
-        $this->adresse = $_adresse;
+        $this->type = $_type;
+        $this->num = $_num;
         $this->localisation = $_localisation;
         $this->commentaire = $_commentaire;
         $this->description = $_description;
@@ -36,22 +36,21 @@ class Quartier
         return $this->id;
     }
 
-    public function setNom($_nom)
+    public function setType($_type)
     {
-        $this->nom = $_nom;
+        $this->type = $_type;
     }
-    public function getNom()
+    public function getType()
     {
-        return $this->nom;
+        return $this->type;
     }
 
-    public function setAdresse($_adresse)
-    {
-        $this->adresse = $_adresse;
+    public function setNum($_num){
+        $this->num =$_num;
     }
-    public function getAdresse()
-    {
-        return $this->adresse;
+
+    public function getNum(){
+        return $this->num;
     }
 
     public function setLocalisation($_localisation)
@@ -63,11 +62,11 @@ class Quartier
         return $this->localisation;
     }
 
-    public function setQuotation($_commentaire)
+    public function setCommentaire($_commentaire)
     {
         $this->commentaire = $_commentaire;
     }
-    public function getQuotation()
+    public function getCommentaire()
     {
         return $this->commentaire;
     }
@@ -85,36 +84,37 @@ class Quartier
 
     /** Renvoie les données du quartier sous forme de tableau
      * @param{text} $_id;
-     * @param{text}$_nom;
-     * @param{text}$_adresse;
+     * @param{text}$_type;
+     * @param{text}$_num;
      * @param{text}$_localisation;
      * @param{text}$_commentaire;
      * @param{text}$_description;
      * @returns {array} Renvoie un tableau avec les données
      */
 
-    public function get_quartier($_id, $_nom, $_adresse, $_localisation, $_commentaire, $_description)
+    public function get_rue($_id, $_type, $_num, $_localisation, $_commentaire, $_description)
     {
-        /* Transforme les données du quartier en tableau */
+        /* Transforme les données du rue en tableau */
 
-        $data_quartier = [$_id, $_nom, $_adresse, $_localisation, $_commentaire, $_description];
-        return $data_quartier;
+        $data_rue = [$_id, $_type, $_num, $_localisation, $_commentaire, $_description];
+        return $data_rue;
     }
 
     /* Pour update et Delete, il existe des fonctions en php/mySql préécrites. Est-ce qu'on peut les utiliser ? 
    DELETE : $this->query(" DELETE FROM table " );  
    UPDATE : $this->query(" UPDATE table SET nom = '$_nom', prenom = '$_prenom' "; */
 
-    public function update_quartier($_id, $_nom, $_adresse, $_localisation, $_commentaire, $_description)
+    public function update_rue($_id, $_nom, $_adresse, $_localisation, $_commentaire, $_description)
     {
     }
-    public function delete_quartier($_id)
+    public function delete_rue($_id)
     {
     }
-    public function insert_commentaire_quartier($_id)
+    public function insert_commentaire_rue($_id)
     {
+        //contiendrait l'auteur / le contenu / la date...
     }
-    public function delete_commentaire_quartier($_id, $_commentaire)
+    public function delete_commentaire_rue($_id, $_commentaire)
     {
     }
 }
