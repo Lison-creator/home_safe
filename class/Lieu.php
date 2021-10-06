@@ -21,9 +21,9 @@ class Lieu {
         }
 
         // MÉTHODES
-        public lieuAjoute (){
+       /*  public lieuAjoute (){
             return '<p>'. $this->type . ' ' . $this->adresse . ' ' . $this->description . '</p>';
-        }
+        } */
 
         /* public lieuModifie(){
 

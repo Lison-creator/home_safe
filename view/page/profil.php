@@ -22,7 +22,7 @@
     </div>
     <div>
         <!-- input "rechercher un lieu" -->
-        <input type="text">
+        <input type="text" placeholder="Où allez-vous?">
         <!-- Grand "plus" -->
         <svg id="_Color" data-name=" ↳Color" xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56">
             <path id="_Color-2" data-name=" ↳Color" d="M56,32H32V56H24V32H0V24H24V0h8V24H56Z" fill="#fff" />
