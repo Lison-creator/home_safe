@@ -39,7 +39,7 @@
                     <div class="row">
                         <form action="#" method="post" class="col-11 offset-1">
                             <label for="nom" id="labelConnectionPrenom">Prénom</label><br> <!-- TODO modifier le name et le for dans php et le routeur pour prénom -->
-                            <input type="text" name="nom" id="nom" placeholder="Chatshimi"><br>
+                            <input type="text" name="nom" id="nom" placeholder="Chatshimi"><br> <!-- TODO mettre un focus avec du javascript -->
 
                             <label for="emailConnection" id="labelConnectionEmail">E-mail</label><br>
                             <input type="mail" name="emailConnection" id="emailConnection" placeholder="Chatshimi@email.be"><br>
