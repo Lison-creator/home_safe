@@ -12,4 +12,4 @@
     <!-- <link rel="stylesheet" href="public/css/profil.css"> -->
 </head>
 
-<body>
+<body class="container-fluid">
