@@ -75,7 +75,6 @@ div.fondFormulaire form > input {
 
 .btnConnection{
     width: 155px;
-    text-align: center;
 }
 
 input[type=checkbox]{ /* TODO à voir s'il y ad'autres checkbox ailleurs dans le code */

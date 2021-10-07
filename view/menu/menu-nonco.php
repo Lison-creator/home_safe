@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg">
+<nav class="navbar navbar-expand-lg z-index-2">
   <div class="container-fluid">
     <div class="logoPrincipal">
       <!-- Logo
