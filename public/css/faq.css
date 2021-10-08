@@ -61,6 +61,8 @@ section {
     display: flex;
     width: 60%;
     flex-wrap: wrap;
+    background-color: rgba(63, 80, 167, 0.8);
+    border-radius: 10px;
 }
 
 section article {

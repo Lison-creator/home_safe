@@ -16,7 +16,7 @@
                 <div class="blocCategories">Questions sur les rues éclairées<br>dans Bruxelles</div>
             </aside>
 
-            <section class="col-8 offset-left-1 fonctionnementGeneral"> <!-- Textes: Questions avec les réponses, par catégorie: Général -->
+            <section class="col-8 offset-left-1 col-lg-6 m-lg-auto p-4 fonctionnementGeneral"> <!-- Textes: Questions avec les réponses, par catégorie: Général -->
                 <article>
                     <div class="titreQuestion">Qu'est-ce que "Home Safe" ?</div>
                     <div class="flecheDescend"><svg width="24" height="24" viewBox="0 0 24 24"><path d="M10.59,0,6,4.574,1.41,0,0,1.408,6,7.4l6-5.992Z" fill="#fac815"/></svg></div>
