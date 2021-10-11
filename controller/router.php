@@ -1,4 +1,7 @@
 <?php 
+
+// ici aussi il faudra changer et pas forcément lister tous les cases
+
     if(isset($_GET["section"])){
         if(isset($_SESSION["nom"])){
             // il est connecté
