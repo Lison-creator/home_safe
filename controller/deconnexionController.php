@@ -1,5 +1,9 @@
 <?php 
-    // vider les variables de session
+
+// inclure aussi ici toutes les class relatives à la page
+
+
+// vider les variables de session
     unset($_SESSION["nom"]);
     unset($_SESSION["count"]);
     // détruire la session
