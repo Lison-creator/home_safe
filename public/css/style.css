@@ -89,6 +89,10 @@ h3 {
 }
 
 
+.container-fluid{
+    padding: 0;
+}
+
 /* Boutons */
 
 
