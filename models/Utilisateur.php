@@ -1,8 +1,11 @@
- <?php 
-    class Utilisateur {
+ <?php
+    require_once("UxDB.php");
+
+    class Utilisateur extends UxDB
+    {
         // PROPRIETES
         // La classe qui englobe toutes les autres classes au niveau du genre
-        protected $id;
+        /*  protected $id;
         protected $nom;
         protected $prenom;
         protected $pseudo;
@@ -12,21 +15,33 @@
         protected $mdp;
         // protected $photoprofil;
         protected $genre;
+ */
 
-        // CONSTRUCTEUR
-        public function __construct($_nom, $_prenom, $_pseudo, $_email, $_localite, $_bio, $_mdp, $_genre) 
+        public function getUtilisateur($id)
         {
-            $this->nom = $_nom;
-            $this->prenom = $_prenom;
-            $this->pseudo = $_pseudo;
-            $this->email = $_email;
-            $this->localite = $_localite;
-            $this->bio = $_bio;
-            $this->mdp = $_mdp;
-            $this->genre = $_genre;
+
+            try {
+                $requete = "SELECT * FROM utilisateurs WHERE id = :id"; //injection SQL on rajoute un alias // sécuriser
+                $params = array(
+                    ":id" => $id
+                );
+                if ($this->execute($requete, $params) != null) {
+                    return $this->execute($requete, $params)[0];
+                } // [0] la première ligne de notre requête de notre BD
+                //retourne la premièrte ligne de mon tbaleau
+
+                else {
+                    throw new Exception("Le thé n'existe pas");
+                }
+                return null;
+            } catch (Exception $e) {
+                var_dump($e);
+                return null;
+            }
         }
+
 
         // METHODES
         // TODO
     }
-?>
+    ?>
