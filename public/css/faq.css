@@ -26,7 +26,7 @@
 
 /* Container */
 
-.container-fluid {
+.containerFAQ {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -36,13 +36,13 @@
 
 /* Aside */
 
-aside {
+.containerFAQ aside {
     flex-direction: column;
     align-items: center;
     text-align: center;
 }
 
-aside .blocCategories {
+.containerFAQ aside .blocCategories {
     width: 314px;
     height: 85px;
     background-color: rgba(241, 241, 241, 1);
@@ -56,14 +56,14 @@ aside .blocCategories {
     margin: 10px;
 }
 
-aside .blocCategories:hover {
+.containerFAQ aside .blocCategories:hover {
     background-color: rgba(149, 80, 155, 1);
     color: rgba(241, 241, 241, 1);
 }
 
 /* Sections avec textes */
 
-section {
+.containerFAQ section {
     display: flex;
     width: 60%;
     flex-wrap: wrap;
@@ -71,7 +71,7 @@ section {
     border-radius: 10px;
 }
 
-section article {
+.containerFAQ section article {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -79,11 +79,11 @@ section article {
     flex-wrap: wrap;
 }
 
-section article .titreQuestion {
+.containerFAQ section article .titreQuestion {
     font-weight: bold;
 }
 
-section article .reponse {
+.containerFAQ section article .reponse {
     margin-left: 40px;
     padding: 7px 0px 7px 15px;
     border-left: 3px solid rgba(250, 200, 21, 1);
@@ -91,6 +91,6 @@ section article .reponse {
 
 /* Sections cachées */
 
-.hidden {
+.containerFAQ .hidden {
     display: none;
 }

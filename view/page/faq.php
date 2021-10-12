@@ -18,7 +18,7 @@
         <div class="titrePages">FAQ</div>
     </div>
 
-    <div class="container-fluid"> <!-- Container avec tout le contenu -->
+    <div class="container-fluid containerFAQ"> <!-- Container avec tout le contenu -->
         <div class="row align-items-center">
             <aside class="col-3 d-flex"> <!-- Blocs cliquables avec les categories de questions, qui font apparaitre/disparaitre le texte à droite -->
                 <div class="blocCategories">Fonctionnement en général</div>
