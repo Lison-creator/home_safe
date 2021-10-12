@@ -12,12 +12,16 @@
 .barreHaut {
     height: 85px;
     background-color: rgba(40, 40, 40, 1);
+    top: 50px;
+    position: relative;
+    align-items: center;
 }
 
 .barreHaut .titrePages {
     font-family: 'coco';
     font-size: 35px;
-    text-align: center;
+    color: #FAC815;
+    margin: auto;
 }
 
 /* Container */
@@ -26,6 +30,8 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    position: relative;
+    top: 100px;
 }
 
 /* Aside */

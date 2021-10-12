@@ -3,17 +3,54 @@
 .barreHaut {
     height: 85px;
     background-color: #282828;
+    justify-content: center;
 }
 
-.barreHaut .blocTitresAssociation {
+.blocTitresAssociation {
     width: 187px;
     height: 107px;
     background-color: #95509B;
-    display: inline-block;
     border-radius: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px;
+    font-family: 'coco';
 }
 
-.barreHaut .blocTitresAssociation a {
+.barreHaut a {
     text-decoration: none;
     color: #f1f1f1;
+}
+
+.barreHaut .blocTitresAssociation:hover {
+    background-color: #FAC815;
+    border-radius: 17px;
+    color: #282828;
+    width: 235px;
+    height: 146px;
+    font-size: 1.3rem;
+}
+
+/* Section : Codeuses */
+
+#codeuses div img {
+    width: 350px;
+    border-radius: 50%;
+    margin-right: 30px;
+}
+
+.codeuseLison, .codeuseManon, .codeuseMaureen {
+    align-items: center;
+    height: 100vh;
+}
+
+.titresCodeuses {
+    font-family: 'coco';
+    font-size: 35px;
+    color: #95509B;
+}
+
+.titresCodeuses::first-letter {
+    color: #FAC815;
 }
