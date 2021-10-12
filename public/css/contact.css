@@ -1,0 +1,118 @@
+/* Pour annuler les marges du Bootstrap */
+
+.flex-menu-contact {
+    display: flex;
+    background-color: #282828;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.blocComplet {
+    padding-top: 30px;
+}
+
+.coco {
+    font-family: "coco";
+}
+
+h2 {
+    text-align: center;
+    margin: auto;
+}
+
+.informations p {
+    font-size: 23px;
+}
+
+.informations {
+    margin: auto;
+}
+
+.informations svg {
+    margin-right: 30px;
+}
+
+
+/* Ecartement des infos de contact (à gauche) */
+
+div.align-self-center {
+    padding: 30px;
+}
+
+div .texteContact {
+    padding: 30px;
+    font-size: 20px;
+    text-shadow: rgb(0, 0, 0) 1px 0 10px;
+}
+
+
+/* Couleur des labels dans le formulaire */
+
+form>label {
+    color: #FAC815;
+    font-weight: bold;
+    padding: 10px;
+}
+
+
+/* Css du champ "Votre question concerne:" */
+
+select {
+    background-color: #F1F1F1;
+    border-radius: 20px 20px 20px 20px;
+    border: 4px solid RGBA(255, 255, 255, 0.5);
+    padding: 3px;
+    font-family: 'ubuntuLight';
+    color: #3F50A7;
+    padding: 5px 5px 5px 15px;
+    font-size: 0.85rem;
+}
+
+select.champFormulaire:focus-visible {
+    border: 0;
+}
+
+select.champFormulaire:hover,
+select.champFormulaire:active,
+select.champFormulaire:focus {
+    border: 4px solid RGBA(112, 112, 112, 0.5);
+}
+
+
+/* Input de la question de l'utilisateur.ice */
+
+#messageContact {
+    height: 100px;
+}
+
+
+/* Pièce jointe */
+
+input[type="file"] {
+    background-color: #282828;
+    border-radius: revert;
+    border-style: dashed;
+    cursor: pointer;
+}
+
+input[type="file"]:hover {
+    background-color: #282828;
+    border-radius: revert;
+}
+
+.pieceJointe {
+    box-sizing: border-box;
+    border-color: #9B9B9B;
+    margin: auto;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.pieceJointe label {
+    padding: 10px;
+}
+
+.centrage {
+    margin: auto;
+}
