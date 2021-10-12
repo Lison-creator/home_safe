@@ -19,14 +19,21 @@
                 <div class="row">
                     <form action="?section=inscriptionProfil" method="post" class="col-11 offset-1">
 
-                        <label for="nom" id="labelConnectionPrenom">Prénom</label><br> <!-- TODO modifier le name et le for dans php et le routeur pour prénom -->
-                        <input type="text" name="nom" id="nom" placeholder="Chatshimi"><br>
+                        <label for="zipCodes" id="labelZip">Choisis ton zip code</label><br> <!-- TODO rajouter tous les codes Bruxelles -->
+                        <select name="zipCodes" id="zipCodes">
+                            <option value="">--Choisis ton zip code sur Bruxelles--</option>
+                            <option value="1000">--1000 Bruxelles--</option>
+                            <option value="1020">--1020 Laeken --</option>
+                            <option value="1030">--1030 Schaerbeek--</option>
+                            <option value="1040">--1040 Etterbeek--</option>
+                            <option value="1050">--1050 Ixelles--</option>
+                            <option value="1060">--1060 Saint-Gilles--</option>
+                            <option value="1070">--1070 Anderlecht--</option>
+                            <option value="1080">--1080 Molenbeek-Saint-Jean--</option>
+                            <option value="1090">--1090 Jette--</option>
 
-                        <label for="emailConnection" id="labelConnectionEmail">E-mail</label><br>
-                        <input type="mail" name="emailConnection" id="emailConnection" placeholder="Chatshimi@email.be"><br>
 
-                        <label for="motDePasseConnection" id="labelConnectionMdp">Mot de passe</label><br>
-                        <input type="password" name="motDePasseConnection" id="motDePasseConnection"><br>
+                        </select>
 
                         <div class="row m-auto">
                             <div class="col-12">
@@ -34,7 +41,7 @@
                                 <label for="accepter" class="accepter">J'accepte <span><a class="lienTermesEtCondition" href="?section=termes">les termes et les conditions d'utilisation </a> </span></label>
                             </div>
                             <div class="col-12 text-center mt-3 mb-4">
-                                <input type="submit" value="Suivant" class="btnJaune">
+                                <input type="submit" value="Suivant" class="btnJaune ">
                             </div>
                         </div>
                     </form>
