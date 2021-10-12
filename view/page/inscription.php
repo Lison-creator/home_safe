@@ -35,7 +35,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <form action="#" method="post" class="col-11 offset-1">
+                    <form action="?section=inscriptionProfil" method="post" class="col-11 offset-1">
 
                         <label for="nom" id="labelConnectionPrenom">Prénom</label><br> <!-- TODO modifier le name et le for dans php et le routeur pour prénom -->
                         <input type="text" name="nom" id="nom" placeholder="Chatshimi"><br>
