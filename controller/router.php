@@ -21,8 +21,11 @@
                 case 'termes' :
                     include("controller/termesController.php");
                     break;
-                case 'profil' :
-                    include("controller/profilController.php");
+                case 'carte' :
+                    include("controller/carteController.php");
+                    break;
+                case 'editerProfil' :
+                    include("controller/editerProfilController.php");
                     break;
                 case 'deconnexion' :
                     include("controller/deconnexionController.php");
@@ -61,7 +64,7 @@
         }
     }
     else {
-        include("controller/accueilController.php");//suppression ici du s
+        include("controller/accueilController.php");
     }
         
 ?>

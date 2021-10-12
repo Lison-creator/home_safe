@@ -1,29 +1,4 @@
 
-
-  <nav class="navbar navbar-expand-lg">
-    <div class="container-fluid">
-      <div class="logoPrincipal">
-        <!-- Logo
-       Ajouter une classe hidden //TODO car il n'apparait pas sur cette session
-      <a class="navbar-brand" href="?section=accueil">Home Safe</a> -->
-      </div>
-
-      <!-- Icone menu-burger -->
-      <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button> -->
-      <div class="navbar" id="menuAccueil">
-        <ul class="navbar-nav d-flex">
-          <li class="nav-item">
-            <a href="?section=deconnexion" class="nav-link" id="deconnexion"><?= $_SESSION['nom']; ?> Se déconnecter</a><!-- modification ici, anciennement FAQ alors que le href renvoyé à connecxion -->
-          </li>
-        </ul>
-
-      </div>
-
-    </div>
-  </nav>
-
   <!-- Ici c'est le menu editer Modifier mon profil, Paramètre, sécurité... -->
 
 
