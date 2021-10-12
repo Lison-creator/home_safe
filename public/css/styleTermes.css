@@ -1,0 +1,38 @@
+.imageDeFond{
+    background-image: url("../images/vectorised_Map_background_blured_50.jpg");
+    background-repeat: no-repeat;
+    background-position: cover;
+    height: 92vh;
+    /* TODO classe existe déjà dans les autres pages - à mettre en commun avec les filles */
+}
+
+nav.flex-menu-contact{
+    display: flex;
+    background-color: #282828;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 85px;
+    
+}
+
+nav.flex-menu-contact>h2{
+    color: #FAC815;
+    font-family: 'coco';
+    margin: auto;
+    text-align: center;
+}
+
+.contenuTermes {
+    display: flex;
+    width: 80%;
+    flex-wrap: wrap;
+    background-color: rgba(63, 80, 167, 0.8);
+    border-radius: 10px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 73vh;
+}
+
+.container-fluid{
+    padding: 0;/* TODO à voir si effet sur toutes les pages  */
+}

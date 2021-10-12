@@ -39,6 +39,7 @@ a.lienPageConnection{
   color: #FAC815;
   font-size: 1rem;
   font-family: 'coco';
+  
 }
 
 .soulignement{
@@ -48,6 +49,7 @@ a.lienPageConnection{
     border-radius: 1px;
     margin: auto;
     margin-top: 3px;
+    
 }
 
 .blockHover:hover a.lienPageConnection, .blockHover:active a.lienPageConnection, .blockHover:focus a.lienPageConnection{ /* je mets le hover sur tout le div donc mettre avant le a */
