@@ -36,12 +36,64 @@
                 return null;
             } catch (Exception $e) {
                 var_dump($e);
+                die();
+
                 return null;
             }
         }
 
 
         // METHODES
-        // TODO
+
+        // récupérer tous les utilisateurs
+
+        public function getAllUtilisateurs()
+        {
+            $requete = "SELECT * FROM utilisateurs";
+            return $this->execute($requete);
+        }
+
+        // ajoute un utilisateur : enregistrer un profil
+
+        public function addUtilisateur($nom, $prenom)
+        {
+            $requete = "INSERT INTO utilisateurs (nom, prenom, email) VALUES (:nom, :prenom, :email)"; /* On passe par des alias pour éviter les piratages de données */
+            $params = array(
+                ":nom" => $nom,
+                ":prenom" => $prenom
+            );
+            $this->execute($requete, $params);
+        }
+
+        // met à jour un thé
+        public function updateTea($id, $nom)
+        {
+            //modifier les données
+            $requete = "UPDATE the SET nom=:nom WHERE the_id = :id";
+            $params = array(
+                ":id" => $id,
+                ":nom" => $nom
+            );
+            $this->execute($requete, $params)[0]; /* L'index 0 permet de récupérer la ligne 0 du tableau */
+        }
+        // supprime un thé
+        public function deleteTea($id)
+        {
+            //supprimer les données
+            $requete = "DELETE FROM the WHERE the_id = :id";
+            $params = array(
+                ":id" => $id
+            );
+            $this->execute($requete, $params);
+        }
+
+        // supprime plusieurs thés
+        public function deleteTeas($tab_id)
+        {
+            foreach ($tab_id as $id) {
+                $this->deleteTea($id);
+            }
+        }
     }
+
     ?>

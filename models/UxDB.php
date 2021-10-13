@@ -31,7 +31,7 @@ abstract class UxDB {
         // xampp : '' // pas de mdp /!\ production
         // mamp : 'root'
         // production : lorsque vous mettrez en ligne votre site vous recevrez de votre fournisseur les données 2, 5, 6
-        self::$_connexion = new PDO("mysql:host=localhost;dbname=web10;charset=utf8", 'root', '');
+        self::$_connexion = new PDO("mysql:host=localhost;dbname=home_safe;charset=utf8", 'root', 'root');
         // ::Default : mode par défaut de récupération de données
         // :: données sous forme tableau associatif
         self::$_connexion->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
