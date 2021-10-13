@@ -1,11 +1,11 @@
-<!-- <link rel="stylesheet" href="styleConnection.css"> -->
-<!-- Faut-il le relier ici aussi où uniquement dans le head.php ? -->
+
 
 <section class="imageDeFond">
 
     <!-- Un formulaire html complet pour la connection -->
 
-    <div class="row"><!-- début de la row générale -->
+    <div class="row">
+        <!-- début de la row générale -->
         <!-- composée de 2 colls -->
 
         <!-- Couper la page en 2 / formulaire et titre à gauche et Logo à droite -->
@@ -48,11 +48,15 @@
 
                         <div class="row m-auto">
                             <div class="col-12">
+                                <!-- //TODO Ajouter les "required" -->
+
                                 <input type="checkbox" id="accepter" name="accepter" class="me-3 checkboxColor"><!-- me-3 avec bootstrap pour faire une marge autour mais qui reste alignée/centrée par rapport à l'élément à côté -->
                                 <label for="accepter" class="accepter">J'accepte <span><a class="lienTermesEtCondition" href="?section=termes">les termes et les conditions d'utilisation </a> </span></label>
                             </div>
                             <div class="col-12 text-center mt-3 mb-4">
                                 <input type="submit" value="S'inscrire" class="btnJaune btnConnection">
+                                <!-- //TODO enlever le clic et récupérer les infos avec php -->
+                                <a href="?section=inscriptionProfil">Clic</a>
                             </div>
                         </div>
 
@@ -61,8 +65,9 @@
                 <?= $msgErreurInscription; ?>
             </div><!-- Fin de mon formulaire -->
         </div><!-- fin de la première div.formulaireConnection de 6 complètement à gauche -->
-        
-        <div class="col-6"><!-- début de la deuxième div complètement à droite avec le svg -->
+
+        <div class="col-6">
+            <!-- début de la deuxième div complètement à droite avec le svg -->
             <!-- Deuxième col qui prend l'autre moitié de la page pour le logo qui doit être centré -->
             <div class="container-fluid">
                 <div class="row">

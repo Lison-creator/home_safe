@@ -23,12 +23,9 @@ class Lieu {
         // MÉTHODES
        /*  public lieuAjoute (){
             return '<p>'. $this->type . ' ' . $this->adresse . ' ' . $this->description . '</p>';
-        } */
-
-        /* public lieuModifie(){
+        } public lieuModifie(){
 
         }
-
         public lieuPartage(){
 
         } 
@@ -37,8 +34,6 @@ class Lieu {
             return $this->rue . ' ' . $this->num . ' , boîte ' . $this->boite . '<br />' . $this->zip . ' ' . $this->localite; 
         }
     
-        
-        
         */
 
 ?>

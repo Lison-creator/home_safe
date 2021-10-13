@@ -1,6 +1,3 @@
-<!-- <link rel="stylesheet" href="styleConnection.css"> -->
-<!-- Faut-il le relier ici aussi où uniquement dans le head.php ? -->
-
 
     <section class="imageDeFond">
 

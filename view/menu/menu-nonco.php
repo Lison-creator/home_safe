@@ -2,7 +2,7 @@
   <div class="container-fluid">
     <div class="logoPrincipal">
       <!-- Logo
-       Ajouter une classe hidden //TODO car il n'apparait pas sur cette session
+       //TODO 
       <a class="navbar-brand" href="?section=accueil">Home Safe</a> -->
     </div>
 

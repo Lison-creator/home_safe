@@ -52,6 +52,9 @@
                 case 'termes' :
                     include("controller/termesController.php");
                     break;
+                case 'inscriptionProfil' :
+                    include("controller/inscriptionProfilController.php");
+                    break;
                 case 'connexion' :
                     include("controller/connexionController.php");
                     break;
@@ -66,5 +69,3 @@
     else {
         include("controller/accueilController.php");
     }
-        
-?>
