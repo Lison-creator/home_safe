@@ -12,11 +12,13 @@ include("models/Utilisateur.php");
     
     // si le form est soumis (une variable post nom)
     if((isset($_POST["nom"]))&&(isset($_POST["prenom"]))){
-        
+        $prenom = $_POST["prenom"];
+        $nom = $_POST["nom"];
+        /* $email = $_POST["emailConnection"]; */
     // vérifie le nom et qu'il ne contient pas que des espace
-        if((trim($_POST["nom"])!= "") && (trim($_POST["prenom"])!= "")){
-            $user1->addUtilisateur($_POST["nom"], $_POST["prenom"]);
-            header("Location:?section=accueil");
+        if(((trim($nom))!= "") && (trim($prenom)!= "")){
+            $user1->addUtilisateur($nom, $prenom);
+            header("Location:?section=inscriptionProfil");
             /* Renvoie à la page d'accueil une fois le formulaire envoyé */
         }
         else {
@@ -29,3 +31,4 @@ include("models/Utilisateur.php");
     include("controller/menuController.php"); 
     include("view/page/inscription.php");
     include("view/html/footer.php");
+    ?>;

@@ -39,7 +39,7 @@
                     <label for="nom" id="labelConnectionPrenom">Nom</label><br> <!-- TODO modifier le name et le for dans php et le routeur pour prénom -->
                     <input required type="text" name="nom" id="nom" placeholder="Chatshimi"><br> <!-- TODO mettre un focus avec du javascript -->
 
-                    <!-- <label for="emailConnection" id="labelConnectionEmail">E-mail</label><br>
+                   <!--  <label for="emailConnection" id="labelConnectionEmail">E-mail</label><br>
                     <input type="mail" name="emailConnection" id="emailConnection" placeholder="Chatshimi@email.be"> -->
                     
                     <label for="prenom">Prénom</label><br>

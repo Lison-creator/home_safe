@@ -52,14 +52,14 @@
                 case 'termes' :
                     include("controller/termesController.php");
                     break;
-                case 'inscriptionProfil' :
-                    include("controller/inscriptionProfilController.php");
-                    break;
                 case 'connexion' :
                     include("controller/connexionController.php");
                     break;
                 case 'inscription' :
                     include("controller/inscriptionController.php");
+                    break;
+                case 'inscriptionProfil' :
+                    include("controller/inscriptionProfilController.php");
                     break;
                 default:
                     include("view/error/404.php");
