@@ -9,13 +9,13 @@
         <!-- composée de 2 colls -->
 
         <!-- Couper la page en 2 / formulaire et titre à gauche et Logo à droite -->
-        <div class="col-4 offset-2 formulaireAvatar">
+        <div class="col-4 offset-2 ">
             <!-- Ne prend pas toute la page car l'autre col c'est pour le logo -->
 
             <h2 class="mb-2 mt-5 text-center ombrageText">Salut ! Créons ton profil</h2>
             <h3 class="text-center mb-5 ombrageText">Présente toi rapidement !<br>Tu pourras changer ton profil plus tard.</h3>
 
-            <div class="fondFormulaire">
+            <div class="formulaireAvatar">
                 <div class="row">
                     <form action="?section=inscriptionProfil" method="post" class="col-11 offset-1">
 
