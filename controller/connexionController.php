@@ -3,6 +3,7 @@
 // inclure aussi ici toutes les class relatives à la page
 
 
+
     // si la variable de session count n'existe pas
     if(!isset($_SESSION["count"])){
         // alors la créer et initialiser à 0
@@ -50,5 +51,3 @@
     include("controller/menuController.php"); 
     include("view/page/connexion.php");
     include("view/html/footer.php");
-    
-?>

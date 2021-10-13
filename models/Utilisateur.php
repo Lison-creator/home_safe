@@ -57,7 +57,7 @@
 
         public function addUtilisateur($nom, $prenom)
         {
-            $requete = "INSERT INTO utilisateurs (nom, prenom, email) VALUES (:nom, :prenom, :email)"; /* On passe par des alias pour éviter les piratages de données */
+            $requete = "INSERT INTO utilisateurs (nom, prenom) VALUES (:nom, :prenom)"; /* On passe par des alias pour éviter les piratages de données */
             $params = array(
                 ":nom" => $nom,
                 ":prenom" => $prenom
@@ -65,21 +65,21 @@
             $this->execute($requete, $params);
         }
 
-        // met à jour un thé
+       /*   met à jour un thé
         public function updateTea($id, $nom)
         {
-            //modifier les données
+            modifier les données
             $requete = "UPDATE the SET nom=:nom WHERE the_id = :id";
             $params = array(
                 ":id" => $id,
                 ":nom" => $nom
             );
-            $this->execute($requete, $params)[0]; /* L'index 0 permet de récupérer la ligne 0 du tableau */
+            $this->execute($requete, $params)[0]; /* L'index 0 permet de récupérer la ligne 0 du tableau 
         }
-        // supprime un thé
+         supprime un thé
         public function deleteTea($id)
         {
-            //supprimer les données
+            supprimer les données
             $requete = "DELETE FROM the WHERE the_id = :id";
             $params = array(
                 ":id" => $id
@@ -87,13 +87,13 @@
             $this->execute($requete, $params);
         }
 
-        // supprime plusieurs thés
+         supprime plusieurs thés
         public function deleteTeas($tab_id)
         {
             foreach ($tab_id as $id) {
                 $this->deleteTea($id);
             }
-        }
+        } */
     }
 
     ?>

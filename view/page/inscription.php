@@ -35,32 +35,22 @@
                     </div>
                 </div>
                 <div class="row">
-                    <form action="#" method="post" class="col-11 offset-1">
+                <form action="#" method="post" class="col-11 offset-1">
+                    <label for="nom" id="labelConnectionPrenom">Nom</label><br> <!-- TODO modifier le name et le for dans php et le routeur pour prénom -->
+                    <input required type="text" name="nom" id="nom" placeholder="Chatshimi"><br> <!-- TODO mettre un focus avec du javascript -->
 
-                        <label for="nom" id="labelConnectionPrenom">Prénom</label><br> <!-- TODO modifier le name et le for dans php et le routeur pour prénom -->
-                        <input type="text" name="nom" id="nom" placeholder="Chatshimi"><br>
+                    <!-- <label for="emailConnection" id="labelConnectionEmail">E-mail</label><br>
+                    <input type="mail" name="emailConnection" id="emailConnection" placeholder="Chatshimi@email.be"> -->
+                    
+                    <label for="prenom">Prénom</label><br>
+                    <input type="text" name="prenom" id="prenom" placeholder="Boule>">
 
-                        <label for="emailConnection" id="labelConnectionEmail">E-mail</label><br>
-                        <input type="mail" name="emailConnection" id="emailConnection" placeholder="Chatshimi@email.be"><br>
-
-                        <label for="motDePasseConnection" id="labelConnectionMdp">Mot de passe</label><br>
-                        <input type="password" name="motDePasseConnection" id="motDePasseConnection"><br>
-
-                        <div class="row m-auto">
-                            <div class="col-12">
-                                <!-- //TODO Ajouter les "required" -->
-
-                                <input type="checkbox" id="accepter" name="accepter" class="me-3 checkboxColor"><!-- me-3 avec bootstrap pour faire une marge autour mais qui reste alignée/centrée par rapport à l'élément à côté -->
-                                <label for="accepter" class="accepter">J'accepte <span><a class="lienTermesEtCondition" href="?section=termes">les termes et les conditions d'utilisation </a> </span></label>
-                            </div>
-                            <div class="col-12 text-center mt-3 mb-4">
-                                <input type="submit" value="S'inscrire" class="btnJaune btnConnection">
-                                <!-- //TODO enlever le clic et récupérer les infos avec php -->
-                                <a href="?section=inscriptionProfil">Clic</a>
-                            </div>
+                    <div class="row">
+                        <div class="col-12 text-center mt-3 mb-4">
+                            <input type="submit" value="Inscription" class="btnJaune btnConnection">
                         </div>
-
-                    </form>
+                    </div>
+                </form>
                 </div>
                 <?= $msgErreurInscription; ?>
             </div><!-- Fin de mon formulaire -->
