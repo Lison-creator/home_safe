@@ -17,7 +17,11 @@
 
             <div class="formulaireAvatar">
                 <div class="row">
-                    <form action="?section=inscriptionProfil" method="post" class="col-11 offset-1">
+                    <form action="?section=inscriptionProfil" method="post" class="col-11 offset-1" enctype="multipart/form-data">
+<!-- https://www.w3schools.com/php/php_file_upload.asp -->
+                        <label for="imageUploader">Ici</label>
+                        <input type="file" name="imageUploader" id="imageUploader">
+                        <input type="submit" value="Importe une image" name="submit">
 
                         <label for="zipCodes" id="labelZip">Choisis ton zip code</label><br> <!-- TODO rajouter tous les codes Bruxelles -->
                         <select name="zipCodes" id="zipCodes">
