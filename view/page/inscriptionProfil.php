@@ -42,7 +42,7 @@
                         </div>
 
                         <label for="zipCodes" id="labelZip" class="mb-1 mt-4 ajoutZip col-12">Choisis ton zip code</label><br> <!-- TODO rajouter tous les codes Bruxelles / à lier avec la DB ?-->
-                        <select name="zipCodes" id="zipCodes">
+                        <select name="zipCodes" id="zipCodes" class="zipCodes">
                             <option value="">--Choisis ton zip code sur Bruxelles--</option>
                             <option value="1000">--1000 Bruxelles--</option>
                             <option value="1020">--1020 Laeken --</option>
