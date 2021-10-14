@@ -11,6 +11,7 @@ const imageChoisie = document.getElementById('imageChoisie');
 
 btnImporterImage.addEventListener('change', function(){
     imageChoisie.textContent =  this.files[0].name
+    console.log(this.files[0].name);
 })
 
 /* ------------------------------------------------------------------- */
