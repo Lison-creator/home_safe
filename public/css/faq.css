@@ -5,6 +5,7 @@
     background-repeat: no-repeat;
     background-position: fixed;
     height: 100vh;
+    z-index: 0;
 }
 
 /* Barre noire en haut avec le logo + titre de la page */

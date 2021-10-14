@@ -40,12 +40,10 @@
     overflow-x: hidden;
     overflow-y: hidden;
     width: 100vw;
-    height: 80vh;
-    white-space: nowrap;
+    height: 65vh;
 }
 
 .containerAssociation > div {
-    display: inline-block;
     width: 100vw;
     height: 100%;
     max-height: 100%;
@@ -61,8 +59,6 @@
 
 .codeuseLison, .codeuseManon, .codeuseMaureen {
     align-items: center;
-    width: 100%;
-    margin: 0 auto;
 }
 
 .titresCodeuses {
@@ -83,4 +79,6 @@
 
 .fleches {
     justify-content: space-between;
+    align-content: center;
+    z-index: 1;
 }
