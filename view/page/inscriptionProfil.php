@@ -16,7 +16,7 @@
             <h2 class="mb-2 mt-5 text-center ombrageText">Salut ! Créons ton profil</h2>
             <h3 class="text-center mb-5 ombrageText">Présente toi rapidement !<br>Tu pourras changer ton profil plus tard.</h3>
 
-            <div class="formulaireAvatar">
+            <div class="formulaireAvatar"><!-- Block noir ici -->
                 <div class="row">
                     <!-- TODO renvoyer au fichier importerImage -->
                     <form action="?section=inscriptionProfil" method="post" class="col-11 offset-1" enctype="multipart/form-data">

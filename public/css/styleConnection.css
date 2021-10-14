@@ -18,7 +18,7 @@
     font-family: 'coco';
 }
 
-.fondFormulaire, .formulaireAvatar {/* contient le css des pages Inscription, Connection et Edit Profil */
+.fondFormulaire{/
     border: 2px solid #282828;
     border-radius: 10px;
     background-color: #282828;
