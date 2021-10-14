@@ -74,10 +74,10 @@
 
                     <form action="#" method="post" class="col-11 offset-1">
                         <label for="nomContact" id="nomContact">Nom</label><br>
-                        <input type="text" name="nomContact" id="nomContact" placeholder="Chatshimi"><br>
+                        <input class="champFormulaire" type="text" name="nomContact" id="nomContact" placeholder="Chatshimi"><br>
 
                         <label for="emailContact" id="emailContact">E-mail</label><br>
-                        <input type="mail" name="emailContact" id="emailContact" placeholder="Chatshimi@email.be"><br>
+                        <input class="champFormulaire" type="mail" name="emailContact" id="emailContact" placeholder="Chatshimi@email.be"><br>
 
                         <!-- L'objet du message -->
                         <label for="objet" id="objet">Objet</label><br>
