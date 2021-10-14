@@ -69,11 +69,15 @@
     align-items: center;
 }
 
-.texteCodeusesBackground{
+.texteCodeusesBackground, .texteValeursBackground{
     width: 50%;
     background-color: rgba(63, 80, 167, 0.8);
     border-radius: 10px;
     box-shadow: 2px 3px 5px RGBA(19, 19, 19, 0.6); /* TODO ajout d'une ombre ? est-ce que ça vous va ? si oui, à rajouter sur tous les blocs bleu background */
+}
+
+.texteValeursBackground{
+    width: 80%;
 }
 
 .titresCodeuses {
