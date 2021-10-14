@@ -24,6 +24,9 @@
                 case 'carte' :
                     include("controller/carteController.php");
                     break;
+                /* case 'inscriptionProfil' :
+                    include("controller/inscriptionProfilController.php");
+                    break; */
                 case 'editerProfil' :
                     include("controller/editerProfilController.php");
                     break;
@@ -68,4 +71,5 @@
     }
     else {
         include("controller/accueilController.php");
+        var_dump("je suis rentrée dans case: je suis nulle part help !");
     }
