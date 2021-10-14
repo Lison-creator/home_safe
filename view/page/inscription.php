@@ -36,14 +36,12 @@
                 </div>
                 <div class="row">
                 <form action="#" method="post" class="col-11 offset-1">
-                    <label for="nom" id="labelConnectionPrenom">Nom</label><br> <!-- TODO modifier le name et le for dans php et le routeur pour prénom -->
-                    <input required type="text" name="nom" id="nom" placeholder="Chatshimi"><br> <!-- TODO mettre un focus avec du javascript -->
+                    <label for="pseudo" id="labelConnectionPseudo">Pseudo</label><br> <!-- TODO modifier le name et le for dans php et le routeur pour Pseudo -->
+                    <input required type="text" name="pseudo" id="pseudo" placeholder="Chatshimi"><br> <!-- TODO mettre un focus avec du javascript -->
 
-                   <!--  <label for="emailConnection" id="labelConnectionEmail">E-mail</label><br>
-                    <input type="mail" name="emailConnection" id="emailConnection" placeholder="Chatshimi@email.be"> -->
+                   <label for="email" id="labelConnectionEmail">E-mail</label><br>
+                    <input type="mail" name="email" id="email" placeholder="Chatshimi@email.be">
                     
-                    <label for="prenom">Prénom</label><br>
-                    <input type="text" name="prenom" id="prenom" placeholder="Boule>">
 
                     <div class="row">
                         <div class="col-12 text-center mt-3 mb-4">

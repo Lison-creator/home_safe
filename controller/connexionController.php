@@ -12,15 +12,15 @@
     // initialiser la variable pour ne pas avoir d'erreur
     $msgError = "";
     // si le form est soumis (une variable post nom)
-    if(isset($_POST["nom"])){
+    if(isset($_POST["pseudo"])){
         // si inférieur à 3 essais
         if($_SESSION["count"]< 3){
             // incrémente la variable de session
             $_SESSION["count"]++;
-            // vérifie le nom et qu'il ne contient pas que des espaces
-            if(trim($_POST["nom"])!=  ""){
+            // vérifie le pseudo et qu'il ne contient pas que des espaces
+            if(trim($_POST["pseudo"])!=  ""){
                 // enregistrer dans une variable de session
-                $_SESSION["nom"] = trim($_POST["nom"]);
+                $_SESSION["pseudo"] = trim($_POST["pseudo"]);
                 // rediriger vers la page d'accueil
                 header("Location:?section=accueil");
             }
@@ -28,7 +28,7 @@
                 // message d'erreur
                 // si inférieur à 3 essais
                 if($_SESSION["count"] < 3){
-                    $msgError = "<p class='red'>Veuillez entrer un nom valide</p>";
+                    $msgError = "<p class='red'>Veuillez entrer un pseudo valide</p>";
                 }
                 else {
                     // si 3 essais négatifs sont faits

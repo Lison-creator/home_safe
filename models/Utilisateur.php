@@ -25,6 +25,7 @@
                 $params = array(
                     ":id" => $id
                 );
+
                 if ($this->execute($requete, $params) != null) {
                     return $this->execute($requete, $params)[0];
                 } // [0] la première ligne de notre requête de notre BD
@@ -54,18 +55,20 @@
         }
 
         // ajoute un utilisateur : enregistrer un profil
+        //TODO Ajouter le code pour les images https://beaussier.developpez.com/articles/php/mysql/blob/#LIII-B
 
-        public function addUtilisateur($nom, $prenom)
+        public function addUtilisateur($pseudo, $email)
         {
-            $requete = "INSERT INTO utilisateurs (nom, prenom) VALUES (:nom, :prenom)"; /* On passe par des alias pour éviter les piratages de données */
+            $requete = "INSERT INTO utilisateurs ( pseudo, email) VALUES ( :pseudo, :email)"; /* On passe par des alias pour éviter les piratages de données */
             $params = array(
-                ":nom" => $nom,
-                ":prenom" => $prenom
+              
+                ":pseudo" => $pseudo,
+                ":email" => $email
             );
             $this->execute($requete, $params);
         }
 
-       /*   met à jour un thé
+        /*   met à jour un thé
         public function updateTea($id, $nom)
         {
             modifier les données

@@ -3,7 +3,7 @@
 // ici aussi il faudra changer et pas forcément lister tous les cases
 
     if(isset($_GET["section"])){
-        if(isset($_SESSION["nom"])){
+        if(isset($_SESSION["pseudo"])){
             // il est connecté
             switch($_GET["section"]){
                 case 'accueil' :

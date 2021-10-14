@@ -14,7 +14,7 @@
     <div class="navbar" id="menuAccueil">
       <ul class="navbar-nav d-flex">
         <li class="nav-item">
-          <a href="?section=deconnexion" class="nav-link" id="deconnexion"><?= $_SESSION['nom']; ?> Se déconnecter</a><!-- modification ici, anciennement FAQ alors que le href renvoyé à connecxion -->
+          <a href="?section=deconnexion" class="nav-link" id="deconnexion"><?= $_SESSION['pseudo']; ?> Se déconnecter</a><!-- modification ici, anciennement FAQ alors que le href renvoyé à connecxion -->
         </li>
       </ul>
 
