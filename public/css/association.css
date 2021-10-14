@@ -1,3 +1,6 @@
+/* TODO rajouter des transform ease */
+/* TODO boutons avec des ombres portées */
+
 /* Barre noire en haut avec le logo + titre de la page */
 
 .barreHaut {
@@ -61,6 +64,12 @@
     align-items: center;
 }
 
+.texteCodeusesBackground{
+    width: 60%;
+    background-color: rgba(63, 80, 167, 0.8);
+    border-radius: 10px;
+}
+
 .titresCodeuses {
     font-family: 'coco';
     font-size: 35px;
@@ -72,7 +81,12 @@
 }
 
 .texteCodeuses {
-    width: 50%;
+    width: 100%;
+}
+
+.svg{ /* mr et ml de bootstrap ne fonctionne pas */
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 /* Flèches */
