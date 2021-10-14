@@ -19,6 +19,7 @@
     align-items: center;
     margin: 25px;
     font-family: 'coco';
+    box-shadow: 0px 3px 6px RGBA(0, 0, 0, 0.2) inset, 2px 3px 5px RGBA(19, 19, 19, 0.5);
 }
 
 .barreHaut a {
@@ -33,6 +34,7 @@
     width: 235px;
     height: 146px;
     font-size: 1.3rem;
+    box-shadow: 0px 3px 6px RGBA(0, 0, 0, 0.2) inset, 2px 3px 5px RGBA(19, 19, 19, 0.5);
 }
 
 /* Container */
@@ -57,7 +59,10 @@
 .codeuseLison img, .codeuseManon img, .codeuseMaureen img {
     width: 350px;
     border-radius: 50%;
-    margin-right: 30px;
+}
+
+.rondImage{
+    position: absolute;
 }
 
 .codeuseLison, .codeuseManon, .codeuseMaureen {
@@ -65,9 +70,10 @@
 }
 
 .texteCodeusesBackground{
-    width: 60%;
+    width: 50%;
     background-color: rgba(63, 80, 167, 0.8);
     border-radius: 10px;
+    box-shadow: 2px 3px 5px RGBA(19, 19, 19, 0.6); /* TODO ajout d'une ombre ? est-ce que ça vous va ? si oui, à rajouter sur tous les blocs bleu background */
 }
 
 .titresCodeuses {
@@ -88,6 +94,7 @@
     margin-left: 10px;
     margin-right: 10px;
 }
+
 
 /* Flèches */
 
