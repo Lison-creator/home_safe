@@ -27,6 +27,9 @@
                 case 'editerProfil' :
                     include("controller/editerProfilController.php");
                     break;
+                /* case 'inscriptionProfil' :
+                    include("controller/inscriptionProfilController.php");
+                    break; */
                 case 'deconnexion' :
                     include("controller/deconnexionController.php");
                     break;
@@ -60,6 +63,9 @@
                     break;
                 case 'inscription' :
                     include("controller/inscriptionController.php");
+                    break;
+                case 'inscriptionProfil' :
+                    include("controller/inscriptionProfilController.php");
                     break;
                 default:
                     include("view/error/404.php");

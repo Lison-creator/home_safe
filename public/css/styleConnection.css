@@ -4,7 +4,6 @@
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
-    /* mettons nous ici en plus une opacité de 0.7 ??????? attention se fait sur toute la pagr */
 }
 
 .logoConnection{
@@ -14,12 +13,12 @@
     height: 100vh;
 }
 
-.formulaireConnection > h2 {
+.formulaireConnection > h2, .formulaireAvatar > h2 {/* contient le css des pages Inscription, Connection et Edit Profil */
     font-size: 3.5rem;
     font-family: 'coco';
 }
 
-.fondFormulaire {
+.fondFormulaire{/
     border: 2px solid #282828;
     border-radius: 10px;
     background-color: #282828;
@@ -63,7 +62,8 @@ a.lienPageConnection{
 
 
 /************************* inputs du formulaire */
-#labelConnectionPrenom, #labelConnectionEmail, #labelConnectionMdp{
+/* contient le css des pages Inscription, Connection et Edit Profil */
+#labelConnectionPrenom, #labelConnectionEmail, #labelConnectionMdp, #labelZip{
     color: #FAC815;
     font-weight: bold;
     padding: 10px;
