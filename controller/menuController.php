@@ -7,6 +7,10 @@
 /* TODO ne fonctionne pas - rentre tjs dans al boucle edit-profil */
 /* voir avec le router : où mettre la page "inscriptionProfilController ? dans connecté ou non-connecté ? */
 
+/* faire un switch ou else if */
+// nom +  accueil
+//nom + editer (elseif)
+
 
 //Si j'ai un nom, que je suis déjà inscrite
 if (isset($_SESSION["nom"])) {
