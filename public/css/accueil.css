@@ -1,8 +1,3 @@
-.titreAccueil {
-    text-align: center;
-    text-shadow: #000000 1px 0 10px;
-}
-
 .btnAccueil {
     text-align: center;
     width: 350px;
@@ -12,6 +7,11 @@
 
 .logo {
     margin-bottom: 40px;
+}
+
+.titreAccueil {
+    text-align: center;
+    text-shadow: #000000 1px 0 10px;
 }
 
 .titreAccueil>h1 {
