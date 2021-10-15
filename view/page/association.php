@@ -15,16 +15,16 @@
             </svg>
         </div>
         <a href="#codeuseLison">
-            <div class="blocTitresAssociation">Les codeuses</div>
+            <div class="blocTitresAssociation" id="btnCodeuses">Les codeuses</div>
         </a>
         <a href="#valeurs">
-            <div class="blocTitresAssociation">Nos valeurs</div>
+            <div class="blocTitresAssociation" id="btnValeurs">Nos valeurs</div>
         </a>
         <a href="#projet">
-            <div class="blocTitresAssociation">Le projet<br>Home Safe</div>
+            <div class="blocTitresAssociation" id="btnProjet">Le projet<br>Home Safe</div>
         </a>
         <a href="#autres">
-            <div class="blocTitresAssociation">Autres initiatives</div>
+            <div class="blocTitresAssociation" id="btnAutres">Autres initiatives</div>
         </a>
     </div>
 
