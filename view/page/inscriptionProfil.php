@@ -57,7 +57,7 @@
 
                         <div class="row m-auto">
                             <div class="col-12 text-center mt-5 mb-3">
-                                <input type="submit" value="Suivant" class="btnJaune ">
+                                <input type="submit" name="selection" value="Suivant" class="btnJaune ">
                             </div>
                         </div>
                     </form>
