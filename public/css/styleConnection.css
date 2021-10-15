@@ -6,7 +6,7 @@
     background-size: cover;
 } */
 
-.logoConnection{
+.logoConnection {
     width: 30%;
     padding: 0;
     margin: auto;
@@ -23,40 +23,47 @@
     border-radius: 10px;
     background-color: #282828;
     width: 80%;
-    box-shadow:2px 3px 5px RGBA(19, 19, 19, 1); /* TODO vérifier si l'ombre est identique chez nous toutes */
-    margin:auto;
+    box-shadow: 2px 3px 5px RGBA(19, 19, 19, 1);
+    /* TODO vérifier si l'ombre est identique chez nous toutes */
+    margin: auto;
 }
+
 
 /* Texte */
 
-.ombrageText{
+.ombrageText {
     text-shadow: 2px 2px #131313;
 }
 
 
 /************************* liens se connecter et s'inscrire */
-a.lienPageConnection{
-  color: #FAC815;
-  font-size: 1rem;
-  font-family: 'coco';
-  
+
+a.lienPageConnection {
+    color: #FAC815;
+    font-size: 1rem;
+    font-family: 'coco';
 }
 
-.soulignement{
+.soulignement {
     width: 80%;
     height: 3px;
     background-color: #3F50A7;
     border-radius: 1px;
     margin: auto;
     margin-top: 3px;
-    
 }
 
-.blockHover:hover a.lienPageConnection, .blockHover:active a.lienPageConnection, .blockHover:focus a.lienPageConnection{ /* je mets le hover sur tout le div donc mettre avant le a */
+.blockHover:hover a.lienPageConnection,
+.blockHover:active a.lienPageConnection,
+.blockHover:focus a.lienPageConnection {
+    /* je mets le hover sur tout le div donc mettre avant le a */
     color: #3F50A7;
 }
 
-.blockHover:hover .soulignement, .blockHover:active .soulignement, .blockHover:focus .soulignement{ /* je mets le hover sur tout le div donc mettre avant la class soulignement */
+.blockHover:hover .soulignement,
+.blockHover:active .soulignement,
+.blockHover:focus .soulignement {
+    /* je mets le hover sur tout le div donc mettre avant la class soulignement */
     background-color: #FAC815;
 }
 
@@ -67,45 +74,56 @@ a.lienPageConnection{
     color: #FAC815;
     font-weight: bold;
     padding: 10px;
- /* TODO à vérifier si en accord avec Lison et ses formulaires */
-} 
+    /* TODO à vérifier si en accord avec Lison et ses formulaires */
+}
 
-div.fondFormulaire form > input {
+div.fondFormulaire form>input {
     width: 90%;
     margin-bottom: 25px;
 }
 
-.btnConnection{
+.btnConnection {
     width: 155px;
 }
 
-input[type=checkbox]{ /* TODO à voir s'il y ad'autres checkbox ailleurs dans le code */
+input[type=checkbox] {
+    /* TODO à voir s'il y ad'autres checkbox ailleurs dans le code */
     /* augmenter la taille des Checkboxes */
-  -ms-transform: scale(1.5); /* IE */
-  -moz-transform: scale(1.5); /* FF */
-  -webkit-transform: scale(1.5); /* Safari et Chrome */
-  -o-transform: scale(1.5); /* Opera */
-  transform: scale(1.5);
-  padding: 15px;
+    -ms-transform: scale(1.5);
+    /* IE */
+    -moz-transform: scale(1.5);
+    /* FF */
+    -webkit-transform: scale(1.5);
+    /* Safari et Chrome */
+    -o-transform: scale(1.5);
+    /* Opera */
+    transform: scale(1.5);
+    padding: 15px;
 }
 
+
 /************************* lien termes et condition + j'ai oublié mon mdp */
-a.lienTermesEtCondition, a.oublie {
+
+a.lienTermesEtCondition,
+a.oublie {
     color: #FAC815;
 }
-.accepter, .oublie {
+
+.accepter,
+.oublie {
     opacity: 0.5;
 }
 
-.accepter{
+.accepter {
     font-size: 12px;
 }
 
-.accepter:hover, .oublie:hover {
+.accepter:hover,
+.oublie:hover {
     opacity: 1;
 }
 
-.checkboxColor{
+.checkboxColor {
     /* Pour changer la couleur de fond de la checkbox */
     /* couleur difficilement changeable, correspond au mieux au bleu de la charte */
     filter: hue-rotate(20deg);

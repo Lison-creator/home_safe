@@ -4,7 +4,7 @@
 
 
 // vider les variables de session
-    unset($_SESSION["nom"]);
+    unset($_SESSION["pseudo"]);
     unset($_SESSION["count"]);
     // détruire la session
     session_destroy();

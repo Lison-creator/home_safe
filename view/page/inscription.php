@@ -35,11 +35,14 @@
                     </div>
                 </div>
                 <div class="row">
-                    <form action="?section=inscriptionProfil" method="post" class="col-11 offset-1">
+                <form action="#" method="post" class="col-11 offset-1">
+                    <label for="pseudo" id="labelConnectionPseudo">Pseudo</label><br> <!-- TODO modifier le name et le for dans php et le routeur pour Pseudo -->
+                    <input required type="text" name="pseudo" id="pseudo" placeholder="Chatshimi"><br> <!-- TODO mettre un focus avec du javascript -->
 
-                        <label for="nom" id="labelConnectionPrenom">Prénom</label><br> <!-- TODO modifier le name et le for dans php et le routeur pour prénom -->
-                        <input type="text" name="nom" id="nom" placeholder="Chatshimi"><br>
 
+                    <div class="row">
+                        <div class="col-12 text-center mt-3 mb-4">
+                            <input type="submit" value="Inscription" class="btnJaune btnConnection">
                         <label for="emailConnection" id="labelConnectionEmail">E-mail</label><br>
                         <input type="mail" name="emailConnection" id="emailConnection" placeholder="Chatshimi@email.be"><br>
 
@@ -59,8 +62,8 @@
                                 <a href="?section=inscriptionProfil">Clic</a>
                             </div>
                         </div>
-
-                    </form>
+                    </div>
+                </form>
                 </div>
                 <?= $msgErreurInscription; ?>
             </div><!-- Fin de mon formulaire -->
