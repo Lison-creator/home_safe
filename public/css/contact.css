@@ -1,4 +1,8 @@
-/* Pour annuler les marges du Bootstrap */
+/* //TODO Ranger par ordre alphabétique */
+
+.blocComplet {
+    padding-top: 30px;
+}
 
 .flex-menu-contact {
     display: flex;
@@ -9,10 +13,6 @@
 
 .flex-menu-contact>p {
     padding-left: 30px;
-}
-
-.blocComplet {
-    padding-top: 30px;
 }
 
 .coco {
@@ -72,6 +72,19 @@ form>label {
     font-weight: bold;
     padding: 10px;
 }
+
+
+/* 
+ Hover sur le logo
+
+svg:hover {
+    width: 70px;
+    height: auto;
+    position: relative;
+    top: 10px;
+}
+
+*/
 
 
 /* Css du champ "Votre question concerne:" */
