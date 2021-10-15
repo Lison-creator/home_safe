@@ -17,6 +17,7 @@ if (isset($_SESSION["nom"])) {
 
 } else {
     
+    /* Ligne suivante va dans le premier "if", non ? Car c'est une condition connectée... */
     if ((isset($_SESSION["nom"])) && (isset($_GET["section"]) == "inscriptionProfil")) {
             include("view/menu/menuInscriptionProfil.php");} 
 

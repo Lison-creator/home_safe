@@ -12,6 +12,7 @@
     <!-- <link rel="stylesheet" href="public/css/profil.css"> -->
     <link rel="stylesheet" href="public/css/styleTermes.css">
     <link rel="stylesheet" href="public/css/styleEdit.css">
+    <link rel="stylesheet" href="public/css/accueil.css">
 </head>
 
 <body class="container-fluid">
