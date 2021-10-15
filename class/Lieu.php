@@ -15,10 +15,12 @@ class Lieu {
         // CONSTRUCTEUR
         public function __construct($_type, $_adresse, $_description) 
         {
-            $this->type = $type;
-            $this->adresse = $adresse;
-            $this->description = $description;
+            $this->type = $_type;
+            $this->adresse = $_adresse;
+            $this->description = $_description;
         }
+
+    }
 
         // MÉTHODES
        /*  public lieuAjoute (){
@@ -28,9 +30,7 @@ class Lieu {
         /* public lieuModifie(){
 
         }
-
         public lieuPartage(){
-
         } 
         
         public adresseEntiere(){
