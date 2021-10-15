@@ -57,13 +57,14 @@
         // ajoute un utilisateur : enregistrer un profil
         //TODO Ajouter le code pour les images https://beaussier.developpez.com/articles/php/mysql/blob/#LIII-B
 
-        public function addUtilisateur($pseudo, $email)
+        public function addUtilisateur($pseudo, $email, $mdp)
         {
-            $requete = "INSERT INTO utilisateurs ( pseudo, email) VALUES ( :pseudo, :email)"; /* On passe par des alias pour éviter les piratages de données */
+            $requete = "INSERT INTO utilisateurs (pseudo, email, mdp) VALUES ( :pseudo, :email, :mdp)"; /* On passe par des alias pour éviter les piratages de données */
             $params = array(
               
                 ":pseudo" => $pseudo,
-                ":email" => $email
+                ":email" => $email,
+                ":mdp" => $mdp
             );
             $this->execute($requete, $params);
         }

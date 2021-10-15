@@ -12,20 +12,21 @@ include("models/Utilisateur.php");
     
     // si le form est soumis (une variable post nom)
 
-    if((isset($_POST["pseudo"]))&&(isset($_POST["email"]))){
+    if((isset($_POST["pseudo"]))&&(isset($_POST["email"]))&&(isset($_POST["mdp"]))){
         $email = $_POST["email"];
         $pseudo = $_POST["pseudo"];
+        $mdp = $_POST["mdp"];
         /* $email = $_POST["emailConnection"]; */
 
     // vérifie le pseudo et qu'il ne contient pas que des espace
 
-        if(((trim($pseudo))!= "") && (trim($email)!= "")){
-            $user1->addUtilisateur($pseudo, $email);
+        if(((trim($pseudo))!= "") && (trim($email)!= "") && (trim($mdp)!= "")){
+            $user1->addUtilisateur($pseudo, $email, $mdp);
             header("Location:?section=inscriptionProfil");
             /* Renvoie à la page d'accueil une fois le formulaire envoyé */
         }
         else {
-            $msgErreurInscription ="<p style='color:red'>Veuillez remplir le champ pseudo</p>";
+            $msgErreurInscription ="<p style='color:red'>Veuillez remplir tous les champs </p>";
         }
         }
         
