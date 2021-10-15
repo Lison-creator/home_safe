@@ -1,7 +1,26 @@
-/* //TODO Ranger par ordre alphabétique */
-
 .blocComplet {
     padding-top: 30px;
+}
+
+.champFormulaire {
+    width: 90%;
+}
+
+.coco {
+    font-family: "coco";
+}
+
+
+/* Ecartement des infos de contact (à gauche) */
+
+div.align-self-center {
+    padding: 30px;
+}
+
+div .texteContact {
+    padding: 30px;
+    font-size: 20px;
+    text-shadow: rgb(0, 0, 0) 1px 0 10px;
 }
 
 .flex-menu-contact {
@@ -15,8 +34,28 @@
     padding-left: 30px;
 }
 
-.coco {
-    font-family: "coco";
+
+/*----- Le formulaire ------- */
+
+
+/* Couleur des labels dans le formulaire */
+
+form>label {
+    color: #FAC815;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.formulaireContact {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    border: 2px solid #282828;
+    border-radius: 10px;
+    background-color: #282828;
+    width: 80%;
+    box-shadow: 2px 3px 5px RGBA(19, 19, 19, 1);
+    /* TODO vérifier si l'ombre est identique chez nous toutes */
+    margin: auto;
 }
 
 h2 {
@@ -37,40 +76,10 @@ h2 {
 }
 
 
-/* Le formulaire */
+/* Input de la question de l'utilisateur.ice */
 
-.formulaireContact {
-    padding-top: 30px;
-    padding-bottom: 20px;
-    border: 2px solid #282828;
-    border-radius: 10px;
-    background-color: #282828;
-    width: 80%;
-    box-shadow: 2px 3px 5px RGBA(19, 19, 19, 1);
-    /* TODO vérifier si l'ombre est identique chez nous toutes */
-    margin: auto;
-}
-
-
-/* Ecartement des infos de contact (à gauche) */
-
-div.align-self-center {
-    padding: 30px;
-}
-
-div .texteContact {
-    padding: 30px;
-    font-size: 20px;
-    text-shadow: rgb(0, 0, 0) 1px 0 10px;
-}
-
-
-/* Couleur des labels dans le formulaire */
-
-form>label {
-    color: #FAC815;
-    font-weight: bold;
-    padding: 10px;
+#messageContact {
+    height: 100px;
 }
 
 
@@ -108,17 +117,6 @@ select.champFormulaire:hover,
 select.champFormulaire:active,
 select.champFormulaire:focus {
     border: 4px solid RGBA(112, 112, 112, 0.5);
-}
-
-.champFormulaire {
-    width: 90%;
-}
-
-
-/* Input de la question de l'utilisateur.ice */
-
-#messageContact {
-    height: 100px;
 }
 
 
