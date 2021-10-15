@@ -1,6 +1,6 @@
 /********* carré noir de la page inscriptiOnProfil*/
 
-.formulaireAvatar {/* TODO même css que les pages Inscription, Connection à rajouter dans le css ? */
+.formulaireAvatar, .formulaireEditerProfil {/* TODO même css que les pages Inscription, Connection à rajouter dans le css ? */
     border: 2px solid #282828;
     border-radius: 10px;
     background-color: #282828;
@@ -11,9 +11,14 @@
 
 /********** typographies */
 
-.ajoutAvatar, .ajoutZip {
+.ajoutAvatar, .ajoutZip, .editerBio {
     font-family: 'coco';
     color: #FAC815;
+}
+
+.editerPrenom, .editerCP {
+    font-family: 'coco';
+    color: #95509B;
 }
 
 div>#imageChoisie{
@@ -47,3 +52,25 @@ select.zipCodes { /* TODO A voir si Lison en a besoin aussi */
     font-size: 0.85rem;
 }
 
+/********** menu */
+
+.menuEditer{
+    position: absolute;
+    z-index: 2;
+    top: 250px;
+    left: 240px;
+    color: #9B9B9B;
+}
+
+.menuEditer ul li {
+    list-style-type: none;
+    padding: 5px;
+}
+
+.menuEditer ul li:hover {
+    color: #FAC815;
+}
+
+.menuEditer ul li:hover svg path {
+    fill: #FAC815;
+}
