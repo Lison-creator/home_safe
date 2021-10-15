@@ -69,18 +69,23 @@
             $this->execute($requete, $params);
         }
 
-        /*   met à jour un thé
-        public function updateTea($id, $nom)
+        /*  Ajoute le zip code et la photo */
+        public function addZipPhoto($id, $ad_cp)
         {
-            modifier les données
-            $requete = "UPDATE the SET nom=:nom WHERE the_id = :id";
+            //TODO Faire un switch pour récupérer les codes postaux et les encoder sous la bonne valeur dans la db
+            
+           /*  modifier les données */
+            $requete = "UPDATE utilisateurs SET ad_cp=:ad_cp WHERE id = :id";
             $params = array(
                 ":id" => $id,
-                ":nom" => $nom
+                ":ad_cp" => $ad_cp
             );
-            $this->execute($requete, $params)[0]; /* L'index 0 permet de récupérer la ligne 0 du tableau 
+            $this->execute($requete, $params)[0]; 
+            /* L'index 0 permet de récupérer la ligne 0 du tableau */
         }
-         supprime un thé
+
+
+        /*  supprime un thé
         public function deleteTea($id)
         {
             supprimer les données
@@ -97,7 +102,7 @@
             foreach ($tab_id as $id) {
                 $this->deleteTea($id);
             }
-        } */
+        }  */
     }
 
     ?>

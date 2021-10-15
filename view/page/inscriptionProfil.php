@@ -19,7 +19,7 @@
             <div class="formulaireAvatar"><!-- Block noir ici -->
                 <div class="row">
                     <!-- TODO renvoyer au fichier importerImage -->
-                    <form action="?section=inscriptionProfil" method="post" class="col-11 offset-1" enctype="multipart/form-data">
+                    <form action="#" method="post" class="col-11 offset-1" enctype="multipart/form-data">
                         <!-- enctype="multipart/form-data". It specifies which content-type to use when submitting the form  -->
 
                         <label for="importerImage" class="ajoutAvatar col-12 mb-4 mt-4">Ajoute ton Avatar</label>
@@ -41,8 +41,8 @@
                             </div>
                         </div>
 
-                        <label for="zipCodes" id="labelZip" class="mb-1 mt-4 ajoutZip col-12">Choisis ton zip code</label><br> <!-- TODO rajouter tous les codes Bruxelles / à lier avec la DB ?-->
-                        <select name="zipCodes" id="zipCodes" class="zipCodes">
+                        <label for="ad_cp" id="labelZip" class="mb-1 mt-4 ajoutZip col-12">Choisis ton zip code</label><br> <!-- TODO rajouter tous les codes Bruxelles / à lier avec la DB ?-->
+                        <select name="ad_cp" id="ad_cp" class="zipCodes">
                             <option value="">--Choisis ton zip code sur Bruxelles--</option>
                             <option value="1000">--1000 Bruxelles--</option>
                             <option value="1020">--1020 Laeken --</option>
