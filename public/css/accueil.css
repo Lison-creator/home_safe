@@ -1,0 +1,24 @@
+.titreAccueil {
+    text-align: center;
+    text-shadow: #000000 1px 0 10px;
+}
+
+.btnAccueil {
+    text-align: center;
+    width: 350px;
+    height: 70px;
+    margin: auto;
+}
+
+.logo {
+    margin-bottom: 40px;
+}
+
+.titreAccueil>h1 {
+    margin-bottom: 50px;
+}
+
+.titreAccueil>h3 {
+    margin-top: 50px;
+    margin-bottom: 70px;
+}
