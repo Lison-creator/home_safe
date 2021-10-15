@@ -1,4 +1,5 @@
-
+<!-- <link rel="stylesheet" href="styleConnection.css"> -->
+<!-- Faut-il le relier ici aussi où uniquement dans le head.php ? -->
 
 <section class="imageDeFond">
 
@@ -9,62 +10,60 @@
         <!-- composée de 2 colls -->
 
         <!-- Couper la page en 2 / formulaire et titre à gauche et Logo à droite -->
-        <div class="col-4 offset-2 formulaireConnection">
+        <div class="col-4 offset-2 ">
             <!-- Ne prend pas toute la page car l'autre col c'est pour le logo -->
 
-            <h2 class="text-uppercase mb-2 mt-5 text-center ombrageText">Home Safe</h2>
-            <h3 class="text-center mb-5 ombrageText">Rejoins Home Safe et ta communauté <br>pour des trajets sécures dans Bruxelles !</h3>
+            <h2 class="mb-2 mt-5 text-center ombrageText">Salut ! Créons ton profil</h2>
+            <h3 class="text-center mb-5 ombrageText">Présente toi rapidement !<br>Tu pourras changer ton profil plus tard.</h3>
 
-            <div class="fondFormulaire">
-                <div class="row mt-3">
-                    <div class="col-6 text-center mb-5">
-                        <div class="blockHover">
-                            <a class="lienPageConnection" href="?section=connexion">Se connecter</a>
-                            <div class="soulignement d-flex justify-content-center">
-                                <!-- Contient un background-color et une width special pour faire un soulignement -->
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6 text-center mb-5">
-                        <div class="blockHover">
-                            <a class="lienPageConnection" href="?section=inscription">S'inscrire</a>
-                            <div class="soulignement d-flex justify-content-center">
-                                <!-- Contient un background-color et une width special pour faire un soulignement -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="formulaireAvatar"><!-- Block noir ici -->
                 <div class="row">
-                    <form action="?section=inscriptionProfil" method="post" class="col-11 offset-1">
+                    <!-- TODO renvoyer au fichier importerImage -->
+                    <form action="?section=inscriptionProfil" method="post" class="col-11 offset-1" enctype="multipart/form-data">
+                        <!-- enctype="multipart/form-data". It specifies which content-type to use when submitting the form  -->
 
-                        <label for="nom" id="labelConnectionPrenom">Prénom</label><br> <!-- TODO modifier le name et le for dans php et le routeur pour prénom -->
-                        <input type="text" name="nom" id="nom" placeholder="Chatshimi"><br>
+                        <label for="importerImage" class="ajoutAvatar col-12 mb-4 mt-4">Ajoute ton Avatar</label>
+                        <div class="row align-items-center">
+                            <!-- l'id de mon input doit être lié au for de mon label > pour pouvoir le récupérer en JS -->
+                            <div class="col-6">
+                                <label for="btnImporterImage" class="importerImage d-flex justify-content-center align-items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22.5" height="20.25" viewBox="0 0 22.5 20.25">
+                                        <g id="Group_1596" data-name="Group 1596" transform="translate(0 -1)">
+                                            <path id="Path_110" data-name="Path 110" d="M11.25,13.5a2.766,2.766,0,0,0,2.813-2.7,2.815,2.815,0,0,0-5.625,0A2.766,2.766,0,0,0,11.25,13.5Zm0-8.1a5.532,5.532,0,0,1,5.625,5.4,5.532,5.532,0,0,1-5.625,5.4,5.532,5.532,0,0,1-5.625-5.4A5.532,5.532,0,0,1,11.25,5.4Zm8.438,14.85H2.813a2.834,2.834,0,0,1-1.969-.81A2.614,2.614,0,0,1,0,17.55V5.4A2.766,2.766,0,0,1,2.813,2.7h2.25L7.172.675A2.377,2.377,0,0,1,8.859,0h4.922a2.3,2.3,0,0,1,1.547.675L17.438,2.7h2.25A2.766,2.766,0,0,1,22.5,5.4V17.55A2.766,2.766,0,0,1,19.688,20.25Z" transform="translate(0 1)" fill="#3f50a7" fill-rule="evenodd" />
+                                        </g>
+                                    </svg>
 
-                        <label for="emailConnection" id="labelConnectionEmail">E-mail</label><br>
-                        <input type="mail" name="emailConnection" id="emailConnection" placeholder="Chatshimi@email.be"><br>
+                                </label>
+                            </div>
+                            <div class="col-6">
+                                <input type="file" name="importerImage" id="btnImporterImage" hidden>
+                                <div id="imageChoisie">Aucune image importée</div>
+                            </div>
+                        </div>
 
-                        <label for="motDePasseConnection" id="labelConnectionMdp">Mot de passe</label><br>
-                        <input type="password" name="motDePasseConnection" id="motDePasseConnection"><br>
+                        <label for="zipCodes" id="labelZip" class="mb-1 mt-4 ajoutZip col-12">Choisis ton zip code</label><br> <!-- TODO rajouter tous les codes Bruxelles / à lier avec la DB ?-->
+                        <select name="zipCodes" id="zipCodes" class="zipCodes">
+                            <option value="">--Choisis ton zip code sur Bruxelles--</option>
+                            <option value="1000">--1000 Bruxelles--</option>
+                            <option value="1020">--1020 Laeken --</option>
+                            <option value="1030">--1030 Schaerbeek--</option>
+                            <option value="1040">--1040 Etterbeek--</option>
+                            <option value="1050">--1050 Ixelles--</option>
+                            <option value="1060">--1060 Saint-Gilles--</option>
+                            <option value="1070">--1070 Anderlecht--</option>
+                            <option value="1080">--1080 Molenbeek-Saint-Jean--</option>
+                            <option value="1090">--1090 Jette--</option>
+                        </select>
 
                         <div class="row m-auto">
-                            <div class="col-12">
-                                <!-- //TODO Ajouter les "required" -->
-
-                                <input type="checkbox" id="accepter" name="accepter" class="me-3 checkboxColor"><!-- me-3 avec bootstrap pour faire une marge autour mais qui reste alignée/centrée par rapport à l'élément à côté -->
-                                <label for="accepter" class="accepter">J'accepte <span><a class="lienTermesEtCondition" href="?section=termes">les termes et les conditions d'utilisation </a> </span></label>
-                            </div>
-                            <div class="col-12 text-center mt-3 mb-4">
-                                <input type="submit" value="S'inscrire" class="btnJaune btnConnection">
-                                <!-- //TODO enlever le clic et récupérer les infos avec php -->
-                                <a href="?section=inscriptionProfil">Clic</a>
+                            <div class="col-12 text-center mt-5 mb-3">
+                                <input type="submit" value="Suivant" class="btnJaune ">
                             </div>
                         </div>
-
                     </form>
                 </div>
-                <?= $msgErreurInscription; ?>
             </div><!-- Fin de mon formulaire -->
-        </div><!-- fin de la première div.formulaireConnection de 6 complètement à gauche -->
+        </div><!-- fin de la première div.formulaireAvatar de 6 complètement à gauche -->
 
         <div class="col-6">
             <!-- début de la deuxième div complètement à droite avec le svg -->

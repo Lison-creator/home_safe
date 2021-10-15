@@ -21,9 +21,15 @@
                 case 'termes' :
                     include("controller/termesController.php");
                     break;
-                case 'profil' :
-                    include("controller/profilController.php");
+                case 'carte' :
+                    include("controller/carteController.php");
                     break;
+                case 'editerProfil' :
+                    include("controller/editerProfilController.php");
+                    break;
+                /* case 'inscriptionProfil' :
+                    include("controller/inscriptionProfilController.php");
+                    break; */
                 case 'deconnexion' :
                     include("controller/deconnexionController.php");
                     break;
@@ -49,11 +55,17 @@
                 case 'termes' :
                     include("controller/termesController.php");
                     break;
+                case 'inscriptionProfil' :
+                    include("controller/inscriptionProfilController.php");
+                    break;
                 case 'connexion' :
                     include("controller/connexionController.php");
                     break;
                 case 'inscription' :
                     include("controller/inscriptionController.php");
+                    break;
+                case 'inscriptionProfil' :
+                    include("controller/inscriptionProfilController.php");
                     break;
                 default:
                     include("view/error/404.php");
@@ -61,7 +73,5 @@
         }
     }
     else {
-        include("controller/accueilController.php");//suppression ici du s
+        include("controller/accueilController.php");
     }
-        
-?>

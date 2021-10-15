@@ -45,6 +45,11 @@
     }
 
     // var_dump($_SESSION["count"]);
+
+    include("view/html/head.php");
+    include("controller/menuController.php"); 
     include("view/page/inscription.php");
+    include("view/html/footer.php");
+    
     
 ?>

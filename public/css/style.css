@@ -89,6 +89,10 @@ h3 {
     font-family: 'ubuntuBold';
 }
 
+.container-fluid {
+    padding: 0;
+}
+
 
 /* Boutons */
 
@@ -252,6 +256,7 @@ input:focus {
     justify-content: center;
     height: 50px;
     width: 50px;
+    font-size: 40px;
 }
 
 #iconPlus>div {
@@ -260,7 +265,7 @@ input:focus {
     margin-bottom: 8px;
     position: absolute;
     top: 22px;
-    transition: 0.3s ease all;
+    /*   transition: 0.3s ease all; */
     display: flex;
     flex-direction: column;
     align-items: center;
