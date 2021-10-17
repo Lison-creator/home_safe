@@ -19,7 +19,7 @@
             <div class="formulaireAvatar"><!-- Block noir ici -->
                 <div class="row">
                     <!-- TODO renvoyer au fichier importerImage -->
-                    <form action="?section=inscriptionProfil" method="post" class="col-11 offset-1" enctype="multipart/form-data">
+                    <form action="?section=editerProfil" method="post" class="col-11 offset-1" enctype="multipart/form-data">
                         <!-- enctype="multipart/form-data". It specifies which content-type to use when submitting the form  -->
 
                         <label for="importerImage" class="ajoutAvatar col-12 mb-4 mt-4">Ajoute ton Avatar</label>

@@ -52,7 +52,21 @@ select.zipCodes { /* TODO A voir si Lison en a besoin aussi */
     font-size: 0.85rem;
 }
 
-/********** menu */
+/********** la partie bio */
+
+textarea.editerBio {
+    resize: none;
+    width: 90%;
+    min-height: 80px;
+}
+
+/********** le bouton */
+
+.btnJaune {
+    width: 150px;
+}
+
+/********** le menu */
 
 .menuEditer{
     position: absolute;

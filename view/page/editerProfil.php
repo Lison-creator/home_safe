@@ -18,7 +18,7 @@
                         <option value="1000">1070 Anderlecht</option>
                     </select><br>
                     <label for="bio" class="editerBio">Bio</label><br>
-                    <textarea name="bio" id="bio" cols="100" rows="8" style="resize:none"></textarea>
+                    <textarea name="bio" id="bio" class="editerBio"></textarea>
 
                     <div class="row m-auto">
                         <div class="col-12 text-center mt-5 mb-3">
