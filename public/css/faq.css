@@ -1,0 +1,97 @@
+/* Image de fond */
+
+.imageDeFond{
+    background-image: url("../images/vectorised_Map_background_blured_50.jpg");
+    background-repeat: no-repeat;
+    background-position: fixed;
+    height: 100vh;
+    z-index: 0;
+}
+
+/* Barre noire en haut avec le logo + titre de la page */
+
+.barreHaut {
+    height: 85px;
+    background-color: rgba(40, 40, 40, 1);
+    top: 50px;
+    position: relative;
+    align-items: center;
+}
+
+.barreHaut .titrePages {
+    font-family: 'coco';
+    font-size: 35px;
+    color: #FAC815;
+    margin: auto;
+}
+
+/* Container */
+
+.containerFAQ {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 100px;
+}
+
+/* Aside */
+
+.containerFAQ aside {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.containerFAQ aside .blocCategories {
+    width: 314px;
+    height: 85px;
+    background-color: rgba(241, 241, 241, 1);
+    border-radius: 7px;
+    color: rgba(40, 40, 40, 1);
+    font-family: 'ubuntuBold';
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.containerFAQ aside .blocCategories:hover {
+    background-color: rgba(149, 80, 155, 1);
+    color: rgba(241, 241, 241, 1);
+}
+
+/* Sections avec textes */
+
+.containerFAQ section {
+    display: flex;
+    width: 60%;
+    flex-wrap: wrap;
+    background-color: rgba(63, 80, 167, 0.8);
+    border-radius: 10px;
+}
+
+.containerFAQ section article {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px 10px 0px;
+    flex-wrap: wrap;
+}
+
+.containerFAQ section article .titreQuestion {
+    font-weight: bold;
+}
+
+.containerFAQ section article .reponse {
+    margin-left: 40px;
+    padding: 7px 0px 7px 15px;
+    border-left: 3px solid rgba(250, 200, 21, 1);
+}
+
+/* Sections cachées */
+
+.containerFAQ .hidden {
+    display: none;
+}

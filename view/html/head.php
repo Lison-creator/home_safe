@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="public/css/styleTermes.css">
     <link rel="stylesheet" href="public/css/styleEdit.css">
     <link rel="stylesheet" href="public/css/accueil.css">
+    <link rel="stylesheet" href="public/css/faq.css">
+    <link rel="stylesheet" href="public/css/association.css">
 </head>
 
 <body class="container-fluid">
