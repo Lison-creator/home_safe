@@ -42,7 +42,8 @@
     </li>
     <li id="iconPlus" class="navBlanc">
       <div>
-      &#43;
+        <div class="vertical"></div>
+        <div class="horizontal"></div>
       </div>
     </li>
   </ul>

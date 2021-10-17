@@ -1,5 +1,6 @@
 $("#iconPlus").on("click", function(e) {
-    $(".blocNav").toggleClass("collapse");
+    $(".blocNav").toggleClass("collapse"); // toggle le bloc
+    $(".vertical").toggleClass("hidden"); // change le + en -
 })
 
 /* ------------------------------------------------------------------- */
