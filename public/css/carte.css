@@ -1,0 +1,52 @@
+.panneau {
+    background-color: rgb(255, 255, 255);
+    width: 350px;
+    height: 100vh;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 77vw;
+    transition: 0.3s;
+    transition-timing-function: ease;
+}
+
+.displayNone {
+    width: 0;
+    transition: 0.3s;
+    transition-timing-function: ease;
+}
+
+
+/* Petite flèche qui fait disparaitre le panneau de droite */
+
+.btnToggle {
+    position: absolute;
+    top: 0px;
+    left: -56px;
+    z-index: 10;
+}
+
+.logoCarte {
+    padding-left: 60px;
+}
+
+.sousMenuCarte {
+    background-color: rgb(255, 255, 255);
+    width: 150px;
+    text-align: center;
+    border-radius: 5px;
+    height: 80px;
+    font-family: "coco";
+}
+
+.violet {
+    color: #95509B;
+}
+
+.jaune {
+    color: #FAC815;
+}
+
+.bleu {
+    color: #3F50A7;
+}
