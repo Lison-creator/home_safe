@@ -85,7 +85,7 @@
 
                         <!-- Bouton d'envoi -->
 
-                            <input type="submit" value="Envoyer" class="btnJaune btnConnection">
+                            <input type="submit" value="Envoyer" class="btnJaune ">
                     </form>
                 </div>
             </div>

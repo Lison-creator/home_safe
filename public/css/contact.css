@@ -131,6 +131,8 @@ input[type="file"]:hover {
 input[type="submit"] {
     margin: auto;
     display: block;
+    width: 155px;
+    margin-top: 20px;
 }
 
 .pieceJointe {
