@@ -24,11 +24,20 @@
     top: 0px;
     left: -56px;
     z-index: 10;
+    width: 60px;
 }
 
 .logoCarte {
     padding-left: 60px;
 }
+
+
+/* //TODO Un hover sur le logo. Ca ne fonctionne pas avec les svg... */
+
+
+/* .logoCarte>a>svg>path#Tracé_1123:hover {
+    box-shadow: 15px 10px 18px #ffffff;
+} */
 
 
 /* Le sous-menu (Nouveautés, Communauté, Favoris) */
@@ -41,11 +50,17 @@
 
 .sousMenuCarte {
     background-color: rgb(255, 255, 255);
-    width: 150px;
+    width: 186px;
     text-align: center;
     border-radius: 5px;
-    height: 80px;
+    height: 95px;
     font-family: "coco";
+    padding-top: 15px;
+}
+
+.sousMenuCarte:hover {
+    background-color: #F1F1F1;
+    cursor: pointer;
 }
 
 .violet {

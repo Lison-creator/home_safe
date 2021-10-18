@@ -9,6 +9,7 @@
 
 <!-- logo en haut à gauche -->
 <div class="logoCarte">
+    <a href="?section=accueil">
     <svg xmlns="http://www.w3.org/2000/svg" width="96.606" height="139.197" viewBox="0 0 96.606 139.197">
         <g id="Groupe_1745" data-name="Groupe 1745" transform="translate(-451.765 643.243)">
             <path id="Tracé_1120" data-name="Tracé 1120" d="M548.09-593.48A47.338,47.338,0,0,0,499.568-640.8a47.5,47.5,0,0,0-46.146,46.444c-.227,12.52,14.435,35.332,15.337,36.9l9.18,15.9,20.77,35.975a2.359,2.359,0,0,0,4.085,0l20.77-35.975,9.174-15.891C533.655-559.041,548.09-581.329,548.09-593.48Z" transform="translate(-0.686 -1.006)" fill="#282828" />
@@ -19,6 +20,7 @@
             </g>
         </g>
     </svg>
+    </a>
 
 </div>
 
@@ -63,8 +65,8 @@
     <div id="panneau" class="row panneau">
         
         <!-- Bouton pour rouvrir -->
-        <a href="javascript:void(0)" class="btnToggle" onclick="togglePanneau()">
-            <svg id="Flèche_toggle_profil" data-name="Flèche toggle profil" xmlns="http://www.w3.org/2000/svg" width="44" height="54" viewBox="0 0 44 54">
+        <a href="javascript:void(0)" class="btnToggle" >
+            <svg onclick="togglePanneau()" id="Flèche_toggle_profil" data-name="Flèche toggle profil" xmlns="http://www.w3.org/2000/svg" width="44" height="54" viewBox="0 0 44 54">
                 <rect id="Rectangle_1626" data-name="Rectangle 1626" width="44" height="54" rx="5" fill="#9b9b9b" />
                 <path id="_Color" data-name=" ↳Color" d="M3.566,0,0,3.571,11.584,15.2,0,26.821l3.566,3.571L18.742,15.2Z" transform="translate(12.629 11.804)" fill="#f1f1f1" />
             </svg>
