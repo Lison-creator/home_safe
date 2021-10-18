@@ -2,10 +2,10 @@
 
 // ici aussi il faudra changer et pas forcément lister tous les cases
 
-    if(isset($_GET["section"])){
-        if(isset($_SESSION["pseudo"])){
+    if(isset($_GET['section'])){
+        if(isset($_SESSION['pseudo'])){
             // il est connecté
-            switch($_GET["section"]){
+            switch($_GET['section']){
                 case 'accueil' :
                     include("controller/accueilController.php");
                     break;
@@ -68,7 +68,7 @@
                     include("controller/inscriptionProfilController.php");
                     break;
                 case 'editerProfil' :
-                    include("controller/editerProfilController.php");
+                    include("controller/editerProfilController.php");/* TODO faire remonter le case après nouvelle inscription dans le if car connecté */
                     break;
                 default:
                     include("view/error/404.php");

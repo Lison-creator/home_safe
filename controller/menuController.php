@@ -13,7 +13,7 @@
 
 //Si j'ai un connecté et que l'on est déjà inscrite
 
-    if (isset($_SESSION["pseudo"])) {
+    if (isset($_SESSION['pseudo'])) {
         // il/elle est connecté
         // DE BASE, il inclut le menu permanent
         var_dump("je suis rentrée dans les deux if - donc section + je suis connectée");
