@@ -45,6 +45,32 @@ div .texteContact {
     text-shadow: rgb(0, 0, 0) 1px 0 10px;
 }
 
+.formulaireContact {
+    border: 2px solid #282828;
+    border-radius: 10px;
+    background-color: #282828;
+    width: 80%;
+    box-shadow: 2px 3px 5px RGBA(19, 19, 19, 1);
+    /* TODO vérifier si l'ombre est identique chez nous toutes */
+    margin: auto;
+    width: 600px;
+}
+
+
+/* 
+div.formulaireContact form>input {
+    width: 90%;
+    margin-bottom: 25px;
+} */
+
+
+/* Le padding-top et bottom du formulaire */
+
+form.padding {
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
 
 /* Couleur des labels dans le formulaire */
 
@@ -66,6 +92,10 @@ select {
     color: #3F50A7;
     padding: 5px 5px 5px 15px;
     font-size: 0.85rem;
+}
+
+.champFormulaire {
+    width: 90%;
 }
 
 select.champFormulaire:focus-visible {
@@ -100,6 +130,11 @@ input[type="file"]:hover {
     border-radius: revert;
 }
 
+input[type="submit"] {
+    margin: auto;
+    display: block;
+}
+
 .pieceJointe {
     box-sizing: border-box;
     border-color: #9B9B9B;
@@ -115,4 +150,20 @@ input[type="file"]:hover {
 
 .centrage {
     margin: auto;
+}
+
+@media(max-width:992px) {
+    div.blocComplet {
+        display: block;
+    }
+    div.formulaire {
+        margin: auto;
+    }
+    div.align-self-center,
+    div.texteContact {
+        padding: 10px;
+    }
+    div.informations {
+        padding-bottom: 30px;
+    }
 }

@@ -17,7 +17,7 @@
 <div class="container-fluid">
     <div class="row blocComplet">
         <div class="informations col-5 d-flex justify-content-center align-items-center">
-           
+
             <!-- Les svg dans un flexbox -->
             <div class="svg d-flex flex-column">
                 <div class="align-self-center">
@@ -25,12 +25,12 @@
                         <path id="Tracé_110" data-name="Tracé 110" d="M13.348,16.429l2.464-2.259a.754.754,0,0,1,.616-.205l.411.205,5.75,2.67c.411.205.411.411.411.821a5.206,5.206,0,0,1-1.643,3.7A5.883,5.883,0,0,1,17.045,23a12.513,12.513,0,0,1-5.75-1.437,26.921,26.921,0,0,1-5.75-4.107,34.979,34.979,0,0,1-3.08-4.518A28.386,28.386,0,0,1,.411,8.42,12.637,12.637,0,0,1,0,4.518a5.4,5.4,0,0,1,1.438-3.08A6.245,6.245,0,0,1,5.339,0a1.067,1.067,0,0,1,.821.411l3.08,5.75a.717.717,0,0,0,.205.411.754.754,0,0,1-.205.616L6.571,9.652a.917.917,0,0,0,0,1.027,19.61,19.61,0,0,0,2.464,3.286,20.735,20.735,0,0,0,3.286,2.67C12.732,16.839,13.143,16.839,13.348,16.429Z" fill="#fac815" />
                     </svg>
                 </div>
-                <div  class="align-self-center">
+                <div class="align-self-center">
                     <svg xmlns="http://www.w3.org/2000/svg" width="31" height="27" viewBox="0 0 31 27">
                         <path id="Tracé_50" data-name="Tracé 50" d="M27.125,4.5H3.875L15.5,15.75ZM0,4.5C0,2.025,1.744,0,3.875,0h23.25C29.256,0,31,2.025,31,4.5v18c0,2.475-1.744,4.5-3.875,4.5H3.875C1.744,27,0,24.975,0,22.5Z" transform="translate(0)" fill="#fac815" fill-rule="evenodd" />
                     </svg>
                 </div>
-                <div  class="align-self-center">
+                <div class="align-self-center">
                     <svg xmlns="http://www.w3.org/2000/svg" width="12.011" height="23" viewBox="0 0 12.011 23">
                         <path id="Tracé_1" data-name="Tracé 1" d="M87.794,23V12.522h3.578l.511-4.089H87.794V5.878c0-1.15.383-2.044,2.044-2.044h2.172V.128C91.5.128,90.222,0,88.817,0c-3.067,0-5.239,1.917-5.239,5.367V8.433H80v4.089h3.578V23Z" transform="translate(-80)" fill="#fac815" fill-rule="evenodd" />
                     </svg>
@@ -51,17 +51,18 @@
 
             </div>
         </div>
+        <!-- Le formulaire de contact -->
         <div class="formulaire col-7">
-            <div class="fondFormulaire">
+            <div class="formulaireContact">
 
                 <div class="row">
 
-                    <form action="#" method="post" class="col-11 offset-1">
+                    <form action="#" method="post" class="col-11 offset-1 padding">
                         <label for="nomContact" id="nomContact">Nom</label><br>
-                        <input type="text" name="nomContact" id="nomContact" placeholder="Chatshimi"><br>
+                        <input type="text" name="nomContact" id="nomContact" class="champFormulaire "placeholder="Chatshimi"><br>
 
                         <label for="emailContact" id="emailContact">E-mail</label><br>
-                        <input type="mail" name="emailContact" id="emailContact" placeholder="Chatshimi@email.be"><br>
+                        <input type="mail" name="emailContact" id="emailContact" class="champFormulaire " placeholder="Chatshimi@email.be"><br>
 
                         <!-- L'objet du message -->
                         <label for="objet" id="objet">Objet</label><br>
@@ -73,20 +74,16 @@
                             <option value="4">Autre</option>
                         </select><br>
                         <label for="messageContact">Message</label>
-                        <textarea rows="5" cols="30" style="resize:none;" name="messageContact" id="messageContact" class="messageContact"></textarea>
+                        <textarea rows="5" cols="30" style="resize:none;" name="messageContact" id="messageContact" class="champFormulaire messageContact"></textarea>
 
                         <!-- Ajouter une pièce jointe -->
-                        <div class="pieceJointe">
-                            <label class="pieceJointeLabel" for="pieceJointe">Ajouter une pièce jointe</label><br>
-                            <input type="file" id="pieceJointe">
-                        </div>
+
+                        <label class="pieceJointe pieceJointeLabel" for="pieceJointe">Ajouter une pièce jointe</label><br>
+                        <input type="file" id="pieceJointe"><br>
 
                         <!-- Bouton d'envoi -->
-                        <div class="row">
-                            <div class="col-12 text-center mt-3 mb-4">
-                                <input type="submit" value="Envoyer" class="btnJaune btnConnection">
-                            </div>
-                        </div>
+
+                            <input type="submit" value="Envoyer" class="btnJaune btnConnection">
                     </form>
                 </div>
             </div>
