@@ -1,12 +1,12 @@
 /* Image de fond */
 
-.imageDeFond{
+/* .imageDeFond{
     background-image: url("../images/vectorised_Map_background_blured_50.jpg");
     background-repeat: no-repeat;
     background-position: fixed;
     height: 100vh;
     z-index: 0;
-}
+} */
 
 /* Barre noire en haut avec le logo + titre de la page */
 

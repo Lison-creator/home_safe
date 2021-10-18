@@ -29,6 +29,10 @@
     margin: auto;
 }
 
+.transition{
+    transition: all 8s ease-in-out;
+}
+
 
 /* Texte */
 
@@ -69,6 +73,7 @@ a.lienPageConnection {
 }
 
 
+
 /************************* inputs du formulaire */
 
 
@@ -107,6 +112,18 @@ input[type=checkbox] {
     transform: scale(1.5);
     padding: 15px;
 }
+
+/*************************** Favicon oeil*/
+div.oeil{
+    z-index: 2;
+    top: 260px;
+    right: 75px;
+    
+}
+
+i.fas{
+    color: black;
+}   
 
 
 /************************* lien termes et condition + j'ai oublié mon mdp */
