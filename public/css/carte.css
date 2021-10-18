@@ -5,7 +5,7 @@
     z-index: 1;
     position: absolute;
     top: 0;
-    left: 77vw;
+    right: 0px;
     transition: 0.3s;
     transition-timing-function: ease;
 }
@@ -28,6 +28,15 @@
 
 .logoCarte {
     padding-left: 60px;
+}
+
+
+/* Le sous-menu (Nouveautés, Communauté, Favoris) */
+
+.sousMenuGroupe {
+    position: absolute;
+    top: 0;
+    right: 436px;
 }
 
 .sousMenuCarte {

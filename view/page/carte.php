@@ -23,7 +23,7 @@
 </div>
 
 <!-- Petit menu qui tombe en haut à droite -->
-<nav class="d-flex flex-column">
+<nav class="d-flex flex-column sousMenuGroupe">
     <div class="violet sousMenuCarte">Nouveautés<br>
 
         <!-- Icone étoile -->
