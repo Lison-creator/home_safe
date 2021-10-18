@@ -10,28 +10,12 @@ const btnImporterImage = document.getElementById('btnImporterImage');
 
 const imageChoisie = document.getElementById('imageChoisie');
 
-btnImporterImage.addEventListener('change', function(){
-    imageChoisie.textContent =  this.files[0].name
+btnImporterImage.addEventListener('change', function() {
+    imageChoisie.textContent = this.files[0].name
     console.log(this.files[0].name);
 })
 
 /* ------------------------------------------------------------------- */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -66,3 +50,12 @@ btnAssociation.forEach((element) => {
         console.log(xx);
     })
 })
+
+/*carte.php:
+
+Partie du coté droit qui toggle au clic */
+
+function togglePanneau() {
+    var element = document.getElementById("panneau");
+    element.classList.toggle("displayNone");
+}
