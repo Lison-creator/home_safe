@@ -21,7 +21,8 @@ include("models/Utilisateur.php");
     // vérifie le pseudo et qu'il ne contient pas que des espace
 
         if(((trim($pseudo))!= "") && (trim($email)!= "") && (trim($mdp)!= "")){
-            $user1->addUtilisateur($pseudo, $email, $mdp);
+            $last_insert_id = $user1->addUtilisateur($pseudo, $email, $mdp);
+            $_SESSION["last_id"] = $last_insert_id[0]["LAST_INSERT_ID()"];
             header("Location:?section=inscriptionProfil");
             /* Renvoie à la page d'accueil une fois le formulaire envoyé */
         }

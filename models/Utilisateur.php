@@ -67,6 +67,17 @@
                 ":mdp" => $mdp
             );
             $this->execute($requete, $params);
+
+            $requete = "SELECT LAST_INSERT_ID()";
+
+            if ($this->execute($requete) != null) {
+                return $this->execute($requete, $params);
+            } // [0] la première ligne de notre requête de notre BD
+            //retourne la premièrte ligne de mon tbaleau
+
+            else {
+                throw new Exception("Soucis lors de la création de l'user");
+            }
         }
 
         /*  Ajoute le zip code et la photo */
@@ -80,7 +91,7 @@
                 ":id" => $id,
                 ":ad_cp" => $ad_cp
             );
-            $this->execute($requete, $params)[0]; 
+            $this->execute($requete, $params); 
             /* L'index 0 permet de récupérer la ligne 0 du tableau */
         }
 

@@ -33,7 +33,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <form action="#" method="post" class="col-11 offset-1">
+                    <form action="index.php?section=inscription" method="POST" class="col-11 offset-1">
                             <label for="pseudo" id="labelConnectionPseudo">Pseudo</label><br>
                             <input type="text" name="pseudo" id="pseudo" placeholder="Chatshimi"><br> <!-- TODO mettre un focus avec du javascript -->
 
@@ -41,8 +41,8 @@
                             <input type="mail" name="email" id="email" placeholder="Chatshimi@email.be"><br>
 
                             <label for="motDePasseConnection" id="labelConnectionMdp">Mot de passe</label><br>
-                            <input type="password" name="mdp" id="motDePasseConnection" pattern="[A-Za-z0-9]{8,}"><br>
-
+                            <input type="password" name="mdp" id="motDePasseConnection" ><br>
+                            [A-Za-z0-9]{8,}
                             <div class="row m-auto">
                                 <div class="col-12">
                                     <input required type="checkbox" id="accepter" name="accepter" class="me-3 checkboxColor"><!-- me-3 avec bootstrap pour faire une marge autour mais qui reste alignée/centrée par rapport à l'élément à côté -->
@@ -50,7 +50,7 @@
                                 </div>
                             </div>
                             <div class="col-12 text-center mt-3 mb-4">
-                                <a href="?section=inscriptionProfil"><input type="submit" value="S'inscrire" class="btnJaune btnConnection"></a>
+                                <input type="submit" value="S'inscrire" class="btnJaune btnConnection">
                             </div>
                     </form>
                 </div>

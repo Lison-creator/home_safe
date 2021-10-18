@@ -43,7 +43,7 @@
                         <label for="motDePasseConnection" id="labelConnectionMdp">Mot de passe</label><br>
                         <input type="password" name="mdp" id="motDePasseConnection"><br>
                         <div class="position-absolute oeil">
-                            <i class="fas fa-eye " id="btnOeil"></i>
+                            <i class="fas fa-eye" id="btnOeil"></i>
                         </div>
                         <div class="row">
                             <div class="col-12 text-center mt-3 mb-4">

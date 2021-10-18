@@ -67,6 +67,9 @@
                 case 'inscriptionProfil' :
                     include("controller/inscriptionProfilController.php");
                     break;
+                case 'editerProfil' :
+                    include("controller/editerProfilController.php");
+                    break;
                 default:
                     include("view/error/404.php");
             }
