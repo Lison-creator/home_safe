@@ -40,10 +40,10 @@
                         <label for="email" id="labelConnectionEmail">E-mail</label><br>
                         <input type="mail" name="email" id="email" placeholder="Chatshimi@email.be"><br>
 
-                        <label for="motDePasseConnection" id="labelConnectionMdp">Mot de passe</label><br>
-                        <input type="password" name="mdp" id="motDePasseConnection"><br>
+                        <label for="motDePasseConnection" id="labelConnectionMdp" namespace >Mot de passe</label><br>
+                        <input type="password" name="mdp" id="motDePasseConnection" pattern="{[A-Za-z0-9]{8,}"><br>
                         <div class="position-absolute oeil">
-                            <i class="fas fa-eye" id="btnOeil"></i>
+                            <i class="fas fa-eye oeilChange" id="btnOeil" onClick="montrerMdp('motDePasseConnection', this)"></i>
                         </div>
                         <div class="row">
                             <div class="col-12 text-center mt-3 mb-4">

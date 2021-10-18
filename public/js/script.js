@@ -1,3 +1,6 @@
+/* ------------------------------------------------------------------- */
+// animation pour le bouton du menu permanent
+
 $("#iconPlus").on("click", function(e) {
     $(".blocNav").toggleClass("collapse"); // toggle le bloc
     $(".vertical").toggleClass("hidden"); // change le + en -
@@ -66,3 +69,18 @@ btnAssociation.forEach((element) => {
         console.log(xx);
     })
 })
+
+
+/* ------------------------------------------------------------------- */
+//Animation pour le bouton oeil de la page connection / inscritpion
+
+function montrerMdp(id, element) {
+    let x = document.getElementById(id);
+    if (x.type === "password") {
+      x.type = "text";
+      element.className = 'fas fa-eye-slash oeilChange';
+    } else {
+      x.type = "password";
+      element.className = 'fas fa-eye oeilChange';
+    }
+  } 
