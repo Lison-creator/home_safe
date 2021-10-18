@@ -1,6 +1,8 @@
+<!-- Barre de menu avec le titre "Contact" -->
 <nav>
     <div class="d-flex flex-menu-contact">
-        <p><svg xmlns="http://www.w3.org/2000/svg" width="49.112" height="70.763" viewBox="0 0 49.112 70.763">
+        <!-- Logo du menu -->
+        <p class="logoMenuContact"><svg xmlns="http://www.w3.org/2000/svg" width="49.112" height="70.763" viewBox="0 0 49.112 70.763">
                 <g id="Groupe_1744" data-name="Groupe 1744" transform="translate(-451.765 643.243)">
                     <path id="Tracé_1120" data-name="Tracé 1120" d="M501.547-616.753a24.065,24.065,0,0,0-24.667-24.058A24.146,24.146,0,0,0,453.421-617.2c-.115,6.365,7.338,17.962,7.8,18.756l4.667,8.083,10.559,18.289a1.2,1.2,0,0,0,2.077,0l10.559-18.289,4.664-8.078C494.209-599.245,501.547-610.575,501.547-616.753Z" transform="translate(-1.162 -1.704)" fill="#282828" />
                     <g id="Groupe_1591" data-name="Groupe 1591" transform="translate(451.765 -643.243)">

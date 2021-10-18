@@ -1,5 +1,3 @@
-/* Pour annuler les marges du Bootstrap */
-
 .flex-menu-contact {
     display: flex;
     background-color: #282828;
@@ -57,13 +55,6 @@ div .texteContact {
 }
 
 
-/* 
-div.formulaireContact form>input {
-    width: 90%;
-    margin-bottom: 25px;
-} */
-
-
 /* Le padding-top et bottom du formulaire */
 
 form.padding {
@@ -78,6 +69,13 @@ form>label {
     color: #FAC815;
     font-weight: bold;
     padding: 10px;
+}
+
+
+/* Padding du logo "Home Safe" dans le menu contact */
+
+p.logoMenuContact {
+    padding-left: 30px;
 }
 
 
@@ -151,6 +149,9 @@ input[type="submit"] {
 .centrage {
     margin: auto;
 }
+
+
+/* Le responsive */
 
 @media(max-width:992px) {
     div.blocComplet {
