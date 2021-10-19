@@ -1,6 +1,7 @@
 <?php 
+    require_once("UxDB.php");
 
-class Lieu {
+    class Lieu extends UxDB {
         // PROPRIETES
         protected $type;
         protected $adresse; // relier à MySQL de type composite (rue, numéro, boite...) ???
@@ -13,12 +14,12 @@ class Lieu {
 
         
         // CONSTRUCTEUR
-        public function __construct($_type, $_adresse, $_description) 
+        /* public function __construct($_type, $_adresse, $_description) 
         {
             $this->type = $type;
             $this->adresse = $adresse;
             $this->description = $description;
-        }
+        } */
 
         // MÉTHODES
        /*  public lieuAjoute (){
@@ -36,9 +37,31 @@ class Lieu {
         public adresseEntiere(){
             return $this->rue . ' ' . $this->num . ' , boîte ' . $this->boite . '<br />' . $this->zip . ' ' . $this->localite; 
         }
-    
-        
         
         */
+
+        public function getLieu($id) {
+            try {
+                $requete = "SELECT * FROM lieux WHERE id = :id"; //injection SQL on rajoute un alias // sécuriser
+                $params = array(
+                    ":id" => $id
+                );
+
+                if ($this->execute($requete, $params) != null) {
+                    return $this->execute($requete, $params)[0];
+                } // [0] la première ligne de notre requête de notre BD
+                //retourne la premièrte ligne de mon tbaleau
+
+                else {
+                    throw new Exception("Le lieu n'existe pas");
+                }
+                return null;
+            } catch (Exception $e) {
+                var_dump($e);
+                die();
+
+                return null;
+            }
+        }
 
 ?>
