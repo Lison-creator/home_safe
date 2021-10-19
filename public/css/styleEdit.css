@@ -24,7 +24,12 @@
 div>#imageChoisie{
     font-family: 'ubuntuBold';
     color: #FAC815;
-} 
+}
+
+.titrePseudo {
+    width: 80%;
+    margin: auto;
+}
 
 /********** la partie de l'avatar*/
 
@@ -37,6 +42,13 @@ div>#imageChoisie{
     cursor: pointer;
     font-family: 'ubuntuLight';
     color: #3F50A7;
+}
+
+.ajoutImageEdit {
+    border-radius: 50%;
+    width: 107px;
+    height: 107px;
+    background-color: #F1F1F1;
 }
 
 /********** la partie de la droplist avec les zip*/
@@ -60,10 +72,32 @@ textarea.editerBio {
     min-height: 80px;
 }
 
-/********** le bouton */
+.infoBio {
+    color: #9B9B9B;
+    font-size: 12px;
+}
 
-.btnJaune {
+/********** les boutons & icones */
+
+.btnSauvegarder {
     width: 150px;
+}
+
+.btnChangerAvatar {
+    width: 200px;
+}
+
+.btnChangerAvatar, .btnSupprimerAvatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.iconPhoto {
+    background-color: RGBA(255, 255, 255, 0.5);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
 }
 
 /********** le menu */
