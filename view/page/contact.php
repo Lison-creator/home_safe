@@ -61,7 +61,7 @@
 
                     <form action="#" method="post" class="col-11 offset-1 padding">
                         <label for="nomContact" id="nomContact">Nom</label><br>
-                        <input type="text" name="nomContact" id="nomContact" class="champFormulaire "placeholder="Chatshimi"><br>
+                        <input type="text" name="nomContact" id="nomContact" class="champFormulaire " placeholder="Chatshimi"><br>
 
                         <label for="emailContact" id="emailContact">E-mail</label><br>
                         <input type="mail" name="emailContact" id="emailContact" class="champFormulaire " placeholder="Chatshimi@email.be"><br>
@@ -79,13 +79,24 @@
                         <textarea rows="5" cols="30" style="resize:none;" name="messageContact" id="messageContact" class="champFormulaire messageContact"></textarea>
 
                         <!-- Ajouter une pièce jointe -->
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-11">
+                                    <label class="pieceJointe pieceJointeLabel" for="pieceJointe">Ajouter une pièce jointe</label><br>
+                                    <input type="file" id="pieceJointe"><br>
+                                </div>
+                            </div>
+                        </div>
 
-                        <label class="pieceJointe pieceJointeLabel" for="pieceJointe">Ajouter une pièce jointe</label><br>
-                        <input type="file" id="pieceJointe"><br>
 
                         <!-- Bouton d'envoi -->
-
-                            <input type="submit" value="Envoyer" class="btnJaune ">
+                        <div class="container-fluid">
+                            <div class="row ">
+                                <div class="col-11">
+                                    <input type="submit" value="Envoyer" class="btnJaune ">
+                                </div>
+                            </div>
+                        </div>
                     </form>
                 </div>
             </div>
