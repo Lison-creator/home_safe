@@ -1,5 +1,5 @@
 /* ------------------------------------------------------------------- */
-// animation pour le bouton du menu permanent
+// animation pour le bouton du menu permanent en jQuery
 
 $("#iconPlus").on("click", function(e) {
     $(".blocNav").toggleClass("collapse"); // toggle le bloc
@@ -84,3 +84,8 @@ function montrerMdp(id, element) {
       element.className = 'fas fa-eye oeilChange';
     }
   } 
+
+
+  /* ------------------------------------------------------------------- */
+  // Animation utilisation jQuery pour slide page association
+  //https://demos.jquerymobile.com/1.4.5/transitions/

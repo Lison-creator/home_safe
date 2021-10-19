@@ -16,15 +16,15 @@
             <div class="fondFormulaire">
                 <div class="row mt-3">
                     <div class="col-6 text-center mb-5">
-                        <div class="blockHover">
+                        <div class="blockHover transition">
                             <a class="lienPageConnection" href="?section=connexion">Se connecter</a>
                             <div class="soulignement d-flex justify-content-center">
                                 <!-- Contient un background-color et une width special pour faire un soulignement -->
                             </div>
                         </div>
                     </div>
-                    <div class="col-6 text-center mb-5">
-                        <div class="blockHover">
+                    <div class="col-6 text-center mb-5 transition">
+                        <div class="blockHover ">
                             <a class="lienPageConnection" href="?section=inscription">S'inscrire</a>
                             <div class="soulignement d-flex justify-content-center">
                                 <!-- Contient un background-color et une width special pour faire un soulignement -->
