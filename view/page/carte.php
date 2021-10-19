@@ -62,7 +62,7 @@
     <!--  Panneau de droite -->
 
 
-    
+
     <!-- Bouton pour fermer le panneau -->
     <div id="panneau" class="row panneau">
         <a href="javascript:void(0)" class="btnToggle">
@@ -79,10 +79,22 @@
 
             <div class="petiteBarreDuHaut">
                 <img src="" alt="photo de profil">
-                <!-- Petite flêche vers le bas pour les options de compte -->
-                <svg id="_Color" data-name=" ↳Color" xmlns="http://www.w3.org/2000/svg" width="25.04" height="15.442" viewBox="0 0 25.04 15.442">
-                    <path id="_Color-2" data-name=" ↳Color" d="M2.938,0,0,2.942,9.544,12.52,0,22.1,2.938,25.04l12.5-12.52Z" transform="translate(25.04) rotate(90)" fill="#707070" />
-                </svg>
+                <!-- Contenu du menu déroulant au hover (dropdown) -->
+                <div class="dropdown">
+                    <!-- Petite flêche vers le bas pour les options de compte -->
+                    <button class="btnDropdown">
+                        <svg id="_Color" data-name=" ↳Color" xmlns="http://www.w3.org/2000/svg" width="25.04" height="15.442" viewBox="0 0 25.04 15.442">
+                            <path id="_Color-2" data-name=" ↳Color" d="M2.938,0,0,2.942,9.544,12.52,0,22.1,2.938,25.04l12.5-12.52Z" transform="translate(25.04) rotate(90)" fill="#707070" />
+                        </svg>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">Créer une communauté</a>
+                        <a href="#">Modifier le profil</a>
+                        <a href="#">Paramètres du compte</a>
+                        <a href="#">Dark Mode</a>
+                        <a href="#">Se déconnecter</a>
+                    </div>
+                </div>
 
                 <!-- Icone "commentaires récents" -->
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
@@ -142,7 +154,7 @@
         </aside>
 
         <!-- La carte -->
-       <!--  <div id="carteId"></div> -->
+        <!--  <div id="carteId"></div> -->
     </div>
 
     //TODO Une fonction js pour cacher le panneau de droite et afficher différents panneau selon la rubrique cliquée ( Communauté, favoris)
