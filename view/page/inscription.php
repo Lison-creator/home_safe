@@ -51,7 +51,7 @@
                                 <label for="accepter" class="accepter">J'accepte <span><a class="lienTermesEtCondition" href="?section=termes">les termes et les conditions d'utilisation </a> </span></label>
                             </div>
                         </div>
-                        <div class="col-12 text-center mt-3 mb-4">
+                        <div class="col-11 text-center mt-3 mb-4">
                             <input type="submit" value="S'inscrire" class="btnJaune btnConnection">
                         </div>
                     </form>

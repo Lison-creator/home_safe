@@ -46,7 +46,7 @@
                             <i class="fas fa-eye oeilChange" id="btnOeil" onClick="montrerMdp('motDePasseConnection', this)"></i>
                         </div>
                         <div class="row">
-                            <div class="col-12 text-center mt-3 mb-4">
+                            <div class="col-11 text-center mt-2 mb-4">
                                 <input type="submit" value="Se connecter" class="btnJaune btnConnection">
                             </div>
                         </div>
