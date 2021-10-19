@@ -16,6 +16,12 @@
     <link rel="stylesheet" href="public/css/accueil.css">
     <link rel="stylesheet" href="public/css/faq.css">
     <link rel="stylesheet" href="public/css/association.css">
+    <!-- La carte -->
+    <link rel="stylesheet" href="public/css/carte.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
 </head>
 
 <body class="container-fluid">
