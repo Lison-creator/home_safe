@@ -22,8 +22,12 @@ include("models/Utilisateur.php");
 
         if(((trim($pseudo))!= "") && (trim($email)!= "") && (trim($mdp)!= "")){
             $last_insert_id = $user1->addUtilisateur($pseudo, $email, $mdp);
-            $_SESSION["last_id"] = $last_insert_id[0]["LAST_INSERT_ID()"];
-            header("Location:?section=inscriptionProfil");
+            $user = $user1->getUtilisateur($last_insert_id);
+            
+            $_SESSION["last_id"] = $last_insert_id;
+            $_SESSION["pseudo"] = $user["pseudo"];
+
+            header("Location:?section=accueil");
             /* Renvoie à la page d'accueil une fois le formulaire envoyé */
         }
         else {

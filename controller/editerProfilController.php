@@ -4,6 +4,7 @@
 include("view/html/head.php");
 
 if (isset($_SESSION)) {
+    var_dump($_SESSION);
     // il/elle est connecté
     include('view/menu/menu-co.php'); 
     var_dump('je suis dans la boulce du if');

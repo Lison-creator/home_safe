@@ -29,10 +29,6 @@
     margin: auto;
 }
 
-.blockHover{
-    transition: all, 8s, ease-in-out;
-}
-
 
 /* Texte */
 
@@ -47,7 +43,8 @@ a.lienPageConnection {
     color: #FAC815;
     font-size: 1rem;
     font-family: 'coco';
-    transition: all 0.5 ease-in-out;
+    transition: all 0.5s ease-in-out;
+
 }
 
 .soulignement {
@@ -57,7 +54,8 @@ a.lienPageConnection {
     border-radius: 1px;
     margin: auto;
     margin-top: 3px;
-    transition: all 0.5 ease-in-out;
+    transition: all 0.5s ease-in-out;
+
 }
 
 .blockHover:hover a.lienPageConnection,

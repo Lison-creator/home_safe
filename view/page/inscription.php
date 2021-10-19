@@ -15,7 +15,7 @@
 
             <div class="fondFormulaire">
                 <div class="row mt-3">
-                    <div class="col-6 text-center mb-5">
+                    <div class="col-6 text-center mb-5 transition">
                         <div class="blockHover">
                             <a class="lienPageConnection" href="?section=connexion">Se connecter</a>
                             <div class="soulignement d-flex justify-content-center">
