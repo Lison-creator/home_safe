@@ -12,6 +12,8 @@ h2 {
     right: 0px;
     transition: 0.3s;
     transition-timing-function: ease;
+    /* Pour que le bloc soit bien calé sur la fenêtre de l'écran */
+    right: 12px;
 }
 
 .displayNone {
@@ -141,37 +143,38 @@ aside.row {
     border: none;
 }
 
-.btnDropdown:hover {}
+.btnDropdown:hover {
+    background-color: #FAC815;
+}
 
 .dropdown {
     position: relative;
     display: inline-block;
 }
 
-.dropdown-content {
+.contenuDropdown {
     display: none;
     position: absolute;
     background-color: #f1f1f1;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
+    border-radius: 5px;
 }
 
-.dropdown-content a {
-    color: black;
+.contenuDropdown a {
+    color: #95509B;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    border-radius: 5px;
 }
 
-.dropdown-content a:hover {
+.contenuDropdown a:hover {
     background-color: #ddd;
 }
 
-.dropdown:hover .dropdown-content {
+.dropdown:hover .contenuDropdown {
     display: block;
-}
-
-.dropdown:hover .dropbtn {
-    background-color: #3e8e41;
+    border-radius: 5px;
 }
