@@ -1,5 +1,5 @@
 /* ------------------------------------------------------------------- */
-// animation pour le bouton du menu permanent
+// animation pour le bouton du menu permanent en jQuery
 
 $("#iconPlus").on("click", function(e) {
     $(".blocNav").toggleClass("collapse"); // toggle le bloc
@@ -13,28 +13,12 @@ const btnImporterImage = document.getElementById('btnImporterImage');
 
 const imageChoisie = document.getElementById('imageChoisie');
 
-btnImporterImage.addEventListener('change', function(){
-    imageChoisie.textContent =  this.files[0].name
+btnImporterImage.addEventListener('change', function() {
+    imageChoisie.textContent = this.files[0].name
     console.log(this.files[0].name);
 })
 
 /* ------------------------------------------------------------------- */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -70,6 +54,36 @@ btnAssociation.forEach((element) => {
     })
 })
 
+/*carte.php:
+
+Partie du coté droit qui toggle au clic */
+var visible = true;
+
+function togglePanneau() {
+    console.log(visible);
+    var panneau = document.getElementById("panneau");
+    panneau.classList.toggle("displayNone");
+    let aside = document.getElementById("aside");
+    if (!visible) {
+        aside.hidden = true;
+        visible = true;
+    } else {
+        aside.hidden = false;
+        visible = false;
+    }
+
+
+}
+
+
+/* 
+$("li").toggle(
+    function() { $(this).css({ "color": "red" }); },
+    function() { $(this).css({ "color": "blue" }); },
+    function() { $(this).css({ "color": "purple" }); },
+    function() {
+        $(this).css({ "color": "turquoise" });
+    }); */
 
 /* ------------------------------------------------------------------- */
 //Animation pour le bouton oeil de la page connection / inscritpion
@@ -84,3 +98,8 @@ function montrerMdp(id, element) {
       element.className = 'fas fa-eye oeilChange';
     }
   } 
+
+
+  /* ------------------------------------------------------------------- */
+  // Animation utilisation jQuery pour slide page association
+  //https://demos.jquerymobile.com/1.4.5/transitions/

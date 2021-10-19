@@ -22,9 +22,9 @@
         <!-- + menu déroulant en bas à gauche -->
     </div>
     <div class="d-flex"> <!-- Boutons En flex -->
-        <button class=" btnAccueil btnViolet">Partager avec ma communauté</button>
-        <button class=" btnAccueil btnJaune">Chercher un trajet</button>
-        <button class=" btnAccueil btnViolet">Rejoindre une communauté</button>
+        <button class=" btnAccueil btnViolet"><a href=#>Partager avec ma communauté</a></button> <!-- TODO rajouter les liens -->
+        <button class=" btnAccueil btnJaune"><a href=#>Chercher un trajet</a></button>
+        <button class=" btnAccueil btnViolet"><a href="#">Rejoindre une communauté</a></button>
     </div>
     </section>
   

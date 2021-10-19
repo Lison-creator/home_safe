@@ -32,7 +32,7 @@
                 //retourne la premièrte ligne de mon tbaleau
 
                 else {
-                    throw new Exception("Le thé n'existe pas");
+                    throw new Exception("Pas de donnée");
                 }
                 return null;
             } catch (Exception $e) {
@@ -68,10 +68,10 @@
             );
             $this->execute($requete, $params);
 
-            $requete = "SELECT LAST_INSERT_ID()";
+            $requete = "SELECT LAST_INSERT_ID() as id";
 
             if ($this->execute($requete) != null) {
-                return $this->execute($requete, $params);
+                return $this->execute($requete, $params)[0]["id"];
             } // [0] la première ligne de notre requête de notre BD
             //retourne la premièrte ligne de mon tbaleau
 
@@ -83,7 +83,6 @@
         /*  Ajoute le zip code et la photo */
         public function addZipPhoto($id, $ad_cp)
         {
-            //TODO Faire un switch pour récupérer les codes postaux et les encoder sous la bonne valeur dans la db
             
            /*  modifier les données */
             $requete = "UPDATE utilisateurs SET ad_cp=:ad_cp WHERE id = :id";

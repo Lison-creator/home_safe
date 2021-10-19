@@ -4,6 +4,13 @@
     height: 70px;
     margin: auto;
 }
+button.btnAccueil.btnViolet>a{
+    color: #F1F1F1;
+}
+
+button.btnAccueil.btnJaune>a{
+    color: #282828;
+}
 
 .logo {
     margin-bottom: 40px;

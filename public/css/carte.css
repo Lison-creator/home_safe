@@ -1,0 +1,177 @@
+h2 {
+    text-align: center;
+}
+
+.panneau {
+    background-color: rgb(255, 255, 255);
+    width: 350px;
+    height: 100vh;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    right: 0px;
+    transition: 0.3s;
+    transition-timing-function: ease;
+}
+
+.displayNone {
+    width: 0;
+    transition: 0.3s;
+    transition-timing-function: ease;
+}
+
+
+/* Petite flèche qui fait disparaitre le panneau de droite */
+
+.btnToggle {
+    position: absolute;
+    top: 0px;
+    left: -38px;
+    z-index: 10;
+    width: 60px;
+}
+
+.logoCarte {
+    padding-left: 60px;
+}
+
+
+/* //TODO Un hover sur le logo. Ca ne fonctionne pas avec les svg... */
+
+
+/* .logoCarte>a>svg>path#Tracé_1123:hover {
+    box-shadow: 15px 10px 18px #ffffff;
+} */
+
+
+/* Le sous-menu (Nouveautés, Communauté, Favoris) */
+
+.sousMenuGroupe {
+    position: absolute;
+    top: 0;
+    right: 436px;
+}
+
+.sousMenuCarte {
+    background-color: rgb(255, 255, 255);
+    width: 186px;
+    text-align: center;
+    border-radius: 5px;
+    height: 95px;
+    font-family: "coco";
+    padding-top: 15px;
+}
+
+.sousMenuCarte:hover {
+    background-color: #F1F1F1;
+    cursor: pointer;
+}
+
+.violet {
+    color: #95509B;
+}
+
+.jaune {
+    color: #FAC815;
+}
+
+.bleu {
+    color: #3F50A7;
+}
+
+#aside {
+    padding-right: 0;
+    color: grey;
+}
+
+
+/* Petite barre du haut dans l'aside à droite */
+
+.petiteBarreDuHaut {
+    padding-top: 15px;
+    padding-bottom: 30px;
+}
+
+
+/* Input "rechercher" */
+
+.rechercher {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+input.inputRechercher {
+    width: 270px;
+    margin: auto;
+}
+
+
+/* Le fil d'actualité */
+
+.filActualite {
+    overflow-y: scroll;
+    overflow: auto;
+    height: 400px;
+    padding: 15px;
+}
+
+.imgActualite {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.photoProfilGrande {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* pour enlever la petite marge à gauche sur le panneau de droite */
+
+aside.row {
+    padding: 0;
+}
+
+
+/* Le sous-menu déroulant dans le panneau de droite */
+
+.btnDropdown {
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+}
+
+.btnDropdown:hover {}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}

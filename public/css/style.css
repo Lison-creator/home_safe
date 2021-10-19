@@ -54,9 +54,12 @@ body {
     font-size: 15px;
     background-color: #282828;
     background-image: url("../images/vectorised_Map_background_blured_50.jpg");
+    background-size: cover;
     color: #F1F1F1;
-    height: 100vh;
-    width: 100vw;
+    /* height: 100vh;
+    width: 100vw; */
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 html {
@@ -119,16 +122,19 @@ h3 {
 .btnJaune {
     background-color: #FAC815;
     color: #282828;
+    transition: all 0.2s ease;
 }
 
 .btnBleu {
     background-color: #3F50A7;
     color: #F1F1F1;
+    transition: all 0.2s ease;
 }
 
 .btnViolet {
     background-color: #95509B;
     color: #F1F1F1;
+    transition: all 0.2s ease;
 }
 
 .btnViolet:hover {
@@ -234,6 +240,7 @@ input:focus {
 .menuPermanent>ul>li>div>a {
     color: #707070;
     margin: auto;
+    transition: all 0.4s ease-in-out;
     text-align: center;
 }
 
@@ -285,11 +292,14 @@ input:focus {
 }
 
 .hidden {
-    display: none;
+   width: 0;
 }
 
 .menuPermanent>ul>li.collapse {
     left: -300px;
+    width: 0;
+
+
 }
 
 .navBlanc {
@@ -307,10 +317,13 @@ input:focus {
     background-color: #F1F1F1;
     height: 67px;
     width: 100%;
+    transition: all 0.4s ease-in-out;
+
 }
 
 .blocNav:hover .navJaune {
     background-color: #FAC815;
+    
 }
 
 .blocNav:hover .navJaune a.nav-link {
@@ -330,8 +343,25 @@ input:focus {
     color: #F1F1F1;
 }
 
+
+/*********************** Menu non connecté */
 #menuAccueil>ul>li>a {
     color: #F1F1F1;
     font-family: "coco";
     font-size: 1rem;
 }
+
+a.nav-link {
+    opacity: 0.8;
+    transition: all 0.4s ease-in;
+}
+
+a.nav-link:hover{
+    opacity: 1;
+}
+
+.navbar {
+    margin-right: 30px;
+}
+
+

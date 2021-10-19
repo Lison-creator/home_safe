@@ -1,29 +1,7 @@
-/* Image de fond */
 
-/* .imageDeFond{
-    background-image: url("../images/vectorised_Map_background_blured_50.jpg");
-    background-repeat: no-repeat;
-    background-position: fixed;
-    height: 100vh;
-    z-index: 0;
-} */
-
-/* Barre noire en haut avec le logo + titre de la page */
-
-.barreHaut {
-    height: 85px;
-    background-color: rgba(40, 40, 40, 1);
-    top: 50px;
-    position: relative;
-    align-items: center;
-}
-
-.barreHaut .titrePages {
-    font-family: 'coco';
-    font-size: 35px;
-    color: #FAC815;
-    margin: auto;
-}
+/*******************************************************************
+/* NOTE CSS de la bar menu-faq dans la feuille de style contac.css */
+/*******************************************************************
 
 /* Container */
 

@@ -1,6 +1,7 @@
 <nav class="navbar navbar-expand-lg">
   <div class="container-fluid">
     <div class="logoPrincipal">
+      
       <!-- //TODO Ajouter le retour page Accueil sur le logo -->
       <!-- Logo
        Ajouter une classe hidden //TODO car il n'apparait pas sur cette session

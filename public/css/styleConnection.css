@@ -29,10 +29,6 @@
     margin: auto;
 }
 
-.transition{
-    transition: all 8s ease-in-out;
-}
-
 
 /* Texte */
 
@@ -47,6 +43,8 @@ a.lienPageConnection {
     color: #FAC815;
     font-size: 1rem;
     font-family: 'coco';
+    transition: all 0.5s ease-in-out;
+
 }
 
 .soulignement {
@@ -56,6 +54,8 @@ a.lienPageConnection {
     border-radius: 1px;
     margin: auto;
     margin-top: 3px;
+    transition: all 0.5s ease-in-out;
+
 }
 
 .blockHover:hover a.lienPageConnection,
@@ -118,13 +118,19 @@ div.oeil{
     z-index: 2;
     top: 260px;
     right: 75px;
+    opacity: 0.7;
     
 }
 
 div.oeilInscription{
     z-index: 2;
-    bottom: 118px;
-    left: 721px;
+    bottom: 204px;
+    left: 730px;
+    opacity: 0.7;
+}
+
+div.oeil:hover, div.oeilInscription:hover{
+opacity: 1;
 }
 
 i.fas{
@@ -142,6 +148,7 @@ a.oublie {
 .accepter,
 .oublie {
     opacity: 0.5;
+    transition: all 0.5s ease-in-out;
 }
 
 .accepter {

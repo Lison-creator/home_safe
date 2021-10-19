@@ -10,7 +10,7 @@
     <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button> -->
-    <div class="navbar" id="menuAccueil">
+    <div class="navbar offset-left-1" id="menuAccueil">
       <ul class="navbar-nav ">
         <li class="nav-item">
           <a href="?section=connexion" class="nav-link" id="connexion"> Se connecter</a><!-- modification ici, anciennement FAQ alors que le href renvoyé à connecxion -->
