@@ -121,8 +121,14 @@ div.oeil{
     
 }
 
+div.oeilInscription{
+    z-index: 2;
+    bottom: 118px;
+    left: 721px;
+}
+
 i.fas{
-    color: black;
+    color: #3F50A7;
 }   
 
 
