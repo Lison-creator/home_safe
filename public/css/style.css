@@ -364,4 +364,24 @@ a.nav-link:hover{
     margin-right: 30px;
 }
 
+.animationCroixFun{ /* TODO ou alors l'animation pourrait se faire au hover*/
+    position: relative;
+    /*  animation-name: petitEffetFun;
+     animation-duration: 10s;
+     animation-delay: 1s;
+     animation-iteration-count: infinite;
+     animation-direction: alternate; */
+     animation: animationCroixFun 2s ease-in-out 1s 2 alternate;/* 5 fois max pour éviter la perte de concentration des personnes avec trouble de l'attention */
+ }
+
+ @keyframes animationCroixFun {
+     0% {transform: rotate(0deg); left: 10px;}
+     50%{transform: rotate(-360deg); left: 10px;}
+     100% {transform: rotate(0deg); left: 10px;}
+
+ }
+ 
+
+
+
 

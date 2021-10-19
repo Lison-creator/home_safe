@@ -56,7 +56,7 @@
                     <path d="M7.358,17.834c0,.089-.1.16-.231.16-.146.013-.248-.058-.248-.16s.1-.16.231-.16S7.358,17.732,7.358,17.834Zm-1.379-.2c-.031.089.058.191.191.217a.208.208,0,0,0,.275-.089c.027-.089-.058-.191-.191-.231A.228.228,0,0,0,5.979,17.635Zm1.96-.075c-.129.031-.217.115-.2.217s.129.146.262.115.217-.115.2-.2S8.068,17.546,7.94,17.559Zm2.919-17A10.636,10.636,0,0,0,0,11.385a11.12,11.12,0,0,0,7.518,10.61c.568.1.767-.248.767-.537s-.013-1.792-.013-2.723c0,0-3.1.665-3.757-1.322,0,0-.506-1.291-1.233-1.623,0,0-1.016-.7.071-.683a2.341,2.341,0,0,1,1.712,1.144,2.345,2.345,0,0,0,3.233.927,2.465,2.465,0,0,1,.71-1.495c-2.479-.275-4.981-.634-4.981-4.9A3.362,3.362,0,0,1,5.074,8.169,4.191,4.191,0,0,1,5.19,5.158c.927-.288,3.06,1.2,3.06,1.2a10.478,10.478,0,0,1,5.571,0s2.133-1.49,3.06-1.2A4.189,4.189,0,0,1,17,8.169a3.448,3.448,0,0,1,1.144,2.613c0,4.28-2.613,4.622-5.092,4.9a2.623,2.623,0,0,1,.754,2.058c0,1.495-.013,3.344-.013,3.708,0,.288.2.639.767.537A11.018,11.018,0,0,0,22,11.385,10.876,10.876,0,0,0,10.858.562ZM4.311,15.86c-.058.044-.044.146.031.231s.173.1.231.044.044-.146-.031-.231S4.369,15.8,4.311,15.86ZM3.832,15.5c-.031.058.013.129.1.173a.132.132,0,0,0,.191-.031c.031-.058-.013-.129-.1-.173C3.934,15.444,3.863,15.457,3.832,15.5ZM5.269,17.08c-.071.058-.044.191.058.275.1.1.231.115.288.044s.031-.191-.058-.275C5.46,17.023,5.327,17.009,5.269,17.08Zm-.506-.652c-.071.044-.071.16,0,.262s.191.146.248.1a.2.2,0,0,0,0-.275C4.95,16.415,4.835,16.371,4.764,16.428Z" transform="translate(0 -0.563)" fill="#fac815" />
                 </svg></a>
         </div>
-        <div class="flecheDroite">
+        <div class="flecheDroite animationFunDroite">
             <a href="#codeuseMaureen">
                 <svg xmlns="http://www.w3.org/2000/svg" width="31" height="51" viewBox="0 0 31 51">
                     <path d="M12.885,53.632,32.046,34.125,12.885,14.617l5.9-5.992,25.1,25.5-25.1,25.5Z" transform="translate(-12.885 -8.625)" fill="#fac815" />
@@ -66,7 +66,7 @@
     </div>
     <div class="d-flex codeuseMaureen" id="codeuseMaureen">
         <!-- Partie Maureen -->
-        <div class="flecheGauche">
+        <div class="flecheGauche animationFunGauche">
             <a href="#codeuseLison"><svg xmlns="http://www.w3.org/2000/svg" width="31" height="51" viewBox="0 0 31 51">
                     <path d="M43,53.257,30.86,40.9,23.839,33.75,43,14.242,37.1,8.25,12,33.75l25.1,25.5Z" transform="translate(-12 -8.25)" fill="#fac815" />
                 </svg></a>
@@ -90,7 +90,7 @@
                     <path d="M7.358,17.834c0,.089-.1.16-.231.16-.146.013-.248-.058-.248-.16s.1-.16.231-.16S7.358,17.732,7.358,17.834Zm-1.379-.2c-.031.089.058.191.191.217a.208.208,0,0,0,.275-.089c.027-.089-.058-.191-.191-.231A.228.228,0,0,0,5.979,17.635Zm1.96-.075c-.129.031-.217.115-.2.217s.129.146.262.115.217-.115.2-.2S8.068,17.546,7.94,17.559Zm2.919-17A10.636,10.636,0,0,0,0,11.385a11.12,11.12,0,0,0,7.518,10.61c.568.1.767-.248.767-.537s-.013-1.792-.013-2.723c0,0-3.1.665-3.757-1.322,0,0-.506-1.291-1.233-1.623,0,0-1.016-.7.071-.683a2.341,2.341,0,0,1,1.712,1.144,2.345,2.345,0,0,0,3.233.927,2.465,2.465,0,0,1,.71-1.495c-2.479-.275-4.981-.634-4.981-4.9A3.362,3.362,0,0,1,5.074,8.169,4.191,4.191,0,0,1,5.19,5.158c.927-.288,3.06,1.2,3.06,1.2a10.478,10.478,0,0,1,5.571,0s2.133-1.49,3.06-1.2A4.189,4.189,0,0,1,17,8.169a3.448,3.448,0,0,1,1.144,2.613c0,4.28-2.613,4.622-5.092,4.9a2.623,2.623,0,0,1,.754,2.058c0,1.495-.013,3.344-.013,3.708,0,.288.2.639.767.537A11.018,11.018,0,0,0,22,11.385,10.876,10.876,0,0,0,10.858.562ZM4.311,15.86c-.058.044-.044.146.031.231s.173.1.231.044.044-.146-.031-.231S4.369,15.8,4.311,15.86ZM3.832,15.5c-.031.058.013.129.1.173a.132.132,0,0,0,.191-.031c.031-.058-.013-.129-.1-.173C3.934,15.444,3.863,15.457,3.832,15.5ZM5.269,17.08c-.071.058-.044.191.058.275.1.1.231.115.288.044s.031-.191-.058-.275C5.46,17.023,5.327,17.009,5.269,17.08Zm-.506-.652c-.071.044-.071.16,0,.262s.191.146.248.1a.2.2,0,0,0,0-.275C4.95,16.415,4.835,16.371,4.764,16.428Z" transform="translate(0 -0.563)" fill="#fac815" />
                 </svg></a>
         </div>
-        <div class="flecheDroite">
+        <div class="flecheDroite animationFunDroite">
             <a href="#codeuseManon"><svg xmlns="http://www.w3.org/2000/svg" width="31" height="51" viewBox="0 0 31 51">
                     <path d="M12.885,53.632,32.046,34.125,12.885,14.617l5.9-5.992,25.1,25.5-25.1,25.5Z" transform="translate(-12.885 -8.625)" fill="#fac815" />
                 </svg></a>
@@ -98,7 +98,7 @@
     </div>
     <div class="d-flex codeuseManon" id="codeuseManon">
         <!-- Partie Manon -->
-        <div class="flecheGauche">
+        <div class="flecheGauche animationFunGauche">
             <a href="#codeuseMaureen"><svg xmlns="http://www.w3.org/2000/svg" width="31" height="51" viewBox="0 0 31 51">
                     <path d="M43,53.257,30.86,40.9,23.839,33.75,43,14.242,37.1,8.25,12,33.75l25.1,25.5Z" transform="translate(-12 -8.25)" fill="#fac815" />
                 </svg></a>
@@ -123,7 +123,7 @@
                     <path d="M7.358,17.834c0,.089-.1.16-.231.16-.146.013-.248-.058-.248-.16s.1-.16.231-.16S7.358,17.732,7.358,17.834Zm-1.379-.2c-.031.089.058.191.191.217a.208.208,0,0,0,.275-.089c.027-.089-.058-.191-.191-.231A.228.228,0,0,0,5.979,17.635Zm1.96-.075c-.129.031-.217.115-.2.217s.129.146.262.115.217-.115.2-.2S8.068,17.546,7.94,17.559Zm2.919-17A10.636,10.636,0,0,0,0,11.385a11.12,11.12,0,0,0,7.518,10.61c.568.1.767-.248.767-.537s-.013-1.792-.013-2.723c0,0-3.1.665-3.757-1.322,0,0-.506-1.291-1.233-1.623,0,0-1.016-.7.071-.683a2.341,2.341,0,0,1,1.712,1.144,2.345,2.345,0,0,0,3.233.927,2.465,2.465,0,0,1,.71-1.495c-2.479-.275-4.981-.634-4.981-4.9A3.362,3.362,0,0,1,5.074,8.169,4.191,4.191,0,0,1,5.19,5.158c.927-.288,3.06,1.2,3.06,1.2a10.478,10.478,0,0,1,5.571,0s2.133-1.49,3.06-1.2A4.189,4.189,0,0,1,17,8.169a3.448,3.448,0,0,1,1.144,2.613c0,4.28-2.613,4.622-5.092,4.9a2.623,2.623,0,0,1,.754,2.058c0,1.495-.013,3.344-.013,3.708,0,.288.2.639.767.537A11.018,11.018,0,0,0,22,11.385,10.876,10.876,0,0,0,10.858.562ZM4.311,15.86c-.058.044-.044.146.031.231s.173.1.231.044.044-.146-.031-.231S4.369,15.8,4.311,15.86ZM3.832,15.5c-.031.058.013.129.1.173a.132.132,0,0,0,.191-.031c.031-.058-.013-.129-.1-.173C3.934,15.444,3.863,15.457,3.832,15.5ZM5.269,17.08c-.071.058-.044.191.058.275.1.1.231.115.288.044s.031-.191-.058-.275C5.46,17.023,5.327,17.009,5.269,17.08Zm-.506-.652c-.071.044-.071.16,0,.262s.191.146.248.1a.2.2,0,0,0,0-.275C4.95,16.415,4.835,16.371,4.764,16.428Z" transform="translate(0 -0.563)" fill="#fac815" />
                 </svg></a>
         </div>
-        <div class="flecheDroite">
+        <div class="flecheDroite animationFunDroite">
             <a href="#valeurs"><svg xmlns="http://www.w3.org/2000/svg" width="31" height="51" viewBox="0 0 31 51">
                     <path d="M12.885,53.632,32.046,34.125,12.885,14.617l5.9-5.992,25.1,25.5-25.1,25.5Z" transform="translate(-12.885 -8.625)" fill="#fac815" />
                 </svg></a>
@@ -131,7 +131,7 @@
     </div>
 
     <div id="valeurs" class="d-flex">
-        <div class="flecheGauche">
+        <div class="flecheGauche animationFunGauche">
             <a href="#codeuseManon"><svg xmlns="http://www.w3.org/2000/svg" width="31" height="51" viewBox="0 0 31 51">
                     <path d="M43,53.257,30.86,40.9,23.839,33.75,43,14.242,37.1,8.25,12,33.75l25.1,25.5Z" transform="translate(-12 -8.25)" fill="#fac815" />
                 </svg></a>
@@ -142,7 +142,7 @@
             <h2 class="titreSection p-2">Respect</h2>
             <p class="p-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, cum veniam. Eos beatae ratione porro quibusdam harum sunt, adipisci praesentium magni, perferendis perspiciatis nesciunt dolore minima mollitia ullam ex rem aperiam blanditiis magnam ipsum quas facere. Modi similique minima excepturi nisi eius enim labore cupiditate blanditiis veritatis doloremque eum neque quo dignissimos, inventore iusto cumque quos corrupti molestiae nemo aliquam. Voluptas perferendis odit corporis at incidunt harum accusantium, officiis iste ipsum praesentium aperiam nulla excepturi magnam nisi rem, aut molestiae modi enim hic nobis! Obcaecati perferendis praesentium aliquam minus, quas sequi error, delectus mollitia, beatae similique adipisci accusamus minima voluptates.</p>
         </div>
-        <div class="flecheDroite">
+        <div class="flecheDroite animationFunDroite">
             <a href="#projet"><svg xmlns="http://www.w3.org/2000/svg" width="31" height="51" viewBox="0 0 31 51">
                     <path d="M12.885,53.632,32.046,34.125,12.885,14.617l5.9-5.992,25.1,25.5-25.1,25.5Z" transform="translate(-12.885 -8.625)" fill="#fac815" />
                 </svg></a>
@@ -150,7 +150,7 @@
     </div>
 
     <div id="projet" class="d-flex">
-        <div class="flecheGauche">
+        <div class="flecheGauche animationFunGauche">
             <a href="#valeurs"><svg xmlns="http://www.w3.org/2000/svg" width="31" height="51" viewBox="0 0 31 51">
                     <path d="M43,53.257,30.86,40.9,23.839,33.75,43,14.242,37.1,8.25,12,33.75l25.1,25.5Z" transform="translate(-12 -8.25)" fill="#fac815" />
                 </svg></a>
@@ -160,7 +160,7 @@
             <h2 class="titreSection p-2">Le Projet <span class="text-uppercase">Home Safe</span></h2>
             <p class="p-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia aut odio ipsam praesentium sed repellendus quas, quisquam quidem enim. Doloremque sequi quod rerum earum impedit quos minima cum assumenda, sapiente fuga quae eos rem deserunt cupiditate enim non praesentium autem quam amet eius itaque tempora similique ad molestiae? Laboriosam eum non rerum et deleniti vel qui eveniet dicta voluptates aspernatur a quod, obcaecati, molestias id distinctio maxime. Perferendis, nostrum suscipit ratione voluptates explicabo quam dolore quis itaque? Quibusdam aliquid dolorum eligendi quisquam sit cupiditate id nam dolorem. Adipisci, nobis! Necessitatibus optio illo vero autem odio. Expedita vel illum tempore numquam? Saepe, magnam officiis modi vel qui aliquid, sequi a reiciendis ipsam rem nostrum fuga delectus veniam, aperiam ullam? Reprehenderit assumenda veritatis provident consectetur sed amet libero quam esse dolorem a itaque, corrupti delectus eligendi nulla minima incidunt explicabo officia eaque ipsam in rerum. Perspiciatis distinctio unde obcaecati dolor quam cumque earum itaque nesciunt reprehenderit modi mollitia necessitatibus nobis excepturi quasi suscipit eveniet ullam quod rerum amet ipsum laudantium, deserunt doloremque? Perspiciatis tenetur soluta, vel sed quo et. Fugit libero iure reiciendis aperiam odio mollitia fuga debitis saepe, modi architecto quos ipsum, ipsa eius culpa consectetur ratione corrupti molestiae earum autem delectus atque. Ipsum quisquam, itaque praesentium sint cum culpa? Repudiandae laudantium explicabo pariatur cum tempora ipsum? Quo sunt quas voluptatibus, quibusdam iure provident aliquid sequi excepturi dolor amet quae dolore architecto. Similique iure harum tempora voluptatem beatae, cum nihil neque magnam quo fuga unde perferendis ipsa libero facilis facere consequuntur aut inventore hic repellat rerum. Aut laborum tenetur itaque tempore culpa architecto magni excepturi a explicabo eum consequatur ipsum id fuga iusto asperiores beatae eos, provident quis. Quod, necessitatibus laboriosam eius dolorum sapiente amet sunt consequatur impedit vero ab rem dolor excepturi quibusdam consequuntur, non fuga debitis repudiandae dignissimos corrupti.</p>
         </div>
-        <div class="flecheDroite">
+        <div class="flecheDroite animationFunDroite">
             <a href="#autres"><svg xmlns="http://www.w3.org/2000/svg" width="31" height="51" viewBox="0 0 31 51">
                     <path d="M12.885,53.632,32.046,34.125,12.885,14.617l5.9-5.992,25.1,25.5-25.1,25.5Z" transform="translate(-12.885 -8.625)" fill="#fac815" />
                 </svg></a>
@@ -168,7 +168,7 @@
     </div>
 
     <div id="autres" class="d-flex">
-        <div class="flecheGauche">
+        <div class="flecheGauche animationFunGauche">
             <a href="#projet"><svg xmlns="http://www.w3.org/2000/svg" width="31" height="51" viewBox="0 0 31 51">
                     <path d="M43,53.257,30.86,40.9,23.839,33.75,43,14.242,37.1,8.25,12,33.75l25.1,25.5Z" transform="translate(-12 -8.25)" fill="#fac815" />
                 </svg></a>
