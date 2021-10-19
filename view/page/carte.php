@@ -64,12 +64,16 @@
 
     <div id="panneau" class="row panneau">
 
-        <!-- Bouton pour rouvrir -->
+        <!-- Bouton pour fermer le panneau -->
         <a href="javascript:void(0)" class="btnToggle">
-            <svg onclick="togglePanneau()" id="Flèche_toggle_profil" data-name="Flèche toggle profil" xmlns="http://www.w3.org/2000/svg" width="44" height="54" viewBox="0 0 44 54">
-                <rect id="Rectangle_1626" data-name="Rectangle 1626" width="44" height="54" rx="5" fill="#9b9b9b" />
-                <path id="_Color" data-name=" ↳Color" d="M3.566,0,0,3.571,11.584,15.2,0,26.821l3.566,3.571L18.742,15.2Z" transform="translate(12.629 11.804)" fill="#f1f1f1" />
+
+            <svg onclick="togglePanneau()" xmlns="http://www.w3.org/2000/svg" width="26" height="33" viewBox="0 0 26 33">
+                <g id="Groupe_1745" data-name="Groupe 1745" transform="translate(-27 -462.667)">
+                    <rect id="Rectangle_1626" data-name="Rectangle 1626" width="26" height="33" rx="5" transform="translate(27 462.667)" fill="#9b9b9b" />
+                    <path id="_Color" data-name=" ↳Color" d="M2,0,0,2,6.5,8.527,0,15.051l2,2,8.516-8.527Z" transform="translate(35.171 470.985)" fill="#f1f1f1" />
+                </g>
             </svg>
+
         </a>
         <aside class="">
 
