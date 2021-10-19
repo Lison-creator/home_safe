@@ -122,16 +122,19 @@ h3 {
 .btnJaune {
     background-color: #FAC815;
     color: #282828;
+    transition: all 0.2s ease;
 }
 
 .btnBleu {
     background-color: #3F50A7;
     color: #F1F1F1;
+    transition: all 0.2s ease;
 }
 
 .btnViolet {
     background-color: #95509B;
     color: #F1F1F1;
+    transition: all 0.2s ease;
 }
 
 .btnViolet:hover {
@@ -340,8 +343,25 @@ input:focus {
     color: #F1F1F1;
 }
 
+
+/*********************** Menu non connecté */
 #menuAccueil>ul>li>a {
     color: #F1F1F1;
     font-family: "coco";
     font-size: 1rem;
 }
+
+a.nav-link {
+    opacity: 0.8;
+    transition: all 0.4s ease-in;
+}
+
+a.nav-link:hover{
+    opacity: 1;
+}
+
+.navbar {
+    margin-right: 30px;
+}
+
+

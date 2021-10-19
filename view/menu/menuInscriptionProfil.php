@@ -14,7 +14,7 @@
     <div class="navbar" id="menuAccueil">
       <ul class="navbar-nav ">
         <li class="nav-item">
-          <a href="?section=connexion" class="nav-link" id="connexion"> Se connecter</a><!-- modification ici, anciennement FAQ alors que le href renvoyé à connecxion -->
+          <a href="?section=connexion" class="nav-link" id="connexion"> Se connecter</a>
         </li>
         <li class="nav-item">
           <a href="?section=inscription" class="nav-link" id="inscription">S'inscrire</a>

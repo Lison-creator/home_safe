@@ -1,4 +1,4 @@
-.flex-menu-contact {
+.flex-menu-contact, .flex-menu-faq {
     display: flex;
     background-color: #282828;
     padding-top: 10px;
@@ -9,13 +9,11 @@
     padding-top: 30px;
 }
 
-.coco {
-    font-family: "coco";
-}
 
-h2 {
+h2.coco {
     text-align: center;
     margin: auto;
+    font-family: 'coco';
 }
 
 .informations p {
@@ -74,7 +72,7 @@ form>label {
 
 /* Padding du logo "Home Safe" dans le menu contact */
 
-p.logoMenuContact {
+p.logoMenuContact, p.logoMenuFaq {
     padding-left: 30px;
 }
 
