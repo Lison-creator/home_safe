@@ -42,7 +42,7 @@
 
                         <label for="motDePasseConnection" id="labelConnectionMdp" namespace>Mot de passe</label><br>
                         <input type="password" name="mdp" id="motDePasseConnection" pattern="{[A-Za-z0-9]{8,}"><br>
-                        <div class="position-absolute oeil">
+                        <div class="position-absolute oeilInscription">
                             <i class="fas fa-eye oeilChange" id="btnOeil" onClick="montrerMdp('motDePasseConnection', this)"></i>
                         </div>
                         <div class="row m-auto">
