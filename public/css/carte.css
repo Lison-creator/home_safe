@@ -1,6 +1,7 @@
-body {
+/* body {
     color: grey;
 }
+ */
 
 h2 {
     text-align: center;
@@ -83,6 +84,10 @@ h2 {
     color: #3F50A7;
 }
 
+#aside {
+    padding-right: 0;
+}
+
 
 /* Petite barre du haut dans l'aside à droite */
 
@@ -91,9 +96,17 @@ h2 {
     padding-bottom: 30px;
 }
 
+
+/* Input "rechercher" */
+
 .rechercher {
     padding-bottom: 10px;
     padding-top: 10px;
+}
+
+input.inputRechercher {
+    width: 270px;
+    margin: auto;
 }
 
 

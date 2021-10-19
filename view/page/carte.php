@@ -62,9 +62,9 @@
     <!--  Panneau de droite -->
 
 
+    
+    <!-- Bouton pour fermer le panneau -->
     <div id="panneau" class="row panneau">
-
-        <!-- Bouton pour fermer le panneau -->
         <a href="javascript:void(0)" class="btnToggle">
 
             <svg onclick="togglePanneau()" xmlns="http://www.w3.org/2000/svg" width="26" height="33" viewBox="0 0 26 33">
@@ -75,7 +75,7 @@
             </svg>
 
         </a>
-        <aside class="">
+        <aside id="aside">
 
             <div class="petiteBarreDuHaut">
                 <img src="" alt="photo de profil">
@@ -127,8 +127,8 @@
             </div>
 
             <!-- Input "rechercher" -->
-            <div class="rechercher">
-                <input type="text" placeholder="Rechercher">
+            <div class="d-flex flex-column rechercher">
+                <input class="inputRechercher" type="text" placeholder="Rechercher">
             </div>
 
             <h3>Fil d'actualité</h3>
@@ -142,7 +142,7 @@
         </aside>
 
         <!-- La carte -->
-        <div id="carteId"></div>
+       <!--  <div id="carteId"></div> -->
     </div>
 
     //TODO Une fonction js pour cacher le panneau de droite et afficher différents panneau selon la rubrique cliquée ( Communauté, favoris)

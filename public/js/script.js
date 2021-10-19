@@ -54,8 +54,30 @@ btnAssociation.forEach((element) => {
 /*carte.php:
 
 Partie du coté droit qui toggle au clic */
+var visible = true;
 
 function togglePanneau() {
-    var element = document.getElementById("panneau");
-    element.classList.toggle("displayNone");
+    console.log(visible);
+    var panneau = document.getElementById("panneau");
+    panneau.classList.toggle("displayNone");
+    let aside = document.getElementById("aside");
+    if (!visible) {
+        aside.hidden = true;
+        visible = true;
+    } else {
+        aside.hidden = false;
+        visible = false;
+    }
+
+
 }
+
+
+/* 
+$("li").toggle(
+    function() { $(this).css({ "color": "red" }); },
+    function() { $(this).css({ "color": "blue" }); },
+    function() { $(this).css({ "color": "purple" }); },
+    function() {
+        $(this).css({ "color": "turquoise" });
+    }); */
