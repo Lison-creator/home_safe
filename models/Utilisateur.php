@@ -83,7 +83,6 @@
         /*  Ajoute le zip code et la photo */
         public function addZipPhoto($id, $ad_cp)
         {
-            //TODO Faire un switch pour récupérer les codes postaux et les encoder sous la bonne valeur dans la db
             
            /*  modifier les données */
             $requete = "UPDATE utilisateurs SET ad_cp=:ad_cp WHERE id = :id";
