@@ -8,7 +8,7 @@
                 <!-- Espace vide pour le menu -->
             </div>
             <div class="col-9 p-3">
-                <form action="#" method="get">
+                <form action="#" method="post">
                     <div class="row align-items-center justify-content-evenly">
                         <div class="ajoutImageEdit d-flex justify-content-end align-items-end">
                             <div class="iconPhoto d-flex justify-content-center align-items-center">
@@ -23,21 +23,25 @@
                         <input type="file" name="editerImage" id="editerImage" hidden>
                         <label for="supprimerImage" class="btnViolet btnSupprimerAvatar">Supprimer</label>
                     </div>
-                    <label for="pseudo" class="editerPrenom">Pseudo</label><br>
+                    <label for="pseudo" class="editerPseudo">Pseudo</label><br>
                     <input type="text" name="pseudo" id="pseudo"><br>
-                    <label for="ad_cp" class="editerCP mt-4">Ton code postal</label><br>
+                    <div class="row editCP">
+                        <label for="ad_cp" class="editerCP mt-4 col-8">Ton code postal</label>
+                        <div class="infoCP col-4 mt-4">Cliquer sur la liste déroulante pour voir<br>les différentes communes sur Bruxelles.</div>
+                    </div>
                     <select name="ad_cp" id="ad_cp" class="zipCodes">
                         <option value="1000">1000 Bruxelles</option>
-                        <option value="1000">1020 Laeken</option>
-                        <option value="1000">1030 Schaerbeek</option>
-                        <option value="1000">1040 Etterbeek</option>
-                        <option value="1000">1050 Ixelles</option>
-                        <option value="1000">1060 Saint-Gilles</option>
-                        <option value="1000">1070 Anderlecht</option>
+                        <option value="1020">1020 Laeken</option>
+                        <option value="1030">1030 Schaerbeek</option>
+                        <option value="1040">1040 Etterbeek</option>
+                        <option value="1050">1050 Ixelles</option>
+                        <option value="1060">1060 Saint-Gilles</option>
+                        <option value="1070">1070 Anderlecht</option>
+                        <option value="1080">1080 Molenbeek-Saint-Jean</option>
                     </select>
-                    <div class="row">
-                        <label for="bio" class="editerBio mt-4">Bio</label>
-                        <div class="infoBio">1500 caractères max</div>
+                    <div class="row editBio">
+                        <label for="bio" class="editerBio mt-4 col-10">Bio</label>
+                        <div class="infoBio col-2 mt-4">1500 caractères max</div>
                     </div>
                     <textarea name="bio" id="bio" class="editerBio"></textarea>
                     <div class="row m-auto">

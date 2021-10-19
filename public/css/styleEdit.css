@@ -16,7 +16,7 @@
     color: #FAC815;
 }
 
-.editerPrenom, .editerCP {
+.editerPseudo, .editerCP {
     font-family: 'coco';
     color: #95509B;
 }
@@ -64,7 +64,22 @@ select.zipCodes { /* TODO A voir si Lison en a besoin aussi */
     font-size: 0.85rem;
 }
 
+.infoCP {
+    position: relative;
+    top: 35px;
+    color: #9B9B9B;
+    font-size: 12px;
+}
+
 /********** la partie bio */
+
+.editBio, .editCP {
+    width: 90%;
+}
+
+#pseudo, #ad_cp {
+    width: 50%;
+}
 
 textarea.editerBio {
     resize: none;
@@ -98,6 +113,9 @@ textarea.editerBio {
     width: 30px;
     height: 30px;
     border-radius: 50%;
+    position: relative;
+    top: 6px;
+    left: 5px;
 }
 
 /********** le menu */
