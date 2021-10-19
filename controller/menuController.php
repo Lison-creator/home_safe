@@ -16,11 +16,11 @@
     if (isset($_SESSION['pseudo'])) {
         // il/elle est connecté
         // DE BASE, il inclut le menu permanent
-        var_dump("je suis rentrée dans les deux if - donc section + je suis connectée");
+      /*   var_dump("je suis rentrée dans les deux if - donc section + je suis connectée"); */
         switch ($_GET["section"]) {
             case 'accueil': // menu permanent + menu nom / deconnection
                 include("view/menu/menu-co.php");
-                var_dump("je suis rentrée dans case: accueil");//FONCTIONNE HOUURRRRAAA !!!
+                /* var_dump("je suis rentrée dans case: accueil") */;//FONCTIONNE HOUURRRRAAA !!!
                 break;
                 /*  case 'inscriptionProfil': // menu permanent + logo de retour à la page d'accueil et pas le menu connecté
                 include("view/menu/menuInscriptionProfil.php");
@@ -29,32 +29,32 @@
                 /* break; */
             case 'editerProfil': // menu permanent + logo de retour à la page d'accueil
                 include("view/menu/menu-editer-profil.php");
-                var_dump("je suis rentrée dans case: Editer Profil"); //FONCTIONNE HOUURRRRAAA !!!
+                /* var_dump("je suis rentrée dans case: Editer Profil") */; //FONCTIONNE HOUURRRRAAA !!!
                 break;
 
             case 'contact': // menu permanent + menu nom / deconnection
                 include("view/menu/menu-co.php");
-                var_dump("je suis rentrée dans case: contact");//FONCTIONNE HOUURRRRAAA !!!
+                /* var_dump("je suis rentrée dans case: contact") */;//FONCTIONNE HOUURRRRAAA !!!
                 break;
 
             case 'faq': // menu permanent + menu nom / deconnection
                 include("view/menu/menu-co.php");
-                var_dump("je suis rentrée dans case: faq");//FONCTIONNE HOUURRRRAAA !!!
+                /* var_dump("je suis rentrée dans case: faq") */;//FONCTIONNE HOUURRRRAAA !!!
                 break;
 
             case 'contact': // menu permanent + menu nom / deconnection
                 include("view/menu/menu-co.php");
-                var_dump("je suis rentrée dans case: contact");//FONCTIONNE HOUURRRRAAA !!!
+                /* var_dump("je suis rentrée dans case: contact") */;//FONCTIONNE HOUURRRRAAA !!!
                 break;
 
             case 'association': // menu permanent + menu nom / deconnection
                 include("view/menu/menu-co.php");
-                var_dump("je suis rentrée dans case: association");//FONCTIONNE HOUURRRRAAA !!!
+                /* var_dump("je suis rentrée dans case: association") */;//FONCTIONNE HOUURRRRAAA !!!
                 break;
 
             case 'carte': // menu permanent + menu nom / deconnection
                 include("view/menu/menu-co.php");
-                var_dump("je suis rentrée dans case: carte");//FONCTIONNE HOUURRRRAAA !!!
+                /* var_dump("je suis rentrée dans case: carte"); *///FONCTIONNE HOUURRRRAAA !!!
                 break;
             default:
                 include("view/error/404.php");
@@ -62,16 +62,16 @@
 
     } else { // si tu n'es pas connecté
 
-        var_dump("je suis rentrée dans le else");
+        /* var_dump("je suis rentrée dans le else"); */
 
        if (isset($_GET["section"]) === "inscriptionProfil") {
             // menu permanent + logo de retour à la page d'accueil et pas le menu connecté
             include("view/menu/menuInscriptionProfil.php");
-            var_dump("je suis rentrée dans case: inscriptionProfil");
+          /*   var_dump("je suis rentrée dans case: inscriptionProfil"); */
 
         } else {
             include("view/menu/menu-nonco.php");
-        var_dump("je suis rentrée dans le else du else");
+        /* var_dump("je suis rentrée dans le else du else"); */
 
         }
         
