@@ -13,69 +13,102 @@
 
 //Si j'ai un connecté et que l'on est déjà inscrite
 
-    if (isset($_SESSION['pseudo'])) {
-        // il/elle est connecté
-        // DE BASE, il inclut le menu permanent
-      /*   var_dump("je suis rentrée dans les deux if - donc section + je suis connectée"); */
-        switch ($_GET["section"]) {
-            case 'accueil': // menu permanent + menu nom / deconnection
-                include("view/menu/menu-co.php");
-                /* var_dump("je suis rentrée dans case: accueil") */;//FONCTIONNE HOUURRRRAAA !!!
-                break;
-                /*  case 'inscriptionProfil': // menu permanent + logo de retour à la page d'accueil et pas le menu connecté
+if (isset($_SESSION['pseudo'], $_SESSION['count']) && $_SESSION["count"] == 1) {
+    // il/elle est connecté
+    // DE BASE, il inclut le menu permanent
+    /*   var_dump("je suis rentrée dans les deux if - donc section + je suis connectée"); */
+
+    switch ($_GET["section"]) {
+        case 'accueil': // menu permanent + menu nom / deconnection
+            include("view/menu/menu-co.php");
+                /* var_dump("je suis rentrée dans case: accueil") */; //FONCTIONNE HOUURRRRAAA !!!
+            break;
+            /*  case 'inscriptionProfil': // menu permanent + logo de retour à la page d'accueil et pas le menu connecté
                 include("view/menu/menuInscriptionProfil.php");
         var_dump("je suis rentrée dans case: inscriptionProfil"); */
 
-                /* break; */
-            case 'editerProfil': // menu permanent + logo de retour à la page d'accueil
-                include("view/menu/menu-editer-profil.php");
+            /* break; */
+        case 'editerProfil': // menu permanent + logo de retour à la page d'accueil
+            include("view/menu/menu-editer-profil.php");
                 /* var_dump("je suis rentrée dans case: Editer Profil") */; //FONCTIONNE HOUURRRRAAA !!!
-                break;
+            break;
 
-            case 'contact': // menu permanent + menu nom / deconnection
-                include("view/menu/menu-co.php");
-                /* var_dump("je suis rentrée dans case: contact") */;//FONCTIONNE HOUURRRRAAA !!!
-                break;
+        case 'contact': // menu permanent + menu nom / deconnection
+            include("view/menu/menu-co.php");
+                /* var_dump("je suis rentrée dans case: contact") */; //FONCTIONNE HOUURRRRAAA !!!
+            break;
 
-            case 'faq': // menu permanent + menu nom / deconnection
-                include("view/menu/menu-co.php");
-                /* var_dump("je suis rentrée dans case: faq") */;//FONCTIONNE HOUURRRRAAA !!!
-                break;
+        case 'faq': // menu permanent + menu nom / deconnection
+            include("view/menu/menu-co.php");
+                /* var_dump("je suis rentrée dans case: faq") */; //FONCTIONNE HOUURRRRAAA !!!
+            break;
 
-            case 'contact': // menu permanent + menu nom / deconnection
-                include("view/menu/menu-co.php");
-                /* var_dump("je suis rentrée dans case: contact") */;//FONCTIONNE HOUURRRRAAA !!!
-                break;
+        case 'contact': // menu permanent + menu nom / deconnection
+            include("view/menu/menu-co.php");
+                /* var_dump("je suis rentrée dans case: contact") */; //FONCTIONNE HOUURRRRAAA !!!
+            break;
 
-            case 'association': // menu permanent + menu nom / deconnection
-                include("view/menu/menu-co.php");
-                /* var_dump("je suis rentrée dans case: association") */;//FONCTIONNE HOUURRRRAAA !!!
-                break;
+        case 'association': // menu permanent + menu nom / deconnection
+            include("view/menu/menu-co.php");
+                /* var_dump("je suis rentrée dans case: association") */; //FONCTIONNE HOUURRRRAAA !!!
+            break;
 
-            case 'carte': // menu permanent + menu nom / deconnection
-                include("view/menu/menu-co.php");
-                /* var_dump("je suis rentrée dans case: carte"); *///FONCTIONNE HOUURRRRAAA !!!
-                break;
-            default:
-                include("view/error/404.php");
-        }
-
-    } else { // si tu n'es pas connecté
-
-        /* var_dump("je suis rentrée dans le else"); */
-
-       if (isset($_GET["section"]) === "inscriptionProfil") {
-            // menu permanent + logo de retour à la page d'accueil et pas le menu connecté
-            include("view/menu/menuInscriptionProfil.php");
-          /*   var_dump("je suis rentrée dans case: inscriptionProfil"); */
-
-        } else {
-            include("view/menu/menu-nonco.php");
-        /* var_dump("je suis rentrée dans le else du else"); */
-
-        }
-        
+        case 'carte': // menu permanent + menu nom / deconnection
+            include("view/menu/menu-co.php");
+            /* var_dump("je suis rentrée dans case: carte"); */ //FONCTIONNE HOUURRRRAAA !!!
+            break;
+        default:
+            include("view/error/404.php");
     }
+} elseif (isset($_SESSION['pseudo'], $_SESSION['count']) && $_SESSION["count"] == 0) {
+
+
+    switch ($_GET["section"]) {
+        case 'accueil': // menu permanent + menu nom / deconnection
+            include("view/menu/menu-co.php");
+                /* var_dump("je suis rentrée dans case: accueil") */; //FONCTIONNE HOUURRRRAAA !!!
+            break;
+            /*  case 'inscriptionProfil': // menu permanent + logo de retour à la page d'accueil et pas le menu connecté
+                include("view/menu/menuInscriptionProfil.php");
+        var_dump("je suis rentrée dans case: inscriptionProfil"); */
+
+            /* break; */
+        case 'editerProfil': // menu permanent + logo de retour à la page d'accueil
+            include("view/menu/menu-editer-profil.php");
+                /* var_dump("je suis rentrée dans case: Editer Profil") */; //FONCTIONNE HOUURRRRAAA !!!
+            break;
+
+        case 'contact': // menu permanent + menu nom / deconnection
+            include("view/menu/menu-co.php");
+                /* var_dump("je suis rentrée dans case: contact") */; //FONCTIONNE HOUURRRRAAA !!!
+            break;
+
+        case 'faq': // menu permanent + menu nom / deconnection
+            include("view/menu/menu-co.php");
+                /* var_dump("je suis rentrée dans case: faq") */; //FONCTIONNE HOUURRRRAAA !!!
+            break;
+
+        case 'contact': // menu permanent + menu nom / deconnection
+            include("view/menu/menu-co.php");
+                /* var_dump("je suis rentrée dans case: contact") */; //FONCTIONNE HOUURRRRAAA !!!
+            break;
+
+        case 'association': // menu permanent + menu nom / deconnection
+            include("view/menu/menu-co.php");
+                /* var_dump("je suis rentrée dans case: association") */; //FONCTIONNE HOUURRRRAAA !!!
+            break;
+
+        case 'inscriptionProfil':
+            include("view/menu/menuInscriptionProfil.php");
+            break;
+        default:
+            include("view/error/404.php");
+    }
+} else { // si tu n'es pas connecté
+
+    include("view/menu/menu-nonco.php");
+    /* var_dump("je suis rentrée dans le else du else"); */
+}
 
 
 

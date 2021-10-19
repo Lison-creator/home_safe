@@ -19,6 +19,7 @@ include("models/Utilisateur.php");
         /* $email = $_POST["emailConnection"]; */
 
     // vérifie le pseudo et qu'il ne contient pas que des espace
+/*     var_dump("hors de la boucle :("); */
 
         if(((trim($pseudo))!= "") && (trim($email)!= "") && (trim($mdp)!= "")){
             $last_insert_id = $user1->addUtilisateur($pseudo, $email, $mdp);
@@ -27,7 +28,8 @@ include("models/Utilisateur.php");
             $_SESSION["last_id"] = $last_insert_id;
             $_SESSION["pseudo"] = $user["pseudo"];
 
-            header("Location:?section=accueil");
+            header("Location:?section=inscriptionProfil");
+            /* var_dump("inscriptionProfil"); */
             /* Renvoie à la page d'accueil une fois le formulaire envoyé */
         }
         else {

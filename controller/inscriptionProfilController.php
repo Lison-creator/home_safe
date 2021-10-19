@@ -22,8 +22,8 @@ $user1 = new Utilisateur();
 
     }
             /* Renvoie à la page d'accueil une fois le formulaire envoyé */
-    
-        
+ /*    var_dump("en dehors de la boucle pour le code postal");
+         */
        /*  else {
             $msgErreurInscription ="<p style='color:red'>Veuillez remplir tous les champs </p>";
         } */

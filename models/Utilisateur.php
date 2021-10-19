@@ -32,7 +32,7 @@
                 //retourne la premièrte ligne de mon tbaleau
 
                 else {
-                    throw new Exception("Le thé n'existe pas");
+                    throw new Exception("Pas de donnée");
                 }
                 return null;
             } catch (Exception $e) {

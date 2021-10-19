@@ -1,15 +1,29 @@
 <!-- Menu permanent + Logo -->
-
 <nav class="navbar navbar-expand-lg z-index-2">
   <div class="container-fluid">
     <div class="logoPrincipal">
       <!-- Logo
-       //TODO ajouter logo
+       //TODO 
       <a class="navbar-brand" href="?section=accueil">Home Safe</a> -->
     </div>
+
+    <!-- Icone menu-burger -->
+    <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button> -->
+    <div class="navbar" id="menuAccueil">
+      <ul class="navbar-nav ">
+        <li class="nav-item">
+          <a href="?section=connexion" class="nav-link" id="connexion"> Se connecter</a><!-- modification ici, anciennement FAQ alors que le href renvoyé à connecxion -->
+        </li>
+        <li class="nav-item">
+          <a href="?section=inscription" class="nav-link" id="inscription">S'inscrire</a>
+        </li>
+      </ul>
+    </div>
+
   </div>
 </nav>
-
 <!-- Menu permanent -->
 <nav class="menuPermanent">
   <ul class="passeDevant">
