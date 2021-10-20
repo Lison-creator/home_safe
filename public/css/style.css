@@ -240,7 +240,7 @@ input:focus {
 .menuPermanent>ul>li>div>a {
     color: #707070;
     margin: auto;
-    transition: all 0.4s ease-in-out;
+    /* transition: all 0.4s ease-in-out; */
     text-align: center;
 }
 
@@ -292,15 +292,27 @@ input:focus {
 }
 
 .hidden {
+   width: 0px;
+}
+
+.menuPermanent>ul>li.collapse-menu {
+   left: -300px;
    width: 0;
+   color: white;
 }
 
-.menuPermanent>ul>li.collapse {
-    left: -300px;
-    width: 0;
+.menuPermanent>ul>li.collapse-menu>div>a {
+    color: #F1F1F1; 
+ }
 
-
+.menuPermanent>ul>li {
+   transition: width 1s ease-in-out;
+   overflow-x: hidden;
 }
+.menuPermanent>ul>li a {
+    transition: color 1s linear 50ms;
+    white-space: nowrap
+ }
 
 .navBlanc {
     background-color: rgba(255, 255, 255, 0.3);

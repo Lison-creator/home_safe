@@ -1,8 +1,8 @@
 /* ------------------------------------------------------------------- */
 // animation pour le bouton du menu permanent en jQuery
 
-$("#iconPlus").on("click", function(e) {
-    $(".blocNav").toggleClass("collapse"); // toggle le bloc
+$("#iconPlus").on("click", function (e) {
+    $(".blocNav").toggleClass("collapse-menu"); // toggle le bloc
     $(".vertical").toggleClass("hidden"); // change le + en -
 })
 
@@ -81,32 +81,31 @@ $("li").toggle(
 function montrerMdp(id, element) {
     let x = document.getElementById(id);
     if (x.type === "password") {
-      x.type = "text";
-      element.className = 'fas fa-eye-slash oeilChange';
+        x.type = "text";
+        element.className = 'fas fa-eye-slash oeilChange';
     } else {
-      x.type = "password";
-      element.className = 'fas fa-eye oeilChange';
+        x.type = "password";
+        element.className = 'fas fa-eye oeilChange';
     }
-  } 
-
- 
-
-  /* ------------------------------------------------------------------- */
-  // Animation utilisation jQuery pour slide page association
-  //https://demos.jquerymobile.com/1.4.5/transitions/
+}
 
 
-  const desactivation = document.querySelectorAll('animationCroixFun');
-  console.log(desactivation);
 
-  function toggleDesactivation(element, classeEnQuestion) {
+/* ------------------------------------------------------------------- */
+// Animation utilisation jQuery pour slide page association
+//https://demos.jquerymobile.com/1.4.5/transitions/
 
-       if (element.className) {
-            element.remove(classeEnQuestion);
-        }
-    }
 
-  //ici j'exécute le code 
-desactivation.addEventListener('click', function(){
-    toggleDesactivation();
-});
+
+/* ------------------Désactivation de la petite croix du menu permanent au moment du clique- */
+
+//je vais chercher mon élément via son id
+const btnDesactivation = document.getElementById('iconPlus');
+const btnCroix = document.getElementById('croix')
+
+//je lance la fonction desactivation au clique
+btnDesactivation.addEventListener('click', (e) => {
+    //pour l'élement qui contient la class animationCroixFun, je veux que tu puisse l'enelver ou la remettre
+    btnCroix.classList.toggle('animationCroixFun');
+})
+/* ------------------------------------------------------------------- */

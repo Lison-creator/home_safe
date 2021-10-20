@@ -41,7 +41,7 @@
       <div class="navJaune d-flex justify-content-center"><a href="?section=faq" class="nav-link" id="faq">FAQ</a></div>
     </li>
     <li id="iconPlus" class="navBlanc">
-      <div class="animationCroixFun">
+      <div class="animationCroixFun" id="croix">
         <div class="vertical"></div>
         <div class="horizontal"></div>
       </div>
