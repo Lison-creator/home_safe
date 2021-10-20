@@ -22,6 +22,9 @@ h2.coco {
 
 .informations {
     margin: auto;
+    background-color: rgba(63, 80, 167, 0.8);
+    border-radius: 10px;
+    box-shadow: 2px 3px 5px RGBA(19, 19, 19, 0.6);
 }
 
 .informations svg {
@@ -29,16 +32,16 @@ h2.coco {
 }
 
 
+
 /* Ecartement des infos de contact (à gauche) */
 
 div.align-self-center {
-    padding: 30px;
+    padding: 30px 0px 30px;;
 }
 
 div .texteContact {
     padding: 30px;
-    font-size: 20px;
-    text-shadow: rgb(0, 0, 0) 1px 0 10px;
+    font-size: 1.2rem;
 }
 
 .formulaireContact {

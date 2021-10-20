@@ -19,7 +19,7 @@
 </nav>
 <div class="container-fluid">
     <div class="row blocComplet">
-        <div class="informations col-5 d-flex justify-content-center align-items-center">
+        <div class=" col-3 offset-2 d-flex justify-content-center align-items-center informations">
 
             <!-- Les svg dans un flexbox -->
             <div class="svg d-flex flex-column">
