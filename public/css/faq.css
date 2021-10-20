@@ -35,7 +35,7 @@
     margin: 10px;
 }
 
-.containerFAQ aside .blocCategories:hover {
+.containerFAQ aside .blocCategories:hover, .selected {
     background-color: rgba(149, 80, 155, 1);
     color: rgba(241, 241, 241, 1);
 }
