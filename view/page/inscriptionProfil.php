@@ -91,3 +91,4 @@
     </div><!-- fin de la row générale -->
 
 </section>
+<script src="public/js/script-inscriptionProfile.js"></script>
