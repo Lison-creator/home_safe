@@ -134,6 +134,14 @@ h3 {
     color: #F1F1F1;
 }
 
+
+/* //TODO  Un hover sur le bouton alerte */
+
+*/ .btnAlerte {
+    background-color: #BF293E;
+    color: #F1F1F1;
+}
+
 .btnViolet:hover {
     border: 4px solid #5E2F62;
 }

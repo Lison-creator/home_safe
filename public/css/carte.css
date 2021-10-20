@@ -68,6 +68,10 @@ img {
     color: #3F50A7;
 }
 
+.rouge {
+    color: #BF293E;
+}
+
 .bgViolet {
     background-color: #95509B;
 }
@@ -247,10 +251,12 @@ input.inputRechercher {
 
 #nouveautes {
     padding-left: 35px;
-    padding-right: 35px;
+}
+
+#nouveautesContent {
     overflow-y: scroll;
     overflow: auto;
-    height: 500px;
+    height: 720px;
 }
 
 .lieuAmi {

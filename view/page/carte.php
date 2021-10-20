@@ -217,30 +217,41 @@
             <div id="nouveautes">
                 <h2 class="violet">Nouveautés</h2>
                 <h3 class="violet">Quoi de neuf à Bruxelles ?</h3>
-                <h4 class="pt-3 pb-2 bleu">Nouveaux lieux favoris de vos ami.e.s !</h4>
+                
+                <div id="nouveautesContent">
+                    <h4 class="pt-3 pb-2 bleu">Nouveaux lieux favoris de vos ami.e.s !</h4>
+                    <!-- Lieu ami (Goupil Le fol: texte + image) -->
+                    <div>
+                        <div class="lieuAmi d-flex align-items-center justify-content-between ">
+                            <div class="svgLieu"><svg xmlns="http://www.w3.org/2000/svg" width="21.652" height="21.652" viewBox="0 0 21.652 21.652">
+                                    <path id="Icon_awesome-beer" data-name="Icon awesome-beer" d="M17.786,5.343h-2.32V3.41a1.16,1.16,0,0,0-1.16-1.16H1.16A1.16,1.16,0,0,0,0,3.41V22.742A1.16,1.16,0,0,0,1.16,23.9H14.306a1.16,1.16,0,0,0,1.16-1.16V20.707l3.9-1.739a3.871,3.871,0,0,0,2.291-3.531V9.21A3.871,3.871,0,0,0,17.786,5.343Zm.773,10.094a.774.774,0,0,1-.458.706L15.466,17.32V8.436h2.32a.774.774,0,0,1,.773.773Zm-8.506,3.825a.773.773,0,0,1-.773-.773V7.663a.773.773,0,1,1,1.547,0V18.489A.773.773,0,0,1,10.053,19.263Zm-4.64,0a.773.773,0,0,1-.773-.773V7.663a.773.773,0,1,1,1.547,0V18.489A.773.773,0,0,1,5.413,19.263Z" transform="translate(0 -2.25)" fill="#282828" />
+                                </svg>
+                            </div>
+                            <div class="lieuAmiTexte">
+                                <span>Rue de la Violette 22, 1000 Bruxelles</span>
+                                <p>Goupil Le fol (texte demo)</p>
+                            </div>
+                            <div class="svgCoeur"><svg id="Groupe_1569" data-name="Groupe 1569" xmlns="http://www.w3.org/2000/svg" width="23.394" height="23.42" viewBox="0 0 23.394 23.42">
+                                    <path id="Tracé_1110" data-name="Tracé 1110" d="M325.8,305.469h.068c.023.041.059,0,.086.027a5.118,5.118,0,0,1,2.109.618,7.11,7.11,0,0,1,3.587,5.528,3.737,3.737,0,0,0,.068.5v1.146a1.966,1.966,0,0,0-.064.455,7.46,7.46,0,0,1-1.777,4.064c-3.246,3.682-6.514,7.342-9.769,11.01-.068.077-.1.077-.173,0l-8.387-9.478c-.3-.336-.568-.7-.887-1a7.592,7.592,0,0,1-2.273-4.573,2.955,2.955,0,0,0-.064-.491v-1.146a.663.663,0,0,0,.041-.268,7.505,7.505,0,0,1,2.114-4.623,5.661,5.661,0,0,1,3.228-1.687,2.658,2.658,0,0,0,.455-.073h.1a.86.86,0,0,0,.455,0h.073c0,.032.036,0,.059,0a4.791,4.791,0,0,1,2.1.682,7.683,7.683,0,0,1,3,3.473c.023.041.032.1.082.132l.059-.136a8.337,8.337,0,0,1,1.9-2.65,5.456,5.456,0,0,1,2.841-1.459,1.667,1.667,0,0,0,.4-.064h.023A1.181,1.181,0,0,0,325.8,305.469Z" transform="translate(-308.33 -305.46)" fill="#3f50a7" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="mt-3">
+                            <img src="public/images/imagesDemoCarte/goupil-01.jpeg" alt="Goupil Le Fol">
+                        </div>
+                        <p>Aimé par...</p>
+                    </div>
+                    <hr> <!-- Ligne droite -->
+                    <!-- Fin du lieu ami :'( -->
 
-                <!-- Lieu ami (Goupil Le fol: texte + image) -->
-                <div>
-                    <div class="lieuAmi d-flex align-items-center justify-content-between ">
-                        <div class="svgLieu"><svg xmlns="http://www.w3.org/2000/svg" width="21.652" height="21.652" viewBox="0 0 21.652 21.652">
-                                <path id="Icon_awesome-beer" data-name="Icon awesome-beer" d="M17.786,5.343h-2.32V3.41a1.16,1.16,0,0,0-1.16-1.16H1.16A1.16,1.16,0,0,0,0,3.41V22.742A1.16,1.16,0,0,0,1.16,23.9H14.306a1.16,1.16,0,0,0,1.16-1.16V20.707l3.9-1.739a3.871,3.871,0,0,0,2.291-3.531V9.21A3.871,3.871,0,0,0,17.786,5.343Zm.773,10.094a.774.774,0,0,1-.458.706L15.466,17.32V8.436h2.32a.774.774,0,0,1,.773.773Zm-8.506,3.825a.773.773,0,0,1-.773-.773V7.663a.773.773,0,1,1,1.547,0V18.489A.773.773,0,0,1,10.053,19.263Zm-4.64,0a.773.773,0,0,1-.773-.773V7.663a.773.773,0,1,1,1.547,0V18.489A.773.773,0,0,1,5.413,19.263Z" transform="translate(0 -2.25)" fill="#282828" />
-                            </svg>
-                        </div>
-                        <div class="lieuAmiTexte">
-                            <span>Rue de la Violette 22, 1000 Bruxelles</span>
-                            <p>Goupil Le fol (texte demo)</p>
-                        </div>
-                        <div class="svgCoeur"><svg id="Groupe_1569" data-name="Groupe 1569" xmlns="http://www.w3.org/2000/svg" width="23.394" height="23.42" viewBox="0 0 23.394 23.42">
-                                <path id="Tracé_1110" data-name="Tracé 1110" d="M325.8,305.469h.068c.023.041.059,0,.086.027a5.118,5.118,0,0,1,2.109.618,7.11,7.11,0,0,1,3.587,5.528,3.737,3.737,0,0,0,.068.5v1.146a1.966,1.966,0,0,0-.064.455,7.46,7.46,0,0,1-1.777,4.064c-3.246,3.682-6.514,7.342-9.769,11.01-.068.077-.1.077-.173,0l-8.387-9.478c-.3-.336-.568-.7-.887-1a7.592,7.592,0,0,1-2.273-4.573,2.955,2.955,0,0,0-.064-.491v-1.146a.663.663,0,0,0,.041-.268,7.505,7.505,0,0,1,2.114-4.623,5.661,5.661,0,0,1,3.228-1.687,2.658,2.658,0,0,0,.455-.073h.1a.86.86,0,0,0,.455,0h.073c0,.032.036,0,.059,0a4.791,4.791,0,0,1,2.1.682,7.683,7.683,0,0,1,3,3.473c.023.041.032.1.082.132l.059-.136a8.337,8.337,0,0,1,1.9-2.65,5.456,5.456,0,0,1,2.841-1.459,1.667,1.667,0,0,0,.4-.064h.023A1.181,1.181,0,0,0,325.8,305.469Z" transform="translate(-308.33 -305.46)" fill="#3f50a7" />
-                            </svg>
-                        </div>
+                    <!-- Lieu "alerte" -->
+                    <div class="lieuAlerte">
+                        <h4 class="pt-3 pb-2 rouge">Alerte</h4>
+
                     </div>
-                    <div class="mt-3">
-                        <img src="public/images/imagesDemoCarte/goupil-01.jpeg" alt="Goupil Le Fol">
-                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque reprehenderit aut nisi. Ipsa consectetur quas iste, ab autem in neque excepturi quasi debitis tempora accusantium vero corporis eaque animi! Voluptate optio nobis quod qui dignissimos porro asperiores, sed, autem aperiam maxime dolore suscipit cupiditate sint! Quasi ducimus enim at autem tempore repudiandae culpa dignissimos, obcaecati harum eius mollitia, aperiam illum, voluptatum debitis ipsa numquam? Voluptas totam error doloribus ea, excepturi commodi alias voluptate molestiae aperiam sed vitae modi rem? Dolores perspiciatis mollitia blanditiis corrupti voluptatibus est voluptas, ut natus ad nostrum, voluptate quod atque nemo nisi vitae vero, accusamus ipsa quas dolorum expedita alias iusto. Tempore deserunt, animi maiores autem est non, quisquam doloremque temporibus quasi iste corrupti eos provident. Earum dolorem incidunt soluta quod enim quas maxime totam quasi minima repellendus sapiente ex, dicta hic dolore esse amet adipisci tenetur id repudiandae reiciendis molestias minus? Sapiente perferendis at velit officiis eligendi dolorem assumenda rerum! Alias, assumenda eaque! Quisquam tenetur optio architecto ratione asperiores quis. Iusto praesentium libero quas, nihil, eum laudantium explicabo nobis voluptates beatae laboriosam minus provident ducimus amet sit porro impedit, atque reiciendis eligendi. Quia perspiciatis a nesciunt ex fuga aliquid, quidem aut eum minima. Reiciendis, deleniti.</p>
                 </div>
-                <!-- Fin du lieu ami :'( -->
-
+                <!-- Fin de la div "nouveauté content" -->
             </div>
             <!-- Fin du panneau Nouveautés -->
 
