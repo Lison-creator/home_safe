@@ -9,14 +9,14 @@ $("#iconPlus").on("click", function(e) {
 /* ------------------------------------------------------------------- */
 //JS pour la page inscriptionProfil > ajout d'un avatar
 
-const btnImporterImage = document.getElementById('btnImporterImage');
+/* const btnImporterImage = document.getElementById('btnImporterImage');
 
 const imageChoisie = document.getElementById('imageChoisie');
 
 btnImporterImage.addEventListener('change', function() {
     imageChoisie.textContent = this.files[0].name
     console.log(this.files[0].name);
-})
+}) */
 
 /* ------------------------------------------------------------------- */
 
@@ -57,22 +57,63 @@ btnAssociation.forEach((element) => {
 /*carte.php:
 
 Partie du coté droit qui toggle au clic */
-var visible = true;
+// var visible = true;
 
 function togglePanneau() {
-    console.log(visible);
+    /*     console.log(visible); */
     var panneau = document.getElementById("panneau");
     panneau.classList.toggle("displayNone");
-    let aside = document.getElementById("aside");
-    if (!visible) {
-        aside.hidden = true;
-        visible = true;
-    } else {
-        aside.hidden = false;
-        visible = false;
-    }
+
+    /*     let aside = document.getElementById("aside");
+        if (!visible) {
+            visible = true;
+        } else {
+            visible = false;
+        } */
+}
+
+/* Carte: fonction pour un menu aside qui change: Communauté, Nouveautés, Favoris */
+
+/* console.log("hello"); */
 
 
+
+
+/* Afficher le profil (aside par défaut au chargement de la page) */
+
+function afficherProfil() {
+
+    $("#profil").show();
+    $("#nouveautes").hide();
+    $("#communaute").hide();
+    $("#favoris").hide();
+}
+/* Afficher les nouveautés*/
+
+
+function afficherNouveautes() {
+    $("#nouveautes").show();
+    $("#profil").hide();
+    $("#communaute").hide();
+    $("#favoris").hide();
+}
+
+/* Afficher la communauté*/
+
+function afficherCommunaute() {
+    $("#communaute").show();
+    $("#nouveautes").hide();
+    $("#profil").hide();
+    $("#favoris").hide();
+}
+
+/* Afficher les favoris*/
+
+function afficherFavoris() {
+    $("#favoris").show();
+    $("#nouveautes").hide();
+    $("#communaute").hide();
+    $("#profil").hide();
 }
 
 
@@ -91,15 +132,15 @@ $("li").toggle(
 function montrerMdp(id, element) {
     let x = document.getElementById(id);
     if (x.type === "password") {
-      x.type = "text";
-      element.className = 'fas fa-eye-slash oeilChange';
+        x.type = "text";
+        element.className = 'fas fa-eye-slash oeilChange';
     } else {
-      x.type = "password";
-      element.className = 'fas fa-eye oeilChange';
+        x.type = "password";
+        element.className = 'fas fa-eye oeilChange';
     }
-  } 
+}
 
 
-  /* ------------------------------------------------------------------- */
-  // Animation utilisation jQuery pour slide page association
-  //https://demos.jquerymobile.com/1.4.5/transitions/
+/* ------------------------------------------------------------------- */
+// Animation utilisation jQuery pour slide page association
+//https://demos.jquerymobile.com/1.4.5/transitions/

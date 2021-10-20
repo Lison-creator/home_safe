@@ -58,8 +58,8 @@ body {
     color: #F1F1F1;
     /* height: 100vh;
     width: 100vw; */
-    overflow-x: hidden;
-    overflow-y: hidden;
+    /* overflow-x: hidden;
+    overflow-y: hidden; */
 }
 
 html {
@@ -289,14 +289,12 @@ input:focus {
 }
 
 .hidden {
-   width: 0;
+    width: 0;
 }
 
 .menuPermanent>ul>li.collapse {
     left: -300px;
     width: 0;
-
-
 }
 
 .navBlanc {
@@ -315,12 +313,10 @@ input:focus {
     height: 67px;
     width: 100%;
     transition: all 0.4s ease-in-out;
-
 }
 
 .blocNav:hover .navJaune {
     background-color: #FAC815;
-    
 }
 
 .blocNav:hover .navJaune a.nav-link {
