@@ -1,0 +1,167 @@
+/* .imageDeFond{
+    background-image: url("../images/vectorised_Map_background_blured_50.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+} */
+
+.logoConnection {
+    width: 30%;
+    padding: 0;
+    margin: auto;
+    height: 100vh;
+}
+
+.formulaireConnection>h2,
+.formulaireAvatar>h2 {
+    /* contient le css des pages Inscription, Connection et Edit Profil */
+    font-size: 3.5rem;
+    font-family: 'coco';
+}
+
+.fondFormulaire {
+    border: 2px solid #282828;
+    border-radius: 10px;
+    background-color: #282828;
+    width: 80%;
+    box-shadow: 2px 3px 5px RGBA(19, 19, 19, 1);
+    /* TODO vérifier si l'ombre est identique chez nous toutes */
+    margin: auto;
+}
+
+
+/* Texte */
+
+.ombrageText {
+    text-shadow: 2px 2px #131313;
+}
+
+
+/************************* liens se connecter et s'inscrire */
+
+a.lienPageConnection {
+    color: #FAC815;
+    font-size: 1rem;
+    font-family: 'coco';
+    transition: all 0.5s ease-in-out;
+
+}
+
+.soulignement {
+    width: 80%;
+    height: 3px;
+    background-color: #3F50A7;
+    border-radius: 1px;
+    margin: auto;
+    margin-top: 3px;
+    transition: all 0.5s ease-in-out;
+
+}
+
+.blockHover:hover a.lienPageConnection,
+.blockHover:active a.lienPageConnection,
+.blockHover:focus a.lienPageConnection {
+    /* je mets le hover sur tout le div donc mettre avant le a */
+    color: #3F50A7;
+}
+
+.blockHover:hover .soulignement,
+.blockHover:active .soulignement,
+.blockHover:focus .soulignement {
+    /* je mets le hover sur tout le div donc mettre avant la class soulignement */
+    background-color: #FAC815;
+}
+
+
+
+/************************* inputs du formulaire */
+
+
+/* contient le css des pages Inscription, Connection et Edit Profil */
+
+#labelConnectionPrenom,
+#labelConnectionEmail,
+#labelConnectionMdp,
+#labelZip {
+    color: #FAC815;
+    font-weight: bold;
+    padding: 10px;
+    /* TODO à vérifier si en accord avec Lison et ses formulaires */
+}
+
+div.fondFormulaire form>input {
+    width: 90%;
+    margin-bottom: 25px;
+}
+
+.btnConnection {
+    width: 155px;
+}
+
+input[type=checkbox] {
+    /* TODO à voir s'il y ad'autres checkbox ailleurs dans le code */
+    /* augmenter la taille des Checkboxes */
+    -ms-transform: scale(1.5);
+    /* IE */
+    -moz-transform: scale(1.5);
+    /* FF */
+    -webkit-transform: scale(1.5);
+    /* Safari et Chrome */
+    -o-transform: scale(1.5);
+    /* Opera */
+    transform: scale(1.5);
+    padding: 15px;
+}
+
+/*************************** Favicon oeil*/
+div.oeil{
+    z-index: 2;
+    top: 260px;
+    right: 75px;
+    opacity: 0.7;
+    
+}
+
+div.oeilInscription{
+    z-index: 2;
+    bottom: 204px;
+    left: 730px;
+    opacity: 0.7;
+}
+
+div.oeil:hover, div.oeilInscription:hover{
+opacity: 1;
+}
+
+i.fas{
+    color: #3F50A7;
+}   
+
+
+/************************* lien termes et condition + j'ai oublié mon mdp */
+
+a.lienTermesEtCondition,
+a.oublie {
+    color: #FAC815;
+}
+
+.accepter,
+.oublie {
+    opacity: 0.5;
+    transition: all 0.5s ease-in-out;
+}
+
+.accepter {
+    font-size: 12px;
+}
+
+.accepter:hover,
+.oublie:hover {
+    opacity: 1;
+}
+
+.checkboxColor {
+    /* Pour changer la couleur de fond de la checkbox */
+    /* couleur difficilement changeable, correspond au mieux au bleu de la charte */
+    filter: hue-rotate(20deg);
+}

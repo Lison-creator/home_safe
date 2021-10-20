@@ -1,15 +1,7 @@
 <?php 
-    define('__ROOT__', dirname(dirname(__FILE__)));
-    require_once(__ROOT__."/class/Utilisateur.php");
-    
+    require_once("../class/Utilisateur.php");
+    $u = new Utilisateur();
 
-    /* test qui fonctionne */
-    $Manon = new Utilisateur ("Lespes", "Manon", "Chatshimi", "m.lespes@interface3.be", " ", " ", " ", " ", " ", " ", "001");
-    $Manon->setAdresse("Rue de la victoire");
-    echo "<p>Voici l'adresse de" . $Manon->getPrenom() . " " . $Manon->getAdresse() . "</p>";
-    $Manon->setMdp("azerty");
-    $Manon->verificationConnection();
-    echo "<p>Voici la vérifaction de".$Manon->getPrenom(). " :" . $Manon->verificationConnection()."</p>";
-    
-    
+    // mettre ça dans le controller adequat au dessus de tout
+    //pour relier avec les classes
 ?>

@@ -1,0 +1,49 @@
+/********* carré noir de la page inscriptiOnProfil*/
+
+.formulaireAvatar {/* TODO même css que les pages Inscription, Connection à rajouter dans le css ? */
+    border: 2px solid #282828;
+    border-radius: 10px;
+    background-color: #282828;
+    width: 80%;
+    box-shadow:2px 3px 5px RGBA(19, 19, 19, 1); /* TODO vérifier si l'ombre est identique chez nous toutes */
+    margin:auto;
+}
+
+/********** typographies */
+
+.ajoutAvatar, .ajoutZip {
+    font-family: 'coco';
+    color: #FAC815;
+}
+
+div>#imageChoisie{
+    font-family: 'ubuntuBold';
+    color: #FAC815;
+} 
+
+/********** la partie de l'avatar*/
+
+.importerImage {
+    border-radius: 50%;
+    width: 155px;
+    height: 155px;
+    background-color: #F1F1F1;
+    border: none;
+    cursor: pointer;
+    font-family: 'ubuntuLight';
+    color: #3F50A7;
+}
+
+/********** la partie de la droplist avec les zip*/
+
+select.zipCodes { /* TODO A voir si Lison en a besoin aussi */
+    background-color: #F1F1F1;
+    border-radius: 20px 20px 20px 20px;
+    border: 4px solid RGBA(255, 255, 255, 0.5);
+    padding: 3px;
+    font-family: 'ubuntuLight';
+    color: #3F50A7;
+    padding: 5px 5px 5px 15px;
+    font-size: 0.85rem;
+}
+

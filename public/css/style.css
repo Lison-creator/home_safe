@@ -39,10 +39,12 @@
 
 /* Question Loïc: est-ce qu'on doit préparer des média querys alors qu'on travaille partiellement en Bootstrap ? */
 
-@media (min-width:991px) {}
+
+/* @media (min-width:991px) {} */
 
 
 /* ---------------------------- */
+
 
 /* Body */
 
@@ -51,12 +53,27 @@ body {
     padding: 0;
     font-size: 15px;
     background-color: #282828;
+    background-image: url("../images/vectorised_Map_background_blured_50.jpg");
+    background-size: cover;
     color: #F1F1F1;
+    /* height: 100vh;
+    width: 100vw; */
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 * {
     box-sizing: border-box;
 }
+
+a {
+    text-decoration: none;
+}
+
 
 /* Textes */
 
@@ -75,12 +92,19 @@ h3 {
     font-family: 'ubuntuBold';
 }
 
+.container-fluid {
+    padding: 0;
+}
+
 
 /* Boutons */
 
 
 /* Utiliser la balise <button> */
+
+
 /*NOTE: si la taille du bouton doit être changer (width/height), rajouter une autre class mais ne pas modifier cette classe-ci*/
+
 .btnViolet,
 .btnJaune,
 .btnBleu {
@@ -98,16 +122,19 @@ h3 {
 .btnJaune {
     background-color: #FAC815;
     color: #282828;
+    transition: all 0.2s ease;
 }
 
 .btnBleu {
     background-color: #3F50A7;
     color: #F1F1F1;
+    transition: all 0.2s ease;
 }
 
 .btnViolet {
     background-color: #95509B;
     color: #F1F1F1;
+    transition: all 0.2s ease;
 }
 
 .btnViolet:hover {
@@ -128,9 +155,12 @@ h3 {
     outline: none;
 }
 
+
 /* Inputs de lieux et la barre de recherche */
 
-input {
+input:not([type="submit"]),
+textarea {
+    /* pour éviter qu'il fasse nawak avec les input submit - autrement il impossible de centrer correctement */
     background-color: #F1F1F1;
     border-radius: 20px 20px 20px 20px;
     border: 4px solid RGBA(255, 255, 255, 0.5);
@@ -145,32 +175,213 @@ input:focus-visible {
     border: 0;
 }
 
-input:hover, input:active, input:focus {
+input:hover,
+input:active,
+input:focus {
     border: 4px solid RGBA(112, 112, 112, 0.5);
 }
 
+textarea:hover,
+textarea:active,
+textarea:focus {
+    border: 4px solid RGBA(112, 112, 112, 0.5);
+}
+
+
 /* Pour les biographies */
 
-textarea:focus, input:focus {
+textarea:focus,
+input:focus {
     outline: none;
 }
 
-textarea {
-    border: none;
-    outline: none;
-}
 
 /* Input champs formulaire */
 
-.champFormulaire { /* Quand il est vide */
+.champFormulaire {
+    /* Quand il est vide */
     height: 48px;
     width: 327px;
     border-radius: 25px 25px 25px 25px;
 }
 
-.champFormulaireErreur { /* Quand il y a une erreur */
+.champFormulaireErreur {
+    /* Quand il y a une erreur */
     height: 48px;
     width: 327px;
     border-radius: 25px 25px 25px 25px;
     border: 4px solid #FAC815;
 }
+
+
+/* Menu à gauche qui apparait et disparait */
+
+.menuPermanent {
+    position: absolute;
+    top: 600px;
+    left: 0;
+}
+
+.menuPermanent>ul {
+    height: 67px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    list-style: none;
+    position: fixed;
+}
+
+.menuPermanent>ul>li {
+    font-family: 'coco';
+    width: 151px;
+    margin: auto;
+}
+
+.menuPermanent>ul>li>div>a {
+    color: #707070;
+    margin: auto;
+    transition: all 0.4s ease-in-out;
+    text-align: center;
+}
+
+.passeDevant>li:nth-last-child(2)>div {
+    /* cible l'avant dernier element */
+    border-radius: 0px 5px 5px 0px;
+}
+
+.passeDevant {
+    z-index: 150;
+}
+
+#iconPlus {
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 100;
+    top: 20px;
+    left: 20px;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    font-size: 40px;
+}
+
+#iconPlus>div {
+    width: 30px;
+    margin-bottom: 8px;
+    position: absolute;
+    top: 22px;
+    /*   transition: 0.3s ease all; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.vertical {
+    background-color: #F1F1F1;
+    width: 5px;
+    height: 20px;
+}
+
+.horizontal {
+    background-color: #F1F1F1;
+    width: 20px;
+    height: 5px;
+    top: 8px;
+    position: absolute;
+}
+
+.hidden {
+   width: 0;
+}
+
+.menuPermanent>ul>li.collapse {
+    left: -300px;
+    width: 0;
+
+
+}
+
+.navBlanc {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+
+/* li>.navBlanc>div {
+    color: #9B9B9B;
+} */
+
+.navJaune,
+.navBleu,
+.navViolet {
+    background-color: #F1F1F1;
+    height: 67px;
+    width: 100%;
+    transition: all 0.4s ease-in-out;
+
+}
+
+.blocNav:hover .navJaune {
+    background-color: #FAC815;
+    
+}
+
+.blocNav:hover .navJaune a.nav-link {
+    color: #282828;
+}
+
+.blocNav:hover .navBleu {
+    background-color: #3F50A7;
+}
+
+.blocNav:hover .navViolet {
+    background-color: #95509B;
+}
+
+.blocNav:hover .navBleu a.nav-link,
+.blocNav:hover .navViolet a.nav-link {
+    color: #F1F1F1;
+}
+
+
+/*********************** Menu non connecté */
+#menuAccueil>ul>li>a {
+    color: #F1F1F1;
+    font-family: "coco";
+    font-size: 1rem;
+}
+
+a.nav-link {
+    opacity: 0.8;
+    transition: all 0.4s ease-in;
+}
+
+a.nav-link:hover{
+    opacity: 1;
+}
+
+.navbar {
+    margin-right: 30px;
+}
+
+.animationCroixFun{ /* TODO ou alors l'animation pourrait se faire au hover*/
+    position: relative;
+    /*  animation-name: petitEffetFun;
+     animation-duration: 10s;
+     animation-delay: 1s;
+     animation-iteration-count: infinite;
+     animation-direction: alternate; */
+     animation: animationCroixFun 2s ease-in-out 1s 2 alternate;/* 5 fois max pour éviter la perte de concentration des personnes avec trouble de l'attention */
+ }
+
+ @keyframes animationCroixFun {
+     0% {transform: rotate(0deg); left: 10px;}
+     50%{transform: rotate(-360deg); left: 10px;}
+     100% {transform: rotate(0deg); left: 10px;}
+
+ }
+ 
+
+
+
+

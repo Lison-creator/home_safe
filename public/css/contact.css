@@ -1,0 +1,170 @@
+.flex-menu-contact, .flex-menu-faq {
+    display: flex;
+    background-color: #282828;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.blocComplet {
+    padding-top: 30px;
+}
+
+
+h2.coco {
+    text-align: center;
+    margin: auto;
+    font-family: 'coco';
+}
+
+.informations p {
+    font-size: 23px;
+}
+
+.informations {
+    margin: auto;
+}
+
+.informations svg {
+    margin-right: 30px;
+}
+
+
+/* Ecartement des infos de contact (à gauche) */
+
+div.align-self-center {
+    padding: 30px;
+}
+
+div .texteContact {
+    padding: 30px;
+    font-size: 20px;
+    text-shadow: rgb(0, 0, 0) 1px 0 10px;
+}
+
+.formulaireContact {
+    border: 2px solid #282828;
+    border-radius: 10px;
+    background-color: #282828;
+    width: 80%;
+    box-shadow: 2px 3px 5px RGBA(19, 19, 19, 1);
+    /* TODO vérifier si l'ombre est identique chez nous toutes */
+    margin: auto;
+    width: 600px;
+}
+
+
+/* Le padding-top et bottom du formulaire */
+
+form.padding {
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+
+/* Couleur des labels dans le formulaire */
+
+form>label {
+    color: #FAC815;
+    font-weight: bold;
+    padding: 10px;
+}
+
+
+/* Padding du logo "Home Safe" dans le menu contact */
+
+p.logoMenuContact, p.logoMenuFaq {
+    padding-left: 30px;
+}
+
+
+/* Css du champ "Votre question concerne:" */
+
+select {
+    background-color: #F1F1F1;
+    border-radius: 20px 20px 20px 20px;
+    border: 4px solid RGBA(255, 255, 255, 0.5);
+    padding: 3px;
+    font-family: 'ubuntuLight';
+    color: #3F50A7;
+    padding: 5px 5px 5px 15px;
+    font-size: 0.85rem;
+}
+
+.champFormulaire {
+    width: 90%;
+}
+
+select.champFormulaire:focus-visible {
+    border: 0;
+}
+
+select.champFormulaire:hover,
+select.champFormulaire:active,
+select.champFormulaire:focus {
+    border: 4px solid RGBA(112, 112, 112, 0.5);
+}
+
+
+/* Input de la question de l'utilisateur.ice */
+
+#messageContact {
+    height: 100px;
+}
+
+
+/* Pièce jointe */
+
+input[type="file"] {
+    background-color: #282828;
+    border-radius: revert;
+    border-style: dashed;
+    cursor: pointer;
+}
+
+input[type="file"]:hover {
+    background-color: #282828;
+    border-radius: revert;
+}
+
+input[type="submit"] {
+    margin: auto;
+    display: block;
+    width: 155px;
+    margin-top: 20px;
+}
+
+.pieceJointe {
+    box-sizing: border-box;
+    border-color: #9B9B9B;
+    margin: auto;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.pieceJointe label {
+    padding: 10px;
+}
+
+.centrage {
+    margin: auto;
+}
+
+
+/* Le responsive */
+
+@media(max-width:992px) {
+    div.blocComplet {
+        display: block;
+    }
+    div.formulaire {
+        margin: auto;
+    }
+    div.align-self-center,
+    div.texteContact {
+        padding: 10px;
+    }
+    div.informations {
+        padding-bottom: 30px;
+    }
+}

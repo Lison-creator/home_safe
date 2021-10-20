@@ -1,12 +1,10 @@
 <?php 
     session_start();
     ob_start();
-
-    include("view/html/head.php");
-
-    include("controller/menuController.php");
-
+    if(isset($_SESSION)){
+   /*      var_dump($_SESSION); */
+    }
+    
     include("controller/router.php");
 
-    include("view/html/footer.php");
 ?>
