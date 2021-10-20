@@ -35,7 +35,7 @@
     margin: 10px;
 }
 
-.containerFAQ aside .blocCategories:hover, .selected {
+.containerFAQ aside .blocCategories:hover {
     background-color: rgba(149, 80, 155, 1);
     color: rgba(241, 241, 241, 1);
 }
@@ -68,8 +68,12 @@
     border-left: 3px solid rgba(250, 200, 21, 1);
 }
 
+.containerFAQ section article .flecheMonte svg {
+    transform: rotate(180deg);
+}
+
 /* Sections cachées */
 
-.containerFAQ .hidden {
+.cache {
     display: none;
 }
