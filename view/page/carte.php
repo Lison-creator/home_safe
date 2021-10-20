@@ -141,7 +141,7 @@
                                 </svg>
                                 Dark Mode
                             </a>
-                            <a href="#">
+                            <a href="?section=deconnexion" class="nav-link" id="deconnexion">
                                 <!-- Icone se déconnecter-->
 
                                 <svg xmlns="http://www.w3.org/2000/svg" width="12.954" height="14.829" viewBox="0 0 12.954 14.829">
