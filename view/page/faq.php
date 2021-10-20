@@ -24,7 +24,7 @@
     <div class="row align-items-center">
         <aside class="col-2 d-flex offset-1">
             <!-- Blocs cliquables avec les categories de questions, qui font apparaitre/disparaitre le texte à droite -->
-            <div class="blocCategories">Fonctionnement en général</div>
+            <div class="blocCategories selected">Fonctionnement en général</div>
             <div class="blocCategories">Questions sur "Mon profil"</div>
             <div class="blocCategories">Questions sur "Ma communauté"</div>
             <div class="blocCategories">Questions sur les bars safe<br>dans Bruxelles</div>
@@ -38,7 +38,7 @@
                 <div class="flecheDescend"><svg width="24" height="24" viewBox="0 0 24 24">
                         <path d="M10.59,0,6,4.574,1.41,0,0,1.408,6,7.4l6-5.992Z" fill="#fac815" />
                     </svg></div>
-                <div class="reponse">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</div>
+                <div class="reponse hidden">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</div>
             </article>
             <article>
                 <div class="titreQuestion">Comment l'application/le site web fonctionne ?</div>
