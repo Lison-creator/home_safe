@@ -89,7 +89,24 @@ function montrerMdp(id, element) {
     }
   } 
 
+ 
 
   /* ------------------------------------------------------------------- */
   // Animation utilisation jQuery pour slide page association
   //https://demos.jquerymobile.com/1.4.5/transitions/
+
+
+  const desactivation = document.querySelectorAll('animationCroixFun');
+  console.log(desactivation);
+
+  function toggleDesactivation(element, classeEnQuestion) {
+
+       if (element.className) {
+            element.remove(classeEnQuestion);
+        }
+    }
+
+  //ici j'exécute le code 
+desactivation.addEventListener('click', function(){
+    toggleDesactivation();
+});
