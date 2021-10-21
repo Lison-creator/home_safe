@@ -66,7 +66,7 @@
 
                 ":pseudo" => $pseudo,
                 ":email" => $email,
-                ":mdp" => $mdp
+                ":mdp" => password_hash($mdp, PASSWORD_DEFAULT)
             );
             $this->execute($requete, $params);
 
@@ -117,40 +117,69 @@
                 ADD CONSTRAINT UQ_utilisateurs_email
                 UNIQUE (email) */
 
-                if ($this->execute($requete, $params) != null) {
-                    $data = $this->execute($requete, $params);
-                    // var_dump($data);
 
-                    if (sizeof($data) != 1) {
-                        return null;
-                    }
+                $data = $this->execute($requete, $params);
+                // var_dump($data);
 
-                    $userData = $data[0];
-                    /* var_dump($userData); */
 
-                    /* TODO hasher le mdp et enlever le premier ou */
-                    if ($mdp == $userData["mdp"] || password_verify($mdp, $userData['mdp'])) {
-                        // var_dump('Utilisateur is ok');
-                        $arrayData = array(
-                            "id" => $userData["id"],
-                            "email" => $userData["email"],
-                            "pseudo" => $userData["pseudo"]
-                        );
-                        return $arrayData;
-                    } else {
-                        // le mot de passe n'est pas valide
-                        return null;
-                    }
+                if ($data == null || sizeof($data) != 1) {
+                    return null;
+                }
+
+                $userData = $data[0];
+                /* var_dump($userData); */
+
+                $hashed_mdp = password_hash($mdp, PASSWORD_DEFAULT);
+                /* var_dump($hashed_mdp); */
+
+                if (password_verify($mdp, $hashed_mdp)) {
+                    // var_dump('Utilisateur is ok');
+                    $arrayData = array(
+                        "id" => $userData["id"],
+                        "email" => $userData["email"],
+                        "pseudo" => $userData["pseudo"]
+                    );
+                    return $arrayData;
                 } else {
-                    // l'utilisateur n'existe pas
+                    // le mot de passe n'est pas valide
                     return null;
                 }
             } catch (PDOException $e) {
-                return false;
+                return null;
             }
         }
-    }
 
+
+        // ============ INSCRIPTION=========
+        // retourne si le compte n'existe pas
+
+        public function checkAccountNotExist($pseudo, $email)
+        {
+            try {
+                $requete = "SELECT * FROM utilisateurs WHERE email = :email AND pseudo = :pseudo";
+                $params = array(
+                    ":email" => $email,
+                    ":pseudo" => $pseudo,
+                );
+
+                $data = $this->execute($requete, $params);
+
+
+                if ($data != null && sizeof($data) == 1) {
+                    var_dump("le compte existe");
+                    return false;
+                }
+                return true;
+            } catch (PDOException $e) {
+               var_dump($e);
+                return true;
+            }
+        }
+    
+    
+
+
+    /* Accolade globale: NE PAS SUPPRIMER => */ }
 
 
 
