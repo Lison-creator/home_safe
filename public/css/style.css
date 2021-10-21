@@ -30,21 +30,15 @@
     src: url('../fonts/cocogoose/Cocogoose\ Pro-trial.ttf');
 }
 
-
 /* ---------------------------- */
-
 
 /* Responsive  */
 
-
 /* Question Loïc: est-ce qu'on doit préparer des média querys alors qu'on travaille partiellement en Bootstrap ? */
-
 
 /* @media (min-width:991px) {} */
 
-
 /* ---------------------------- */
-
 
 /* Body */
 
@@ -59,7 +53,7 @@ body {
     /* height: 100vh;
    /* width: 100vw; */
     overflow-x: hidden;
-    overflow-y: hidden; 
+    overflow-y: hidden;
 }
 
 html {
@@ -73,7 +67,6 @@ html {
 a {
     text-decoration: none;
 }
-
 
 /* Textes */
 
@@ -96,18 +89,13 @@ h3 {
     padding: 0;
 }
 
-
 /* Boutons */
-
 
 /* Utiliser la balise <button> */
 
-
 /*NOTE: si la taille du bouton doit être changer (width/height), rajouter une autre class mais ne pas modifier cette classe-ci*/
 
-.btnViolet,
-.btnJaune,
-.btnBleu {
+.btnViolet, .btnJaune, .btnBleu {
     /* ombre interne & ombre externe */
     box-shadow: 0px 3px 6px RGBA(0, 0, 0, 0.2) inset, 2px 3px 5px RGBA(19, 19, 19, 0.5);
     font-family: 'coco';
@@ -137,7 +125,6 @@ h3 {
     transition: all 0.2s ease;
 }
 
-
 /* //TODO  Un hover sur le bouton alerte */
 
 */ .btnAlerte {
@@ -157,17 +144,13 @@ h3 {
     border: 4px solid #A27E00;
 }
 
-.btnJaune:focus,
-.btnBleu:focus,
-.btnViolet:focus {
+.btnJaune:focus, .btnBleu:focus, .btnViolet:focus {
     outline: none;
 }
 
-
 /* Inputs de lieux et la barre de recherche */
 
-input:not([type="submit"]),
-textarea {
+input:not([type="submit"]), textarea {
     /* pour éviter qu'il fasse nawak avec les input submit - autrement il impossible de centrer correctement */
     background-color: #F1F1F1;
     border-radius: 20px 20px 20px 20px;
@@ -183,26 +166,19 @@ input:focus-visible {
     border: 0;
 }
 
-input:hover,
-input:active,
-input:focus {
+input:hover, input:active, input:focus {
     border: 4px solid RGBA(112, 112, 112, 0.5);
 }
 
-textarea:hover,
-textarea:active,
-textarea:focus {
+textarea:hover, textarea:active, textarea:focus {
     border: 4px solid RGBA(112, 112, 112, 0.5);
 }
-
 
 /* Pour les biographies */
 
-textarea:focus,
-input:focus {
+textarea:focus, input:focus {
     outline: none;
 }
-
 
 /* Input champs formulaire */
 
@@ -220,7 +196,6 @@ input:focus {
     border-radius: 25px 25px 25px 25px;
     border: 4px solid #FAC815;
 }
-
 
 /* Menu à gauche qui apparait et disparait */
 
@@ -300,40 +275,38 @@ input:focus {
 }
 
 .hidden {
-   width: 0px;
+    width: 0px;
 }
 
 .menuPermanent>ul>li.collapse-menu {
-   left: -300px;
-   width: 0;
-   color: white;
+    left: -300px;
+    width: 0;
+    color: white;
 }
 
 .menuPermanent>ul>li.collapse-menu>div>a {
-    color: #F1F1F1; 
- }
+    color: #F1F1F1;
+}
 
 .menuPermanent>ul>li {
-   transition: all 0.8s ease-in-out;
-   overflow-x: hidden;
+    transition: all 0.8s ease-in-out;
+    overflow-x: hidden;
 }
+
 .menuPermanent>ul>li a {
     transition: color 0.8s linear 50ms;
     white-space: nowrap
- }
+}
 
 .navBlanc {
     background-color: rgba(255, 255, 255, 0.3);
 }
 
-
 /* li>.navBlanc>div {
     color: #9B9B9B;
 } */
 
-.navJaune,
-.navBleu,
-.navViolet {
+.navJaune, .navBleu, .navViolet {
     background-color: #F1F1F1;
     height: 67px;
     width: 100%;
@@ -356,13 +329,12 @@ input:focus {
     background-color: #95509B;
 }
 
-.blocNav:hover .navBleu a.nav-link,
-.blocNav:hover .navViolet a.nav-link {
+.blocNav:hover .navBleu a.nav-link, .blocNav:hover .navViolet a.nav-link {
     color: #F1F1F1;
 }
 
-
 /*********************** Menu non connecté */
+
 #menuAccueil>ul>li>a {
     color: #F1F1F1;
     font-family: "coco";
@@ -374,7 +346,7 @@ a.nav-link {
     transition: all 0.4s ease-in;
 }
 
-a.nav-link:hover{
+a.nav-link:hover {
     opacity: 1;
 }
 
@@ -382,24 +354,50 @@ a.nav-link:hover{
     margin-right: 30px;
 }
 
-.animationCroixFun{ /* TODO ou alors l'animation pourrait se faire au hover*/
+.animationCroixFun {
+    /* TODO ou alors l'animation pourrait se faire au hover*/
     position: relative;
     /*  animation-name: petitEffetFun;
      animation-duration: 10s;
      animation-delay: 1s;
      animation-iteration-count: infinite;
      animation-direction: alternate; */
-     animation: animationCroixFun 2s ease-in-out 1s 2 alternate;/* 5 fois max pour éviter la perte de concentration des personnes avec trouble de l'attention */
- }
+    animation: animationCroixFun 2s ease-in-out 1s 2 alternate;
+    /* 5 fois max pour éviter la perte de concentration des personnes avec trouble de l'attention */
+}
 
- @keyframes animationCroixFun {
-     0% {transform: rotate(0deg); left: 10px;}
-     50%{transform: rotate(-360deg); left: 10px;}
-     100% {transform: rotate(0deg); left: 10px;}
+@keyframes animationCroixFun {
+    0% {
+        transform: rotate(0deg);
+        left: 10px;
+    }
+    50% {
+        transform: rotate(-360deg);
+        left: 10px;
+    }
+    100% {
+        transform: rotate(0deg);
+        left: 10px;
+    }
+}
 
- }
- 
+@media (min-width:0px) and (max-width:576px) {
+    body {
+        background-image: none;
+        overflow-x: hiddispalyen;
+    }
 
-
-
-
+    h1 {
+        font-size: 25px;
+        font-family: 'coco';
+    }
+    h2 {
+        font-size: 15px;
+        font-family: 'ubuntu';
+    }
+    h3 {
+        font-size: 13px;
+        font-family: 'ubuntuBold';
+    }
+    
+}

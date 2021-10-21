@@ -29,3 +29,53 @@ button.btnAccueil.btnJaune>a{
     margin-top: 50px;
     margin-bottom: 70px;
 }
+
+@media (min-width:0px) and (max-width:576px)
+{
+    section.accueilResponsive{
+        margin: 0;
+        padding: 0;
+    }
+
+    .logo>svg {
+        width: 60px;
+    }
+
+    div.logo {
+        display: flex;
+        justify-content: end;
+        margin-bottom: 0px;
+        margin-right: 50px;
+    }
+
+    .titreAccueil{
+        background-image: url(../images/vectorised_Map_background_SMScreen.jpg);
+        background-size: cover;
+        margin-right: -35px;
+        height: 332px;
+    }
+    .titreAccueil > h1 {
+        margin-bottom: 25px;
+    }
+
+    .titreAccueil > h3 {
+        margin-top: 30px;
+        margin-bottom: 70px;
+    }
+
+    .divBtnResponsiveAccueil{
+        flex-direction: column;
+        align-content: space-around;
+        align-items: center;
+    }
+
+    .btnAccueil{
+        width: 321px;
+        height: 45px;
+        border-radius: 25px;
+    }
+
+    .btnAccueil a {
+        font-size: 13px;
+    }
+}
