@@ -76,8 +76,6 @@
 
         </a>
         <aside id="aside">
-            <!--  //TODO Faire flotter les 3 petits icones correctement -->
-
             <!-- Englobe les 3 div sous-menu aside; reste TOUJOURS quelque soit la rubrique -->
             <div class="petiteBarreDuHaut d-flex">
 
@@ -100,7 +98,7 @@
                         </g>
                     </svg>
                 </div>
-                <!-- Contenu du menu déroulant au hover (dropdown) -->
+                <!-- Contenu du menu déroulant au hover (dropdown) --> <!-- //TODO Fix le hover lien bleu pour "se déconnecter" -->
                 <div class="dropdown">
                     <!-- Petite flêche vers le bas pour les options de compte -->
                     <button class="btnDropdown">
@@ -217,7 +215,7 @@
             <div id="nouveautes">
                 <h2 class="violet">Nouveautés</h2>
                 <h3 class="violet">Quoi de neuf à Bruxelles ?</h3>
-                
+
                 <div id="nouveautesContent">
                     <h4 class="pt-3 pb-2 bleu">Nouveaux lieux favoris de vos ami.e.s !</h4>
                     <!-- Lieu ami (Goupil Le fol: texte + image) -->
@@ -279,5 +277,3 @@
         <!-- La carte -->
         <!--  <div id="carteId"></div> -->
     </div>
-
-    <!--     //TODO Une fonction js pour cacher le panneau de droite et afficher différents panneau selon la rubrique cliquée ( Communauté, favoris) -->
