@@ -22,7 +22,6 @@ if (isset($_POST)){
         $mdp = $_POST["mdp"];
 
        
-
         // vérifie le pseudo et qu'il ne contient pas que des espace
         /*     var_dump("hors de la boucle :("); */
 
@@ -45,7 +44,7 @@ if (isset($_POST)){
                 $_SESSION["pseudo"] = $user["pseudo"];
                 
                 // incrémente la variable de session
-                $_SESSION["count"] =  $_SESSION["count"]+1;
+                $_SESSION["count"] = 0;
                 
                 /*  $_SESSION["user"] = $user; */
                 var_dump($_SESSION);
