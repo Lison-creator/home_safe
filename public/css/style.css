@@ -314,11 +314,11 @@ input:focus {
  }
 
 .menuPermanent>ul>li {
-   transition: width 1s ease-in-out;
+   transition: all 0.8s ease-in-out;
    overflow-x: hidden;
 }
 .menuPermanent>ul>li a {
-    transition: color 1s linear 50ms;
+    transition: color 0.8s linear 50ms;
     white-space: nowrap
  }
 
