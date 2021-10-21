@@ -1,35 +1,24 @@
-h2 {
+h2,
+h3 {
     text-align: center;
 }
 
-.panneau {
-    background-color: rgb(255, 255, 255);
-    width: 350px;
-    height: 100vh;
-    z-index: 1;
-    position: absolute;
-    top: 0;
-    right: 0px;
-    transition: 0.3s;
-    transition-timing-function: ease;
+h4 {
+    text-align: left;
+    font-size: 1em;
 }
 
-.displayNone {
-    width: 0;
-    transition: 0.3s;
-    transition-timing-function: ease;
+h2.nom {
+    padding-bottom: 10px;
+}
+
+img {
+    width: 100%;
+    border-radius: 5px;
 }
 
 
-/* Petite flèche qui fait disparaitre le panneau de droite */
-
-.btnToggle {
-    position: absolute;
-    top: 0px;
-    left: -38px;
-    z-index: 10;
-    width: 60px;
-}
+/* Le logo "Home Safe" */
 
 .logoCarte {
     padding-left: 60px;
@@ -44,15 +33,15 @@ h2 {
 } */
 
 
-/* Le sous-menu (Nouveautés, Communauté, Favoris) */
+/* Le menu (Nouveautés, Communauté, Favoris) */
 
-.sousMenuGroupe {
+.MenuGroupe {
     position: absolute;
     top: 0;
     right: 436px;
 }
 
-.sousMenuCarte {
+.MenuCarte {
     background-color: rgb(255, 255, 255);
     width: 186px;
     text-align: center;
@@ -62,7 +51,7 @@ h2 {
     padding-top: 15px;
 }
 
-.sousMenuCarte:hover {
+.MenuCarte:hover {
     background-color: #F1F1F1;
     cursor: pointer;
 }
@@ -79,21 +68,146 @@ h2 {
     color: #3F50A7;
 }
 
+.rouge {
+    color: #BF293E;
+}
+
+.bgViolet {
+    background-color: #95509B;
+}
+
+.bgJaune {
+    background-color: #FAC815;
+}
+
+.bgBleu {
+    background-color: #3F50A7;
+}
+
 #aside {
-    padding-right: 0;
-    color: grey;
+    color: #707070;
+}
+
+#aside {
+    overflow-x: hidden;
+    padding: 0;
+}
+
+#aside>* {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.panneau {
+    background-color: rgb(255, 255, 255);
+    width: 350px;
+    height: 100vh;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    right: 0px;
+    transition: 0.3s;
+    transition-timing-function: ease;
+    /* Pour que le bloc soit bien calé sur la fenêtre de l'écran */
+    right: 12px;
+}
+
+.displayNone {
+    width: 0;
+    transition: width 0.3s;
+    transition-timing-function: ease;
 }
 
 
-/* Petite barre du haut dans l'aside à droite */
+/* Petite flèche qui fait disparaitre le panneau de droite */
+
+.btnToggle {
+    position: absolute;
+    top: 0px;
+    left: -38px;
+    z-index: 10;
+    width: 60px;
+}
+
+
+/*---------- Petite barre du haut dans l'aside à droite (sous-menu permanent)-----------*/
 
 .petiteBarreDuHaut {
     padding-top: 15px;
     padding-bottom: 30px;
 }
 
+.miniPhotoProfil {
+    cursor: pointer;
+}
 
-/* Input "rechercher" */
+
+/* Le sous-menu déroulant */
+
+.btnDropdown {
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+}
+
+.btnDropdown:hover {
+    background-color: #FAC815;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.contenuDropdown {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.contenuDropdown a {
+    color: #95509B;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-radius: 5px;
+}
+
+.contenuDropdown a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .contenuDropdown {
+    display: block;
+    border-radius: 5px;
+}
+
+
+/* Le hover sur la mini photo de profil dans l'aside */
+
+
+/* //TODO : un hover plus joli sur le svg de la photo  */
+
+
+/* .miniPhotoProfil:hover {
+    box-shadow: 2px 2px black;
+} */
+
+
+/* Au chargement de la page, ces rubriques n'aparaissent pas. Elles sont accessibles au clic-bouton */
+
+#nouveautes,
+#communaute,
+#favoris {
+    display: none;
+}
+
+
+/* Input "rechercher" (pour panneau "Profil" et "Communauté") */
 
 .rechercher {
     padding-bottom: 10px;
@@ -106,12 +220,15 @@ input.inputRechercher {
 }
 
 
+/*--- Panneau "Profil"--- */
+
+
 /* Le fil d'actualité */
 
 .filActualite {
     overflow-y: scroll;
     overflow: auto;
-    height: 400px;
+    height: 500px;
     padding: 15px;
 }
 
@@ -126,52 +243,51 @@ input.inputRechercher {
 }
 
 
-/* pour enlever la petite marge à gauche sur le panneau de droite */
+/*--- Panneau "Nouveautés"--- */
 
-aside.row {
-    padding: 0;
+#nouveautes>h3 {
+    font-style: italic;
 }
 
+#nouveautes {
+    padding-left: 35px;
+}
 
-/* Le sous-menu déroulant dans le panneau de droite */
+#nouveautesContent {
+    overflow-y: scroll;
+    overflow: auto;
+    height: 720px;
+}
 
-.btnDropdown {
-    padding: 10px;
-    border-radius: 20px;
+.lieuAmi {
+    box-shadow: 0px 3px 6px RGBA(0, 0, 0, 0.2) inset, 2px 3px 5px RGBA(19, 19, 19, 0.5);
+    font-family: 'coco';
     border: none;
+    border-radius: 20px 20px 20px 20px;
+    background-color: #FAC815;
+    color: #282828;
 }
 
-.btnDropdown:hover {}
-
-.dropdown {
-    position: relative;
-    display: inline-block;
+.lieuAmi:hover {
+    background-color: #ffdf6b;
 }
 
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
+.lieuAmiTexte {
+    padding-top: 10px;
 }
 
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
+.lieuAmiTexte>p {
+    font-size: 1em;
 }
 
-.dropdown-content a:hover {
-    background-color: #ddd;
+.lieuAmiTexte>span {
+    color: #707070;
+    font-family: "ubuntu";
+    font-size: 0.8rem;
 }
 
-.dropdown:hover .dropdown-content {
-    display: block;
-}
 
-.dropdown:hover .dropbtn {
-    background-color: #3e8e41;
-}
+/*--- Panneau "Communauté"--- */
+
+
+/*--- Panneau "Favoris"--- */
