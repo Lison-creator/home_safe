@@ -63,7 +63,7 @@
         {
             $requete = "INSERT INTO utilisateurs (pseudo, email, mdp) VALUES ( :pseudo, :email, :mdp)"; /* On passe par des alias pour éviter les piratages de données */
             $params = array(
-              
+
                 ":pseudo" => $pseudo,
                 ":email" => $email,
                 ":mdp" => $mdp
@@ -86,53 +86,65 @@
         /*  Ajoute le zip code et la photo */
         public function addZipPhoto($id, $ad_cp)
         {
-            
-           /*  modifier les données */
+
+            /*  modifier les données */
             $requete = "UPDATE utilisateurs SET ad_cp=:ad_cp WHERE id = :id";
             $params = array(
                 ":id" => $id,
                 ":ad_cp" => $ad_cp
             );
-            $this->execute($requete, $params); 
+            $this->execute($requete, $params);
             /* L'index 0 permet de récupérer la ligne 0 du tableau */
         }
 
-// ============ CONNEXION =========
+        // ============ CONNEXION =========
         // retourne l'utilisateur si il existe
-        public function verify($pseudo, $email, $mdp) {
+        public function verify($pseudo, $email, $mdp)
+        {
             if (empty($pseudo) || empty($email) || empty($mdp)) {
-                return false;
+                return null;
             }
             try {
-                $requete = "SELECT * FROM utilisateurs WHERE email = :email";
+                $requete = "SELECT * FROM utilisateurs WHERE email = :email AND pseudo = :pseudo";
                 $params = array(
-                    ":email" => $email
+                    ":email" => $email,
+                    ":pseudo" => $pseudo,
+
                 );
 
-                if($this->execute($requete, $params)!= null){
-                    $data = $this->execute($requete, $params)[0];
+                //rajout d'une contrainte dans la structure SQL de notre DB
+                /*                 ALTER TABLE utilisateurs
+                ADD CONSTRAINT UQ_utilisateurs_email
+                UNIQUE (email) */
+
+                if ($this->execute($requete, $params) != null) {
+                    $data = $this->execute($requete, $params);
                     // var_dump($data);
-                   
-                    if(password_verify($mdp, $data['mdp'])) {
-                        // var_dump('Utilisateur is ok');
-                        $arrayData = array(
-                            "id" => $data["id"],
-                            "email" => $data["email"],
-                            "pseudo" => $data["pseudo"]
-                        );
-                        return $arrayData;
-                    }
-                    else {
-                        // le mot de passe n'est pas valide
-                        return false;
+
+                    if (sizeof($data) != 1) {
+                        return null;
                     }
 
-                }
-                else {
+                    $userData = $data[0];
+                    /* var_dump($userData); */
+
+                    /* TODO hasher le mdp et enlever le premier ou */
+                    if ($mdp == $userData["mdp"] || password_verify($mdp, $userData['mdp'])) {
+                        // var_dump('Utilisateur is ok');
+                        $arrayData = array(
+                            "id" => $userData["id"],
+                            "email" => $userData["email"],
+                            "pseudo" => $userData["pseudo"]
+                        );
+                        return $arrayData;
+                    } else {
+                        // le mot de passe n'est pas valide
+                        return null;
+                    }
+                } else {
                     // l'utilisateur n'existe pas
-                    return false;
+                    return null;
                 }
-            
             } catch (PDOException $e) {
                 return false;
             }
@@ -144,7 +156,7 @@
 
 
 
-        /*  supprime un thé
+    /*  supprime un thé
         public function deleteTea($id)
         {
             supprimer les données
@@ -162,6 +174,6 @@
                 $this->deleteTea($id);
             }
         }  */
-    
+
 
     ?>

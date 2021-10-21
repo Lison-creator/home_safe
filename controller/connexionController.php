@@ -29,11 +29,11 @@ if (isset($_POST["pseudo"], $_POST["email"], $_POST["mdp"])) {
             //vérifie que les connections (email, pseudo et mdp) existe déjà ou pas dans la db en passant par un tableau nommé $data
             $userComparaison = $connexionUtilisateur->verify(htmlspecialchars($_POST['pseudo']), htmlspecialchars($_POST['email']), htmlspecialchars($_POST['mdp']));
 
-            if ($userComparaison != false) {
+            if ($userComparaison != null) {
                 var_dump('function verify okay');
 
                 // enregistrer dans une variable de session
-                $_SESSION["pseudo"] = $userComparaisoner["pseudo"];
+                $_SESSION["pseudo"] = $userComparaison["pseudo"];
 
                 /*  $_SESSION["user"] = $user; */
                 var_dump($_SESSION["pseudo"]);
