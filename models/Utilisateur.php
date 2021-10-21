@@ -47,7 +47,6 @@
         // METHODES
 
         // récupérer tous les utilisateurs
-
         public function getAllUtilisateurs()
         {
             $requete = "SELECT * FROM utilisateurs";
@@ -57,14 +56,17 @@
         // ajoute un utilisateur : enregistrer un profil
         //TODO Ajouter le code pour les images https://beaussier.developpez.com/articles/php/mysql/blob/#LIII-B
 
+
+
+
         public function addUtilisateur($pseudo, $email, $mdp)
         {
             $requete = "INSERT INTO utilisateurs (pseudo, email, mdp) VALUES ( :pseudo, :email, :mdp)"; /* On passe par des alias pour éviter les piratages de données */
             $params = array(
-              
+
                 ":pseudo" => $pseudo,
                 ":email" => $email,
-                ":mdp" => $mdp
+                ":mdp" => password_hash($mdp, PASSWORD_DEFAULT)
             );
             $this->execute($requete, $params);
 
@@ -80,22 +82,110 @@
             }
         }
 
+
         /*  Ajoute le zip code et la photo */
         public function addZipPhoto($id, $ad_cp)
         {
-            
-           /*  modifier les données */
+
+            /*  modifier les données */
             $requete = "UPDATE utilisateurs SET ad_cp=:ad_cp WHERE id = :id";
             $params = array(
                 ":id" => $id,
                 ":ad_cp" => $ad_cp
             );
-            $this->execute($requete, $params); 
+            $this->execute($requete, $params);
             /* L'index 0 permet de récupérer la ligne 0 du tableau */
         }
 
+        // ============ CONNEXION =========
+        // retourne l'utilisateur si il existe
+        public function verify($pseudo, $email, $mdp)
+        {
+            if (empty($pseudo) || empty($email) || empty($mdp)) {
+                return null;
+            }
+            try {
+                $requete = "SELECT * FROM utilisateurs WHERE email = :email AND pseudo = :pseudo";
+                $params = array(
+                    ":email" => $email,
+                    ":pseudo" => $pseudo,
 
-        /*  supprime un thé
+                );
+
+                //rajout d'une contrainte dans la structure SQL de notre DB
+                /*                 ALTER TABLE utilisateurs
+                ADD CONSTRAINT UQ_utilisateurs_email
+                UNIQUE (email) */
+
+
+                $data = $this->execute($requete, $params);
+                // var_dump($data);
+
+
+                if ($data == null || sizeof($data) != 1) {
+                    return null;
+                }
+
+                $userData = $data[0];
+                /* var_dump($userData); */
+
+                $hashed_mdp = password_hash($mdp, PASSWORD_DEFAULT);
+                /* var_dump($hashed_mdp); */
+
+                if (password_verify($mdp, $hashed_mdp)) {
+                    // var_dump('Utilisateur is ok');
+                    $arrayData = array(
+                        "id" => $userData["id"],
+                        "email" => $userData["email"],
+                        "pseudo" => $userData["pseudo"]
+                    );
+                    return $arrayData;
+                } else {
+                    // le mot de passe n'est pas valide
+                    return null;
+                }
+            } catch (PDOException $e) {
+                return null;
+            }
+        }
+
+
+        // ============ INSCRIPTION=========
+        // retourne si le compte n'existe pas
+
+        public function checkAccountNotExist($pseudo, $email)
+        {
+            try {
+                $requete = "SELECT * FROM utilisateurs WHERE email = :email AND pseudo = :pseudo";
+                $params = array(
+                    ":email" => $email,
+                    ":pseudo" => $pseudo,
+                );
+
+                $data = $this->execute($requete, $params);
+
+
+                if ($data != null && sizeof($data) == 1) {
+                    var_dump("le compte existe");
+                    return false;
+                }
+                return true;
+            } catch (PDOException $e) {
+               var_dump($e);
+                return true;
+            }
+        }
+    
+    
+
+
+    /* Accolade globale: NE PAS SUPPRIMER => */ }
+
+
+
+
+
+    /*  supprime un thé
         public function deleteTea($id)
         {
             supprimer les données
@@ -113,6 +203,6 @@
                 $this->deleteTea($id);
             }
         }  */
-    }
+
 
     ?>
