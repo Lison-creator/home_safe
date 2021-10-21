@@ -42,8 +42,9 @@
 .containerAssociation {
     position: relative;
     top: 100px;
-    overflow-x: hidden;
-    overflow-y: hidden;
+   /*  //TODO enlever l'annotation*/
+    /* overflow-x: hidden;
+    overflow-y: hidden; */
     width: 100vw;
     height: 65vh;
 }

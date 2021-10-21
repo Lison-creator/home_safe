@@ -47,7 +47,6 @@
         // METHODES
 
         // récupérer tous les utilisateurs
-
         public function getAllUtilisateurs()
         {
             $requete = "SELECT * FROM utilisateurs";
@@ -56,6 +55,9 @@
 
         // ajoute un utilisateur : enregistrer un profil
         //TODO Ajouter le code pour les images https://beaussier.developpez.com/articles/php/mysql/blob/#LIII-B
+
+
+
 
         public function addUtilisateur($pseudo, $email, $mdp)
         {
@@ -80,6 +82,7 @@
             }
         }
 
+
         /*  Ajoute le zip code et la photo */
         public function addZipPhoto($id, $ad_cp)
         {
@@ -93,6 +96,52 @@
             $this->execute($requete, $params); 
             /* L'index 0 permet de récupérer la ligne 0 du tableau */
         }
+
+// ============ CONNEXION =========
+        // retourne l'utilisateur si il existe
+        public function verify($pseudo, $email, $mdp) {
+            if (empty($pseudo) || empty($email) || empty($mdp)) {
+                return false;
+            }
+            try {
+                $requete = "SELECT * FROM utilisateurs WHERE email = :email";
+                $params = array(
+                    ":email" => $email
+                );
+
+                if($this->execute($requete, $params)!= null){
+                    $data = $this->execute($requete, $params)[0];
+                    // var_dump($data);
+                   
+                    if(password_verify($mdp, $data['mdp'])) {
+                        // var_dump('Utilisateur is ok');
+                        $arrayData = array(
+                            "id" => $data["id"],
+                            "email" => $data["email"],
+                            "pseudo" => $data["pseudo"]
+                        );
+                        return $arrayData;
+                    }
+                    else {
+                        // le mot de passe n'est pas valide
+                        return false;
+                    }
+
+                }
+                else {
+                    // l'utilisateur n'existe pas
+                    return false;
+                }
+            
+            } catch (PDOException $e) {
+                return false;
+            }
+        }
+    }
+
+
+
+
 
 
         /*  supprime un thé
@@ -113,6 +162,6 @@
                 $this->deleteTea($id);
             }
         }  */
-    }
+    
 
     ?>
