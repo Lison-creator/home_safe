@@ -1,0 +1,98 @@
+
+@media (min-width:0px) and (max-width:576px)
+{
+    section.accueilResponsive{
+        margin: 0;
+        padding: 0;
+    }
+
+    .logo>svg {
+        width: 60px;
+    }
+
+    div.logo {
+        display: flex;
+        justify-content: end;
+        margin-bottom: 0px;
+        margin-right: 50px;
+    }
+
+    .titreAccueil{
+        background-image: url(../images/vectorised_Map_background_SMScreen.jpg);
+        background-size: cover;
+        margin-right: -35px;
+        height: 400px;
+    }
+    .titreAccueil > h1 {
+        margin-bottom: 25px;
+    }
+
+    .titreAccueil > h3 {
+        margin-top: 30px;
+    }
+
+    div.petiteFlecheResponsive{
+        visibility: visible;
+        left: 45vw;
+        top: 330px;
+        animation: flecheVersLeBas 2s ease-in-out infinite alternate;
+    }
+
+    @keyframes flecheVersLeBas{
+        0%{left:45vw; top:330px;}
+        50%{left:45vw; top:340px;}
+        100%{left:45vw; top:330px;}
+    }
+
+    .divBtnResponsiveAccueil{
+        margin-top: 95px;
+        margin-left: 32px;
+        flex-direction: column;
+        align-content: space-around;
+        align-items: center;
+    }
+
+    .btnAccueil{
+        width: 321px;
+        height: 65px;
+        border-radius: 35px;
+    }
+
+    .btnAccueil a {
+        font-size: 14px;
+    }
+
+    /* Menu inscription et connection css spécial pour cette page  */
+
+    nav.navbar.navbar-expand-lg.z-index-2{
+        position: absolute;
+        flex-wrap: nowrap;
+        top: 850px;
+        
+    }
+
+    .menuResponsiveAccueil{
+        flex-direction: row;
+        display: flex;
+    }
+
+
+    .menuResponsiveAccueil li.nav-item{
+        margin: 10px;
+        border: 1px solid #3F50A7;
+        background-color: #3F50A7;
+        border-radius: 35px;
+        padding: 10px;
+        width: 240px;
+    }
+    
+    .menuResponsiveAccueil li.nav-item.margeResponsive{
+        margin-left: 35px;
+    }
+
+
+     /* Menu permanent css spécial pour cette page ou alors commun à toutes ?? TODO */
+
+
+
+}

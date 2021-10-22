@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="public/css/accueilResponsive.css"> <!-- placer ici pour que le css responsive prenne effet uniquement sur cette page - bouton inscription et connection devrait être différent -->
+
 <section class="container container-sm accueilResponsive">
   <div class="titreAccueil mb-sm-5">
     <div class="logo">
@@ -17,11 +19,17 @@
     <h2>Les rues te semblent peu sécures à Bruxelles ?<br>
       Avec Home Safe, ton chemin va s'éclairer !</h2>
     <h3>Que souhaites-tu faire ?</h3>
+    <div class="petiteFlecheResponsive">
+      <svg id="icon_navigation_expand_more_24px" data-name="icon/navigation/expand_more_24px" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24">
+        <rect id="Boundary" width="24" height="24" fill="none" />
+        <path id="_Color" data-name=" ↳Color" d="M10.59,0,6,4.574,1.41,0,0,1.408,6,7.4l6-5.992Z" transform="translate(6 8.6)" fill="#fac815" />
+      </svg>
+    </div>
 
     <!-- Trois boutons: "partager", "chercher un trajet", "rejoindre une communauté" -->
     <!-- + menu déroulant en bas à gauche -->
   </div>
-  <div class="d-flex justify-content-lg-between divBtnResponsiveAccueil offset-sm-1">
+  <div class="d-flex justify-content-lg-between divBtnResponsiveAccueil">
     <!-- Boutons En flex -->
     <div class="mb-sm-5">
       <button class=" btnAccueil btnViolet"><a href="?section=carte">Partager avec ma communauté</a></button> <!-- TODO rajouter les liens -->

@@ -385,6 +385,8 @@ a.nav-link:hover {
     body {
         background-image: none;
         overflow-x: visible;
+        overflow-y: hidden;
+        max-width: 100vh; /* pour que cela puisse bien correspondre à la taille de la largeur de l'écran */
     }
 
     h1 {
