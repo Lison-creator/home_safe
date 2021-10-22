@@ -7,6 +7,8 @@
 <!-- La carte interactive -->
 <!-- Le logo -->
 
+
+
 <!-- logo en haut à gauche -->
 <div class="logoCarte">
     <a href="?section=accueil">
@@ -75,8 +77,8 @@
             </svg>
 
         </a>
-        <aside id="aside">
 
+        <aside id="aside">
 
             <!-- Englobe les 3 div sous-menu aside; reste TOUJOURS quelque soit la rubrique -->
             <div class="petiteBarreDuHaut d-flex">
@@ -137,6 +139,7 @@
                             <svg xmlns="http://www.w3.org/2000/svg" width="13.279" height="14.857" viewBox="0 0 13.279 14.857">
                                 <path id="Icon_awesome-moon" data-name="Icon awesome-moon" d="M9.342,14.858a7.415,7.415,0,0,0,5.771-2.751.348.348,0,0,0-.336-.562A5.82,5.82,0,0,1,10.809.769.348.348,0,0,0,10.7.124,7.429,7.429,0,1,0,9.342,14.858Z" transform="translate(-1.913)" fill="#95509b" />
                             </svg>
+                            //TODO <!-- Le dark mode ! -->
                             Dark Mode
                         </a>
                         <a href="?section=deconnexion" class="" id="deconnexion">
@@ -329,6 +332,7 @@
             <!-- Fin du panneau Nouveautés -->
 
             <!-- Troisième panneau: Communauté (le chat) -->
+            //TODO <!-- Js sur les conversation: hide() et show() -->
 
             <div id="communaute">
                 <!-- Suggestions d'ami.e.s -->
