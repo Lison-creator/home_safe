@@ -7,9 +7,7 @@
     </div>
 
     <!-- Icone menu-burger -->
-    <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button> -->
+    
     <div class="navbar offset-left-1" id="menuAccueil">
       <ul class="navbar-nav menuResponsiveAccueil">
         <li class="nav-item margeResponsive">
@@ -26,7 +24,7 @@
 <!-- Est-ce qu'on veut faire juste un bouton cliquable pour le menu ou est-ce qu'on le tranforme en page qui est présente sur toutes les autres pages? -->
 
 <!-- Menu permanent -->
-<nav class="menuPermanent">
+<nav class="menuPermanent" >
   <ul class="passeDevant">
     <li class="collapse-menu blocNav">
       <div class="navJaune d-flex justify-content-center"><a href="?section=accueil" class="nav-link" id="register">Accueil</a></div>
@@ -50,5 +48,6 @@
 </nav>
 
 
-
-
+<!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button> -->
