@@ -458,5 +458,9 @@ input.inputRechercher {
 
 /*--- Panneau "Communauté"--- */
 
+.groupInfos {
+    padding-top: 10px;
+}
+
 
 /*--- Panneau "Favoris"--- */

@@ -346,8 +346,8 @@
                 </div>
                 <div class="discussions">
                     <div class="groupe">
-                        <div class="profilInfos">
-                            <div class="profilInfos d-flex">
+                        <div class="groupInfos">
+                            <div class="groupInfos d-flex">
                                 <img src="public/images/imagesProfil/imgProfil-01.png" alt="profile Pic" class="imgProfilMini">
                                 <div class="profilInfosTexte">
                                     <p>Helena Robert</p>
@@ -356,35 +356,47 @@
                                 <div class="groupIcones d-flex flex-column  ms-auto">
                                     <span>heure</span>
                                     <!-- Petite flèche vers le bas pour expand la conversation  -->
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="11.637" height="6.654" viewBox="0 0 11.637 6.654">
+                                    <svg class="mt-auto pointer" xmlns="http://www.w3.org/2000/svg" width="11.637" height="6.654" viewBox="0 0 11.637 6.654">
                                         <path id="Icon_ionic-ios-arrow-down" data-name="Icon ionic-ios-arrow-down" d="M12.008,15.894l4.4-4.4a.828.828,0,0,1,1.175,0,.839.839,0,0,1,0,1.178L12.6,17.658a.83.83,0,0,1-1.147.024l-5.02-5.01A.832.832,0,1,1,7.6,11.494Z" transform="translate(-6.188 -11.246)" fill="#3f50a7" />
                                     </svg>
-
-
                                 </div>
                             </div>
                         </div>
                     </div>
                     <!-- Fin groupe -->
                     <div class="groupe">
-                        <div class="profilInfos">
-                            <div class="profilInfos d-flex">
-                                <img src="public/images/imagesProfil/imgProfil-01.png" alt="profile Pic" class="imgProfilMini">
+                        <div class="groupInfos">
+                            <div class="groupInfos d-flex">
+                                <img src="public/images/imagesProfil/imgGroup-01.png" alt="profile Pic" class="imgProfilMini">
                                 <div class="profilInfosTexte">
                                     <p>Helena Robert</p>
                                     <span>Petit statut écrit</span>
+                                </div>
+                                <div class="groupIcones d-flex flex-column  ms-auto">
+                                    <span>heure</span>
+                                    <!-- Petite flèche vers le bas pour expand la conversation  -->
+                                    <svg class="mt-auto pointer" xmlns="http://www.w3.org/2000/svg" width="11.637" height="6.654" viewBox="0 0 11.637 6.654">
+                                        <path id="Icon_ionic-ios-arrow-down" data-name="Icon ionic-ios-arrow-down" d="M12.008,15.894l4.4-4.4a.828.828,0,0,1,1.175,0,.839.839,0,0,1,0,1.178L12.6,17.658a.83.83,0,0,1-1.147.024l-5.02-5.01A.832.832,0,1,1,7.6,11.494Z" transform="translate(-6.188 -11.246)" fill="#3f50a7" />
+                                    </svg>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <!-- Fin groupe -->
                     <div class="groupe">
-                        <div class="profilInfos">
-                            <div class="profilInfos d-flex">
+                        <div class="groupInfos">
+                            <div class="groupInfos d-flex">
                                 <img src="public/images/imagesProfil/imgProfil-01.png" alt="profile Pic" class="imgProfilMini">
                                 <div class="profilInfosTexte">
                                     <p>Helena Robert</p>
                                     <span>Petit statut écrit</span>
+                                </div>
+                                <div class="groupIcones d-flex flex-column  ms-auto">
+                                    <span>heure</span>
+                                    <!-- Petite flèche vers le bas pour expand la conversation  -->
+                                    <svg class="mt-auto pointer" xmlns="http://www.w3.org/2000/svg" width="11.637" height="6.654" viewBox="0 0 11.637 6.654">
+                                        <path id="Icon_ionic-ios-arrow-down" data-name="Icon ionic-ios-arrow-down" d="M12.008,15.894l4.4-4.4a.828.828,0,0,1,1.175,0,.839.839,0,0,1,0,1.178L12.6,17.658a.83.83,0,0,1-1.147.024l-5.02-5.01A.832.832,0,1,1,7.6,11.494Z" transform="translate(-6.188 -11.246)" fill="#3f50a7" />
+                                    </svg>
                                 </div>
                             </div>
                         </div>
