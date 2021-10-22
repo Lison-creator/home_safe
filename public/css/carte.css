@@ -18,6 +18,36 @@ img {
 }
 
 
+/* Les images de profil + le nom + mini bio */
+
+.profilInfosTexte {
+    padding-left: 10px;
+}
+
+.profilInfosTexte>p {
+    margin: 0;
+}
+
+.profilInfosTexte>span {
+    font-style: italic;
+}
+
+.imgProfilMini {
+    width: 50px;
+    padding-bottom: 10px;
+    /*//TODO Rend les images rondes, mais à perfectionner */
+    clip-path: ellipse(50% 50%);
+}
+
+
+/* Barre icones Image (Icones: coeur/commentaire/messages */
+
+.barreIconeImage {
+    width: 59%;
+    width: 100%;
+}
+
+
 /* Le logo "Home Safe" */
 
 .logoCarte {
@@ -58,6 +88,10 @@ img {
 .MenuCarte:hover {
     background-color: #F1F1F1;
     cursor: pointer;
+}
+
+.bgGris {
+    background-color: #dadada;
 }
 
 .violet {
@@ -161,6 +195,7 @@ img {
 .dropdown {
     position: relative;
     display: inline-block;
+    padding-left: 10px;
 }
 
 .contenuDropdown {
@@ -242,6 +277,12 @@ input.inputRechercher {
 
 /* Le fil d'actualité */
 
+.titreProfil {
+    text-align: left;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
 .filActualite {
     overflow-y: scroll;
     overflow: auto;
@@ -252,6 +293,7 @@ input.inputRechercher {
 .imgActualite {
     width: 100%;
     border-radius: 5px;
+    padding-bottom: 10px;
 }
 
 .photoProfilGrande {
@@ -355,6 +397,10 @@ input.inputRechercher {
     border-radius: 20px 20px 20px 20px;
 }
 
+.lieuAlerte:hover {
+    background-color: #d34a5c;
+}
+
 .lieuAlerteTexte>span {
     color: #F1F1F1;
     font-family: "ubuntu";
@@ -379,8 +425,34 @@ input.inputRechercher {
 
 .texteCommentaireAlerte {
     position: relative;
-    top: -123px;
+    top: -195px;
     left: 26px;
+    font-size: 0.9em;
+}
+
+.texteCommentaireAlerte>span {
+    color: #BF293E;
+}
+
+
+/* Div pour que le texte soit à la bonne largeur */
+
+.blocTexteCommentaire {
+    width: 250px;
+}
+
+
+/* L'auteurice du commentaire */
+
+.auteurCommentaire {
+    padding-left: 76px;
+}
+
+.sousTitreCommentaire {
+    font-style: italic;
+    color: #3F50A7;
+    font-size: 0.8em;
+    padding-left: 10px;
 }
 
 
