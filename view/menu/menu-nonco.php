@@ -11,12 +11,12 @@
       <span class="navbar-toggler-icon"></span>
     </button> -->
     <div class="navbar offset-left-1" id="menuAccueil">
-      <ul class="navbar-nav ">
-        <li class="nav-item">
-          <a href="?section=connexion" class="nav-link" id="connexion"> Se connecter</a><!-- modification ici, anciennement FAQ alors que le href renvoyé à connecxion -->
+      <ul class="navbar-nav menuResponsiveAccueil">
+        <li class="nav-item margeResponsive">
+          <a href="?section=connexion" class="nav-link text-sm-center" id="connexion"> Se connecter</a><!-- modification ici, anciennement FAQ alors que le href renvoyé à connecxion -->
         </li>
         <li class="nav-item">
-          <a href="?section=inscription" class="nav-link" id="inscription">S'inscrire</a>
+          <a href="?section=inscription" class="nav-link text-sm-center" id="inscription">S'inscrire</a>
         </li>
       </ul>
     </div>
@@ -48,3 +48,7 @@
     </li>
   </ul>
 </nav>
+
+
+
+
