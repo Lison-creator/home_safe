@@ -34,7 +34,7 @@ if (isset($_POST)){
             //retourner vrai si n'existe pas
 
             if ($userNotExist) {
-                var_dump('function verify okay');
+                var_dump('function verify good');
 
                 // contient le spsueod, email et le mdp haché
                 $last_insert_id = $user1->addUtilisateur($pseudo, $email, $mdp);
@@ -50,7 +50,7 @@ if (isset($_POST)){
                 var_dump($_SESSION);
                 
                 header("Location:?section=inscriptionProfil");
-                /* var_dump("inscriptionProfil"); */
+                var_dump("inscriptionProfil");
             } 
             
             else {
