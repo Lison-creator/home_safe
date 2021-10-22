@@ -76,7 +76,7 @@
 
         </a>
         <aside id="aside">
-            <!--  //TODO Faire flotter les 3 petits icones correctement -->
+
 
             <!-- Englobe les 3 div sous-menu aside; reste TOUJOURS quelque soit la rubrique -->
             <div class="petiteBarreDuHaut d-flex">
@@ -139,7 +139,7 @@
                             </svg>
                             Dark Mode
                         </a>
-                        <a href="?section=deconnexion" class="nav-link" id="deconnexion">
+                        <a href="?section=deconnexion" class="" id="deconnexion">
                             <!-- Icone se déconnecter-->
 
                             <svg xmlns="http://www.w3.org/2000/svg" width="12.954" height="14.829" viewBox="0 0 12.954 14.829">
@@ -151,7 +151,7 @@
                 </div>
 
                 <!-- Icone "commentaires récents" flex-end-->
-                <div class="">
+                <div class="ms-auto commentairesIcon pointer">
                     <div>
                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
                             <path id="Icon_feather-message-circle" data-name="Icon feather-message-circle" d="M31.5,17.25a12.57,12.57,0,0,1-1.35,5.7A12.75,12.75,0,0,1,18.75,30a12.57,12.57,0,0,1-5.7-1.35L4.5,31.5l2.85-8.55A12.57,12.57,0,0,1,6,17.25a12.75,12.75,0,0,1,7.05-11.4,12.57,12.57,0,0,1,5.7-1.35h.75a12.72,12.72,0,0,1,12,12Z" transform="translate(-3 -3)" fill="none" stroke="#707070" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" />
@@ -217,7 +217,7 @@
             <div id="nouveautes">
                 <h2 class="violet">Nouveautés</h2>
                 <h3 class="violet">Quoi de neuf à Bruxelles ?</h3>
-                
+
                 <div id="nouveautesContent">
                     <h4 class="pt-3 pb-2 bleu">Nouveaux lieux favoris de vos ami.e.s !</h4>
                     <!-- Lieu ami (Goupil Le fol: texte + image) -->
@@ -245,10 +245,52 @@
                     <!-- Fin du lieu ami :'( -->
 
                     <!-- Lieu "alerte" -->
-                    <div class="lieuAlerte">
-                        <h4 class="pt-3 pb-2 rouge">Alerte</h4>
+
+                    <!-- "Alerte" + Titre du Lieu + nb de personnes qui valident l'alerte -->
+                    <div>
+                        <div class=" alerteTitre d-flex">
+                            <h4 class="pt-2 pb-2 rouge">Alerte</h4>
+                            <span class="align-self-center">Validée par 5 personnes</span>
+                        </div>
+                        <div class="lieuAlerte d-flex align-items-center justify-content-between ">
+                            <div class="svgLieu"><svg xmlns="http://www.w3.org/2000/svg" width="21.652" height="21.652" viewBox="0 0 21.652 21.652">
+                                    <path id="Icon_awesome-beer" data-name="Icon awesome-beer" d="M17.786,5.343h-2.32V3.41a1.16,1.16,0,0,0-1.16-1.16H1.16A1.16,1.16,0,0,0,0,3.41V22.742A1.16,1.16,0,0,0,1.16,23.9H14.306a1.16,1.16,0,0,0,1.16-1.16V20.707l3.9-1.739a3.871,3.871,0,0,0,2.291-3.531V9.21A3.871,3.871,0,0,0,17.786,5.343Zm.773,10.094a.774.774,0,0,1-.458.706L15.466,17.32V8.436h2.32a.774.774,0,0,1,.773.773Zm-8.506,3.825a.773.773,0,0,1-.773-.773V7.663a.773.773,0,1,1,1.547,0V18.489A.773.773,0,0,1,10.053,19.263Zm-4.64,0a.773.773,0,0,1-.773-.773V7.663a.773.773,0,1,1,1.547,0V18.489A.773.773,0,0,1,5.413,19.263Z" transform="translate(0 -2.25)" fill="#282828" />
+                                </svg>
+                            </div>
+                            <div class="lieuAlerteTexte">
+                                <span>Rue de la Panique 30, 1050 Ixelles</span>
+                                <p>Le Joli Café</p>
+                            </div>
+                            <div class="svgAlerte"><svg xmlns="http://www.w3.org/2000/svg" width="24.617" height="24.617" viewBox="0 0 24.617 24.617">
+                                    <path id="Icon_material-error-outline" data-name="Icon material-error-outline" d="M14.078,19h2.462v2.462H14.078Zm0-9.847h2.462v7.385H14.078ZM15.3,3A12.309,12.309,0,1,0,27.617,15.309,12.3,12.3,0,0,0,15.3,3Zm.012,22.155a9.847,9.847,0,1,1,9.847-9.847A9.844,9.844,0,0,1,15.309,25.155Z" transform="translate(-3 -3)" fill="#282828" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Justification: commentaire sur le lieu Alerte -->
+                    <div>
+                        <div>
+                            <!-- Div du commentaire Alerte -->
+                            <!-- Svg du fond jaune du commentaire -->
+                            <svg class="svgCommentaireAlerte" xmlns="http://www.w3.org/2000/svg" width="294.537" height="149.963" viewBox="0 0 294.537 149.963">
+                                <g id="Groupe_1719" data-name="Groupe 1719" transform="translate(0 0)">
+                                    <rect id="Rectangle_1657" data-name="Rectangle 1657" width="294.537" height="129.128" rx="13" transform="translate(0 0)" fill="#fac815" />
+                                    <path id="Tracé_1140" data-name="Tracé 1140" d="M157,512.165,183,540l-5.5-29.5Z" transform="translate(-132 -390.037)" fill="#fac815" />
+                                </g>
+                            </svg>
+
+                            <p class="texteCommentaireAlerte">
+                                <span>Motif: </span>
+                                Serveur raciste
+                                Je ne remettrait plus les pieds ici !!! Tellement dommage, j’adorais ce café, mais ils faut embaucher quelqu’un d’autre là.
+                            </p>
+                        </div>
+
 
                     </div>
+
+
+
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque reprehenderit aut nisi. Ipsa consectetur quas iste, ab autem in neque excepturi quasi debitis tempora accusantium vero corporis eaque animi! Voluptate optio nobis quod qui dignissimos porro asperiores, sed, autem aperiam maxime dolore suscipit cupiditate sint! Quasi ducimus enim at autem tempore repudiandae culpa dignissimos, obcaecati harum eius mollitia, aperiam illum, voluptatum debitis ipsa numquam? Voluptas totam error doloribus ea, excepturi commodi alias voluptate molestiae aperiam sed vitae modi rem? Dolores perspiciatis mollitia blanditiis corrupti voluptatibus est voluptas, ut natus ad nostrum, voluptate quod atque nemo nisi vitae vero, accusamus ipsa quas dolorum expedita alias iusto. Tempore deserunt, animi maiores autem est non, quisquam doloremque temporibus quasi iste corrupti eos provident. Earum dolorem incidunt soluta quod enim quas maxime totam quasi minima repellendus sapiente ex, dicta hic dolore esse amet adipisci tenetur id repudiandae reiciendis molestias minus? Sapiente perferendis at velit officiis eligendi dolorem assumenda rerum! Alias, assumenda eaque! Quisquam tenetur optio architecto ratione asperiores quis. Iusto praesentium libero quas, nihil, eum laudantium explicabo nobis voluptates beatae laboriosam minus provident ducimus amet sit porro impedit, atque reiciendis eligendi. Quia perspiciatis a nesciunt ex fuga aliquid, quidem aut eum minima. Reiciendis, deleniti.</p>
                 </div>
                 <!-- Fin de la div "nouveauté content" -->
@@ -279,5 +321,3 @@
         <!-- La carte -->
         <!--  <div id="carteId"></div> -->
     </div>
-
-    <!--     //TODO Une fonction js pour cacher le panneau de droite et afficher différents panneau selon la rubrique cliquée ( Communauté, favoris) -->
