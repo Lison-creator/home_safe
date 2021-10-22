@@ -10,3 +10,5 @@
 ?>
 
 <!-- inclure le head de Accueil, le footer et le menu pour chaque controller -->
+
+<!-- coucouuouuuuuu -->
