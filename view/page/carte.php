@@ -7,8 +7,13 @@
 <!-- La carte interactive -->
 <!-- Le logo -->
 
+<div class="carteMapbox zindex-1">
+
+
+</div>
+
 <!-- logo en haut à gauche -->
-<div class="logoCarte">
+<div class="logoCarte zindex-3">
     <a href="?section=accueil">
         <svg xmlns="http://www.w3.org/2000/svg" width="96.606" height="139.197" viewBox="0 0 96.606 139.197">
             <g id="Groupe_1745" data-name="Groupe 1745" transform="translate(-451.765 643.243)">
@@ -25,7 +30,7 @@
 </div>
 
 <!-- Petit menu qui tombe en haut à droite -->
-<nav class="d-flex flex-column MenuGroupe">
+<nav class="d-flex flex-column MenuGroupe zindex-3">
     <div onclick="afficherNouveautes()" class="violet MenuCarte">Nouveautés<br>
 
         <!-- Icone étoile -->
@@ -48,7 +53,7 @@
         </svg>
     </div>
 </nav>
-<div class="container">
+<div class="container zindex-3">
 
     <!-- input "rechercher un lieu" -->
     <div>
