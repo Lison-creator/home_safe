@@ -1,7 +1,7 @@
 /* ------------------------------------------------------------------- */
 // animation pour le bouton du menu permanent en jQuery
 
-$("#iconPlus").on("click", function (e) {
+$("#iconPlus").on("click", function(e) {
     $(".blocNav").toggleClass("collapse-menu"); // toggle le bloc
     $(".vertical").toggleClass("hidden"); // change le + en -
 })
@@ -20,8 +20,7 @@ function toggleAssociation(element, classeEnQuestion) {
 
         if (element.id === autreElement.id) {
             autreElement.classList.add(classeEnQuestion)
-        }
-        else {
+        } else {
             autreElement.classList.remove(classeEnQuestion)
         }
 
@@ -82,6 +81,11 @@ function afficherProfil() {
 
 
 function afficherNouveautes() {
+
+    //TODO /* Une classe qui permet de griser la catégorie du menu choisie  */
+    /*   var menuNouveautes = document.getElementById("menuNouveautes");
+      menuNouveautes.classList.toggle("bgGris"); */
+
     $("#nouveautes").show();
     $("#profil").hide();
     $("#communaute").hide();
@@ -149,7 +153,7 @@ const btnCroix = document.getElementById('croix')
 
 //je lance la fonction desactivation au clique
 btnDesactivation.addEventListener('click', (e) => {
-    //pour l'élement qui contient la class animationCroixFun, je veux que tu puisse l'enelver ou la remettre
-    btnCroix.classList.toggle('animationCroixFun');
-})
-/* ------------------------------------------------------------------- */
+        //pour l'élement qui contient la class animationCroixFun, je veux que tu puisse l'enelver ou la remettre
+        btnCroix.classList.toggle('animationCroixFun');
+    })
+    /* ------------------------------------------------------------------- */

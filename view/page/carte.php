@@ -7,6 +7,8 @@
 <!-- La carte interactive -->
 <!-- Le logo -->
 
+
+
 <!-- logo en haut à gauche -->
 <div class="logoCarte">
     <a href="?section=accueil">
@@ -26,7 +28,7 @@
 
 <!-- Petit menu qui tombe en haut à droite -->
 <nav class="d-flex flex-column MenuGroupe">
-    <div onclick="afficherNouveautes()" class="violet MenuCarte">Nouveautés<br>
+    <div onclick="afficherNouveautes()" id="menuNouveautes" class="violet MenuCarte">Nouveautés<br>
 
         <!-- Icone étoile -->
         <svg xmlns="http://www.w3.org/2000/svg" width="26.316" height="25.001" viewBox="0 0 26.316 25.001">
@@ -75,8 +77,8 @@
             </svg>
 
         </a>
+
         <aside id="aside">
-            <!--  //TODO Faire flotter les 3 petits icones correctement -->
 
             <!-- Englobe les 3 div sous-menu aside; reste TOUJOURS quelque soit la rubrique -->
             <div class="petiteBarreDuHaut d-flex">
@@ -137,9 +139,10 @@
                             <svg xmlns="http://www.w3.org/2000/svg" width="13.279" height="14.857" viewBox="0 0 13.279 14.857">
                                 <path id="Icon_awesome-moon" data-name="Icon awesome-moon" d="M9.342,14.858a7.415,7.415,0,0,0,5.771-2.751.348.348,0,0,0-.336-.562A5.82,5.82,0,0,1,10.809.769.348.348,0,0,0,10.7.124,7.429,7.429,0,1,0,9.342,14.858Z" transform="translate(-1.913)" fill="#95509b" />
                             </svg>
+                            //TODO <!-- Le dark mode ! -->
                             Dark Mode
                         </a>
-                        <a href="?section=deconnexion" class="nav-link" id="deconnexion">
+                        <a href="?section=deconnexion" class="" id="deconnexion">
                             <!-- Icone se déconnecter-->
 
                             <svg xmlns="http://www.w3.org/2000/svg" width="12.954" height="14.829" viewBox="0 0 12.954 14.829">
@@ -151,7 +154,7 @@
                 </div>
 
                 <!-- Icone "commentaires récents" flex-end-->
-                <div class="">
+                <div class="ms-auto commentairesIcon pointer">
                     <div>
                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
                             <path id="Icon_feather-message-circle" data-name="Icon feather-message-circle" d="M31.5,17.25a12.57,12.57,0,0,1-1.35,5.7A12.75,12.75,0,0,1,18.75,30a12.57,12.57,0,0,1-5.7-1.35L4.5,31.5l2.85-8.55A12.57,12.57,0,0,1,6,17.25a12.75,12.75,0,0,1,7.05-11.4,12.57,12.57,0,0,1,5.7-1.35h.75a12.72,12.72,0,0,1,12,12Z" transform="translate(-3 -3)" fill="none" stroke="#707070" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" />
@@ -203,10 +206,30 @@
                     <input class="inputRechercher" type="text" placeholder="Rechercher">
                 </div>
 
-                <h3>Fil d'actualité</h3>
+                <h3 class="titreProfil">Fil d'actualité</h3>
                 <div class="filActualite">
-
+                    <div class="profilInfos">
+                        <div class="profilInfos d-flex">
+                            <img src="public/images/imagesProfil/imgProfil-01.png" alt="profile Pic" class="imgProfilMini">
+                            <div class="profilInfosTexte">
+                                <p>Helena Robert</p>
+                                <span>Petit statut écrit</span>
+                            </div>
+                        </div>
+                    </div>
                     <img class="imgActualite" src="public/images/imagesDemoCarte/deliriumCafe.jpg" alt="">
+
+                    <!-- Barre d'icone de l'image (coeur/commentaire/message) -->
+
+                    <svg class="barreIconeImage" xmlns="http://www.w3.org/2000/svg" width="311.055" height="45" viewBox="0 0 311.055 45">
+                        <rect id="Rectangle_3" data-name="Rectangle 3" width="311.055" height="45" rx="16" fill="#95509b" />
+                        <path id="Icon_awesome-comment" data-name="Icon awesome-comment" d="M10.966,2.25C4.909,2.25,0,6.238,0,11.16a7.909,7.909,0,0,0,2.442,5.6,10.9,10.9,0,0,1-2.347,4.1.341.341,0,0,0-.064.373.335.335,0,0,0,.313.206,9.8,9.8,0,0,0,6.023-2.2,13.063,13.063,0,0,0,4.6.831c6.057,0,10.966-3.988,10.966-8.91S17.023,2.25,10.966,2.25Z" transform="translate(64.149 11.814)" fill="#f1f1f1" />
+                        <g id="Icon_awesome-heart" data-name="Icon awesome-heart" transform="translate(20 14.82)">
+                            <path id="Icon_awesome-heart-2" data-name="Icon awesome-heart" d="M19.02,3.508a5.626,5.626,0,0,0-7.677.56l-.811.835-.811-.835a5.626,5.626,0,0,0-7.677-.56,5.909,5.909,0,0,0-.407,8.555L9.6,20.284a1.29,1.29,0,0,0,1.864,0l7.961-8.221a5.905,5.905,0,0,0-.4-8.555Z" transform="translate(0.001 -2.246)" fill="#f1f1f1" />
+                        </g>
+                        <path id="Icon_ionic-ios-send" data-name="Icon ionic-ios-send" d="M25.337,4.551,4.769,13.516a.471.471,0,0,0,.017.857l5.563,3.143a.9.9,0,0,0,1.025-.1l10.97-9.458c.073-.062.247-.179.314-.112s-.039.241-.1.314L13.067,18.85a.894.894,0,0,0-.09,1.07l3.636,5.833a.473.473,0,0,0,.852-.011l8.5-20.569A.472.472,0,0,0,25.337,4.551Z" transform="translate(104.866 7.242)" fill="#f1f1f1" />
+                    </svg>
+
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque sunt voluptates est ducimus placeat totam ex accusantium numquam explicabo sit veniam ea ab doloribus dolor repudiandae id voluptatum, nihil deserunt vero. Ab itaque aut recusandae eos dolore nemo neque exercitationem delectus eius sequi corrupti, velit quasi aspernatur iusto officiis error, asperiores pariatur, minus sapiente labore dignissimos culpa? Blanditiis odit veritatis rerum delectus, vitae doloribus quisquam magnam dolores perferendis debitis magni, ratione nulla consequuntur minima tempora aliquam nemo incidunt laborum tenetur doloremque id! Culpa eius ratione maiores repellendus repellat asperiores, dolorem, quidem fugit optio reprehenderit ipsam. Qui quidem doloremque illo nostrum fugiat quia odio aspernatur similique? Odit eum, doloremque hic nemo, quia optio perferendis provident odio expedita molestiae tenetur alias, fugit sunt reiciendis. Veritatis aperiam corporis possimus sequi vitae voluptatem nobis nihil quo quidem ipsum commodi corrupti debitis non minima et impedit, fugit quis repudiandae praesentium sint illum, numquam alias quibusdam deleniti. Sit praesentium ducimus perspiciatis, accusamus dolores atque facilis corporis! Eos consequatur necessitatibus expedita a. Laboriosam architecto quos iusto officiis. Quasi porro hic obcaecati aut! Consectetur libero ipsum nemo fugit quos assumenda, ratione temporibus doloribus, vitae molestiae aspernatur unde beatae tenetur recusandae voluptatem nostrum eum et! Quis debitis rem modi, veniam praesentium quo nostrum quod ex voluptatibus tempore itaque quae, sint architecto quidem fugiat consequatur corporis eligendi recusandae, libero aut tenetur vel. Expedita quo dolores commodi dolore dignissimos aliquid doloremque fuga alias natus perferendis, quasi ipsum vero facere, eius dicta numquam qui sint distinctio assumenda cum deleniti voluptas hic modi. Doloribus, est tenetur delectus reiciendis repellendus velit eos! Architecto incidunt iure molestiae tempora expedita quam consequatur dolorum voluptas? Adipisci, cupiditate voluptatem maiores perferendis voluptatibus assumenda eum nemo repudiandae sequi. Ratione quisquam sint consequatur atque non, dolore tempore commodi reprehenderit exercitationem error tempora dignissimos. Dolorum voluptates totam necessitatibus ipsam alias maxime possimus saepe non est, eveniet unde quas eum impedit molestias vel, iste odit asperiores? Iusto, quibusdam libero, vero officiis deleniti officia autem, laborum nam obcaecati eum possimus. Sequi eaque expedita nemo doloremque vitae aliquid ducimus facere. Sit consectetur atque suscipit vel perspiciatis quam, nisi ducimus ut? Deleniti sint accusantium, dolorum animi officiis sed et similique esse provident, placeat id maxime illum blanditiis reprehenderit quo aspernatur quas eaque quod nulla maiores nemo necessitatibus! Nostrum minima ipsa veritatis corporis obcaecati nulla odio expedita aut aspernatur, nobis nisi suscipit! Esse necessitatibus est beatae cupiditate voluptatem, earum deserunt eius eveniet porro ullam magni totam ducimus. Magni nihil, eveniet aliquid, earum architecto voluptates non nam sint impedit recusandae repellendus facere inventore id dolore fugiat porro facilis ducimus amet suscipit eligendi velit ea ex iusto? Autem quasi inventore necessitatibus ut. Commodi, sed libero? Quam, obcaecati nostrum iste omnis amet repellat iure porro qui blanditiis officiis, neque id nihil minus earum placeat quo quis praesentium molestias natus. Earum illum ex provident voluptas eos dolorem dignissimos doloremque. Quam adipisci sit vero numquam soluta qui repellat error! Eligendi modi natus beatae ut ipsum ex reprehenderit officiis ab? Consequatur quod natus quam dolor molestias quas autem suscipit illo sed esse.
 
                 </div>
@@ -216,8 +239,8 @@
             <!-- Deuxième panneau: Nouveautés -->
             <div id="nouveautes">
                 <h2 class="violet">Nouveautés</h2>
-                <h3 class="violet">Quoi de neuf à Bruxelles ?</h3>
-                
+                <h3 class="pb-4 violet">Quoi de neuf à Bruxelles ?</h3>
+
                 <div id="nouveautesContent">
                     <h4 class="pt-3 pb-2 bleu">Nouveaux lieux favoris de vos ami.e.s !</h4>
                     <!-- Lieu ami (Goupil Le fol: texte + image) -->
@@ -245,10 +268,63 @@
                     <!-- Fin du lieu ami :'( -->
 
                     <!-- Lieu "alerte" -->
-                    <div class="lieuAlerte">
-                        <h4 class="pt-3 pb-2 rouge">Alerte</h4>
+
+                    <!-- "Alerte" + Titre du Lieu + nb de personnes qui valident l'alerte -->
+                    <div>
+                        <div class=" alerteTitre d-flex">
+                            <h4 class="pt-2 pb-2 rouge">Alerte</h4>
+                            <span class="align-self-center">Validée par 5 personnes</span>
+                        </div>
+                        <div class="lieuAlerte d-flex align-items-center justify-content-between ">
+                            <div class="svgLieu"><svg xmlns="http://www.w3.org/2000/svg" width="21.652" height="21.652" viewBox="0 0 21.652 21.652">
+                                    <path id="Icon_awesome-beer" data-name="Icon awesome-beer" d="M17.786,5.343h-2.32V3.41a1.16,1.16,0,0,0-1.16-1.16H1.16A1.16,1.16,0,0,0,0,3.41V22.742A1.16,1.16,0,0,0,1.16,23.9H14.306a1.16,1.16,0,0,0,1.16-1.16V20.707l3.9-1.739a3.871,3.871,0,0,0,2.291-3.531V9.21A3.871,3.871,0,0,0,17.786,5.343Zm.773,10.094a.774.774,0,0,1-.458.706L15.466,17.32V8.436h2.32a.774.774,0,0,1,.773.773Zm-8.506,3.825a.773.773,0,0,1-.773-.773V7.663a.773.773,0,1,1,1.547,0V18.489A.773.773,0,0,1,10.053,19.263Zm-4.64,0a.773.773,0,0,1-.773-.773V7.663a.773.773,0,1,1,1.547,0V18.489A.773.773,0,0,1,5.413,19.263Z" transform="translate(0 -2.25)" fill="#282828" />
+                                </svg>
+                            </div>
+                            <div class="lieuAlerteTexte">
+                                <span>Rue de la Panique 30, 1050 Ixelles</span>
+                                <p>Le Joli Café</p>
+                            </div>
+                            <div class="svgAlerte"><svg xmlns="http://www.w3.org/2000/svg" width="24.617" height="24.617" viewBox="0 0 24.617 24.617">
+                                    <path id="Icon_material-error-outline" data-name="Icon material-error-outline" d="M14.078,19h2.462v2.462H14.078Zm0-9.847h2.462v7.385H14.078ZM15.3,3A12.309,12.309,0,1,0,27.617,15.309,12.3,12.3,0,0,0,15.3,3Zm.012,22.155a9.847,9.847,0,1,1,9.847-9.847A9.844,9.844,0,0,1,15.309,25.155Z" transform="translate(-3 -3)" fill="#282828" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Justification: commentaire sur le lieu Alerte -->
+                    <div>
+                        <div>
+                            <!-- Div du commentaire Alerte -->
+                            <!-- Svg du fond jaune du commentaire -->
+                            <svg class="svgCommentaireAlerte" xmlns="http://www.w3.org/2000/svg" width="294.537" height="149.963" viewBox="0 0 294.537 149.963">
+                                <g id="Groupe_1719" data-name="Groupe 1719" transform="translate(0 0)">
+                                    <rect id="Rectangle_1657" data-name="Rectangle 1657" width="294.537" height="129.128" rx="13" transform="translate(0 0)" fill="#fac815" />
+                                    <path id="Tracé_1140" data-name="Tracé 1140" d="M157,512.165,183,540l-5.5-29.5Z" transform="translate(-132 -390.037)" fill="#fac815" />
+                                </g>
+                            </svg>
+                            <div class="blocTexteCommentaire">
+                                <p class="auteurCommentaire">Justine Roy</p>
+
+                                <!-- Icone "ouvrir" pour voir les 18 commentaires + texte dans un flexbox -->
+                                <div class="d-flex">
+                                    <svg class="align-self-center" xmlns="http://www.w3.org/2000/svg" width="14.871" height="8.503" viewBox="0 0 14.871 8.503">
+                                        <path id="Icon_ionic-ios-arrow-down" data-name="Icon ionic-ios-arrow-down" d="M13.626,17.186l5.623-5.628a1.058,1.058,0,0,1,1.5,0,1.072,1.072,0,0,1,0,1.505L14.379,19.44a1.061,1.061,0,0,1-1.466.031L6.5,13.068A1.063,1.063,0,1,1,8,11.563Z" transform="translate(-6.188 -11.246)" fill="#3f50a7" />
+                                    </svg>
+                                    <p class="sousTitreCommentaire align-self-center">Voir les 18 commentaires</p>
+                                </div>
+                                <p class="texteCommentaireAlerte">
+                                    <span>Motif: </span>
+                                    Serveur raciste
+                                    Je ne remettrais plus les pieds ici !!! Tellement dommage, j’adorais ce café, mais il faut embaucher quelqu’un d’autre là.
+                                </p>
+                            </div>
+                        </div>
+                        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto architecto nesciunt accusamus! Dolor, ipsa. Perspiciatis eveniet dolores fugit veniam porro temporibus deserunt cumque similique obcaecati corporis? Saepe aliquid nostrum qui, eum quos illo libero similique maxime eaque doloribus corporis tempore nobis id corrupti blanditiis obcaecati perferendis at cum itaque quo!</div>
+
 
                     </div>
+
+
+
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque reprehenderit aut nisi. Ipsa consectetur quas iste, ab autem in neque excepturi quasi debitis tempora accusantium vero corporis eaque animi! Voluptate optio nobis quod qui dignissimos porro asperiores, sed, autem aperiam maxime dolore suscipit cupiditate sint! Quasi ducimus enim at autem tempore repudiandae culpa dignissimos, obcaecati harum eius mollitia, aperiam illum, voluptatum debitis ipsa numquam? Voluptas totam error doloribus ea, excepturi commodi alias voluptate molestiae aperiam sed vitae modi rem? Dolores perspiciatis mollitia blanditiis corrupti voluptatibus est voluptas, ut natus ad nostrum, voluptate quod atque nemo nisi vitae vero, accusamus ipsa quas dolorum expedita alias iusto. Tempore deserunt, animi maiores autem est non, quisquam doloremque temporibus quasi iste corrupti eos provident. Earum dolorem incidunt soluta quod enim quas maxime totam quasi minima repellendus sapiente ex, dicta hic dolore esse amet adipisci tenetur id repudiandae reiciendis molestias minus? Sapiente perferendis at velit officiis eligendi dolorem assumenda rerum! Alias, assumenda eaque! Quisquam tenetur optio architecto ratione asperiores quis. Iusto praesentium libero quas, nihil, eum laudantium explicabo nobis voluptates beatae laboriosam minus provident ducimus amet sit porro impedit, atque reiciendis eligendi. Quia perspiciatis a nesciunt ex fuga aliquid, quidem aut eum minima. Reiciendis, deleniti.</p>
                 </div>
                 <!-- Fin de la div "nouveauté content" -->
@@ -256,12 +332,80 @@
             <!-- Fin du panneau Nouveautés -->
 
             <!-- Troisième panneau: Communauté (le chat) -->
+            //TODO <!-- Js sur les conversation: hide() et show() -->
 
             <div id="communaute">
+                <!-- Suggestions d'ami.e.s -->
+                <div class="profilInfos d-flex">
+                    <img src="public/images/imagesProfil/imgProfil-01.png" alt="profile Pic" class="imgProfilMini">
+                    <div class="profilInfosTexte">
+                        <p>Helena Robert</p>
+                        <span>Petit statut écrit</span>
+                    </div>
+                </div>
 
                 <!-- Input "rechercher" -->
                 <div class="d-flex flex-column rechercher">
                     <input class="inputRechercher" type="text" placeholder="Rechercher">
+                </div>
+                <div class="discussions">
+                    <div class="groupe">
+                        <div class="groupInfos">
+                            <div class="groupInfos d-flex">
+                                <img src="public/images/imagesProfil/imgProfil-01.png" alt="profile Pic" class="imgProfilMini">
+                                <div class="profilInfosTexte">
+                                    <p>Helena Robert</p>
+                                    <span>Petit statut écrit</span>
+                                </div>
+                                <div class="groupIcones d-flex flex-column  ms-auto">
+                                    <span>heure</span>
+                                    <!-- Petite flèche vers le bas pour expand la conversation  -->
+                                    <svg class="mt-auto pointer" xmlns="http://www.w3.org/2000/svg" width="11.637" height="6.654" viewBox="0 0 11.637 6.654">
+                                        <path id="Icon_ionic-ios-arrow-down" data-name="Icon ionic-ios-arrow-down" d="M12.008,15.894l4.4-4.4a.828.828,0,0,1,1.175,0,.839.839,0,0,1,0,1.178L12.6,17.658a.83.83,0,0,1-1.147.024l-5.02-5.01A.832.832,0,1,1,7.6,11.494Z" transform="translate(-6.188 -11.246)" fill="#3f50a7" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Fin groupe -->
+                    <div class="groupe">
+                        <div class="groupInfos">
+                            <div class="groupInfos d-flex">
+                                <img src="public/images/imagesProfil/imgGroup-01.png" alt="profile Pic" class="imgProfilMini">
+                                <div class="profilInfosTexte">
+                                    <p>Helena Robert</p>
+                                    <span>Petit statut écrit</span>
+                                </div>
+                                <div class="groupIcones d-flex flex-column  ms-auto">
+                                    <span>heure</span>
+                                    <!-- Petite flèche vers le bas pour expand la conversation  -->
+                                    <svg class="mt-auto pointer" xmlns="http://www.w3.org/2000/svg" width="11.637" height="6.654" viewBox="0 0 11.637 6.654">
+                                        <path id="Icon_ionic-ios-arrow-down" data-name="Icon ionic-ios-arrow-down" d="M12.008,15.894l4.4-4.4a.828.828,0,0,1,1.175,0,.839.839,0,0,1,0,1.178L12.6,17.658a.83.83,0,0,1-1.147.024l-5.02-5.01A.832.832,0,1,1,7.6,11.494Z" transform="translate(-6.188 -11.246)" fill="#3f50a7" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Fin groupe -->
+                    <div class="groupe">
+                        <div class="groupInfos">
+                            <div class="groupInfos d-flex">
+                                <img src="public/images/imagesProfil/imgProfil-01.png" alt="profile Pic" class="imgProfilMini">
+                                <div class="profilInfosTexte">
+                                    <p>Helena Robert</p>
+                                    <span>Petit statut écrit</span>
+                                </div>
+                                <div class="groupIcones d-flex flex-column  ms-auto">
+                                    <span>heure</span>
+                                    <!-- Petite flèche vers le bas pour expand la conversation  -->
+                                    <svg class="mt-auto pointer" xmlns="http://www.w3.org/2000/svg" width="11.637" height="6.654" viewBox="0 0 11.637 6.654">
+                                        <path id="Icon_ionic-ios-arrow-down" data-name="Icon ionic-ios-arrow-down" d="M12.008,15.894l4.4-4.4a.828.828,0,0,1,1.175,0,.839.839,0,0,1,0,1.178L12.6,17.658a.83.83,0,0,1-1.147.024l-5.02-5.01A.832.832,0,1,1,7.6,11.494Z" transform="translate(-6.188 -11.246)" fill="#3f50a7" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Fin groupe -->
                 </div>
 
             </div>
@@ -279,5 +423,3 @@
         <!-- La carte -->
         <!--  <div id="carteId"></div> -->
     </div>
-
-    <!--     //TODO Une fonction js pour cacher le panneau de droite et afficher différents panneau selon la rubrique cliquée ( Communauté, favoris) -->

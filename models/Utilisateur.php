@@ -36,7 +36,7 @@
                 }
                 return null;
             } catch (Exception $e) {
-                var_dump($e);
+                /* var_dump($e); */
                 die();
 
                 return null;

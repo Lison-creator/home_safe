@@ -18,10 +18,44 @@ img {
 }
 
 
+/* Les images de profil + le nom + mini bio */
+
+.profilInfosTexte {
+    padding-left: 10px;
+}
+
+.profilInfosTexte>p {
+    margin: 0;
+}
+
+.profilInfosTexte>span {
+    font-style: italic;
+}
+
+.imgProfilMini {
+    width: 50px;
+    padding-bottom: 10px;
+    /*//TODO Rend les images rondes, mais à perfectionner */
+    clip-path: ellipse(50% 50%);
+}
+
+
+/* Barre icones Image (Icones: coeur/commentaire/messages */
+
+.barreIconeImage {
+    width: 59%;
+    width: 100%;
+}
+
+
 /* Le logo "Home Safe" */
 
 .logoCarte {
     padding-left: 60px;
+}
+
+.pointer {
+    cursor: pointer;
 }
 
 
@@ -54,6 +88,10 @@ img {
 .MenuCarte:hover {
     background-color: #F1F1F1;
     cursor: pointer;
+}
+
+.bgGris {
+    background-color: #dadada;
 }
 
 .violet {
@@ -157,6 +195,7 @@ img {
 .dropdown {
     position: relative;
     display: inline-block;
+    padding-left: 10px;
 }
 
 .contenuDropdown {
@@ -198,6 +237,19 @@ img {
 } */
 
 
+/* Hover sur l'icon commentaires */
+
+.commentairesIcon>div:hover {
+    background-color: #FAC815;
+}
+
+.commentairesIcon>div {
+    padding: 8px;
+    border-radius: 20px;
+    border: none;
+}
+
+
 /* Au chargement de la page, ces rubriques n'aparaissent pas. Elles sont accessibles au clic-bouton */
 
 #nouveautes,
@@ -225,6 +277,12 @@ input.inputRechercher {
 
 /* Le fil d'actualité */
 
+.titreProfil {
+    text-align: left;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
 .filActualite {
     overflow-y: scroll;
     overflow: auto;
@@ -235,6 +293,7 @@ input.inputRechercher {
 .imgActualite {
     width: 100%;
     border-radius: 5px;
+    padding-bottom: 10px;
 }
 
 .photoProfilGrande {
@@ -250,7 +309,8 @@ input.inputRechercher {
 }
 
 #nouveautes {
-    padding-left: 35px;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
 #nouveautesContent {
@@ -258,6 +318,29 @@ input.inputRechercher {
     overflow: auto;
     height: 720px;
 }
+
+
+/* --Cacher la barre de scroll (c'est plus joli :) )-- */
+
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+
+#nouveautesContent::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* Hide scrollbar for IE, Edge and Firefox */
+
+#nouveautesContent {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+
+/* Lieu "Ami" (favori de notre communauté) */
 
 .lieuAmi {
     box-shadow: 0px 3px 6px RGBA(0, 0, 0, 0.2) inset, 2px 3px 5px RGBA(19, 19, 19, 0.5);
@@ -272,12 +355,21 @@ input.inputRechercher {
     background-color: #ffdf6b;
 }
 
+.svgCoeur {
+    margin-right: 10px;
+}
+
+.svgLieu {
+    margin-left: 10px;
+}
+
 .lieuAmiTexte {
     padding-top: 10px;
 }
 
 .lieuAmiTexte>p {
     font-size: 1em;
+    text-align: left;
 }
 
 .lieuAmiTexte>span {
@@ -287,7 +379,88 @@ input.inputRechercher {
 }
 
 
+/* Lieu "Alerte", blacklisté par notre communauté */
+
+.alerteTitre>span {
+    font-style: italic;
+    color: #3F50A7;
+    font-size: 0.8em;
+    padding-left: 10px;
+}
+
+.lieuAlerte {
+    background-color: #BF293E;
+    box-shadow: 0px 3px 6px RGBA(0, 0, 0, 0.2) inset, 2px 3px 5px RGBA(19, 19, 19, 0.5);
+    font-family: 'coco';
+    border: none;
+    color: #282828;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.lieuAlerte:hover {
+    background-color: #d34a5c;
+}
+
+.lieuAlerteTexte>span {
+    color: #F1F1F1;
+    font-family: "ubuntu";
+    font-size: 0.8rem;
+}
+
+.lieuAlerteTexte {
+    padding-top: 10px;
+    text-align: left;
+}
+
+.svgAlerte {
+    margin-right: 10px;
+}
+
+.svgCommentaireAlerte {
+    padding-top: 10px;
+}
+
+
+/*  Comme le fond du commentaire est un svg, on positionne le texte en relatif par rapport à lui */
+
+.texteCommentaireAlerte {
+    position: relative;
+    top: -195px;
+    left: 26px;
+    font-size: 0.9em;
+}
+
+.texteCommentaireAlerte>span {
+    color: #BF293E;
+}
+
+
+/* Div pour que le texte soit à la bonne largeur */
+
+.blocTexteCommentaire {
+    width: 250px;
+}
+
+
+/* L'auteurice du commentaire */
+
+.auteurCommentaire {
+    padding-left: 76px;
+}
+
+.sousTitreCommentaire {
+    font-style: italic;
+    color: #3F50A7;
+    font-size: 0.8em;
+    padding-left: 10px;
+}
+
+
 /*--- Panneau "Communauté"--- */
+
+.groupInfos {
+    padding-top: 10px;
+}
 
 
 /*--- Panneau "Favoris"--- */
