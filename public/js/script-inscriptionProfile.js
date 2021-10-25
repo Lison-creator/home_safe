@@ -26,11 +26,12 @@ btnImporterImage.addEventListener('change', function () {
     reader.addEventListener('load', () => {
         imgUploaded = reader.result;
         document.querySelector('#affichageImgUploaded').style.backgroundImage = `url(${imgUploaded})`;
+
+        miniAppareil.classList.replace('cacheAppareil', 'visibleAppareil');
     });
 
     reader.readAsDataURL(this.files[0]);
 
-    miniAppareil.classList.replace('cacheAppareil');/* Modifier tout ça pour inverser -> check avec l'option 'has" ou !has */
 
 
 })

@@ -12,12 +12,27 @@ $user1 = new Utilisateur();
 
 //TODO Code chouette pour insérer nos données
 /* https://www.youtube.com/watch?v=AHmZ1sKNz64 */
+/* https://mauricemuteti2015.medium.com/how-to-upload-and-insert-image-into-mysql-database-using-php-and-html-32633a06d372 */
+ /* https://www.php.net/manual/fr/features.file-upload.post-method.php */
 
-    if(isset($_POST["ad_cp"]))
+    if(isset($_POST["ad_cp"]) && isset($_POST["image"]))
     {
     //     print_r($_POST);
     //     print_r($_SESSION);
-        $user1->addZipPhoto($_SESSION["last_id"], $_POST["ad_cp"]);
+        $nomImage = $_FILES["image"]["name"];
+
+        $filetmpname = $_FILES["image"]["tmp_name"];
+
+        //folder where images will be uploaded
+        $imageDossier = 'imagesDossier/';
+
+        //function for saving the uploaded images in a specific folder
+        move_uploaded_file($filetmpname, $imageDossier.$nomImage);
+        //inserting image details (ie image name) in the database
+        $sql = "INSERT INTO 'utilisateur' ('image') VALUES ('$nomImage')";
+        $qry = mysqli_query($conn, $sql);
+    
+        $user1->addZipPhoto($_SESSION["last_id"], $_POST["ad_cp"], $_POST["image"]);
         header("Location:?section=editerProfil");
 
     }

@@ -16,7 +16,8 @@
             <h2 class="mb-2 mt-5 text-center ombrageText">Salut ! Créons ton profil</h2>
             <h3 class="text-center mb-5 ombrageText">Présente toi rapidement !<br>Tu pourras changer ton profil plus tard.</h3>
 
-            <div class="formulaireAvatar"><!-- Block noir ici -->
+            <div class="formulaireAvatar">
+                <!-- Block noir ici -->
                 <div class="row">
                     <!-- TODO renvoyer au fichier importerImage -->
                     <form action="#" method="post" class="col-11 offset-1" enctype="multipart/form-data">
@@ -36,7 +37,9 @@
                                 </label>
                             </div>
                             <div class="col-6">
-                                <input type="file" name="importerImage" id="btnImporterImage" hidden>
+                                <!-- MAX_FILE_SIZE doit précéder le champ input de type file -->
+                                <input type="hidden" name="MAX_FILE_SIZE" value="30000" />
+                                <input type="file" name="image" id="btnImporterImage" hidden>
                                 <div id="imageChoisie">Aucune image importée</div>
                             </div>
                         </div>
