@@ -52,6 +52,8 @@ img {
 
 .logoCarte {
     padding-left: 60px;
+    position: fixed;
+    z-index: 3;
 }
 
 .pointer {
@@ -73,6 +75,7 @@ img {
     position: absolute;
     top: 0;
     right: 436px;
+    z-index: 3;
 }
 
 .MenuCarte {
@@ -260,6 +263,12 @@ img {
 
 
 /* Input "rechercher" (pour panneau "Profil" et "Communauté") */
+
+.barreDeRecherche{
+    position: fixed;
+    top: 150px;
+    z-index: 3;
+}
 
 .rechercher {
     padding-bottom: 10px;
@@ -464,3 +473,20 @@ input.inputRechercher {
 
 
 /*--- Panneau "Favoris"--- */
+
+
+
+
+
+
+
+
+
+/*---------------- Carte*/
+
+#map{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+}

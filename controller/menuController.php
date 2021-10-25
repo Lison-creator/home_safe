@@ -54,7 +54,7 @@ if (isset($_SESSION['pseudo'], $_SESSION['count']) && $_SESSION["count"] == 1) {
             break;
 
         case 'carte': // menu permanent + menu nom / deconnection
-            include("view/menu/menu-co.php");
+            include("view/menu/menuCarte.php");
             /* var_dump("je suis rentrée dans case: carte"); */ //FONCTIONNE HOUURRRRAAA !!!
             break;
         default:
