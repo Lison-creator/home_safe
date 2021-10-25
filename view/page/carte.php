@@ -1,5 +1,11 @@
 <!-- Page où on arrive en se connectant -->
 
+<!-- Leaflet -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+<!-- Mapbox GL -->
+<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.css' rel='stylesheet' />
+
+
 <!-- Contient: -->
 <!-- Menu déroulant bas gauche -->
 <!-- Onglet vertical à droite avec le chat, etc -->
@@ -7,10 +13,12 @@
 <!-- La carte interactive -->
 <!-- Le logo -->
 
+<div class="carteMapbox zindex-1" id="map">
 
+</div>
 
 <!-- logo en haut à gauche -->
-<div class="logoCarte">
+<div class="logoCarte zindex-3">
     <a href="?section=accueil">
         <svg xmlns="http://www.w3.org/2000/svg" width="96.606" height="139.197" viewBox="0 0 96.606 139.197">
             <g id="Groupe_1745" data-name="Groupe 1745" transform="translate(-451.765 643.243)">
@@ -27,8 +35,8 @@
 </div>
 
 <!-- Petit menu qui tombe en haut à droite -->
-<nav class="d-flex flex-column MenuGroupe">
-    <div onclick="afficherNouveautes()" id="menuNouveautes" class="violet MenuCarte">Nouveautés<br>
+<nav class="d-flex flex-column MenuGroupe zindex-3">
+    <div onclick="afficherNouveautes()" class="violet MenuCarte">Nouveautés<br>
 
         <!-- Icone étoile -->
         <svg xmlns="http://www.w3.org/2000/svg" width="26.316" height="25.001" viewBox="0 0 26.316 25.001">
@@ -50,8 +58,7 @@
         </svg>
     </div>
 </nav>
-<div class="container">
-
+<div class="container zindex-3">
     <!-- input "rechercher un lieu" -->
     <div>
         <input type="text" placeholder="Où allez-vous?">
@@ -424,4 +431,12 @@
         <!--  <div id="carteId"></div> -->
     </div>
 
-    <!-- PUSSSSSSHHHHHHH !! -->
+    <!--     //TODO Une fonction js pour cacher le panneau de droite et afficher différents panneau selon la rubrique cliquée ( Communauté, favoris) -->
+
+     <!-- Leaflet -->
+     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
+        <!-- Mapbox GL -->
+        <script src="https://api.mapbox.com/mapbox-gl-js/v2.5.1/mapbox-gl.js"></script>
+        <script src="https://unpkg.com/mapbox-gl-leaflet/leaflet-mapbox-gl.js"></script>
