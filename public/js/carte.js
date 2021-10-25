@@ -32,7 +32,6 @@ let exemple =
 </div>
 
 `
-
 marqueur.bindPopup(exemple) //si j'ai envie que ça soit toujorus afficher je peux rajouter .openPopup()
 
 //ajouter par exemple un cercle
@@ -61,7 +60,7 @@ const polygone = L.polygon([
 
 // Marqueur 'Maison'
 const marqueurMaison = L.icon({
-    iconUrl: 'marqueur_maison.png',
+    iconUrl: 'public/images/marqueur_maison.png',
     /* shadowUrl: 'marqueur.png', */
 
     iconSize: [60, 75], // size of the icon
@@ -75,7 +74,7 @@ L.marker([50.830597721903615, 4.345150637346656], { icon: marqueurMaison }).addT
 
 // Marqueur 'Police'
 const marqueurPolice = L.icon({
-    iconUrl: 'marqueur_police.png',
+    iconUrl: 'public/images/marqueur_police.png',
     /* shadowUrl: 'marqueur.png', */
 
     iconSize: [60, 75], // size of the icon
@@ -87,9 +86,10 @@ const marqueurPolice = L.icon({
 
 L.marker([50.8367837, 4.3445671], { icon: marqueurPolice }).addTo(maCarte);
 
-// Marqueur 'Police'
+
+// Marqueur 'Bar'
 const marqueurBar = L.icon({
-    iconUrl: 'marqueur_bar.png',
+    iconUrl: 'public/images/marqueur_bar.png',
     /* shadowUrl: 'marqueur.png', */
 
     iconSize: [60, 75], // size of the icon
@@ -102,7 +102,7 @@ const marqueurBar = L.icon({
 L.marker([50.8270366, 4.3726005], { icon: marqueurBar }).addTo(maCarte);
 
 // Geolocalisation
-map.locate({ setView: true, maxZoom: 16 });
+/* map.locate({ setView: true, maxZoom: 16 });
 
 function onLocationFound(e) {
     var radius = e.accuracy;
@@ -119,4 +119,9 @@ function onLocationError(e) {
     alert(e.message);
 }
 
-map.on('locationerror', onLocationError);
+map.on('locationerror', onLocationError); */
+
+
+
+
+
