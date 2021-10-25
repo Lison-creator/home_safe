@@ -441,3 +441,4 @@
         <!-- Mapbox GL -->
         <script src="https://api.mapbox.com/mapbox-gl-js/v2.5.1/mapbox-gl.js"></script>
         <script src="https://unpkg.com/mapbox-gl-leaflet/leaflet-mapbox-gl.js"></script>
+        <script src="/public/js/carte.js"></script>
