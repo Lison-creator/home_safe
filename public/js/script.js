@@ -111,14 +111,15 @@ function afficherFavoris() {
 }
 
 
-/* 
-$("li").toggle(
-    function() { $(this).css({ "color": "red" }); },
-    function() { $(this).css({ "color": "blue" }); },
-    function() { $(this).css({ "color": "purple" }); },
-    function() {
-        $(this).css({ "color": "turquoise" });
-    }); */
+/* Menu de la carte qui disparait au clic du bouton "plus" */
+//TODO
+/* $("#iconPlus2").on("click", function(e) {
+    $(".blocNav2").toggleClass("collapse-menu2"); // toggle le bloc
+    $(".vertical2").toggleClass("hidden2"); // change le + en -
+})
+ */
+
+
 
 /* ------------------------------------------------------------------- */
 //Animation pour le bouton oeil de la page connection / inscritpion

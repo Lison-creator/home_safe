@@ -32,28 +32,38 @@
 
 <!-- Petit menu qui tombe en haut à droite -->
 <nav class="d-flex flex-column MenuGroupe">
-    <div onclick="afficherNouveautes()" class="violet MenuCarte">Nouveautés<br>
+    <div onclick="afficherNouveautes()" class="violet MenuCarte blocNav2  collapse-menu2">Nouveautés<br>
 
         <!-- Icone étoile -->
         <svg xmlns="http://www.w3.org/2000/svg" width="26.316" height="25.001" viewBox="0 0 26.316 25.001">
             <path id="_Color" data-name=" ↳Color" d="M13.158,20.093,21.29,25l-2.158-9.25,7.184-6.224-9.461-.8L13.158,0l-3.7,8.724L0,9.527,7.184,15.75,5.026,25Z" fill="#95509b" />
         </svg>
     </div>
-    <div onclick="afficherCommunaute()" class="bleu MenuCarte">Ma communauté<br>
+    <div onclick="afficherCommunaute()" class="bleu MenuCarte blocNav2 collapse-menu2">Ma communauté<br>
 
         <!-- Icone Communauté -->
         <svg xmlns="http://www.w3.org/2000/svg" width="33.624" height="23.537" viewBox="0 0 33.624 23.537">
             <path id="Icon_awesome-user-friends" data-name="Icon awesome-user-friends" d="M10.087,14.018A5.884,5.884,0,1,0,4.2,8.134,5.881,5.881,0,0,0,10.087,14.018ZM14.122,15.7h-.436a8.124,8.124,0,0,1-7.2,0H6.052A6.054,6.054,0,0,0,0,21.752v1.513a2.522,2.522,0,0,0,2.522,2.522H17.653a2.522,2.522,0,0,0,2.522-2.522V21.752A6.054,6.054,0,0,0,14.122,15.7Zm11.1-1.681a5.044,5.044,0,1,0-5.044-5.044A5.045,5.045,0,0,0,25.218,14.018ZM27.74,15.7h-.2a6.625,6.625,0,0,1-4.644,0h-.2a5.835,5.835,0,0,0-2.926.809,7.689,7.689,0,0,1,2.086,5.243v2.017c0,.116-.026.226-.032.336H31.1a2.522,2.522,0,0,0,2.522-2.522A5.881,5.881,0,0,0,27.74,15.7Z" transform="translate(0 -2.25)" fill="#3f50a7" />
         </svg>
     </div>
-    <div onclick="afficherFavoris()" class="jaune MenuCarte">Favoris<br>
+    <div onclick="afficherFavoris()" class="jaune MenuCarte blocNav2 collapse-menu2">Favoris<br>
 
         <!-- Icone coeur -->
         <svg xmlns="http://www.w3.org/2000/svg" width="26.347" height="23.713" viewBox="0 0 26.347 23.713">
             <path id="_Color" data-name=" ↳Color" d="M13.173,23.712l-1.91-1.706C4.479,15.972,0,11.992,0,7.107A7.108,7.108,0,0,1,7.245,0a7.952,7.952,0,0,1,5.928,2.7A7.952,7.952,0,0,1,19.1,0a7.108,7.108,0,0,1,7.245,7.107c0,4.885-4.479,8.865-11.263,14.912Z" fill="#fac815" />
         </svg>
     </div>
+
+ <!--    Icone "plus" pour dérouler et enrouler le menu 
+
+    <div id="iconPlus2" class="navBlanc collapse-menu2">
+      <div id="croix" class="animationCroixFun">
+        <div class="vertical2"></div>
+        <div class="horizontal2"></div>
+      </div>
+    </div> -->
 </nav>
+
 <div class="container">
     <!-- input "rechercher un lieu" -->
     <div class="barreDeRecherche">
@@ -63,6 +73,8 @@
             <path id="_Color-2" data-name=" ↳Color" d="M56,32H32V56H24V32H0V24H24V0h8V24H56Z" fill="#fff" />
         </svg>
     </div>
+
+
 
     <!--  Panneau de droite -->
 
@@ -142,7 +154,8 @@
                             <svg xmlns="http://www.w3.org/2000/svg" width="13.279" height="14.857" viewBox="0 0 13.279 14.857">
                                 <path id="Icon_awesome-moon" data-name="Icon awesome-moon" d="M9.342,14.858a7.415,7.415,0,0,0,5.771-2.751.348.348,0,0,0-.336-.562A5.82,5.82,0,0,1,10.809.769.348.348,0,0,0,10.7.124,7.429,7.429,0,1,0,9.342,14.858Z" transform="translate(-1.913)" fill="#95509b" />
                             </svg>
-                            //TODO <!-- Le dark mode ! -->
+                            //TODO
+                            <!-- Le dark mode ! -->
                             Dark Mode
                         </a>
                         <a href="?section=deconnexion" class="" id="deconnexion">
@@ -335,7 +348,8 @@
             <!-- Fin du panneau Nouveautés -->
 
             <!-- Troisième panneau: Communauté (le chat) -->
-            //TODO <!-- Js sur les conversation: hide() et show() -->
+            //TODO
+            <!-- Js sur les conversation: hide() et show() -->
 
             <div id="communaute">
                 <!-- Suggestions d'ami.e.s -->
@@ -417,6 +431,27 @@
             <!-- Quatrième panneau: Favoris -->
 
             <div id="favoris">
+                <h2 class="violet">Favoris</h2>
+                <h3 class="pb-4 violet">Vos endroits préférés !</h3>
+
+                <!-- Icones: "tri" et "Plus" -->
+                <div class="d-flex icones-menu-favoris">
+                    <!-- Icone tri -->
+                    <div class="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15.239" height="21.202" viewBox="0 0 15.239 21.202">
+                            <path id="Icon_awesome-sort" data-name="Icon awesome-sort" d="M2.472,16.31H15.148a1.28,1.28,0,0,1,.905,2.184L9.716,24.831a1.273,1.273,0,0,1-1.805,0L1.567,18.493A1.28,1.28,0,0,1,2.472,16.31Zm13.581-5.592L9.716,4.38a1.273,1.273,0,0,0-1.805,0L1.567,10.718A1.28,1.28,0,0,0,2.472,12.9H15.148A1.28,1.28,0,0,0,16.053,10.718Z" transform="translate(-1.191 -4.004)" fill="#3f50a7" />
+                        </svg>
+                    </div>
+                    <!-- Icone Plus -->
+                    <div class="ms-auto">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="31.156" height="31.156" viewBox="0 0 31.156 31.156">
+                        <path id="_Color" data-name=" ↳Color" d="M31.156,17.8H17.8V31.156H13.353V17.8H0V13.353H13.353V0H17.8V13.353H31.156Z" fill="#3f50a7" />
+                    </svg>
+                    </div>
+
+                </div>
+
+
 
             </div>
             <!-- Fin du panneau Favoris -->
@@ -426,7 +461,3 @@
         <!-- La carte -->
         <!--  <div id="carteId"></div> -->
     </div>
-
-    <!--     //TODO Une fonction js pour cacher le panneau de droite et afficher différents panneau selon la rubrique cliquée ( Communauté, favoris) -->
-
-   
