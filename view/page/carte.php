@@ -1,5 +1,11 @@
 <!-- Page où on arrive en se connectant -->
 
+<!-- Leaflet -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+<!-- Mapbox GL -->
+<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.css' rel='stylesheet' />
+
+
 <!-- Contient: -->
 <!-- Menu déroulant bas gauche -->
 <!-- Onglet vertical à droite avec le chat, etc -->
@@ -7,8 +13,7 @@
 <!-- La carte interactive -->
 <!-- Le logo -->
 
-<div class="carteMapbox zindex-1">
-
+<div class="carteMapbox zindex-1" id="map">
 
 </div>
 
@@ -54,7 +59,6 @@
     </div>
 </nav>
 <div class="container zindex-3">
-
     <!-- input "rechercher un lieu" -->
     <div>
         <input type="text" placeholder="Où allez-vous?">
@@ -222,7 +226,7 @@
             <div id="nouveautes">
                 <h2 class="violet">Nouveautés</h2>
                 <h3 class="violet">Quoi de neuf à Bruxelles ?</h3>
-                
+
                 <div id="nouveautesContent">
                     <h4 class="pt-3 pb-2 bleu">Nouveaux lieux favoris de vos ami.e.s !</h4>
                     <!-- Lieu ami (Goupil Le fol: texte + image) -->
@@ -286,3 +290,11 @@
     </div>
 
     <!--     //TODO Une fonction js pour cacher le panneau de droite et afficher différents panneau selon la rubrique cliquée ( Communauté, favoris) -->
+
+     <!-- Leaflet -->
+     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
+        <!-- Mapbox GL -->
+        <script src="https://api.mapbox.com/mapbox-gl-js/v2.5.1/mapbox-gl.js"></script>
+        <script src="https://unpkg.com/mapbox-gl-leaflet/leaflet-mapbox-gl.js"></script>
