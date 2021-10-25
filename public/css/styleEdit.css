@@ -1,6 +1,6 @@
 /********* carré noir de la page inscriptiOnProfil*/
 
-.formulaireAvatar {/* TODO même css que les pages Inscription, Connection à rajouter dans le css ? */
+.formulaireAvatar, .formulaireEditerProfil {/* TODO même css que les pages Inscription, Connection à rajouter dans le css ? */
     border: 2px solid #282828;
     border-radius: 10px;
     background-color: #282828;
@@ -11,15 +11,25 @@
 
 /********** typographies */
 
-.ajoutAvatar, .ajoutZip {
+.ajoutAvatar, .ajoutZip, .editerBio {
     font-family: 'coco';
     color: #FAC815;
+}
+
+.editerPseudo, .editerCP {
+    font-family: 'coco';
+    color: #95509B;
 }
 
 div>#imageChoisie{
     font-family: 'ubuntuBold';
     color: #FAC815;
-} 
+}
+
+.titrePseudo {
+    width: 80%;
+    margin: auto;
+}
 
 /********** la partie de l'avatar*/
 
@@ -32,6 +42,13 @@ div>#imageChoisie{
     cursor: pointer;
     font-family: 'ubuntuLight';
     color: #3F50A7;
+}
+
+.ajoutImageEdit {
+    border-radius: 50%;
+    width: 107px;
+    height: 107px;
+    background-color: #F1F1F1;
 }
 
 /********** la partie de la droplist avec les zip*/
@@ -47,3 +64,79 @@ select.zipCodes { /* TODO A voir si Lison en a besoin aussi */
     font-size: 0.85rem;
 }
 
+.infoCP {
+    position: relative;
+    top: 35px;
+    color: #9B9B9B;
+    font-size: 12px;
+}
+
+/********** la partie bio */
+
+.editBio, .editCP {
+    width: 90%;
+}
+
+#pseudo, #ad_cp {
+    width: 50%;
+}
+
+textarea.editerBio {
+    resize: none;
+    width: 90%;
+    min-height: 80px;
+}
+
+.infoBio {
+    color: #9B9B9B;
+    font-size: 12px;
+}
+
+/********** les boutons & icones */
+
+.btnSauvegarder {
+    width: 150px;
+}
+
+.btnChangerAvatar {
+    width: 200px;
+}
+
+.btnChangerAvatar, .btnSupprimerAvatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.iconPhoto {
+    background-color: RGBA(255, 255, 255, 0.5);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: relative;
+    top: 6px;
+    left: 5px;
+}
+
+/********** le menu */
+
+.menuEditer{
+    position: absolute;
+    z-index: 2;
+    top: 250px;
+    left: 240px;
+    color: #9B9B9B;
+}
+
+.menuEditer ul li {
+    list-style-type: none;
+    padding: 5px;
+}
+
+.menuEditer ul li:hover {
+    color: #FAC815;
+}
+
+.menuEditer ul li:hover svg path {
+    fill: #FAC815;
+}
