@@ -88,7 +88,7 @@
         {
 
             /*  modifier les données */
-            $requete = "UPDATE utilisateurs SET 'ad_cp=:ad_cp', 'image=:image' WHERE id = :id";
+            $requete = "UPDATE utilisateurs SET ad_cp = :ad_cp, image = :image WHERE id = :id";
             $params = array(
                 ":id" => $id,
                 ":ad_cp" => $ad_cp,

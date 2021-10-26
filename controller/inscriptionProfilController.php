@@ -15,8 +15,10 @@ $user1 = new Utilisateur();
 /* https://mauricemuteti2015.medium.com/how-to-upload-and-insert-image-into-mysql-database-using-php-and-html-32633a06d372 */
  /* https://www.php.net/manual/fr/features.file-upload.post-method.php */
 
-    if(isset($_POST["ad_cp"]) && isset($_POST["image"]))
+    if(isset($_POST["ad_cp"]))
     {
+        print_r($_POST);
+        print_r($_FILES);
     //     print_r($_POST);
     //     print_r($_SESSION);
         $nomImage = $_FILES["image"]["name"];
@@ -24,16 +26,19 @@ $user1 = new Utilisateur();
         $filetmpname = $_FILES["image"]["tmp_name"];
 
         //folder where images will be uploaded
-        $imageDossier = 'imagesDossier/';
+        $imageDossier = __DIR__.'/public/images/imagesDossier/';
+
+        echo $filetmpname;
+        echo $imageDossier;
+        echo $nomImage;
 
         //function for saving the uploaded images in a specific folder
         move_uploaded_file($filetmpname, $imageDossier.$nomImage);
-        //inserting image details (ie image name) in the database
-        $sql = "INSERT INTO 'utilisateur' ('image') VALUES ('$nomImage')";
-        $qry = mysqli_query($conn, $sql);
-    
-        $user1->addZipPhoto($_SESSION["last_id"], $_POST["ad_cp"], $_POST["image"]);
-        header("Location:?section=editerProfil");
+/*TODO  Finir l'upload de l'image dans le bon dossier: voir l'error (2) sur la page web */
+
+            
+        $user1->addZipPhoto($_SESSION["last_id"], $_POST["ad_cp"], $_FILES["image"]["name"]);
+        //header("Location:?section=editerProfil");
 
     }
             /* Renvoie à la page d'accueil une fois le formulaire envoyé */
