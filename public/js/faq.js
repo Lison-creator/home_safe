@@ -34,42 +34,44 @@ function toggleFAQ(element, classeEnQuestion) {
     })
 }) */
 
-// Je vais chercher mes elements
+/* Section: Fonctionnement General */
+
+// UN
 const btnActivation01 = document.getElementById('articleFAQ01');
 const reponseFAQ01 = document.getElementById('reponseFAQ01');
+const flecheDescend01 = document.getElementById('flecheDescend01');
 
-// Créer une fonction
 btnActivation01.addEventListener('click', (e) => {
-    // pour l'élement qui contient la classe "caché" tu la lui enlève/tu la lui remet
     reponseFAQ01.classList.toggle('cache');
-})
+    flecheDescend01.classList.toggle('flecheMonte');
+});
 
 // DEUX
 const btnActivation02 = document.getElementById('articleFAQ02');
 const reponseFAQ02 = document.getElementById('reponseFAQ02');
+const flecheDescend02 = document.getElementById('flecheDescend02');
 
-// Créer une fonction
 btnActivation02.addEventListener('click', (e) => {
-    // pour l'élement qui contient la classe "caché" tu la lui enlève/tu la lui remet
     reponseFAQ02.classList.toggle('cache');
-})
+    flecheDescend02.classList.toggle('flecheMonte');
+});
 
 // TROIS
 const btnActivation03 = document.getElementById('articleFAQ03');
 const reponseFAQ03 = document.getElementById('reponseFAQ03');
+const flecheDescend03 = document.getElementById('flecheDescend03');
 
-// Créer une fonction
 btnActivation03.addEventListener('click', (e) => {
-    // pour l'élement qui contient la classe "caché" tu la lui enlève/tu la lui remet
     reponseFAQ03.classList.toggle('cache');
-})
+    flecheDescend03.classList.toggle('flecheMonte');
+});
 
 // QUATRE
 const btnActivation04 = document.getElementById('articleFAQ04');
 const reponseFAQ04 = document.getElementById('reponseFAQ04');
+const flecheDescend04 = document.getElementById('flecheDescend04');
 
-// Créer une fonction
 btnActivation04.addEventListener('click', (e) => {
-    // pour l'élement qui contient la classe "caché" tu la lui enlève/tu la lui remet
     reponseFAQ04.classList.toggle('cache');
-})
+    flecheDescend04.classList.toggle('flecheMonte');
+});

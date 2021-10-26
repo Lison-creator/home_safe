@@ -21,12 +21,10 @@
     text-align: center;
 }
 
-.containerFAQ aside .blocCategories {
+.containerFAQ aside #blocCategories {
     width: 314px;
     height: 85px;
-    background-color: rgba(241, 241, 241, 1);
     border-radius: 7px;
-    color: rgba(40, 40, 40, 1);
     font-family: 'ubuntuBold';
     font-size: 16px;
     display: flex;
@@ -35,9 +33,19 @@
     margin: 10px;
 }
 
-.containerFAQ aside .blocCategories:hover {
+.containerFAQ aside #blocCategories:hover {
     background-color: rgba(149, 80, 155, 1);
     color: rgba(241, 241, 241, 1);
+}
+
+.selected {
+    background-color: rgba(149, 80, 155, 1);
+    color: rgba(241, 241, 241, 1);
+}
+
+.notSelected {
+    background-color: rgba(241, 241, 241, 1);
+    color: rgba(40, 40, 40, 1);
 }
 
 /* Sections avec textes */
@@ -56,6 +64,7 @@
     justify-content: space-between;
     padding: 10px 0px 10px 0px;
     flex-wrap: wrap;
+    cursor: pointer;
 }
 
 .containerFAQ section article .titreQuestion {
