@@ -133,5 +133,80 @@ map.on('locationerror', onLocationError); */
 
 
 
+/*--------------------------carte.php:
+
+Partie du coté droit qui toggle au clic */
+// var visible = true;
+
+function togglePanneau() {
+    /*     console.log(visible); */
+    var panneau = document.getElementById("panneau");
+    panneau.classList.toggle("displayNone");
+
+    /*     let aside = document.getElementById("aside");
+        if (!visible) {
+            visible = true;
+        } else {
+            visible = false;
+        } */
+}
+
+/* Carte: fonction pour un menu aside qui change: Communauté, Nouveautés, Favoris */
+
+/* console.log("hello"); */
+
+
+
+
+/* Afficher le profil (aside par défaut au chargement de la page) */
+
+function afficherProfil() {
+
+    $("#profil").show();
+    $("#nouveautes").hide();
+    $("#communaute").hide();
+    $("#favoris").hide();
+}
+/* Afficher les nouveautés*/
+
+
+function afficherNouveautes() {
+
+    //TODO /* Une classe qui permet de griser la catégorie du menu choisie  */
+    /*   var menuNouveautes = document.getElementById("menuNouveautes");
+      menuNouveautes.classList.toggle("bgGris"); */
+
+    $("#nouveautes").show();
+    $("#profil").hide();
+    $("#communaute").hide();
+    $("#favoris").hide();
+}
+
+/* Afficher la communauté*/
+
+function afficherCommunaute() {
+    $("#communaute").show();
+    $("#nouveautes").hide();
+    $("#profil").hide();
+    $("#favoris").hide();
+}
+
+/* Afficher les favoris*/
+
+function afficherFavoris() {
+    $("#favoris").show();
+    $("#nouveautes").hide();
+    $("#communaute").hide();
+    $("#profil").hide();
+}
+
+
+/************************************Menu de la carte qui disparait au clic du bouton "plus" */
+
+ $("#iconPlus2").on("click", function(e) {
+    $(".blocNav2").toggleClass("collapseMenu2"); // toggle le bloc
+    $(".fa-minus").toggleClass("fa-plus"); // change le + en -
+})
+
 
 

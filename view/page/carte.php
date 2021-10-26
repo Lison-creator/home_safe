@@ -32,36 +32,37 @@
 
 <!-- Petit menu qui tombe en haut à droite -->
 <nav class="d-flex flex-column MenuGroupe">
-    <div onclick="afficherNouveautes()" class="violet MenuCarte blocNav2  collapse-menu2">Nouveautés<br>
+    <div class="blocNav2">
+        <!-- début des 3 boutons -->
+        <div onclick="afficherNouveautes()" class="violet MenuCarte ">Nouveautés<br>
 
-        <!-- Icone étoile -->
-        <svg xmlns="http://www.w3.org/2000/svg" width="26.316" height="25.001" viewBox="0 0 26.316 25.001">
-            <path id="_Color" data-name=" ↳Color" d="M13.158,20.093,21.29,25l-2.158-9.25,7.184-6.224-9.461-.8L13.158,0l-3.7,8.724L0,9.527,7.184,15.75,5.026,25Z" fill="#95509b" />
-        </svg>
+            <!-- Icone étoile -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="26.316" height="25.001" viewBox="0 0 26.316 25.001">
+                <path id="_Color" data-name=" ↳Color" d="M13.158,20.093,21.29,25l-2.158-9.25,7.184-6.224-9.461-.8L13.158,0l-3.7,8.724L0,9.527,7.184,15.75,5.026,25Z" fill="#95509b" />
+            </svg>
+        </div>
+        <div onclick="afficherCommunaute()" class="bleu MenuCarte">Ma communauté<br>
+
+            <!-- Icone Communauté -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="33.624" height="23.537" viewBox="0 0 33.624 23.537">
+                <path id="Icon_awesome-user-friends" data-name="Icon awesome-user-friends" d="M10.087,14.018A5.884,5.884,0,1,0,4.2,8.134,5.881,5.881,0,0,0,10.087,14.018ZM14.122,15.7h-.436a8.124,8.124,0,0,1-7.2,0H6.052A6.054,6.054,0,0,0,0,21.752v1.513a2.522,2.522,0,0,0,2.522,2.522H17.653a2.522,2.522,0,0,0,2.522-2.522V21.752A6.054,6.054,0,0,0,14.122,15.7Zm11.1-1.681a5.044,5.044,0,1,0-5.044-5.044A5.045,5.045,0,0,0,25.218,14.018ZM27.74,15.7h-.2a6.625,6.625,0,0,1-4.644,0h-.2a5.835,5.835,0,0,0-2.926.809,7.689,7.689,0,0,1,2.086,5.243v2.017c0,.116-.026.226-.032.336H31.1a2.522,2.522,0,0,0,2.522-2.522A5.881,5.881,0,0,0,27.74,15.7Z" transform="translate(0 -2.25)" fill="#3f50a7" />
+            </svg>
+        </div>
+        <div onclick="afficherFavoris()" class="jaune MenuCarte">Favoris<br>
+
+            <!-- Icone coeur -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="26.347" height="23.713" viewBox="0 0 26.347 23.713">
+                <path id="_Color" data-name=" ↳Color" d="M13.173,23.712l-1.91-1.706C4.479,15.972,0,11.992,0,7.107A7.108,7.108,0,0,1,7.245,0a7.952,7.952,0,0,1,5.928,2.7A7.952,7.952,0,0,1,19.1,0a7.108,7.108,0,0,1,7.245,7.107c0,4.885-4.479,8.865-11.263,14.912Z" fill="#fac815" />
+            </svg>
+        </div>
+    </div><!-- Fin des 3 boutons -->
+
+    <!--    Icone "plus" pour dérouler et enrouler le menu -->
+    <div id="iconPlus2" class="navBlanc collapse-btn m-auto">
+        <div id="croix" class="d-flex justify-content-center align-items-center mt-2">
+            <div><i class="fas fa-minus"></i></div>
+        </div>
     </div>
-    <div onclick="afficherCommunaute()" class="bleu MenuCarte blocNav2 collapse-menu2">Ma communauté<br>
-
-        <!-- Icone Communauté -->
-        <svg xmlns="http://www.w3.org/2000/svg" width="33.624" height="23.537" viewBox="0 0 33.624 23.537">
-            <path id="Icon_awesome-user-friends" data-name="Icon awesome-user-friends" d="M10.087,14.018A5.884,5.884,0,1,0,4.2,8.134,5.881,5.881,0,0,0,10.087,14.018ZM14.122,15.7h-.436a8.124,8.124,0,0,1-7.2,0H6.052A6.054,6.054,0,0,0,0,21.752v1.513a2.522,2.522,0,0,0,2.522,2.522H17.653a2.522,2.522,0,0,0,2.522-2.522V21.752A6.054,6.054,0,0,0,14.122,15.7Zm11.1-1.681a5.044,5.044,0,1,0-5.044-5.044A5.045,5.045,0,0,0,25.218,14.018ZM27.74,15.7h-.2a6.625,6.625,0,0,1-4.644,0h-.2a5.835,5.835,0,0,0-2.926.809,7.689,7.689,0,0,1,2.086,5.243v2.017c0,.116-.026.226-.032.336H31.1a2.522,2.522,0,0,0,2.522-2.522A5.881,5.881,0,0,0,27.74,15.7Z" transform="translate(0 -2.25)" fill="#3f50a7" />
-        </svg>
-    </div>
-    <div onclick="afficherFavoris()" class="jaune MenuCarte blocNav2 collapse-menu2">Favoris<br>
-
-        <!-- Icone coeur -->
-        <svg xmlns="http://www.w3.org/2000/svg" width="26.347" height="23.713" viewBox="0 0 26.347 23.713">
-            <path id="_Color" data-name=" ↳Color" d="M13.173,23.712l-1.91-1.706C4.479,15.972,0,11.992,0,7.107A7.108,7.108,0,0,1,7.245,0a7.952,7.952,0,0,1,5.928,2.7A7.952,7.952,0,0,1,19.1,0a7.108,7.108,0,0,1,7.245,7.107c0,4.885-4.479,8.865-11.263,14.912Z" fill="#fac815" />
-        </svg>
-    </div>
-
- <!--    Icone "plus" pour dérouler et enrouler le menu 
-
-    <div id="iconPlus2" class="navBlanc collapse-menu2">
-      <div id="croix" class="animationCroixFun">
-        <div class="vertical2"></div>
-        <div class="horizontal2"></div>
-      </div>
-    </div> -->
 </nav>
 
 <div class="container">
@@ -82,16 +83,10 @@
 
     <!-- Bouton pour fermer le panneau -->
     <div id="panneau" class="row panneau">
-        <a href="javascript:void(0)" class="btnToggle">
-
-            <svg onclick="togglePanneau()" xmlns="http://www.w3.org/2000/svg" width="26" height="33" viewBox="0 0 26 33">
-                <g id="Groupe_1745" data-name="Groupe 1745" transform="translate(-27 -462.667)">
-                    <rect id="Rectangle_1626" data-name="Rectangle 1626" width="26" height="33" rx="5" transform="translate(27 462.667)" fill="#9b9b9b" />
-                    <path id="_Color" data-name=" ↳Color" d="M2,0,0,2,6.5,8.527,0,15.051l2,2,8.516-8.527Z" transform="translate(35.171 470.985)" fill="#f1f1f1" />
-                </g>
-            </svg>
-
-        </a>
+        <!-- //TODO Régler le changement de width lorsque le panneau toggle  -->
+        <div onclick="togglePanneau()" class="btnToggle d-flex align-items-center">
+            <i class="fas fa-chevron-right"></i>
+        </div>
 
         <aside id="aside">
 
@@ -444,9 +439,9 @@
                     </div>
                     <!-- Icone Plus -->
                     <div class="ms-auto">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="31.156" height="31.156" viewBox="0 0 31.156 31.156">
-                        <path id="_Color" data-name=" ↳Color" d="M31.156,17.8H17.8V31.156H13.353V17.8H0V13.353H13.353V0H17.8V13.353H31.156Z" fill="#3f50a7" />
-                    </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="31.156" height="31.156" viewBox="0 0 31.156 31.156">
+                            <path id="_Color" data-name=" ↳Color" d="M31.156,17.8H17.8V31.156H13.353V17.8H0V13.353H13.353V0H17.8V13.353H31.156Z" fill="#3f50a7" />
+                        </svg>
                     </div>
 
                 </div>

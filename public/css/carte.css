@@ -79,12 +79,32 @@ img {
 }
 
 
-/* .collapse-menu2 {
-    top: -300px;
-    width: 0;
-    color: white;
+ .collapse-btn {
+    width: 50px;
+    height: 40px;
+    border-radius: 25%;
 }
- */
+ 
+
+.vertical2{
+    background-color: #F1F1F1;
+    width: 5px;
+    height: 20px ;
+}
+
+.horizontal2{
+    background-color: #F1F1F1;
+    width: 20px;
+    height: 5px ;
+    position: fixed;
+    top: 303px;
+    right: 82px;
+}
+
+.collapseMenu2{
+    top: -300px;
+    position: fixed;
+}
 
 #iconPlus2 {
     cursor: pointer;
@@ -92,9 +112,14 @@ img {
 
 .MenuGroupe {
     position: absolute;
-    top: 0;
+    top:0;
     right: 436px;
     z-index: 3;
+}
+
+i.fas.fa-minus, i.fas.fa-plus {
+    color: #F1F1F1;
+    font-size: 1.5rem;
 }
 
 .MenuCarte {
@@ -105,6 +130,7 @@ img {
     height: 95px;
     font-family: "coco";
     padding-top: 15px;
+    transition: all 0.8s ease-in-out;
 }
 
 .MenuCarte:hover {
@@ -183,11 +209,22 @@ img {
 
 .btnToggle {
     position: absolute;
-    top: 0px;
+    top: 15px;
     left: -38px;
     z-index: 10;
     width: 60px;
+    height:50px;
+    background-color:rgba(255, 255, 255, 0.3); 
+    cursor: pointer;
+    border-radius: 5px;;
 }
+
+i.fas.fa-chevron-right, i.fas.fa-chevron-left {
+    color: #F1F1F1;
+    font-size: 1.5rem;
+}
+
+
 
 
 /*---------- Petite barre du haut dans l'aside à droite (sous-menu permanent)-----------*/
