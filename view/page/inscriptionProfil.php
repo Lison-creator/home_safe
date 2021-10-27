@@ -33,13 +33,12 @@
                                             <path id="Path_110" data-name="Path 110" d="M11.25,13.5a2.766,2.766,0,0,0,2.813-2.7,2.815,2.815,0,0,0-5.625,0A2.766,2.766,0,0,0,11.25,13.5Zm0-8.1a5.532,5.532,0,0,1,5.625,5.4,5.532,5.532,0,0,1-5.625,5.4,5.532,5.532,0,0,1-5.625-5.4A5.532,5.532,0,0,1,11.25,5.4Zm8.438,14.85H2.813a2.834,2.834,0,0,1-1.969-.81A2.614,2.614,0,0,1,0,17.55V5.4A2.766,2.766,0,0,1,2.813,2.7h2.25L7.172.675A2.377,2.377,0,0,1,8.859,0h4.922a2.3,2.3,0,0,1,1.547.675L17.438,2.7h2.25A2.766,2.766,0,0,1,22.5,5.4V17.55A2.766,2.766,0,0,1,19.688,20.25Z" transform="translate(0 1)" fill="#3f50a7" fill-rule="evenodd" />
                                         </g>
                                     </svg>
-
                                 </label>
                             </div>
                             <div class="col-6">
                                 <!-- MAX_FILE_SIZE doit précéder le champ input de type file -->
-                                <input type="hidden" name="MAX_FILE_SIZE" value="30000" />
-                                <input type="file" name="image" id="btnImporterImage" hidden>
+                                <input type="hidden" name="MAX_FILE_SIZE" value="40000" />
+                                <input type="file" name="image" id="btnImporterImage" value="" hidden>
                                 <div id="imageChoisie">Aucune image importée</div>
                             </div>
                         </div>
