@@ -1,7 +1,7 @@
 <!-- Barre de menu avec le titre "Contact" -->
 <nav class="flex-menu-contact">
-        <div class="logoTermes">
-            <a href="?section=accueil"> <svg xmlns="http://www.w3.org/2000/svg" width="40.25" height="58" viewBox="0 0 165.121 237.918">
+    <div class="logoTermes">
+        <a href="?section=accueil"> <svg xmlns="http://www.w3.org/2000/svg" width="40.25" height="58" viewBox="0 0 165.121 237.918">
                 <g id="Group_1743" data-name="Group 1743" transform="translate(-451.765 643.243)">
                     <path id="Path_1120" data-name="Path 1120" d="M615.232-559.907A80.912,80.912,0,0,0,532.3-640.793a81.182,81.182,0,0,0-78.874,79.383c-.388,21.4,24.672,60.39,26.215,63.062l15.69,27.177,35.5,61.489a4.031,4.031,0,0,0,6.982,0l35.5-61.489,15.681-27.161C590.559-501.043,615.232-539.138,615.232-559.907Z" fill="#282828" />
                     <g id="Group_1591" data-name="Group 1591">
@@ -11,9 +11,9 @@
                     </g>
                 </g>
             </svg></a>
-        </div>
-        <h2>Contact</h2>
-    </nav>
+    </div>
+    <h2>Contact</h2>
+</nav>
 </nav>
 <div class="container-fluid">
     <div class="row blocComplet">
@@ -27,9 +27,10 @@
                     </svg>
                 </div>
                 <div class="align-self-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="31" height="27" viewBox="0 0 31 27">
-                        <path id="Tracé_50" data-name="Tracé 50" d="M27.125,4.5H3.875L15.5,15.75ZM0,4.5C0,2.025,1.744,0,3.875,0h23.25C29.256,0,31,2.025,31,4.5v18c0,2.475-1.744,4.5-3.875,4.5H3.875C1.744,27,0,24.975,0,22.5Z" transform="translate(0)" fill="#fac815" fill-rule="evenodd" />
-                    </svg>
+                    <a href="mailto: malima_asblvzw@gmail.com"><svg xmlns="http://www.w3.org/2000/svg" width="31" height="27" viewBox="0 0 31 27">
+                            <path id="Tracé_50" data-name="Tracé 50" d="M27.125,4.5H3.875L15.5,15.75ZM0,4.5C0,2.025,1.744,0,3.875,0h23.25C29.256,0,31,2.025,31,4.5v18c0,2.475-1.744,4.5-3.875,4.5H3.875C1.744,27,0,24.975,0,22.5Z" transform="translate(0)" fill="#fac815" fill-rule="evenodd" />
+                        </svg>
+                    </a>
                 </div>
                 <div class="align-self-center">
                     <svg xmlns="http://www.w3.org/2000/svg" width="12.011" height="23" viewBox="0 0 12.011 23">
@@ -44,7 +45,7 @@
                     0470 / 01 02 03
                 </div>
                 <div class="texteContact">
-                    malima_asblvzw@gmail.com
+                    <a href="mailto: malima_asblvzw@gmail.com">malima_asblvzw@gmail.com</a>
                 </div>
                 <div class="texteContact">
                     facebook.com/homesafeapp

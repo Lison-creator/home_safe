@@ -39,6 +39,16 @@ div .texteContact {
     font-size: 1.2rem;
 }
 
+.texteContact a {
+    color: #F1F1F1;
+    opacity: 0.9;
+}
+
+.texteContact:hover a {
+    opacity: 1;
+}
+
+
 .formulaireContact {
     border: 2px solid #282828;
     border-radius: 10px;
