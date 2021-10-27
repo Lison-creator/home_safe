@@ -11,7 +11,7 @@
                 <form action="#" method="post">
                     <div class="row align-items-center justify-content-evenly">
                         <div class="ajoutImageEdit d-flex justify-content-end align-items-end">
-                            <!-- TODO <img src="public/images/uploads/">-->
+                            <img src="public/images/uploads/<?php $_POST["image"] ?>">
                             <div class="iconPhoto d-flex justify-content-center align-items-center">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="15" height="13" viewBox="0 0 22.5 20.25">
                                     <g id="Group_1596" data-name="Group 1596" transform="translate(0 -1)">
@@ -44,7 +44,7 @@
                         <label for="bio" class="editerBio mt-4 col-10">Bio</label>
                         <div class="infoBio col-2 mt-4">1500 caractères max</div>
                     </div>
-                    <textarea name="bio" id="bio" class="editerBio"></textarea>
+                    <textarea name="bio" id="bio" class="editerTextBio"></textarea>
                     <div class="row m-auto">
                         <div class="col-12 text-center mt-5 mb-3">
                             <input type="submit" value="Sauvegarder" class="btnJaune btnSauvegarder">

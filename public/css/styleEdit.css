@@ -95,7 +95,7 @@ select.zipCodes { /* TODO A voir si Lison en a besoin aussi */
     width: 50%;
 }
 
-textarea.editerBio {
+textarea.editerTextBio {
     resize: none;
     width: 90%;
     min-height: 80px;
