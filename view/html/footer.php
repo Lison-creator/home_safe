@@ -7,6 +7,9 @@
 <script src="public/js/script.js"></script>
 <script src="public/js/faq.js"></script>
 <script src="https://kit.fontawesome.com/0e9c9dec41.js" crossorigin="anonymous"></script>
+<!-- Lien Lison Font Awesome  //TODO à supprimer pour la merge-->
+<script src="https://kit.fontawesome.com/eee3d051b9.js" crossorigin="anonymous"></script>
+
 <!-- Leaflet -->
 <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
 <!-- Mapbox GL -->

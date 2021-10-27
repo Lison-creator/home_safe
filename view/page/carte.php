@@ -114,7 +114,7 @@
                 </div>
                 <!-- Contenu du menu déroulant au hover (dropdown) -->
                 <div class="dropdown">
-                    <!-- Petite flêche vers le bas pour les options de compte -->
+                    <!-- Petite flêche vers le bas pour les options de compte et le dropdown -->
                     <button class="btnDropdown">
                         <svg xmlns="http://www.w3.org/2000/svg" width="22.075" height="13.613" viewBox="0 0 22.075 13.613">
                             <path id="_Color" data-name=" ↳Color" d="M2.59,0,0,2.594l8.414,8.444L0,19.482l2.59,2.594L13.613,11.038Z" transform="translate(22.075) rotate(90)" fill="#707070" />
@@ -237,9 +237,9 @@
                         <path id="Icon_awesome-comment" data-name="Icon awesome-comment" d="M10.966,2.25C4.909,2.25,0,6.238,0,11.16a7.909,7.909,0,0,0,2.442,5.6,10.9,10.9,0,0,1-2.347,4.1.341.341,0,0,0-.064.373.335.335,0,0,0,.313.206,9.8,9.8,0,0,0,6.023-2.2,13.063,13.063,0,0,0,4.6.831c6.057,0,10.966-3.988,10.966-8.91S17.023,2.25,10.966,2.25Z" transform="translate(64.149 11.814)" fill="#f1f1f1" />
                         <g id="Icon_awesome-heart" data-name="Icon awesome-heart" transform="translate(20 14.82)">
 
-                        <path id="Icon_awesome-heart-2" data-name="Icon awesome-heart" d="M19.02,3.508a5.626,5.626,0,0,0-7.677.56l-.811.835-.811-.835a5.626,5.626,0,0,0-7.677-.56,5.909,5.909,0,0,0-.407,8.555L9.6,20.284a1.29,1.29,0,0,0,1.864,0l7.961-8.221a5.905,5.905,0,0,0-.4-8.555Z" transform="translate(0.001 -2.246)" fill="#f1f1f1" />
+                            <path id="Icon_awesome-heart-2" data-name="Icon awesome-heart" d="M19.02,3.508a5.626,5.626,0,0,0-7.677.56l-.811.835-.811-.835a5.626,5.626,0,0,0-7.677-.56,5.909,5.909,0,0,0-.407,8.555L9.6,20.284a1.29,1.29,0,0,0,1.864,0l7.961-8.221a5.905,5.905,0,0,0-.4-8.555Z" transform="translate(0.001 -2.246)" fill="#f1f1f1" />
                         </g>
-                        
+
                         <path id="Icon_ionic-ios-send" data-name="Icon ionic-ios-send" d="M25.337,4.551,4.769,13.516a.471.471,0,0,0,.017.857l5.563,3.143a.9.9,0,0,0,1.025-.1l10.97-9.458c.073-.062.247-.179.314-.112s-.039.241-.1.314L13.067,18.85a.894.894,0,0,0-.09,1.07l3.636,5.833a.473.473,0,0,0,.852-.011l8.5-20.569A.472.472,0,0,0,25.337,4.551Z" transform="translate(104.866 7.242)" fill="#f1f1f1" />
                     </svg>
 
@@ -345,7 +345,7 @@
             <!-- Fin du panneau Nouveautés -->
 
             <!-- Troisième panneau: Communauté (le chat) -->
-            //TODO
+
             <!-- Js sur les conversation: hide() et show() -->
 
             <div id="communaute">
@@ -427,25 +427,178 @@
 
             <!-- Quatrième panneau: Favoris -->
 
+            <!-- TODO HS: z-index sur le menu-du haut pour qu'il passe au-dessus de l'input -->
             <div id="favoris">
                 <h2 class="violet">Favoris</h2>
                 <h3 class="pb-4 violet">Vos endroits préférés !</h3>
 
-                <!-- Icones: "tri" et "Plus" -->
+
                 <div class="d-flex icones-menu-favoris">
-                    <!-- Icone tri -->
                     <div class="">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="15.239" height="21.202" viewBox="0 0 15.239 21.202">
-                            <path id="Icon_awesome-sort" data-name="Icon awesome-sort" d="M2.472,16.31H15.148a1.28,1.28,0,0,1,.905,2.184L9.716,24.831a1.273,1.273,0,0,1-1.805,0L1.567,18.493A1.28,1.28,0,0,1,2.472,16.31Zm13.581-5.592L9.716,4.38a1.273,1.273,0,0,0-1.805,0L1.567,10.718A1.28,1.28,0,0,0,2.472,12.9H15.148A1.28,1.28,0,0,0,16.053,10.718Z" transform="translate(-1.191 -4.004)" fill="#3f50a7" />
-                        </svg>
-                    </div>
-                    <!-- Icone Plus -->
-                    <div class="ms-auto">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="31.156" height="31.156" viewBox="0 0 31.156 31.156">
-                            <path id="_Color" data-name=" ↳Color" d="M31.156,17.8H17.8V31.156H13.353V17.8H0V13.353H13.353V0H17.8V13.353H31.156Z" fill="#3f50a7" />
-                        </svg>
+                        <p class="jaune">
+                            Lieux Favoris
+                        </p>
+                        <ul>
+                            <li class="hoverJaune"><i class="fas fa-beer"></i>Bars</li>
+                            <li class="hoverJaune"><i class="fas fa-utensils"></i>Restaurants</li>
+                            <li class="hoverJaune"><i class="fas fa-theater-masks"></i>Théâtres</li>
+                        </ul>
                     </div>
 
+                    <!-- Icone Plus qui float à droite + son menu dropdown-->
+
+                    <div class="ms-auto">
+                        <!-- Pour le faire flotter à droite -->
+
+                        <div class="dropdownFavoris">
+
+                            <!-- Icon plus (bouton du dropdown) -->
+                            <div class="btnDropdownFavoris">
+
+                                <svg id="iconPlusFavoris" xmlns="http://www.w3.org/2000/svg" width="24.178" height="24.178" viewBox="0 0 24.178 24.178">
+                                    <path id="_Color" data-name=" ↳Color" d="M24.178,13.816H13.816V24.178H10.362V13.816H0V10.362H10.362V0h3.454V10.362H24.178Z" fill="#3f50a7" />
+                                </svg>
+                            </div>
+                            <div class="contenuDropdownFavoris">
+                                <p class="bleu">Créer</p>
+                                <a href="#">Liste</a>
+                                <a href="#">Lieux</a>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+                <!-- Les listes demo avec les jolies images de lieux :) -->
+
+                <div class="d-flex pt-3 pb-4">
+                    <div class="bleu">Vos listes</div>
+                    <div class="ms-auto">
+                        <!-- Icone "tri" -->
+                        <i class="fas fa-sort"></i>
+                    </div>
+                </div>
+                <div class="favorisContent">
+
+                    <div class="listesFavoris">
+                        <!-- Liste 1 (lieux pour faire la fête) -->
+
+                        <div class="bgGris">
+
+                            <!-- Div pour le titre de la liste -->
+                            <div class="d-flex justify-content-between titreListeFavoris">
+                                <div>
+                                    <i class="fas fa-beer"></i>
+                                </div>
+                                <div>
+                                    <p>Lieux pour faire la fête ! </p>
+                                </div>
+                                <div class="">
+                                    <!-- Svg du chevron (Font awesome marche pas pour celui-là, snif ) -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="21.463" height="12.272" viewBox="0 0 21.463 12.272">
+                                        <path id="Icon_ionic-ios-arrow-down" data-name="Icon ionic-ios-arrow-down" d="M16.923,19.819,25.038,11.7a1.527,1.527,0,0,1,2.166,0,1.547,1.547,0,0,1,0,2.173l-9.2,9.2a1.531,1.531,0,0,1-2.115.045l-9.259-9.24A1.534,1.534,0,0,1,8.8,11.7Z" transform="translate(-6.188 -11.246)" fill="#282828" />
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <!-- Div pour l'image -->
+                            <div class="imageLieuxFavoris">
+                                <img src="public/images/imagesDemoCarte/lieux_favoris-01.jpg" alt="profile Pic" class="">
+                            </div>
+
+                            <!-- Le petit "plus" sur l'image -->
+                            <div class="petitPlusImageFavoris">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
+                                    <g id="Groupe_1750" data-name="Groupe 1750" transform="translate(-328 -260)">
+                                        <circle id="Ellipse_318" data-name="Ellipse 318" cx="12.5" cy="12.5" r="12.5" transform="translate(328 260)" fill="#fff" />
+                                        <g id="_Color" data-name=" ↳Color" transform="translate(332 264)">
+                                            <path id="_Color-2" data-name=" ↳Color" d="M17,9.714H9.714V17H7.286V9.714H0V7.286H7.286V0H9.714V7.286H17Z" fill="#3f50a7" />
+                                        </g>
+                                    </g>
+                                </svg>
+
+                            </div>
+                        </div>
+                        <!-- Liste 2 (lieux pour faire du sport) -->
+
+                        <div class="bgGris">
+
+                            <!-- Div pour le titre de la liste -->
+                            <div class="d-flex justify-content-between titreListeFavoris">
+                                <div>
+                                    <i class="fas fa-beer"></i>
+                                </div>
+                                <div>
+                                    <p>Quartiers Jogging </p>
+                                </div>
+                                <div class="">
+                                    <!-- Svg du chevron (Font awesome marche pas pour celui-là, snif ) -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="21.463" height="12.272" viewBox="0 0 21.463 12.272">
+                                        <path id="Icon_ionic-ios-arrow-down" data-name="Icon ionic-ios-arrow-down" d="M16.923,19.819,25.038,11.7a1.527,1.527,0,0,1,2.166,0,1.547,1.547,0,0,1,0,2.173l-9.2,9.2a1.531,1.531,0,0,1-2.115.045l-9.259-9.24A1.534,1.534,0,0,1,8.8,11.7Z" transform="translate(-6.188 -11.246)" fill="#282828" />
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <!-- Div pour l'image -->
+                            <div class="imageLieuxFavoris">
+                                <img src="public/images/imagesDemoCarte/lieux_favoris-02.jpg" alt="profile Pic" class="">
+                            </div>
+
+                            <!-- Le petit "plus" sur l'image -->
+                            <div class="petitPlusImageFavoris">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
+                                    <g id="Groupe_1750" data-name="Groupe 1750" transform="translate(-328 -260)">
+                                        <circle id="Ellipse_318" data-name="Ellipse 318" cx="12.5" cy="12.5" r="12.5" transform="translate(328 260)" fill="#fff" />
+                                        <g id="_Color" data-name=" ↳Color" transform="translate(332 264)">
+                                            <path id="_Color-2" data-name=" ↳Color" d="M17,9.714H9.714V17H7.286V9.714H0V7.286H7.286V0H9.714V7.286H17Z" fill="#3f50a7" />
+                                        </g>
+                                    </g>
+                                </svg>
+
+                            </div>
+                        </div>
+                        <!-- Liste 3 (lieux à aller voir) -->
+
+                        <div class="bgGris">
+
+                            <!-- Div pour le titre de la liste -->
+                            <div class="d-flex justify-content-between titreListeFavoris">
+                                <div>
+                                    <i class="fas fa-beer"></i>
+                                </div>
+                                <div>
+                                    <p>À aller voir  </p>
+                                </div>
+                                <div class="">
+                                    <!-- Svg du chevron (Font awesome marche pas pour celui-là, snif ) -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="21.463" height="12.272" viewBox="0 0 21.463 12.272">
+                                        <path id="Icon_ionic-ios-arrow-down" data-name="Icon ionic-ios-arrow-down" d="M16.923,19.819,25.038,11.7a1.527,1.527,0,0,1,2.166,0,1.547,1.547,0,0,1,0,2.173l-9.2,9.2a1.531,1.531,0,0,1-2.115.045l-9.259-9.24A1.534,1.534,0,0,1,8.8,11.7Z" transform="translate(-6.188 -11.246)" fill="#282828" />
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <!-- Div pour l'image -->
+                            <div class="imageLieuxFavoris">
+                                <img src="public/images/imagesDemoCarte/lieux_favoris-03.jpg" alt="profile Pic" class="">
+                            </div>
+
+                            <!-- Le petit "plus" sur l'image -->
+                            <div class="petitPlusImageFavoris">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
+                                    <g id="Groupe_1750" data-name="Groupe 1750" transform="translate(-328 -260)">
+                                        <circle id="Ellipse_318" data-name="Ellipse 318" cx="12.5" cy="12.5" r="12.5" transform="translate(328 260)" fill="#fff" />
+                                        <g id="_Color" data-name=" ↳Color" transform="translate(332 264)">
+                                            <path id="_Color-2" data-name=" ↳Color" d="M17,9.714H9.714V17H7.286V9.714H0V7.286H7.286V0H9.714V7.286H17Z" fill="#3f50a7" />
+                                        </g>
+                                    </g>
+                                </svg>
+
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
 
 
