@@ -10,7 +10,7 @@
         <div class="col-4 offset-2 formulaireConnection">
             <!-- Ne prend pas toute la page car l'autre col c'est pour le logo -->
 
-            <h2 class="text-uppercase mb-2 mt-5 text-center ombrageText">Home Safe</h2>
+            <h2 class="text-uppercase mb-2 mt-1 text-center ombrageText">Home Safe</h2>
             <h3 class="text-center mb-5 ombrageText">Rejoins Home Safe et ta communauté <br>pour des trajets sécures dans Bruxelles !</h3>
 
             <div class="fondFormulaire">
@@ -35,18 +35,20 @@
                 <div class="row">
                     <form action="index.php?section=inscription" method="POST" class="col-11 offset-1">
                         <label for="pseudo" id="labelConnectionPseudo">Pseudo</label><br>
-                        <input type="text" name="pseudo" id="pseudo" placeholder="Chatshimi"><br> <!-- TODO mettre un focus avec du javascript -->
+                        <input type="text" name="pseudo" id="pseudo" placeholder="Chatshimi" required ><br> <!-- TODO mettre un focus avec du javascript -->
 
                         <label for="email" id="labelConnectionEmail">E-mail</label><br>
-                        <input type="mail" name="email" id="email" placeholder="Chatshimi@email.be"><br>
+                        <input type="mail" name="email" id="email" placeholder="Chatshimi@email.be" required><br>
 
                         <label for="motDePasseConnection" id="labelConnectionMdp" namespace>Mot de passe</label><br>
-                        <input type="password" name="mdp" id="motDePasseConnection" pattern="{[A-Za-z0-9]{8,}"><br>
-                        <div class="position-absolute oeilInscription">
-                            <i class="fas fa-eye oeilChange" id="btnOeil" onClick="montrerMdp('motDePasseConnection', this)"></i>
+                        <div class="d-flex">
+                            <div class="position-absolute oeilInscription d-flex justify-content-center align-self-center">
+                                <i class="fas fa-eye oeilChange" id="btnOeil" onClick="montrerMdp('motDePasseConnection', this)"></i>
+                            </div>
+                            <input type="password" name="mdp" id="motDePasseConnection" pattern="{[A-Za-z0-9]{8,}" required ><br>
                         </div>
                         <div class="row m-auto">
-                            <div class="col-11" offset-1>
+                            <div class="col-11 offset-1 mt-4" >
                                 <input required type="checkbox" id="accepter" name="accepter" class="me-3 checkboxColor"><!-- me-3 avec bootstrap pour faire une marge autour mais qui reste alignée/centrée par rapport à l'élément à côté -->
                                 <label for="accepter" class="accepter">J'accepte <span><a class="lienTermesEtCondition" href="?section=termes">les termes et les conditions d'utilisation </a> </span></label>
                             </div>
@@ -66,7 +68,7 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-12 logoConnection d-flex align-content-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 49.112 70.763">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 49.112 70.763">
                             <a href="?section=accueil">
                                 <g id="Groupe_1744" data-name="Groupe 1744" transform="translate(-451.765 643.243)">
                                     <path id="Tracé_1120" data-name="Tracé 1120" d="M501.547-616.753a24.065,24.065,0,0,0-24.667-24.058A24.146,24.146,0,0,0,453.421-617.2c-.115,6.365,7.338,17.962,7.8,18.756l4.667,8.083,10.559,18.289a1.2,1.2,0,0,0,2.077,0l10.559-18.289,4.664-8.078C494.209-599.245,501.547-610.575,501.547-616.753Z" transform="translate(-1.162 -1.704)" fill="#282828" />
