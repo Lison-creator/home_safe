@@ -31,8 +31,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="erreur">
-                        <?= $msgErreurInscription; ?>
+                    <div class="col-12 d-inline-flex justify-content-evenly align-content-center">
+                        <?= $msgErreurInscription ; ?>
                     </div>
                 </div>
                 <div class="row">

@@ -384,14 +384,25 @@ a.nav-link:hover {
     /* ******** erreur */
 .erreur{
     color: #FAC815;
-    font-weight: bold;
     font-size: 1rem;
 }
 
 i.fas.fa-exclamation-circle{
-    color: #FAC815;
+    color: #BF293E;
     font-size: 1.5rem;
 
+}
+
+a.connectionErreur{
+    color: #3F50A7;
+    font-weight: bold;
+    opacity: 0.9;
+    transition: all 0.5s ease-in-out;
+
+}
+
+a.connectionErreur:hover{
+    opacity:1
 }
 
 @media (min-width:0px) and (max-width:576px) {

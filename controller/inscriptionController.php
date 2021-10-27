@@ -56,14 +56,15 @@ if (isset($_POST)){
             else {
                // var_dump('le else du checkAccountNotExist : le compte existe déjà');
 
-                $msgErrorInscription = '<i class="fas fa-exclamation-circle"><p class="erreur">Ce compte existe déjà. Voulez-vous <a href="?section=connexion">connecter</a></p>';
+               $msgErreurInscription = '<i class="fas fa-exclamation-circle"></i><p class="erreur">Ce compte existe déjà. Voulez-vous <a href="?section=connexion" class="connectionErreur">connecter</a> ?</p>';
             }
         }
     }
 }
 
 else {
-    $msgErreurInscription = '<i class="fas fa-exclamation-circle"><p class="erreur">Veuillez remplir tous les champs s\'il vous plaît.</p>';
+   // var_dump('yolo');
+    $msgErreurInscription = '<i class="fas fa-exclamation-circle"></i><p class="erreur">Veuillez remplir tous les champs s\'il vous plaît.</p>';
     //var_dump('aucun champs');
 }
 

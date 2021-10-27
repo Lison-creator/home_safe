@@ -167,12 +167,12 @@
 
 
                 if ($data != null && sizeof($data) == 1) {
-                    var_dump("le compte existe");
+                    //var_dump("le compte existe");
                     return false;
                 }
                 return true;
             } catch (PDOException $e) {
-               var_dump($e);
+               //var_dump($e);
                 return true;
             }
         }
