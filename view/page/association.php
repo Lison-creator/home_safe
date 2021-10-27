@@ -45,7 +45,6 @@
                 </g>
             </svg>
         </div>
-        <!-- TODO Lison: Ajouter photo -->
         <div class="texteCodeusesBackground p-3 m-auto">
             <p class="titresCodeuses p-2">Lison</p>
             <p class="texteCodeuses p-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nesciunt quibusdam omnis sed laboriosam aspernatur culpa, veniam voluptatem provident suscipit fuga sit quod laborum modi. Assumenda corrupti nemo vitae, blanditiis quasi fuga? Dolor quibusdam, officia ipsa placeat dignissimos, blanditiis explicabo reiciendis sit adipisci quos enim ullam eveniet corporis excepturi minima sed consequuntur eum odio? Molestiae ut ea harum fugit totam odit, praesentium nemo, enim dolores eos hic at temporibus incidunt eveniet sit? Tempore veniam harum nemo voluptate eius inventore temporibus cumque veritatis aliquid eos! Nulla quaerat veritatis nobis suscipit, labore non soluta doloremque nisi itaque nam, eius animi distinctio amet!</p> <!-- TODO Lison: Ajouter texte introduction -->

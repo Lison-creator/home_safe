@@ -93,4 +93,4 @@
     </div><!-- fin de la row générale -->
 
 </section>
-<script src="public/js/script-inscriptionProfile.js"></script>
+<script src="public/js/script-inscriptionProfile.js"></script> <!-- Script ajouté ici et non dans le footer car nécessaire seulement ici -->
