@@ -364,377 +364,376 @@
 
 
 
-    </div>
 
 
-    <!-- Fin du panneau Profil -->
 
-    <!-- Deuxième panneau: Nouveautés -->
-    <div id="nouveautes">
-        <h2 class="violet">Nouveautés</h2>
-        <h3 class="pb-4 violet">Quoi de neuf à Bruxelles ?</h3>
+            <!-- Fin du panneau Profil -->
 
-        <div id="nouveautesContent">
-            <h4 class="pt-3 pb-2 bleu">Nouveaux lieux favoris de vos ami.e.s !</h4>
-            <!-- Lieu ami (Goupil Le fol: texte + image) -->
-            <div>
-                <div class="lieuAmi d-flex align-items-center justify-content-between ">
-                    <div class="svgLieu"><svg xmlns="http://www.w3.org/2000/svg" width="21.652" height="21.652" viewBox="0 0 21.652 21.652">
-                            <path id="Icon_awesome-beer" data-name="Icon awesome-beer" d="M17.786,5.343h-2.32V3.41a1.16,1.16,0,0,0-1.16-1.16H1.16A1.16,1.16,0,0,0,0,3.41V22.742A1.16,1.16,0,0,0,1.16,23.9H14.306a1.16,1.16,0,0,0,1.16-1.16V20.707l3.9-1.739a3.871,3.871,0,0,0,2.291-3.531V9.21A3.871,3.871,0,0,0,17.786,5.343Zm.773,10.094a.774.774,0,0,1-.458.706L15.466,17.32V8.436h2.32a.774.774,0,0,1,.773.773Zm-8.506,3.825a.773.773,0,0,1-.773-.773V7.663a.773.773,0,1,1,1.547,0V18.489A.773.773,0,0,1,10.053,19.263Zm-4.64,0a.773.773,0,0,1-.773-.773V7.663a.773.773,0,1,1,1.547,0V18.489A.773.773,0,0,1,5.413,19.263Z" transform="translate(0 -2.25)" fill="#282828" />
-                        </svg>
-                    </div>
-                    <div class="lieuAmiTexte">
-                        <span>Rue de la Violette 22, 1000 Bruxelles</span>
-                        <p>Goupil Le fol (texte demo)</p>
-                    </div>
-                    <div class="svgCoeur"><svg id="Groupe_1569" data-name="Groupe 1569" xmlns="http://www.w3.org/2000/svg" width="23.394" height="23.42" viewBox="0 0 23.394 23.42">
-                            <path id="Tracé_1110" data-name="Tracé 1110" d="M325.8,305.469h.068c.023.041.059,0,.086.027a5.118,5.118,0,0,1,2.109.618,7.11,7.11,0,0,1,3.587,5.528,3.737,3.737,0,0,0,.068.5v1.146a1.966,1.966,0,0,0-.064.455,7.46,7.46,0,0,1-1.777,4.064c-3.246,3.682-6.514,7.342-9.769,11.01-.068.077-.1.077-.173,0l-8.387-9.478c-.3-.336-.568-.7-.887-1a7.592,7.592,0,0,1-2.273-4.573,2.955,2.955,0,0,0-.064-.491v-1.146a.663.663,0,0,0,.041-.268,7.505,7.505,0,0,1,2.114-4.623,5.661,5.661,0,0,1,3.228-1.687,2.658,2.658,0,0,0,.455-.073h.1a.86.86,0,0,0,.455,0h.073c0,.032.036,0,.059,0a4.791,4.791,0,0,1,2.1.682,7.683,7.683,0,0,1,3,3.473c.023.041.032.1.082.132l.059-.136a8.337,8.337,0,0,1,1.9-2.65,5.456,5.456,0,0,1,2.841-1.459,1.667,1.667,0,0,0,.4-.064h.023A1.181,1.181,0,0,0,325.8,305.469Z" transform="translate(-308.33 -305.46)" fill="#3f50a7" />
-                        </svg>
-                    </div>
-                </div>
-                <div class="mt-3">
-                    <img src="public/images/imagesDemoCarte/goupil-01.jpeg" alt="Goupil Le Fol">
-                </div>
-                <p>Aimé par...</p>
-            </div>
-            <hr> <!-- Ligne droite -->
-            <!-- Fin du lieu ami :'( -->
+            <!-- Deuxième panneau: Nouveautés -->
+            <div id="nouveautes">
+                <h2 class="violet">Nouveautés</h2>
+                <h3 class="pb-4 violet">Quoi de neuf à Bruxelles ?</h3>
 
-            <!-- Lieu "alerte" -->
-
-            <!-- "Alerte" + Titre du Lieu + nb de personnes qui valident l'alerte -->
-            <div>
-                <div class=" alerteTitre d-flex">
-                    <h4 class="pt-2 pb-2 rouge">Alerte</h4>
-                    <span class="align-self-center">Validée par 5 personnes</span>
-                </div>
-                <div class="lieuAlerte d-flex align-items-center justify-content-between ">
-                    <div class="svgLieu"><svg xmlns="http://www.w3.org/2000/svg" width="21.652" height="21.652" viewBox="0 0 21.652 21.652">
-                            <path id="Icon_awesome-beer" data-name="Icon awesome-beer" d="M17.786,5.343h-2.32V3.41a1.16,1.16,0,0,0-1.16-1.16H1.16A1.16,1.16,0,0,0,0,3.41V22.742A1.16,1.16,0,0,0,1.16,23.9H14.306a1.16,1.16,0,0,0,1.16-1.16V20.707l3.9-1.739a3.871,3.871,0,0,0,2.291-3.531V9.21A3.871,3.871,0,0,0,17.786,5.343Zm.773,10.094a.774.774,0,0,1-.458.706L15.466,17.32V8.436h2.32a.774.774,0,0,1,.773.773Zm-8.506,3.825a.773.773,0,0,1-.773-.773V7.663a.773.773,0,1,1,1.547,0V18.489A.773.773,0,0,1,10.053,19.263Zm-4.64,0a.773.773,0,0,1-.773-.773V7.663a.773.773,0,1,1,1.547,0V18.489A.773.773,0,0,1,5.413,19.263Z" transform="translate(0 -2.25)" fill="#282828" />
-                        </svg>
-                    </div>
-                    <div class="lieuAlerteTexte">
-                        <span>Rue de la Panique 30, 1050 Ixelles</span>
-                        <p>Le Joli Café</p>
-                    </div>
-                    <div class="svgAlerte"><svg xmlns="http://www.w3.org/2000/svg" width="24.617" height="24.617" viewBox="0 0 24.617 24.617">
-                            <path id="Icon_material-error-outline" data-name="Icon material-error-outline" d="M14.078,19h2.462v2.462H14.078Zm0-9.847h2.462v7.385H14.078ZM15.3,3A12.309,12.309,0,1,0,27.617,15.309,12.3,12.3,0,0,0,15.3,3Zm.012,22.155a9.847,9.847,0,1,1,9.847-9.847A9.844,9.844,0,0,1,15.309,25.155Z" transform="translate(-3 -3)" fill="#282828" />
-                        </svg>
-                    </div>
-                </div>
-            </div>
-            <!-- Justification: commentaire sur le lieu Alerte -->
-            <div>
-                <div>
-                    <!-- Div du commentaire Alerte -->
-                    <!-- Svg du fond jaune du commentaire -->
-                    <svg class="svgCommentaireAlerte" xmlns="http://www.w3.org/2000/svg" width="294.537" height="149.963" viewBox="0 0 294.537 149.963">
-                        <g id="Groupe_1719" data-name="Groupe 1719" transform="translate(0 0)">
-                            <rect id="Rectangle_1657" data-name="Rectangle 1657" width="294.537" height="129.128" rx="13" transform="translate(0 0)" fill="#fac815" />
-                            <path id="Tracé_1140" data-name="Tracé 1140" d="M157,512.165,183,540l-5.5-29.5Z" transform="translate(-132 -390.037)" fill="#fac815" />
-                        </g>
-                    </svg>
-                    <div class="blocTexteCommentaire">
-                        <p class="auteurCommentaire">Justine Roy</p>
-
-                        <!-- Icone "ouvrir" pour voir les 18 commentaires + texte dans un flexbox -->
-                        <div class="d-flex">
-                            <svg class="align-self-center" xmlns="http://www.w3.org/2000/svg" width="14.871" height="8.503" viewBox="0 0 14.871 8.503">
-                                <path id="Icon_ionic-ios-arrow-down" data-name="Icon ionic-ios-arrow-down" d="M13.626,17.186l5.623-5.628a1.058,1.058,0,0,1,1.5,0,1.072,1.072,0,0,1,0,1.505L14.379,19.44a1.061,1.061,0,0,1-1.466.031L6.5,13.068A1.063,1.063,0,1,1,8,11.563Z" transform="translate(-6.188 -11.246)" fill="#3f50a7" />
-                            </svg>
-                            <p class="sousTitreCommentaire align-self-center">Voir les 18 commentaires</p>
-                        </div>
-                        <p class="texteCommentaireAlerte">
-                            <span>Motif: </span>
-                            Serveur raciste
-                            Je ne remettrais plus les pieds ici !!! Tellement dommage, j’adorais ce café, mais il faut embaucher quelqu’un d’autre là.
-                        </p>
-                    </div>
-                </div>
-                <!-- Fin de l'alerte -->
-
-                <!-- Commentaires récents -->
-                <hr> <!-- Ligne droite -->
-                <!-- Lieu ami (La recyclerie: texte + image) -->
-                <div>
-                    <div class="lieuAmi d-flex align-items-center justify-content-between ">
-                        <div class="svgLieu"><svg xmlns="http://www.w3.org/2000/svg" width="21.652" height="21.652" viewBox="0 0 21.652 21.652">
-                                <path id="Icon_awesome-beer" data-name="Icon awesome-beer" d="M17.786,5.343h-2.32V3.41a1.16,1.16,0,0,0-1.16-1.16H1.16A1.16,1.16,0,0,0,0,3.41V22.742A1.16,1.16,0,0,0,1.16,23.9H14.306a1.16,1.16,0,0,0,1.16-1.16V20.707l3.9-1.739a3.871,3.871,0,0,0,2.291-3.531V9.21A3.871,3.871,0,0,0,17.786,5.343Zm.773,10.094a.774.774,0,0,1-.458.706L15.466,17.32V8.436h2.32a.774.774,0,0,1,.773.773Zm-8.506,3.825a.773.773,0,0,1-.773-.773V7.663a.773.773,0,1,1,1.547,0V18.489A.773.773,0,0,1,10.053,19.263Zm-4.64,0a.773.773,0,0,1-.773-.773V7.663a.773.773,0,1,1,1.547,0V18.489A.773.773,0,0,1,5.413,19.263Z" transform="translate(0 -2.25)" fill="#282828" />
-                            </svg>
-                        </div>
-                        <div class="lieuAmiTexte">
-                            <span>Avenue de Malines 167, 1030 Scharbeek</span>
-                            <p>La Recyclerie</p>
-                        </div>
-                        <div class="svgCoeur"><svg id="Groupe_1569" data-name="Groupe 1569" xmlns="http://www.w3.org/2000/svg" width="23.394" height="23.42" viewBox="0 0 23.394 23.42">
-                                <path id="Tracé_1110" data-name="Tracé 1110" d="M325.8,305.469h.068c.023.041.059,0,.086.027a5.118,5.118,0,0,1,2.109.618,7.11,7.11,0,0,1,3.587,5.528,3.737,3.737,0,0,0,.068.5v1.146a1.966,1.966,0,0,0-.064.455,7.46,7.46,0,0,1-1.777,4.064c-3.246,3.682-6.514,7.342-9.769,11.01-.068.077-.1.077-.173,0l-8.387-9.478c-.3-.336-.568-.7-.887-1a7.592,7.592,0,0,1-2.273-4.573,2.955,2.955,0,0,0-.064-.491v-1.146a.663.663,0,0,0,.041-.268,7.505,7.505,0,0,1,2.114-4.623,5.661,5.661,0,0,1,3.228-1.687,2.658,2.658,0,0,0,.455-.073h.1a.86.86,0,0,0,.455,0h.073c0,.032.036,0,.059,0a4.791,4.791,0,0,1,2.1.682,7.683,7.683,0,0,1,3,3.473c.023.041.032.1.082.132l.059-.136a8.337,8.337,0,0,1,1.9-2.65,5.456,5.456,0,0,1,2.841-1.459,1.667,1.667,0,0,0,.4-.064h.023A1.181,1.181,0,0,0,325.8,305.469Z" transform="translate(-308.33 -305.46)" fill="#3f50a7" />
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="mt-3 pb-3">
-                        <img src="public/images/imagesDemoCarte/recyclerie.jpeg" alt="Goupil Le Fol">
-                    </div>
-                    <!-- Barre d'icone de l'image (coeur/commentaire/message) -->
-
-                    <svg class="barreIconeImage" xmlns="http://www.w3.org/2000/svg" width="311.055" height="45" viewBox="0 0 311.055 45">
-                        <rect id="Rectangle_3" data-name="Rectangle 3" width="311.055" height="45" rx="16" fill="#95509b" />
-                        <path id="Icon_awesome-comment" data-name="Icon awesome-comment" d="M10.966,2.25C4.909,2.25,0,6.238,0,11.16a7.909,7.909,0,0,0,2.442,5.6,10.9,10.9,0,0,1-2.347,4.1.341.341,0,0,0-.064.373.335.335,0,0,0,.313.206,9.8,9.8,0,0,0,6.023-2.2,13.063,13.063,0,0,0,4.6.831c6.057,0,10.966-3.988,10.966-8.91S17.023,2.25,10.966,2.25Z" transform="translate(64.149 11.814)" fill="#f1f1f1" />
-                        <g id="Icon_awesome-heart" data-name="Icon awesome-heart" transform="translate(20 14.82)">
-
-                            <path id="Icon_awesome-heart-2" data-name="Icon awesome-heart" d="M19.02,3.508a5.626,5.626,0,0,0-7.677.56l-.811.835-.811-.835a5.626,5.626,0,0,0-7.677-.56,5.909,5.909,0,0,0-.407,8.555L9.6,20.284a1.29,1.29,0,0,0,1.864,0l7.961-8.221a5.905,5.905,0,0,0-.4-8.555Z" transform="translate(0.001 -2.246)" fill="#f1f1f1" />
-                        </g>
-
-                        <path id="Icon_ionic-ios-send" data-name="Icon ionic-ios-send" d="M25.337,4.551,4.769,13.516a.471.471,0,0,0,.017.857l5.563,3.143a.9.9,0,0,0,1.025-.1l10.97-9.458c.073-.062.247-.179.314-.112s-.039.241-.1.314L13.067,18.85a.894.894,0,0,0-.09,1.07l3.636,5.833a.473.473,0,0,0,.852-.011l8.5-20.569A.472.472,0,0,0,25.337,4.551Z" transform="translate(104.866 7.242)" fill="#f1f1f1" />
-                    </svg>
-
+                <div id="nouveautesContent">
+                    <h4 class="pt-3 pb-2 bleu">Nouveaux lieux favoris de vos ami.e.s !</h4>
+                    <!-- Lieu ami (Goupil Le fol: texte + image) -->
                     <div>
-                        <!-- Div du commentaire Commentaires récents -->
-                        <div class="container">
-                            <div class=" row">
+                        <div class="lieuAmi d-flex align-items-center justify-content-between ">
+                            <div class="svgLieu"><svg xmlns="http://www.w3.org/2000/svg" width="21.652" height="21.652" viewBox="0 0 21.652 21.652">
+                                    <path id="Icon_awesome-beer" data-name="Icon awesome-beer" d="M17.786,5.343h-2.32V3.41a1.16,1.16,0,0,0-1.16-1.16H1.16A1.16,1.16,0,0,0,0,3.41V22.742A1.16,1.16,0,0,0,1.16,23.9H14.306a1.16,1.16,0,0,0,1.16-1.16V20.707l3.9-1.739a3.871,3.871,0,0,0,2.291-3.531V9.21A3.871,3.871,0,0,0,17.786,5.343Zm.773,10.094a.774.774,0,0,1-.458.706L15.466,17.32V8.436h2.32a.774.774,0,0,1,.773.773Zm-8.506,3.825a.773.773,0,0,1-.773-.773V7.663a.773.773,0,1,1,1.547,0V18.489A.773.773,0,0,1,10.053,19.263Zm-4.64,0a.773.773,0,0,1-.773-.773V7.663a.773.773,0,1,1,1.547,0V18.489A.773.773,0,0,1,5.413,19.263Z" transform="translate(0 -2.25)" fill="#282828" />
+                                </svg>
+                            </div>
+                            <div class="lieuAmiTexte">
+                                <span>Rue de la Violette 22, 1000 Bruxelles</span>
+                                <p>Goupil Le fol (texte demo)</p>
+                            </div>
+                            <div class="svgCoeur"><svg id="Groupe_1569" data-name="Groupe 1569" xmlns="http://www.w3.org/2000/svg" width="23.394" height="23.42" viewBox="0 0 23.394 23.42">
+                                    <path id="Tracé_1110" data-name="Tracé 1110" d="M325.8,305.469h.068c.023.041.059,0,.086.027a5.118,5.118,0,0,1,2.109.618,7.11,7.11,0,0,1,3.587,5.528,3.737,3.737,0,0,0,.068.5v1.146a1.966,1.966,0,0,0-.064.455,7.46,7.46,0,0,1-1.777,4.064c-3.246,3.682-6.514,7.342-9.769,11.01-.068.077-.1.077-.173,0l-8.387-9.478c-.3-.336-.568-.7-.887-1a7.592,7.592,0,0,1-2.273-4.573,2.955,2.955,0,0,0-.064-.491v-1.146a.663.663,0,0,0,.041-.268,7.505,7.505,0,0,1,2.114-4.623,5.661,5.661,0,0,1,3.228-1.687,2.658,2.658,0,0,0,.455-.073h.1a.86.86,0,0,0,.455,0h.073c0,.032.036,0,.059,0a4.791,4.791,0,0,1,2.1.682,7.683,7.683,0,0,1,3,3.473c.023.041.032.1.082.132l.059-.136a8.337,8.337,0,0,1,1.9-2.65,5.456,5.456,0,0,1,2.841-1.459,1.667,1.667,0,0,0,.4-.064h.023A1.181,1.181,0,0,0,325.8,305.469Z" transform="translate(-308.33 -305.46)" fill="#3f50a7" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="mt-3">
+                            <img src="public/images/imagesDemoCarte/goupil-01.jpeg" alt="Goupil Le Fol">
+                        </div>
+                        <p>Aimé par...</p>
+                    </div>
+                    <hr> <!-- Ligne droite -->
+                    <!-- Fin du lieu ami :'( -->
 
-                                <div class="commentaireNouveaute col align-self-start bgJaune">
-                                    Un lieu vraiment chaleureux, très chouette pour venir travailler. Et en plus on peut venir y recycler ses bouteilles en verre ! (J'ai pensé à toi @Majdi ^^) !
-                                </div>
+                    <!-- Lieu "alerte" -->
 
-                                <p class="auteurCommentaire">Héléna</p>
-                                <div class="d-flex flex-column">
-                                    <div class="commentaireNouveaute col align-self-start bgJaune">
-                                        Totalement d'accord, j'ai une amie qui y travaille, d'ailleurs. J'y vais tout le temps.
-                                    </div>
-                                    <p class="commentaireAuteur">Majdi</p>
-                                </div>
+                    <!-- "Alerte" + Titre du Lieu + nb de personnes qui valident l'alerte -->
+                    <div>
+                        <div class=" alerteTitre d-flex">
+                            <h4 class="pt-2 pb-2 rouge">Alerte</h4>
+                            <span class="align-self-center">Validée par 5 personnes</span>
+                        </div>
+                        <div class="lieuAlerte d-flex align-items-center justify-content-between ">
+                            <div class="svgLieu"><svg xmlns="http://www.w3.org/2000/svg" width="21.652" height="21.652" viewBox="0 0 21.652 21.652">
+                                    <path id="Icon_awesome-beer" data-name="Icon awesome-beer" d="M17.786,5.343h-2.32V3.41a1.16,1.16,0,0,0-1.16-1.16H1.16A1.16,1.16,0,0,0,0,3.41V22.742A1.16,1.16,0,0,0,1.16,23.9H14.306a1.16,1.16,0,0,0,1.16-1.16V20.707l3.9-1.739a3.871,3.871,0,0,0,2.291-3.531V9.21A3.871,3.871,0,0,0,17.786,5.343Zm.773,10.094a.774.774,0,0,1-.458.706L15.466,17.32V8.436h2.32a.774.774,0,0,1,.773.773Zm-8.506,3.825a.773.773,0,0,1-.773-.773V7.663a.773.773,0,1,1,1.547,0V18.489A.773.773,0,0,1,10.053,19.263Zm-4.64,0a.773.773,0,0,1-.773-.773V7.663a.773.773,0,1,1,1.547,0V18.489A.773.773,0,0,1,5.413,19.263Z" transform="translate(0 -2.25)" fill="#282828" />
+                                </svg>
+                            </div>
+                            <div class="lieuAlerteTexte">
+                                <span>Rue de la Panique 30, 1050 Ixelles</span>
+                                <p>Le Joli Café</p>
+                            </div>
+                            <div class="svgAlerte"><svg xmlns="http://www.w3.org/2000/svg" width="24.617" height="24.617" viewBox="0 0 24.617 24.617">
+                                    <path id="Icon_material-error-outline" data-name="Icon material-error-outline" d="M14.078,19h2.462v2.462H14.078Zm0-9.847h2.462v7.385H14.078ZM15.3,3A12.309,12.309,0,1,0,27.617,15.309,12.3,12.3,0,0,0,15.3,3Zm.012,22.155a9.847,9.847,0,1,1,9.847-9.847A9.844,9.844,0,0,1,15.309,25.155Z" transform="translate(-3 -3)" fill="#282828" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Justification: commentaire sur le lieu Alerte -->
+                    <div>
+                        <div>
+                            <!-- Div du commentaire Alerte -->
+                            <!-- Svg du fond jaune du commentaire -->
+                            <svg class="svgCommentaireAlerte" xmlns="http://www.w3.org/2000/svg" width="294.537" height="149.963" viewBox="0 0 294.537 149.963">
+                                <g id="Groupe_1719" data-name="Groupe 1719" transform="translate(0 0)">
+                                    <rect id="Rectangle_1657" data-name="Rectangle 1657" width="294.537" height="129.128" rx="13" transform="translate(0 0)" fill="#fac815" />
+                                    <path id="Tracé_1140" data-name="Tracé 1140" d="M157,512.165,183,540l-5.5-29.5Z" transform="translate(-132 -390.037)" fill="#fac815" />
+                                </g>
+                            </svg>
+                            <div class="blocTexteCommentaire">
+                                <p class="auteurCommentaire">Justine Roy</p>
+
+                                <!-- Icone "ouvrir" pour voir les 18 commentaires + texte dans un flexbox -->
                                 <div class="d-flex">
-                                    <div class="d-flex flex-column">
-                                        <div class="commentaireNouveaute col align-self-end
+                                    <svg class="align-self-center" xmlns="http://www.w3.org/2000/svg" width="14.871" height="8.503" viewBox="0 0 14.871 8.503">
+                                        <path id="Icon_ionic-ios-arrow-down" data-name="Icon ionic-ios-arrow-down" d="M13.626,17.186l5.623-5.628a1.058,1.058,0,0,1,1.5,0,1.072,1.072,0,0,1,0,1.505L14.379,19.44a1.061,1.061,0,0,1-1.466.031L6.5,13.068A1.063,1.063,0,1,1,8,11.563Z" transform="translate(-6.188 -11.246)" fill="#3f50a7" />
+                                    </svg>
+                                    <p class="sousTitreCommentaire align-self-center">Voir les 18 commentaires</p>
+                                </div>
+                                <p class="texteCommentaireAlerte">
+                                    <span>Motif: </span>
+                                    Serveur raciste
+                                    Je ne remettrais plus les pieds ici !!! Tellement dommage, j’adorais ce café, mais il faut embaucher quelqu’un d’autre là.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Fin de l'alerte -->
+
+                        <!-- Commentaires récents -->
+                        <hr> <!-- Ligne droite -->
+                        <!-- Lieu ami (La recyclerie: texte + image) -->
+                        <div>
+                            <div class="lieuAmi d-flex align-items-center justify-content-between ">
+                                <div class="svgLieu"><svg xmlns="http://www.w3.org/2000/svg" width="21.652" height="21.652" viewBox="0 0 21.652 21.652">
+                                        <path id="Icon_awesome-beer" data-name="Icon awesome-beer" d="M17.786,5.343h-2.32V3.41a1.16,1.16,0,0,0-1.16-1.16H1.16A1.16,1.16,0,0,0,0,3.41V22.742A1.16,1.16,0,0,0,1.16,23.9H14.306a1.16,1.16,0,0,0,1.16-1.16V20.707l3.9-1.739a3.871,3.871,0,0,0,2.291-3.531V9.21A3.871,3.871,0,0,0,17.786,5.343Zm.773,10.094a.774.774,0,0,1-.458.706L15.466,17.32V8.436h2.32a.774.774,0,0,1,.773.773Zm-8.506,3.825a.773.773,0,0,1-.773-.773V7.663a.773.773,0,1,1,1.547,0V18.489A.773.773,0,0,1,10.053,19.263Zm-4.64,0a.773.773,0,0,1-.773-.773V7.663a.773.773,0,1,1,1.547,0V18.489A.773.773,0,0,1,5.413,19.263Z" transform="translate(0 -2.25)" fill="#282828" />
+                                    </svg>
+                                </div>
+                                <div class="lieuAmiTexte">
+                                    <span>Avenue de Malines 167, 1030 Scharbeek</span>
+                                    <p>La Recyclerie</p>
+                                </div>
+                                <div class="svgCoeur"><svg id="Groupe_1569" data-name="Groupe 1569" xmlns="http://www.w3.org/2000/svg" width="23.394" height="23.42" viewBox="0 0 23.394 23.42">
+                                        <path id="Tracé_1110" data-name="Tracé 1110" d="M325.8,305.469h.068c.023.041.059,0,.086.027a5.118,5.118,0,0,1,2.109.618,7.11,7.11,0,0,1,3.587,5.528,3.737,3.737,0,0,0,.068.5v1.146a1.966,1.966,0,0,0-.064.455,7.46,7.46,0,0,1-1.777,4.064c-3.246,3.682-6.514,7.342-9.769,11.01-.068.077-.1.077-.173,0l-8.387-9.478c-.3-.336-.568-.7-.887-1a7.592,7.592,0,0,1-2.273-4.573,2.955,2.955,0,0,0-.064-.491v-1.146a.663.663,0,0,0,.041-.268,7.505,7.505,0,0,1,2.114-4.623,5.661,5.661,0,0,1,3.228-1.687,2.658,2.658,0,0,0,.455-.073h.1a.86.86,0,0,0,.455,0h.073c0,.032.036,0,.059,0a4.791,4.791,0,0,1,2.1.682,7.683,7.683,0,0,1,3,3.473c.023.041.032.1.082.132l.059-.136a8.337,8.337,0,0,1,1.9-2.65,5.456,5.456,0,0,1,2.841-1.459,1.667,1.667,0,0,0,.4-.064h.023A1.181,1.181,0,0,0,325.8,305.469Z" transform="translate(-308.33 -305.46)" fill="#3f50a7" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="mt-3 pb-3">
+                                <img src="public/images/imagesDemoCarte/recyclerie.jpeg" alt="Goupil Le Fol">
+                            </div>
+                            <!-- Barre d'icone de l'image (coeur/commentaire/message) -->
+
+                            <svg class="barreIconeImage" xmlns="http://www.w3.org/2000/svg" width="311.055" height="45" viewBox="0 0 311.055 45">
+                                <rect id="Rectangle_3" data-name="Rectangle 3" width="311.055" height="45" rx="16" fill="#95509b" />
+                                <path id="Icon_awesome-comment" data-name="Icon awesome-comment" d="M10.966,2.25C4.909,2.25,0,6.238,0,11.16a7.909,7.909,0,0,0,2.442,5.6,10.9,10.9,0,0,1-2.347,4.1.341.341,0,0,0-.064.373.335.335,0,0,0,.313.206,9.8,9.8,0,0,0,6.023-2.2,13.063,13.063,0,0,0,4.6.831c6.057,0,10.966-3.988,10.966-8.91S17.023,2.25,10.966,2.25Z" transform="translate(64.149 11.814)" fill="#f1f1f1" />
+                                <g id="Icon_awesome-heart" data-name="Icon awesome-heart" transform="translate(20 14.82)">
+
+                                    <path id="Icon_awesome-heart-2" data-name="Icon awesome-heart" d="M19.02,3.508a5.626,5.626,0,0,0-7.677.56l-.811.835-.811-.835a5.626,5.626,0,0,0-7.677-.56,5.909,5.909,0,0,0-.407,8.555L9.6,20.284a1.29,1.29,0,0,0,1.864,0l7.961-8.221a5.905,5.905,0,0,0-.4-8.555Z" transform="translate(0.001 -2.246)" fill="#f1f1f1" />
+                                </g>
+
+                                <path id="Icon_ionic-ios-send" data-name="Icon ionic-ios-send" d="M25.337,4.551,4.769,13.516a.471.471,0,0,0,.017.857l5.563,3.143a.9.9,0,0,0,1.025-.1l10.97-9.458c.073-.062.247-.179.314-.112s-.039.241-.1.314L13.067,18.85a.894.894,0,0,0-.09,1.07l3.636,5.833a.473.473,0,0,0,.852-.011l8.5-20.569A.472.472,0,0,0,25.337,4.551Z" transform="translate(104.866 7.242)" fill="#f1f1f1" />
+                            </svg>
+
+                            <div>
+                                <!-- Div du commentaire Commentaires récents -->
+                                <div class="container">
+                                    <div class=" row">
+
+                                        <div class="commentaireNouveaute col align-self-start bgJaune">
+                                            Un lieu vraiment chaleureux, très chouette pour venir travailler. Et en plus on peut venir y recycler ses bouteilles en verre ! (J'ai pensé à toi @Majdi ^^) !
+                                        </div>
+
+                                        <p class="auteurCommentaire">Héléna</p>
+                                        <div class="d-flex flex-column">
+                                            <div class="commentaireNouveaute col align-self-start bgJaune">
+                                                Totalement d'accord, j'ai une amie qui y travaille, d'ailleurs. J'y vais tout le temps.
+                                            </div>
+                                            <p class="commentaireAuteur">Majdi</p>
+                                        </div>
+                                        <div class="d-flex">
+                                            <div class="d-flex flex-column">
+                                                <div class="commentaireNouveaute col align-self-end
                                                  bgViolet">
-                                            Cool, on ira ensemble la prochaine fois ? Tu viendra @Héléna ?
+                                                    Cool, on ira ensemble la prochaine fois ? Tu viendra @Héléna ?
+                                                </div>
+                                                <p class="commentaireAuteurSession"><?= $_SESSION['pseudo']; ?></p>
+                                            </div>
                                         </div>
-                                        <p class="commentaireAuteurSession"><?= $_SESSION['pseudo']; ?></p>
+                                        <div class="d-flex flex-column">
+                                            <div class="commentaireNouveaute col align-self-start bgJaune">
+                                                Avec plaisir !
+                                            </div>
+                                            <p class="commentaireAuteur">Héléna</p>
+                                        </div>
+
+                                        <!-- Poster un nouveau commentaire -->
+
+                                        <div class="d-flex">
+                                            <div class="d-flex ">
+
+                                                <!-- Smiley icon -->
+                                                <div class="pb-0 pt-0 pr-0 pl-2  align-self-center">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="33" height="20" viewBox="0 0 33 33">
+                                                        <g id="Icon_feather-smile" data-name="Icon feather-smile" transform="translate(-1.5 -1.5)">
+                                                            <path id="Tracé_1142" data-name="Tracé 1142" d="M33,18A15,15,0,1,1,18,3,15,15,0,0,1,33,18Z" fill="none" stroke="#3f50a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" />
+                                                            <path id="Tracé_1143" data-name="Tracé 1143" d="M12,21a8.1,8.1,0,0,0,6,3,8.1,8.1,0,0,0,6-3" fill="none" stroke="#3f50a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" />
+                                                            <path id="Tracé_1144" data-name="Tracé 1144" d="M13.5,13.5h.015" fill="none" stroke="#3f50a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" />
+                                                            <path id="Tracé_1145" data-name="Tracé 1145" d="M22.5,13.5h.015" fill="none" stroke="#3f50a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" />
+                                                        </g>
+                                                    </svg>
+                                                </div>
+                                                <!-- Trombone icon -->
+                                                <div class="pb-0 pt-0 pr-0 pl-2  align-self-center">
+                                                    <i class="fas fa-paperclip"></i>
+                                                </div>
+                                                <div>
+                                                    <input type="text" name="newCommentaire" placeholder="Taper un message">
+                                                </div>
+
+                                            </div>
+                                        </div>
+
                                     </div>
                                 </div>
-                                <div class="d-flex flex-column">
-                                    <div class="commentaireNouveaute col align-self-start bgJaune">
-                                        Avec plaisir !
-                                    </div>
-                                    <p class="commentaireAuteur">Héléna</p>
+                            </div>
+
+                        </div>
+                        <hr> <!-- Ligne droite -->
+                        <!-- Fin du lieu ami :'( -->
+                    </div>
+
+                </div>
+                <!-- Fin de la div "nouveauté content" -->
+            </div>
+            <!-- Fin du panneau Nouveautés -->
+
+            <!-- Troisième panneau: Communauté (le chat) -->
+
+            <!-- Js sur les conversation: hide() et show() -->
+
+            <div id="communaute">
+                <!-- Suggestions d'ami.e.s -->
+                <div class="profilInfos d-flex">
+                    <img src="public/images/imagesProfil/imgProfil-01.png" alt="profile Pic" class="imgProfilMini">
+                    <div class="profilInfosTexte">
+                        <p>Helena Robert</p>
+                        <span>Petit statut écrit</span>
+                    </div>
+                </div>
+
+                <!-- Input "rechercher" -->
+                <div class="d-flex flex-column rechercher">
+                    <input class="inputRechercher" type="text" placeholder="Rechercher">
+                </div>
+                <div class="discussions">
+                    <div class="groupe">
+                        <div class="groupInfos">
+                            <div class="groupInfos d-flex">
+                                <img src="public/images/imagesProfil/imgProfil-01.png" alt="profile Pic" class="imgProfilMini">
+                                <div class="profilInfosTexte">
+                                    <p>Helena Robert</p>
+                                    <span>Petit statut écrit</span>
                                 </div>
-
-                                <!-- Poster un nouveau commentaire -->
-
-                                <div class="d-flex">
-                                    <div class="d-flex ">
-
-                                        <!-- Smiley icon -->
-                                        <div class="pb-0 pt-0 pr-0 pl-2  align-self-center">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="33" height="20" viewBox="0 0 33 33">
-                                                <g id="Icon_feather-smile" data-name="Icon feather-smile" transform="translate(-1.5 -1.5)">
-                                                    <path id="Tracé_1142" data-name="Tracé 1142" d="M33,18A15,15,0,1,1,18,3,15,15,0,0,1,33,18Z" fill="none" stroke="#3f50a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" />
-                                                    <path id="Tracé_1143" data-name="Tracé 1143" d="M12,21a8.1,8.1,0,0,0,6,3,8.1,8.1,0,0,0,6-3" fill="none" stroke="#3f50a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" />
-                                                    <path id="Tracé_1144" data-name="Tracé 1144" d="M13.5,13.5h.015" fill="none" stroke="#3f50a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" />
-                                                    <path id="Tracé_1145" data-name="Tracé 1145" d="M22.5,13.5h.015" fill="none" stroke="#3f50a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" />
-                                                </g>
-                                            </svg>
-                                        </div>
-                                        <!-- Trombone icon -->
-                                        <div class="pb-0 pt-0 pr-0 pl-2  align-self-center">
-                                            <i class="fas fa-paperclip"></i>
-                                        </div>
-                                        <div>
-                                            <input type="text" name="newCommentaire" placeholder="Taper un message">
-                                        </div>
-
-                                    </div>
+                                <div class="groupIcones d-flex flex-column  ms-auto">
+                                    <span>heure</span>
+                                    <!-- Petite flèche vers le bas pour expand la conversation  -->
+                                    <svg class="mt-auto pointer" xmlns="http://www.w3.org/2000/svg" width="11.637" height="6.654" viewBox="0 0 11.637 6.654">
+                                        <path id="Icon_ionic-ios-arrow-down" data-name="Icon ionic-ios-arrow-down" d="M12.008,15.894l4.4-4.4a.828.828,0,0,1,1.175,0,.839.839,0,0,1,0,1.178L12.6,17.658a.83.83,0,0,1-1.147.024l-5.02-5.01A.832.832,0,1,1,7.6,11.494Z" transform="translate(-6.188 -11.246)" fill="#3f50a7" />
+                                    </svg>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Fin groupe -->
+                    <div class="groupe">
+                        <div class="groupInfos">
+                            <div class="groupInfos d-flex">
+                                <img src="public/images/imagesProfil/imgGroup-01.png" alt="profile Pic" class="imgProfilMini">
+                                <div class="profilInfosTexte">
+                                    <p>Helena Robert</p>
+                                    <span>Petit statut écrit</span>
+                                </div>
+                                <div class="groupIcones d-flex flex-column  ms-auto">
+                                    <span>heure</span>
+                                    <!-- Petite flèche vers le bas pour expand la conversation  -->
+                                    <svg class="mt-auto pointer" xmlns="http://www.w3.org/2000/svg" width="11.637" height="6.654" viewBox="0 0 11.637 6.654">
+                                        <path id="Icon_ionic-ios-arrow-down" data-name="Icon ionic-ios-arrow-down" d="M12.008,15.894l4.4-4.4a.828.828,0,0,1,1.175,0,.839.839,0,0,1,0,1.178L12.6,17.658a.83.83,0,0,1-1.147.024l-5.02-5.01A.832.832,0,1,1,7.6,11.494Z" transform="translate(-6.188 -11.246)" fill="#3f50a7" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Fin groupe -->
+                    <div class="groupe">
+                        <div class="groupInfos">
+                            <div class="groupInfos d-flex">
+                                <img src="public/images/imagesProfil/imgProfil-01.png" alt="profile Pic" class="imgProfilMini">
+                                <div class="profilInfosTexte">
+                                    <p>Helena Robert</p>
+                                    <span>Petit statut écrit</span>
+                                </div>
+                                <div class="groupIcones d-flex flex-column  ms-auto">
+                                    <span>heure</span>
+                                    <!-- Petite flèche vers le bas pour expand la conversation  -->
+                                    <svg class="mt-auto pointer" xmlns="http://www.w3.org/2000/svg" width="11.637" height="6.654" viewBox="0 0 11.637 6.654">
+                                        <path id="Icon_ionic-ios-arrow-down" data-name="Icon ionic-ios-arrow-down" d="M12.008,15.894l4.4-4.4a.828.828,0,0,1,1.175,0,.839.839,0,0,1,0,1.178L12.6,17.658a.83.83,0,0,1-1.147.024l-5.02-5.01A.832.832,0,1,1,7.6,11.494Z" transform="translate(-6.188 -11.246)" fill="#3f50a7" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Fin groupe -->
+                </div>
 
+            </div>
+            <!-- Fin du panneau Communauté -->
+
+            <!-- Quatrième panneau: Favoris -->
+
+            <div id="favoris">
+                <h2 class="violet">Favoris</h2>
+                <h3 class="pb-4 violet">Vos endroits préférés !</h3>
+
+
+                <div class="d-flex icones-menu-favoris">
+                    <div class="">
+                        <p class="jaune">
+                            Lieux Favoris
+                        </p>
+                        <div class="">
+                            <div class="d-flex hoverJaune">
+                                <i class="fas fa-beer"></i>
+                                <div>Bars</div>
+                            </div>
+                            <div class="d-flex hoverJaune">
+                                <i class="fas fa-utensils"></i>
+                                <div>Restaurants</div>
+                            </div>
+                            <div class="d-flex hoverJaune">
+                                <i class="fas fa-theater-masks"></i>
+                                <div> Théâtres</div>
                             </div>
                         </div>
                     </div>
 
-                </div>
-                <hr> <!-- Ligne droite -->
-                <!-- Fin du lieu ami :'( -->
-            </div>
+                    <!-- Icone Plus qui float à droite + son menu dropdown-->
 
-        </div>
-        <!-- Fin de la div "nouveauté content" -->
-    </div>
-    <!-- Fin du panneau Nouveautés -->
+                    <div class="ms-auto">
+                        <!-- Pour le faire flotter à droite -->
 
-    <!-- Troisième panneau: Communauté (le chat) -->
+                        <div class="dropdownFavoris">
 
-    <!-- Js sur les conversation: hide() et show() -->
+                            <!-- Icon plus (bouton du dropdown) -->
+                            <div class="btnDropdownFavoris">
 
-    <div id="communaute">
-        <!-- Suggestions d'ami.e.s -->
-        <div class="profilInfos d-flex">
-            <img src="public/images/imagesProfil/imgProfil-01.png" alt="profile Pic" class="imgProfilMini">
-            <div class="profilInfosTexte">
-                <p>Helena Robert</p>
-                <span>Petit statut écrit</span>
-            </div>
-        </div>
-
-        <!-- Input "rechercher" -->
-        <div class="d-flex flex-column rechercher">
-            <input class="inputRechercher" type="text" placeholder="Rechercher">
-        </div>
-        <div class="discussions">
-            <div class="groupe">
-                <div class="groupInfos">
-                    <div class="groupInfos d-flex">
-                        <img src="public/images/imagesProfil/imgProfil-01.png" alt="profile Pic" class="imgProfilMini">
-                        <div class="profilInfosTexte">
-                            <p>Helena Robert</p>
-                            <span>Petit statut écrit</span>
+                                <svg id="iconPlusFavoris" xmlns="http://www.w3.org/2000/svg" width="24.178" height="24.178" viewBox="0 0 24.178 24.178">
+                                    <path id="_Color" data-name=" ↳Color" d="M24.178,13.816H13.816V24.178H10.362V13.816H0V10.362H10.362V0h3.454V10.362H24.178Z" fill="#3f50a7" />
+                                </svg>
+                            </div>
+                            <div class="contenuDropdownFavoris">
+                                <p class="bleu">Créer</p>
+                                <a href="#">Liste</a>
+                                <a href="#">Lieux</a>
+                            </div>
                         </div>
-                        <div class="groupIcones d-flex flex-column  ms-auto">
-                            <span>heure</span>
-                            <!-- Petite flèche vers le bas pour expand la conversation  -->
-                            <svg class="mt-auto pointer" xmlns="http://www.w3.org/2000/svg" width="11.637" height="6.654" viewBox="0 0 11.637 6.654">
-                                <path id="Icon_ionic-ios-arrow-down" data-name="Icon ionic-ios-arrow-down" d="M12.008,15.894l4.4-4.4a.828.828,0,0,1,1.175,0,.839.839,0,0,1,0,1.178L12.6,17.658a.83.83,0,0,1-1.147.024l-5.02-5.01A.832.832,0,1,1,7.6,11.494Z" transform="translate(-6.188 -11.246)" fill="#3f50a7" />
-                            </svg>
-                        </div>
+
+
                     </div>
-                </div>
-            </div>
-            <!-- Fin groupe -->
-            <div class="groupe">
-                <div class="groupInfos">
-                    <div class="groupInfos d-flex">
-                        <img src="public/images/imagesProfil/imgGroup-01.png" alt="profile Pic" class="imgProfilMini">
-                        <div class="profilInfosTexte">
-                            <p>Helena Robert</p>
-                            <span>Petit statut écrit</span>
-                        </div>
-                        <div class="groupIcones d-flex flex-column  ms-auto">
-                            <span>heure</span>
-                            <!-- Petite flèche vers le bas pour expand la conversation  -->
-                            <svg class="mt-auto pointer" xmlns="http://www.w3.org/2000/svg" width="11.637" height="6.654" viewBox="0 0 11.637 6.654">
-                                <path id="Icon_ionic-ios-arrow-down" data-name="Icon ionic-ios-arrow-down" d="M12.008,15.894l4.4-4.4a.828.828,0,0,1,1.175,0,.839.839,0,0,1,0,1.178L12.6,17.658a.83.83,0,0,1-1.147.024l-5.02-5.01A.832.832,0,1,1,7.6,11.494Z" transform="translate(-6.188 -11.246)" fill="#3f50a7" />
-                            </svg>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Fin groupe -->
-            <div class="groupe">
-                <div class="groupInfos">
-                    <div class="groupInfos d-flex">
-                        <img src="public/images/imagesProfil/imgProfil-01.png" alt="profile Pic" class="imgProfilMini">
-                        <div class="profilInfosTexte">
-                            <p>Helena Robert</p>
-                            <span>Petit statut écrit</span>
-                        </div>
-                        <div class="groupIcones d-flex flex-column  ms-auto">
-                            <span>heure</span>
-                            <!-- Petite flèche vers le bas pour expand la conversation  -->
-                            <svg class="mt-auto pointer" xmlns="http://www.w3.org/2000/svg" width="11.637" height="6.654" viewBox="0 0 11.637 6.654">
-                                <path id="Icon_ionic-ios-arrow-down" data-name="Icon ionic-ios-arrow-down" d="M12.008,15.894l4.4-4.4a.828.828,0,0,1,1.175,0,.839.839,0,0,1,0,1.178L12.6,17.658a.83.83,0,0,1-1.147.024l-5.02-5.01A.832.832,0,1,1,7.6,11.494Z" transform="translate(-6.188 -11.246)" fill="#3f50a7" />
-                            </svg>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Fin groupe -->
-        </div>
 
-    </div>
-    <!-- Fin du panneau Communauté -->
-
-    <!-- Quatrième panneau: Favoris -->
-
-    <!-- TODO HS: z-index sur le menu-du haut pour qu'il passe au-dessus de l'input -->
-    <div id="favoris">
-        <h2 class="violet">Favoris</h2>
-        <h3 class="pb-4 violet">Vos endroits préférés !</h3>
-
-
-        <div class="d-flex icones-menu-favoris">
-            <div class="">
-                <p class="jaune">
-                    Lieux Favoris
-                </p>
-                <div class="">
-                    <div class="d-flex hoverJaune">
-                        <i class="fas fa-beer"></i>
-                        <div>Bars</div>
-                    </div>
-                    <div class="d-flex hoverJaune">
-                        <i class="fas fa-utensils"></i>
-                        <div>Restaurants</div>
-                    </div>
-                    <div class="d-flex hoverJaune">
-                        <i class="fas fa-theater-masks"></i>
-                        <div> Théâtres</div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Icone Plus qui float à droite + son menu dropdown-->
-
-            <div class="ms-auto">
-                <!-- Pour le faire flotter à droite -->
-
-                <div class="dropdownFavoris">
-
-                    <!-- Icon plus (bouton du dropdown) -->
-                    <div class="btnDropdownFavoris">
-
-                        <svg id="iconPlusFavoris" xmlns="http://www.w3.org/2000/svg" width="24.178" height="24.178" viewBox="0 0 24.178 24.178">
-                            <path id="_Color" data-name=" ↳Color" d="M24.178,13.816H13.816V24.178H10.362V13.816H0V10.362H10.362V0h3.454V10.362H24.178Z" fill="#3f50a7" />
-                        </svg>
-                    </div>
-                    <div class="contenuDropdownFavoris">
-                        <p class="bleu">Créer</p>
-                        <a href="#">Liste</a>
-                        <a href="#">Lieux</a>
-                    </div>
                 </div>
 
+                <!-- Les listes demo avec les jolies images de lieux :) -->
 
-            </div>
-
-        </div>
-
-        <!-- Les listes demo avec les jolies images de lieux :) -->
-
-        <div class="d-flex pt-3 pb-4">
-            <div class="bleu">Vos listes</div>
-            <div class="ms-auto">
-                <!-- Icone "tri" -->
-                <i class="fas fa-sort"></i>
-            </div>
-        </div>
-        <div class="favorisContent">
-
-            <div class="listesFavoris">
-                <!-- Liste 1 (lieux pour faire la fête) -->
-
-                <div class="bgGris">
-
-                    <!-- Div pour le titre de la liste -->
-                    <div class="d-flex justify-content-between titreListeFavoris">
-                        <div>
-                            <i class="fas fa-beer"></i>
-                        </div>
-                        <div>
-                            <p>Lieux pour faire la fête ! </p>
-                        </div>
-                        <div class="">
-                            <!-- Svg du chevron (Font awesome marche pas pour celui-là, snif ) -->
-                            <svg xmlns="http://www.w3.org/2000/svg" width="21.463" height="12.272" viewBox="0 0 21.463 12.272">
-                                <path id="Icon_ionic-ios-arrow-down" data-name="Icon ionic-ios-arrow-down" d="M16.923,19.819,25.038,11.7a1.527,1.527,0,0,1,2.166,0,1.547,1.547,0,0,1,0,2.173l-9.2,9.2a1.531,1.531,0,0,1-2.115.045l-9.259-9.24A1.534,1.534,0,0,1,8.8,11.7Z" transform="translate(-6.188 -11.246)" fill="#282828" />
-                            </svg>
-                        </div>
+                <div class="d-flex pt-3 pb-4">
+                    <div class="bleu">Vos listes</div>
+                    <div class="ms-auto">
+                        <!-- Icone "tri" -->
+                        <i class="fas fa-sort"></i>
                     </div>
+                </div>
+                <div class="favorisContent">
 
-                    <!-- Div pour l'image -->
-                    <div class="imageLieuxFavoris">
-                        <img src="public/images/imagesDemoCarte/lieux_favoris-01.jpg" alt="profile Pic" class="">
-                    </div>
+                    <div class="listesFavoris">
+                        <!-- Liste 1 (lieux pour faire la fête) -->
 
-                    <!-- Le petit "plus" sur l'image -->
-                    <!-- <div class="petitPlusImageFavoris">
+                        <div class="bgGris">
+
+                            <!-- Div pour le titre de la liste -->
+                            <div class="d-flex justify-content-between titreListeFavoris">
+                                <div>
+                                    <i class="fas fa-beer"></i>
+                                </div>
+                                <div>
+                                    <p>Lieux pour faire la fête ! </p>
+                                </div>
+                                <div class="">
+                                    <!-- Svg du chevron (Font awesome marche pas pour celui-là, snif ) -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="21.463" height="12.272" viewBox="0 0 21.463 12.272">
+                                        <path id="Icon_ionic-ios-arrow-down" data-name="Icon ionic-ios-arrow-down" d="M16.923,19.819,25.038,11.7a1.527,1.527,0,0,1,2.166,0,1.547,1.547,0,0,1,0,2.173l-9.2,9.2a1.531,1.531,0,0,1-2.115.045l-9.259-9.24A1.534,1.534,0,0,1,8.8,11.7Z" transform="translate(-6.188 -11.246)" fill="#282828" />
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <!-- Div pour l'image -->
+                            <div class="imageLieuxFavoris">
+                                <img src="public/images/imagesDemoCarte/lieux_favoris-01.jpg" alt="profile Pic" class="">
+                            </div>
+
+                            <!-- Le petit "plus" sur l'image -->
+                            <!-- <div class="petitPlusImageFavoris">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
                                     <g id="Groupe_1750" data-name="Groupe 1750" transform="translate(-328 -260)">
                                         <circle id="Ellipse_318" data-name="Ellipse 318" cx="12.5" cy="12.5" r="12.5" transform="translate(328 260)" fill="#fff" />
@@ -744,34 +743,34 @@
                                     </g>
                                 </svg>
                             </div> -->
-                </div>
-                <!-- Liste 2 (lieux pour faire du sport) -->
-
-                <div class="bgGris">
-
-                    <!-- Div pour le titre de la liste -->
-                    <div class="d-flex justify-content-between titreListeFavoris">
-                        <div>
-                            <i class="fas fa-running"></i>
                         </div>
-                        <div>
-                            <p>Quartiers Jogging </p>
-                        </div>
-                        <div class="">
-                            <!-- Svg du chevron (Font awesome marche pas pour celui-là, snif ) -->
-                            <svg xmlns="http://www.w3.org/2000/svg" width="21.463" height="12.272" viewBox="0 0 21.463 12.272">
-                                <path id="Icon_ionic-ios-arrow-down" data-name="Icon ionic-ios-arrow-down" d="M16.923,19.819,25.038,11.7a1.527,1.527,0,0,1,2.166,0,1.547,1.547,0,0,1,0,2.173l-9.2,9.2a1.531,1.531,0,0,1-2.115.045l-9.259-9.24A1.534,1.534,0,0,1,8.8,11.7Z" transform="translate(-6.188 -11.246)" fill="#282828" />
-                            </svg>
-                        </div>
-                    </div>
+                        <!-- Liste 2 (lieux pour faire du sport) -->
 
-                    <!-- Div pour l'image -->
-                    <div class="imageLieuxFavoris">
-                        <img src="public/images/imagesDemoCarte/lieux_favoris-02.jpg" alt="profile Pic" class="">
-                    </div>
+                        <div class="bgGris">
 
-                    <!-- Le petit "plus" sur l'image -->
-                    <!--  <div class="petitPlusImageFavoris">
+                            <!-- Div pour le titre de la liste -->
+                            <div class="d-flex justify-content-between titreListeFavoris">
+                                <div>
+                                    <i class="fas fa-running"></i>
+                                </div>
+                                <div>
+                                    <p>Quartiers Jogging </p>
+                                </div>
+                                <div class="">
+                                    <!-- Svg du chevron (Font awesome marche pas pour celui-là, snif ) -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="21.463" height="12.272" viewBox="0 0 21.463 12.272">
+                                        <path id="Icon_ionic-ios-arrow-down" data-name="Icon ionic-ios-arrow-down" d="M16.923,19.819,25.038,11.7a1.527,1.527,0,0,1,2.166,0,1.547,1.547,0,0,1,0,2.173l-9.2,9.2a1.531,1.531,0,0,1-2.115.045l-9.259-9.24A1.534,1.534,0,0,1,8.8,11.7Z" transform="translate(-6.188 -11.246)" fill="#282828" />
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <!-- Div pour l'image -->
+                            <div class="imageLieuxFavoris">
+                                <img src="public/images/imagesDemoCarte/lieux_favoris-02.jpg" alt="profile Pic" class="">
+                            </div>
+
+                            <!-- Le petit "plus" sur l'image -->
+                            <!--  <div class="petitPlusImageFavoris">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
                                     <g id="Groupe_1750" data-name="Groupe 1750" transform="translate(-328 -260)">
                                         <circle id="Ellipse_318" data-name="Ellipse 318" cx="12.5" cy="12.5" r="12.5" transform="translate(328 260)" fill="#fff" />
@@ -782,34 +781,34 @@
                                 </svg>
 
                             </div> -->
-                </div>
-                <!-- Liste 3 (lieux à aller voir) -->
-
-                <div class="bgGris">
-
-                    <!-- Div pour le titre de la liste -->
-                    <div class="d-flex justify-content-between titreListeFavoris">
-                        <div>
-                            <i class="fas fa-eye"></i>
                         </div>
-                        <div>
-                            <p>À aller voir </p>
-                        </div>
-                        <div class="">
-                            <!-- Svg du chevron (Font awesome marche pas pour celui-là, snif ) -->
-                            <svg xmlns="http://www.w3.org/2000/svg" width="21.463" height="12.272" viewBox="0 0 21.463 12.272">
-                                <path id="Icon_ionic-ios-arrow-down" data-name="Icon ionic-ios-arrow-down" d="M16.923,19.819,25.038,11.7a1.527,1.527,0,0,1,2.166,0,1.547,1.547,0,0,1,0,2.173l-9.2,9.2a1.531,1.531,0,0,1-2.115.045l-9.259-9.24A1.534,1.534,0,0,1,8.8,11.7Z" transform="translate(-6.188 -11.246)" fill="#282828" />
-                            </svg>
-                        </div>
-                    </div>
+                        <!-- Liste 3 (lieux à aller voir) -->
 
-                    <!-- Div pour l'image -->
-                    <div class="imageLieuxFavoris">
-                        <img src="public/images/imagesDemoCarte/lieux_favoris-03.jpg" alt="profile Pic" class="">
-                    </div>
+                        <div class="bgGris">
 
-                    <!-- Le petit "plus" sur l'image -->
-                    <!-- <div class="petitPlusImageFavoris">
+                            <!-- Div pour le titre de la liste -->
+                            <div class="d-flex justify-content-between titreListeFavoris">
+                                <div>
+                                    <i class="fas fa-eye"></i>
+                                </div>
+                                <div>
+                                    <p>À aller voir </p>
+                                </div>
+                                <div class="">
+                                    <!-- Svg du chevron (Font awesome marche pas pour celui-là, snif ) -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="21.463" height="12.272" viewBox="0 0 21.463 12.272">
+                                        <path id="Icon_ionic-ios-arrow-down" data-name="Icon ionic-ios-arrow-down" d="M16.923,19.819,25.038,11.7a1.527,1.527,0,0,1,2.166,0,1.547,1.547,0,0,1,0,2.173l-9.2,9.2a1.531,1.531,0,0,1-2.115.045l-9.259-9.24A1.534,1.534,0,0,1,8.8,11.7Z" transform="translate(-6.188 -11.246)" fill="#282828" />
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <!-- Div pour l'image -->
+                            <div class="imageLieuxFavoris">
+                                <img src="public/images/imagesDemoCarte/lieux_favoris-03.jpg" alt="profile Pic" class="">
+                            </div>
+
+                            <!-- Le petit "plus" sur l'image -->
+                            <!-- <div class="petitPlusImageFavoris">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
                                     <g id="Groupe_1750" data-name="Groupe 1750" transform="translate(-328 -260)">
                                         <circle id="Ellipse_318" data-name="Ellipse 318" cx="12.5" cy="12.5" r="12.5" transform="translate(328 260)" fill="#fff" />
@@ -820,18 +819,18 @@
                                 </svg>
 
                             </div> -->
+                        </div>
+
+                    </div>
                 </div>
 
+
+
             </div>
-        </div>
+            <!-- Fin du panneau Favoris -->
 
+        </aside>
 
-
+        <!-- La carte -->
+        <!--  <div id="carteId"></div> -->
     </div>
-    <!-- Fin du panneau Favoris -->
-
-    </aside>
-
-    <!-- La carte -->
-    <!--  <div id="carteId"></div> -->
-</div>
