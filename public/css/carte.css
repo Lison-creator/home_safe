@@ -107,7 +107,7 @@
         position: absolute;
         top: 0;
         right: 436px;
-        z-index: 3;
+        z-index: 100;
     }
     
     i.fas.fa-minus,
@@ -326,6 +326,20 @@
         height: 500px;
         padding: 15px;
     }
+    /* --Cacher la barre de scroll (c'est plus joli :) )-- */
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    
+    .filActualite::-webkit-scrollbar {
+        display: none;
+    }
+    /* Hide scrollbar for IE, Edge and Firefox */
+    
+    .filActualite {
+        -ms-overflow-style: none;
+        /* IE and Edge */
+        scrollbar-width: none;
+        /* Firefox */
+    }
     
     .imgActualite {
         width: 100%;
@@ -336,6 +350,19 @@
     .photoProfilGrande {
         display: flex;
         justify-content: center;
+    }
+    /* Le texte de "Nouveau Lieu" */
+    
+    .categorieNewLieu {
+        background-color: #FAC815;
+        border-radius: 15px;
+        color: #282828;
+    }
+    /* Les icones de la catégorie "new lieu" */
+    
+    .categorieNewLieu i {
+        padding-left: 10px;
+        padding-right: 10px;
     }
     /* Hover sur les svg de la barre d'icones violette de l'image (coeur/commentaire/message)*/
     /* Icone "coeur" */
@@ -479,10 +506,6 @@
     }
     /* L'auteurice du commentaire */
     
-    .auteurCommentaire {
-        padding-left: 76px;
-    }
-    
     .sousTitreCommentaire {
         font-style: italic;
         color: #3F50A7;
@@ -492,7 +515,7 @@
     /* Les commentaires (pas en svg */
     
     .commentaireNouveaute {
-        width: 90%;
+        width: 80%;
         border-radius: 15px;
         font-size: 0.9em;
         padding: 10px;
