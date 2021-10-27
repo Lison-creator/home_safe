@@ -15,29 +15,47 @@
 
 /* Aside */
 
-.containerFAQ aside {
+.containerFAQ div aside {
     flex-direction: column;
     align-items: center;
     text-align: center;
 }
 
-.containerFAQ aside .blocCategories {
+.containerFAQ div aside .blocCategories {
     width: 314px;
     height: 85px;
-    background-color: rgba(241, 241, 241, 1);
     border-radius: 7px;
-    color: rgba(40, 40, 40, 1);
     font-family: 'ubuntuBold';
     font-size: 16px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 10px;
+    cursor: pointer;
 }
 
-.containerFAQ aside .blocCategories:hover, .selected {
+.containerFAQ div aside .blocCategories:hover {
     background-color: rgba(149, 80, 155, 1);
+}
+
+.containerFAQ div aside .blocCategories:hover a {
     color: rgba(241, 241, 241, 1);
+}
+
+.selected {
+    background-color: rgba(149, 80, 155, 1);
+}
+
+.selected a {
+    color: rgba(241, 241, 241, 1);
+}
+
+.notSelected {
+    background-color: rgba(241, 241, 241, 1);
+}
+
+.notSelected a {
+    color: rgba(40, 40, 40, 1);
 }
 
 /* Sections avec textes */
@@ -56,6 +74,7 @@
     justify-content: space-between;
     padding: 10px 0px 10px 0px;
     flex-wrap: wrap;
+    cursor: pointer;
 }
 
 .containerFAQ section article .titreQuestion {
@@ -68,8 +87,12 @@
     border-left: 3px solid rgba(250, 200, 21, 1);
 }
 
-/* Sections cachées */
+.containerFAQ section article .flecheMonte svg {
+    transform: rotate(180deg);
+}
 
-.containerFAQ .hidden {
-    display: none;
+/* Réponses cachées */
+
+.containerFAQ .cache {
+    display: none !important;
 }

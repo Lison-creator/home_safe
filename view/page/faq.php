@@ -20,129 +20,130 @@
     <div class="row align-items-center">
         <aside class="col-2 d-flex offset-1">
             <!-- Blocs cliquables avec les categories de questions, qui font apparaitre/disparaitre le texte à droite -->
-            <div class="blocCategories selected">Fonctionnement en général</div>
-            <div class="blocCategories">Questions sur "Mon profil"</div>
-            <div class="blocCategories">Questions sur "Ma communauté"</div>
-            <div class="blocCategories">Questions sur les bars safe<br>dans Bruxelles</div>
-            <div class="blocCategories">Questions sur les rues éclairées<br>dans Bruxelles</div>
+            <div class="blocCategories selected"><a href="#fonctionnementGeneral">Fonctionnement en général</a></div>
+            <div class="blocCategories notSelected"><a href="#questionMonProfil">Questions sur "Mon profil"</a></div>
+            <div class="blocCategories notSelected"><a href="#questionMaCommunaute">Questions sur "Ma communauté"</a></div>
+            <div class="blocCategories notSelected"><a href="#questionBarSafe">Questions sur les bars safe<br>dans Bruxelles</a></div>
+            <div class="blocCategories notSelected"><a href="#questionRues">Questions sur les rues éclairées<br>dans Bruxelles</a></div>
         </aside>
 
-        <section class="col-8 m-auto p-4 fonctionnementGeneral">
+        <section id="fonctionnementGeneral" class="col-8 m-auto p-4">
             <!-- Textes: Questions avec les réponses, par catégorie: Général -->
-            <article>
+            <article id="articleFAQ01">
                 <div class="titreQuestion">Qu'est-ce que "Home Safe" ?</div>
-                <div class="flecheDescend"><svg width="24" height="24" viewBox="0 0 24 24">
-                        <path d="M10.59,0,6,4.574,1.41,0,0,1.408,6,7.4l6-5.992Z" fill="#fac815" />
-                    </svg></div>
-                <div class="reponse hidden">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</div>
+                <div id="flecheDescend01" class="flecheDescend"><svg width="12" height="8" viewBox="0 0 12 8">
+                    <path d="M10.59,0,6,4.574,1.41,0,0,1.408,6,7.4l6-5.992Z" fill="#fac815" /></svg></div>
+                <div id="reponseFAQ01" class="reponse cache">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quod impedit voluptatem sint quis quia nihil in fuga veniam dolorum excepturi deleniti, quaerat voluptate itaque distinctio, omnis non molestiae magni. Quaerat aliquid vero aliquam deserunt! Consequuntur saepe ratione qui praesentium est quis unde porro in voluptatem harum rem voluptates minima exercitationem cupiditate, dolore sequi perferendis suscipit! Molestias in alias doloremque voluptas voluptatem? Voluptate tempora illo quod perferendis, omnis est, commodi ut sapiente sit dolorem molestiae eaque. Eum et iure facilis cupiditate labore ducimus odit excepturi tempore magni saepe explicabo, sunt provident minima exercitationem omnis quo tenetur amet repellat fugiat repellendus?</div>
             </article>
-            <article>
+            <article id="articleFAQ02">
                 <div class="titreQuestion">Comment l'application/le site web fonctionne ?</div>
-                <div class="flecheDescend"><svg width="24" height="24" viewBox="0 0 24 24">
+                <div id="flecheDescend02" class="flecheDescend"><svg width="12" height="8" viewBox="0 0 12 8">
                         <path d="M10.59,0,6,4.574,1.41,0,0,1.408,6,7.4l6-5.992Z" fill="#fac815" />
                     </svg></div>
-                <div class="reponse hidden">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</div>
+                <div id="reponseFAQ02" class="reponse cache">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</div>
             </article>
-            <article>
+            <article id="articleFAQ03">
                 <div class="titreQuestion">Comment suggérer des améliorations ?</div>
-                <div class="flecheDescend"><svg width="24" height="24" viewBox="0 0 24 24">
+                <div id="flecheDescend03" class="flecheDescend"><svg width="12" height="8" viewBox="0 0 12 8">
                         <path d="M10.59,0,6,4.574,1.41,0,0,1.408,6,7.4l6-5.992Z" fill="#fac815" />
                     </svg></div>
-                <div class="reponse hidden">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</div>
+                <div id="reponseFAQ03" class="reponse cache">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi voluptatibus tenetur blanditiis minima perspiciatis sapiente, nihil vitae maxime in amet dignissimos suscipit enim voluptate corrupti modi consequuntur qui sed omnis accusamus eos labore sit! Nobis corporis quae cum totam exercitationem eum libero amet at unde, enim dolores quaerat iusto dolorum sunt tempora assumenda expedita dolor ex. Ad accusamus itaque velit debitis, nesciunt ipsa voluptate dignissimos nulla architecto, consequatur totam quam atque ex rerum, voluptatem esse pariatur. Voluptatem esse officia quaerat id magni ratione quo obcaecati consectetur sed eius suscipit dignissimos dolorem labore tempore adipisci, ipsum culpa. Doloribus esse, porro ea autem itaque at quibusdam eligendi beatae? Rem rerum dolore quibusdam voluptates officiis. Non, neque? Eligendi vero quas cupiditate architecto omnis!</div>
             </article>
-            <article>
+            <article id="articleFAQ04">
                 <div class="titreQuestion">Comment signaler des soucis techniques ?</div>
-                <div class="flecheDescend"><svg width="24" height="24" viewBox="0 0 24 24">
+                <div id="flecheDescend04" class="flecheDescend"><svg width="12" height="8" viewBox="0 0 12 8">
                         <path d="M10.59,0,6,4.574,1.41,0,0,1.408,6,7.4l6-5.992Z" fill="#fac815" />
                     </svg></div>
-                <div class="reponse hidden">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</div>
+                <div id="reponseFAQ04" class="reponse cache">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</div>
             </article>
         </section>
 
-        <section class="col-8 offset-left-1 questionMonProfil hidden">
+        <section id="questionMonProfil" class="col-8 m-auto p-4 cache">
             <!-- Textes: Questions avec les réponses, par catégorie : Mon Profil -->
             <article>
                 <div class="titreQuestion">Comment accéder à mon profil ?</div>
-                <div class="flecheDescend"><svg width="24" height="24" viewBox="0 0 24 24">
+                <div class="flecheDescend"><svg width="12" height="8" viewBox="0 0 12 8">
                         <path d="M10.59,0,6,4.574,1.41,0,0,1.408,6,7.4l6-5.992Z" fill="#fac815" />
                     </svg></div>
-                <div class="reponse">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</div>
+                <div class="reponse cache">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</div>
             </article>
             <article>
                 <div class="titreQuestion">Comment modifier mon profil ?</div>
-                <div class="flecheDescend"><svg width="24" height="24" viewBox="0 0 24 24">
+                <div class="flecheDescend"><svg width="12" height="8" viewBox="0 0 12 8">
                         <path d="M10.59,0,6,4.574,1.41,0,0,1.408,6,7.4l6-5.992Z" fill="#fac815" />
                     </svg></div>
-                <div class="reponse">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</div>
+                <div class="reponse cache">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</div>
             </article>
             <article>
                 <div class="titreQuestion">Comment entrer une destination ?</div>
-                <div class="flecheDescend"><svg width="24" height="24" viewBox="0 0 24 24">
+                <div class="flecheDescend"><svg width="12" height="8" viewBox="0 0 12 8">
                         <path d="M10.59,0,6,4.574,1.41,0,0,1.408,6,7.4l6-5.992Z" fill="#fac815" />
                     </svg></div>
-                <div class="reponse">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</div>
+                <div class="reponse cache">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</div>
             </article>
             <article>
                 <div class="titreQuestion">Comment sauvegarder mes trajets préférés ?</div>
-                <div class="flecheDescend"><svg width="24" height="24" viewBox="0 0 24 24">
+                <div class="flecheDescend"><svg width="12" height="8" viewBox="0 0 12 8">
                         <path d="M10.59,0,6,4.574,1.41,0,0,1.408,6,7.4l6-5.992Z" fill="#fac815" />
                     </svg></div>
-                <div class="reponse">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</div>
+                <div class="reponse cache">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</div>
             </article>
             <article>
                 <div class="titreQuestion">Où sont gardées les données que je rentre ?</div>
-                <div class="flecheDescend"><svg width="24" height="24" viewBox="0 0 24 24">
+                <div class="flecheDescend"><svg width="12" height="8" viewBox="0 0 12 8">
                         <path d="M10.59,0,6,4.574,1.41,0,0,1.408,6,7.4l6-5.992Z" fill="#fac815" />
                     </svg></div>
-                <div class="reponse">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</div>
+                <div class="reponse cache">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</div>
             </article>
         </section>
 
-        <section class="col-8 offset-left-1 questionMaCommunaute hidden">
+        <section id="questionMaCommunaute" class="col-8 m-auto p-4 cache">
             <!-- Textes: Questions avec les réponses, par catégorie: Ma communauté -->
             <article>
                 <div class="titreQuestion">Qu'est-ce que le concept de "communauté" dans Home Safe ?</div>
-                <div class="flecheDescend"><svg width="24" height="24" viewBox="0 0 24 24">
+                <div class="flecheDescend"><svg width="12" height="8" viewBox="0 0 12 8">
                         <path d="M10.59,0,6,4.574,1.41,0,0,1.408,6,7.4l6-5.992Z" fill="#fac815" />
                     </svg></div>
-                <div class="reponse">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</div>
+                <div class="reponse cache">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</div>
             </article>
             <article>
                 <div class="titreQuestion">Comment rajouter des personnes dans mes contacts ?</div>
-                <div class="flecheDescend"><svg width="24" height="24" viewBox="0 0 24 24">
+                <div class="flecheDescend"><svg width="12" height="8" viewBox="0 0 12 8">
                         <path d="M10.59,0,6,4.574,1.41,0,0,1.408,6,7.4l6-5.992Z" fill="#fac815" />
                     </svg></div>
-                <div class="reponse">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</div>
+                <div class="reponse cache">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</div>
             </article>
             <article>
                 <div class="titreQuestion">Comment accepter un nouveau contact dans ma communauté ?</div>
-                <div class="flecheDescend"><svg width="24" height="24" viewBox="0 0 24 24">
+                <div class="flecheDescend"><svg width="12" height="8" viewBox="0 0 12 8">
                         <path d="M10.59,0,6,4.574,1.41,0,0,1.408,6,7.4l6-5.992Z" fill="#fac815" />
                     </svg></div>
-                <div class="reponse">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</div>
+                <div class="reponse cache">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</div>
             </article>
         </section>
 
-        <section class="col-8 offset-left-1 questionBarSafe hidden">
+        <section id="questionBarSafe" class="col-8 m-auto p-4 cache">
             <!-- Textes: Questions avec les réponses, par catégorie: Bars -->
             <article>
                 <div class="titreQuestion">Comment suggérer des bars considérés comme sécure ?</div>
-                <div class="flecheDescend"><svg width="24" height="24" viewBox="0 0 24 24">
+                <div class="flecheDescend"><svg width="12" height="8" viewBox="0 0 12 8">
                         <path d="M10.59,0,6,4.574,1.41,0,0,1.408,6,7.4l6-5.992Z" fill="#fac815" />
                     </svg></div>
-                <div class="reponse">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</div>
+                <div class="reponse cache">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam vel tenetur blanditiis minima corrupti sint enim. Pariatur at facilis accusamus totam non minus doloremque, qui asperiores itaque nam iure placeat vel expedita eos eligendi maiores veritatis aut necessitatibus voluptatibus? Cum debitis iste unde magnam excepturi consequatur distinctio magni repellat molestiae adipisci amet, iusto sequi aliquid tempore impedit, quaerat quae voluptatibus quos! Adipisci eveniet, eum voluptate error nulla libero labore nisi omnis nostrum voluptates temporibus facere necessitatibus ipsum quo provident perspiciatis quam deleniti ab. Numquam, autem commodi eos fuga nostrum molestias. Repellat unde ea, voluptate sequi blanditiis laborum modi reiciendis nostrum, obcaecati vero voluptatibus officiis impedit nam. Voluptas reprehenderit quam libero laudantium ab assumenda omnis soluta quod placeat fugit, unde quae ad officiis cupiditate totam beatae earum possimus ut ex repellat optio eum dolorum ea. Officia ullam ipsa aliquid consequuntur et quae minima ducimus nulla similique accusamus! Ad accusamus optio dignissimos laudantium at alias, iure ducimus natus. Impedit, dolores perferendis! Sint debitis fugiat aut quod id, explicabo, pariatur repellat aspernatur unde, consequatur aliquid dignissimos? Eos, explicabo in maiores, nobis eum eveniet ipsam doloribus quis libero ratione repudiandae ipsum. Earum dicta quidem reprehenderit distinctio iusto dolorem architecto nobis dolore ullam. Deleniti sunt facere sit necessitatibus nisi doloribus incidunt, recusandae minus quo aliquam commodi aperiam, voluptate quia assumenda illum placeat distinctio harum vitae? Fugiat quam fuga amet, aspernatur doloribus exercitationem facilis quaerat tempore alias odio assumenda quasi, illum quis aliquid eos fugit debitis rerum accusamus ullam. Harum ipsum eveniet repellendus assumenda dolor cumque minus nisi? Exercitationem distinctio ipsa eaque placeat fuga nostrum, nihil quam expedita, omnis cum delectus quasi? Voluptatibus fugit, rerum officiis reiciendis laborum dicta dolorem consectetur voluptatum asperiores quaerat reprehenderit facere corrupti tempore recusandae quos. Quo accusantium commodi rerum? Reprehenderit fuga aperiam omnis, beatae dignissimos ratione repellat ut minus recusandae modi!</div>
             </article>
         </section>
 
-        <section class="col-8 offset-left-1 questionBarSafe hidden">
+        <section id="questionRues" class="col-8 m-auto p-4 cache">
             <!-- Textes: Questions avec les réponses, par catégorie: Rues -->
             <article>
                 <div class="titreQuestion">Comment suggérer des rues considérés comme sécure ?</div>
-                <div class="flecheDescend"><svg width="24" height="24" viewBox="0 0 24 24">
+                <div class="flecheDescend"><svg width="12" height="8" viewBox="0 0 12 8">
                         <path d="M10.59,0,6,4.574,1.41,0,0,1.408,6,7.4l6-5.992Z" fill="#fac815" />
                     </svg></div>
-                <div class="reponse">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</div>
+                <div class="reponse cache">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est numquam voluptate provident nesciunt eius dolor alias cupiditate ut sit fuga officia cum aliquam quidem, laudantium vel odio illo adipisci harum reiciendis facere, necessitatibus sed reprehenderit vero debitis. Velit porro dolores quidem voluptatibus, impedit perspiciatis, voluptas ex eos sunt ullam autem in aliquid aut laudantium assumenda cupiditate expedita, aperiam laboriosam architecto natus earum omnis veritatis consectetur. Suscipit, molestiae recusandae? Illo nam doloremque fugiat, qui necessitatibus odio vel laborum iste voluptatibus! Quasi, pariatur. Eius cum totam mollitia aspernatur nobis quos? Necessitatibus ipsum ut rem qui quod facilis eligendi, nostrum aut voluptas explicabo, veritatis consequatur, assumenda harum numquam placeat recusandae pariatur sunt magni! Voluptas facere vero dignissimos eligendi omnis quis enim maxime, cum molestias voluptatem fugit laudantium voluptatibus tempora saepe sunt sed veniam? Necessitatibus quia ipsa rerum dolorem debitis magnam maxime? Assumenda illo maxime, sed ex, obcaecati commodi exercitationem animi neque totam dolorum id dolores iusto a aperiam quam quibusdam natus consequatur placeat, officia cumque fugiat. Natus id maiores earum? Omnis, totam nostrum dolores dolore molestiae ipsam corrupti placeat beatae aut enim repellat iusto laboriosam minima nobis voluptatem dolorum voluptas. Rerum fugit maiores aut suscipit aliquid laborum culpa quisquam quaerat praesentium quas. Nihil odio molestiae repellendus. Fuga, accusantium. Tempora fugiat tempore fuga similique in ipsum aut animi ut, possimus ab labore repellat odit deserunt ad dolorum quasi voluptate natus exercitationem voluptas quis. Omnis dolore repudiandae quos, consequuntur incidunt recusandae adipisci vel reiciendis earum at nihil repellat excepturi tempore maiores non odit, hic iusto exercitationem quia cumque repellendus dolor quo unde ratione. Omnis, quisquam. Quasi excepturi esse eos perferendis quos laborum amet sapiente quam rem eveniet, cupiditate magni adipisci quibusdam iusto? Minima recusandae voluptatibus totam numquam quam dicta in repellat vero adipisci commodi deleniti sint ad quisquam repudiandae, ipsam, cupiditate atque eaque. Animi, maiores.</div>
             </article>
         </section>
     </div>
 </div>
+
+<script src="public/js/faq.js"></script>
