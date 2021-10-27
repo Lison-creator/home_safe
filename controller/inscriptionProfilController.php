@@ -24,7 +24,8 @@ if (isset($_POST["ad_cp"])) {
     $fichierTemporaire = $_FILES["image"]["tmp_name"]; 
 
     //dossier où les images vont être sauvegardées
-    $imagesDossier = __DIR__.'/../../public/images';
+    $imagesDossier = 'public/images/uploads/';
+    $lienImage = $imagesDossier . basename($_FILES["image"]["name"]);
 
     echo $fichierTemporaire;
     echo $imagesDossier;
@@ -33,7 +34,7 @@ if (isset($_POST["ad_cp"])) {
     //function for saving the uploaded images in a specific folder
     /*  move_uploaded_file($fichierTemporaire, $imagesDossier.$nomImage); */
 
-    if (move_uploaded_file($fichierTemporaire, $imagesDossier.basename($_FILES["image"]["name"]))) {
+    if (move_uploaded_file($fichierTemporaire, $lienImage)) {
         echo "Uploaded";
     } else {
         echo "Not uploaded";
@@ -41,7 +42,7 @@ if (isset($_POST["ad_cp"])) {
 
 
     $user1->addZipPhoto($_SESSION["last_id"], $_POST["ad_cp"], $_FILES["image"]["name"]);
-    //header("Location:?section=editerProfil");
+    header("Location:?section=editerProfil");
 
 }
 /* Renvoie à la page d'accueil une fois le formulaire envoyé */

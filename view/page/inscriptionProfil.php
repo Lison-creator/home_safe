@@ -37,7 +37,7 @@
                             </div>
                             <div class="col-6">
                                 <!-- MAX_FILE_SIZE doit précéder le champ input de type file -->
-                                <input type="hidden" name="MAX_FILE_SIZE" value="40000" />
+                                <input type="hidden" name="MAX_FILE_SIZE" value="400000" />
                                 <input type="file" name="image" id="btnImporterImage" value="" hidden>
                                 <div id="imageChoisie">Aucune image importée</div>
                             </div>
