@@ -47,7 +47,7 @@ if (isset($_POST["pseudo"], $_POST["email"], $_POST["mdp"])) {
             else {
                 //var_dump('le else du verify : le verify est faux - L\'email ou mot de passe ne sont pas valides');
 
-                $msgError = "<i class='fas fa-exclamation-circle'></i><p class='erreur'>L'email ou le mot de passe ne sont pas valides</p>";
+                $msgError = "<i class='fas fa-exclamation-circle'></i><p class='erreur'>L'email et/ou le mot de passe ne sont pas valides !</p>";
             }
         } else {
             // message d'erreur
@@ -55,15 +55,15 @@ if (isset($_POST["pseudo"], $_POST["email"], $_POST["mdp"])) {
             if ($_SESSION["count"] < 3) {
                 //var_dump('Veuillez entrer un pseudo valide');
 
-                $msgError = "<i class='fas fa-exclamation-circle'></i><p class='erreur'>Veuillez entrer un pseudo valide</p>";
+                $msgError = "<i class='fas fa-exclamation-circle'></i><p class='erreur'>Veuillez entrer un pseudo valide s'il vous plaît.</p>";
             } else {
                 // si 3 essais négatifs sont faits
-                $msgError = "<i class='fas fa-exclamation-circle'><p class='erreur'>Votre compte est bloqué</p>";
+                $msgError = "<i class='fas fa-exclamation-circle'><p class='erreur'>Votre compte est bloqué.</p>";
             }
         }
     } else {
         // si 3 essais négatifs sont faits
-        $msgError = "<i class='fas fa-exclamation-circle'><p class='erreur'>Votre compte est bloqué</p>";
+        $msgError = "<i class='fas fa-exclamation-circle'><p class='erreur'>Votre compte est bloqué.</p>";
     }
 }
 
