@@ -29,12 +29,12 @@ if (isset($_POST)){
 
             /* If si mon user n'existe pas */
             $userNotExist = $user1->checkAccountNotExist(htmlspecialchars($_POST['pseudo']), htmlspecialchars($_POST['email']));
-            var_dump($userNotExist);
+            //var_dump($userNotExist);
 
             //retourner vrai si n'existe pas
 
             if ($userNotExist) {
-                var_dump('function verify good');
+               // var_dump('function verify good');
 
                 // contient le spsueod, email et le mdp haché
                 $last_insert_id = $user1->addUtilisateur($pseudo, $email, $mdp);
@@ -47,24 +47,24 @@ if (isset($_POST)){
                 $_SESSION["count"] = 0;
                 
                 /*  $_SESSION["user"] = $user; */
-                var_dump($_SESSION);
+               // var_dump($_SESSION);
                 
                 header("Location:?section=inscriptionProfil");
-                var_dump("inscriptionProfil");
+               // var_dump("inscriptionProfil");
             } 
             
             else {
-                var_dump('le else du checkAccountNotExist : le compte existe déjà');
+               // var_dump('le else du checkAccountNotExist : le compte existe déjà');
 
-                $msgError = '<p style="color:red">Ce compte existe déjà. Voulez-vous <a href="?section=connexion">connecter</a></p>';
+                $msgErrorInscription = '<i class="fas fa-exclamation-circle"><p class="erreur">Ce compte existe déjà. Voulez-vous <a href="?section=connexion">connecter</a></p>';
             }
         }
     }
 }
 
 else {
-    $msgErreurInscription = "<p style='color:red'>Veuillez remplir tous les champs </p>";
-    var_dump('aucun champs');
+    $msgErreurInscription = '<i class="fas fa-exclamation-circle"><p class="erreur">Veuillez remplir tous les champs s\'il vous plaît.</p>';
+    //var_dump('aucun champs');
 }
 
 

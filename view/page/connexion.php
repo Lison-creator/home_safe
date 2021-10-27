@@ -31,6 +31,9 @@
                             </div>
                         </div>
                     </div>
+                    <div class="col-12 d-inline-flex justify-content-evenly align-content-center">
+                    <?= $msgError; ?>
+                </div>
                 </div>
                 <div class="row">
                     <form action="#" method="post" class="col-11 offset-1 position-relative">
@@ -58,7 +61,6 @@
                     <div class="text-center mb-2"> <a href="" class="oublie">J'ai oublié mon mot de passe ?</a></div><!-- TODO mettre le lien ici -->
                 </div>
             </div>
-            <?= $msgError; ?>
         </div><!-- fin de la première div.formulaireConnection de 6 complètement à gauche -->
 
         <div class="col-6">

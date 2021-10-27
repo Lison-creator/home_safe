@@ -31,6 +31,9 @@
                             </div>
                         </div>
                     </div>
+                    <div class="erreur">
+                        <?= $msgErreurInscription; ?>
+                    </div>
                 </div>
                 <div class="row">
                     <form action="index.php?section=inscription" method="POST" class="col-11 offset-1">
@@ -58,7 +61,7 @@
                         </div>
                     </form>
                 </div>
-                <?= $msgErreurInscription; ?>
+                
             </div><!-- Fin de mon formulaire -->
         </div><!-- fin de la première div.formulaireConnection de 6 complètement à gauche -->
 
