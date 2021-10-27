@@ -11,7 +11,7 @@
                 <form action="#" method="post">
                     <div class="row align-items-center justify-content-evenly">
                         <div class="ajoutImageEdit d-flex justify-content-end align-items-end">
-                            <img src="public/images/uploads/<?= $_SESSION['image']; ?>" alt="" >
+                            <!-- TODO <img src="public/images/uploads/">-->
                             <div class="iconPhoto d-flex justify-content-center align-items-center">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="15" height="13" viewBox="0 0 22.5 20.25">
                                     <g id="Group_1596" data-name="Group 1596" transform="translate(0 -1)">
@@ -25,7 +25,7 @@
                         <label for="supprimerImage" class="btnViolet btnSupprimerAvatar">Supprimer</label>
                     </div>
                     <label for="pseudo" class="editerPseudo">Pseudo</label><br>
-                    <input type="text" name="pseudo" id="pseudo"><br>
+                    <input type="text" name="pseudo" id="pseudoEdit" value="<?= $_SESSION['pseudo']; ?>"><br>
                     <div class="row editCP">
                         <label for="ad_cp" class="editerCP mt-4 col-8">Ton code postal</label>
                         <div class="infoCP col-4 mt-4">Cliquer sur la liste déroulante pour voir<br>les différentes communes sur Bruxelles.</div>

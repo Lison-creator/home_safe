@@ -17,8 +17,7 @@ $user1 = new Utilisateur();
 
 if (isset($_POST["ad_cp"])) {
     //print_r($_POST);
-    print_r($_FILES);
-    //     print_r($_SESSION);
+    //print_r($_FILES);
     /*  $nomImage = $_FILES["image"]["name"];  */
 
     $fichierTemporaire = $_FILES["image"]["tmp_name"]; 
@@ -27,9 +26,9 @@ if (isset($_POST["ad_cp"])) {
     $imagesDossier = 'public/images/uploads/';
     $lienImage = $imagesDossier . basename($_FILES["image"]["name"]);
 
-    echo $fichierTemporaire;
+    /* echo $fichierTemporaire;
     echo $imagesDossier;
-    /* echo $nomImage;  */
+    echo $nomImage;  */
 
     //function for saving the uploaded images in a specific folder
     /*  move_uploaded_file($fichierTemporaire, $imagesDossier.$nomImage); */

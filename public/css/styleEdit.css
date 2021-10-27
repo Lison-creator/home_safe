@@ -29,6 +29,11 @@ div>#imageChoisie{
 .titrePseudo {
     width: 80%;
     margin: auto;
+    padding-top: 50px;
+}
+
+.editerTitre {
+    text-align: left;
 }
 
 /********** la partie de l'avatar*/
@@ -86,7 +91,7 @@ select.zipCodes { /* TODO A voir si Lison en a besoin aussi */
     width: 90%;
 }
 
-#pseudo, #ad_cp {
+#pseudoEdit, #ad_cp {
     width: 50%;
 }
 

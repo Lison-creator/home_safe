@@ -98,6 +98,15 @@
             /* L'index 0 permet de récupérer la ligne 0 du tableau */
         }
 
+        public function getPhoto($id, $image) {
+            $requete = "SELECT image FROM utilisateurs WHERE id = :id";
+            $params = array(
+                ":id" => $id,
+                ":image" => $image
+            );
+            $this->execute($requete, $params);
+        }
+
         // ============ CONNEXION =========
         // retourne l'utilisateur si il existe
         public function verify($pseudo, $email, $mdp)
