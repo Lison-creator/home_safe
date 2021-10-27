@@ -36,14 +36,16 @@ function toggleFAQ(element, classeEnQuestion) {
 
 /* Section: Fonctionnement General */
 
+const fonctionnementGeneral = document.getElementById('fonctionnementGeneral');
+
 // UN
 const btnActivation01 = document.getElementById('articleFAQ01');
 const reponseFAQ01 = document.getElementById('reponseFAQ01');
 const flecheDescend01 = document.getElementById('flecheDescend01');
 
 btnActivation01.addEventListener('click', (e) => {
-    reponseFAQ01.classList.toggle('cache');
-    flecheDescend01.classList.toggle('flecheMonte');
+    reponseFAQ01.classList.toggle('cache'); // montre la reponse
+    flecheDescend01.classList.toggle('flecheMonte'); // tourne la fleche
 });
 
 // DEUX
@@ -75,3 +77,12 @@ btnActivation04.addEventListener('click', (e) => {
     reponseFAQ04.classList.toggle('cache');
     flecheDescend04.classList.toggle('flecheMonte');
 });
+
+/* Section: Questions sur "Mon Profil" */
+
+const questionMonProfil = document.getElementById('questionMonProfil');
+
+if(window.location.hash == '#questionMonProfil') {
+    questionMonProfil.classList.toggle('cache');
+    fonctionnementGeneral.classList.toggle('cache');
+}

@@ -21,7 +21,7 @@
     text-align: center;
 }
 
-.containerFAQ aside #blocCategories {
+.containerFAQ aside .blocCategories {
     width: 314px;
     height: 85px;
     border-radius: 7px;
@@ -31,20 +31,30 @@
     justify-content: center;
     align-items: center;
     margin: 10px;
+    cursor: pointer;
 }
 
-.containerFAQ aside #blocCategories:hover {
+.containerFAQ aside .blocCategories:hover {
     background-color: rgba(149, 80, 155, 1);
+}
+
+.containerFAQ aside .blocCategories:hover a {
     color: rgba(241, 241, 241, 1);
 }
 
 .selected {
     background-color: rgba(149, 80, 155, 1);
+}
+
+.selected a {
     color: rgba(241, 241, 241, 1);
 }
 
 .notSelected {
     background-color: rgba(241, 241, 241, 1);
+}
+
+.notSelected a {
     color: rgba(40, 40, 40, 1);
 }
 
@@ -81,8 +91,8 @@
     transform: rotate(180deg);
 }
 
-/* Sections cachées */
+/* Réponses cachées */
 
 .cache {
-    display: none;
+    display: none !important;
 }
