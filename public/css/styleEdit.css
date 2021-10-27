@@ -42,6 +42,15 @@ div>#imageChoisie{
     cursor: pointer;
     font-family: 'ubuntuLight';
     color: #3F50A7;
+    background-size: cover; /* Merci Maureen ! + nécessaire pour que la taille de l'image importée en css se fixe à la taille du cercle */
+}
+
+.cacheAppareil{
+    visibility: visible;
+}
+
+.visibleAppareil{
+    visibility: hidden;
 }
 
 .ajoutImageEdit {
