@@ -77,12 +77,3 @@ btnActivation04.addEventListener('click', (e) => {
     reponseFAQ04.classList.toggle('cache');
     flecheDescend04.classList.toggle('flecheMonte');
 });
-
-/* Section: Questions sur "Mon Profil" */
-
-const questionMonProfil = document.getElementById('questionMonProfil');
-
-if(window.location.hash == '#questionMonProfil') {
-    questionMonProfil.classList.toggle('cache');
-    fonctionnementGeneral.classList.toggle('cache');
-}

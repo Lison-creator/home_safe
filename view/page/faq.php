@@ -148,3 +148,5 @@
         </section>
     </div>
 </div>
+
+<script src="public/js/faq.js"></script>

@@ -15,13 +15,13 @@
 
 /* Aside */
 
-.containerFAQ aside {
+.containerFAQ div aside {
     flex-direction: column;
     align-items: center;
     text-align: center;
 }
 
-.containerFAQ aside .blocCategories {
+.containerFAQ div aside .blocCategories {
     width: 314px;
     height: 85px;
     border-radius: 7px;
@@ -34,11 +34,11 @@
     cursor: pointer;
 }
 
-.containerFAQ aside .blocCategories:hover {
+.containerFAQ div aside .blocCategories:hover {
     background-color: rgba(149, 80, 155, 1);
 }
 
-.containerFAQ aside .blocCategories:hover a {
+.containerFAQ div aside .blocCategories:hover a {
     color: rgba(241, 241, 241, 1);
 }
 
@@ -93,6 +93,6 @@
 
 /* Réponses cachées */
 
-.cache {
+.containerFAQ .cache {
     display: none !important;
 }
