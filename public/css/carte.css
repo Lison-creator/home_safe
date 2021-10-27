@@ -54,6 +54,7 @@ img {
     padding-left: 60px;
     position: fixed;
     z-index: 3;
+    margin-top: 20px;
 }
 
 .pointer {
@@ -78,30 +79,28 @@ img {
     width: 0px;
 }
 
-
- .collapse-btn {
+.collapse-btn {
     width: 50px;
     height: 40px;
     border-radius: 25%;
 }
- 
 
-.vertical2{
+.vertical2 {
     background-color: #F1F1F1;
     width: 5px;
-    height: 20px ;
+    height: 20px;
 }
 
-.horizontal2{
+.horizontal2 {
     background-color: #F1F1F1;
     width: 20px;
-    height: 5px ;
+    height: 5px;
     position: fixed;
     top: 303px;
     right: 82px;
 }
 
-.collapseMenu2{
+.collapseMenu2 {
     top: -300px;
     position: fixed;
 }
@@ -112,12 +111,13 @@ img {
 
 .MenuGroupe {
     position: absolute;
-    top:0;
+    top: 0;
     right: 436px;
     z-index: 3;
 }
 
-i.fas.fa-minus, i.fas.fa-plus {
+i.fas.fa-minus,
+i.fas.fa-plus {
     color: #F1F1F1;
     font-size: 1.5rem;
 }
@@ -213,18 +213,18 @@ i.fas.fa-minus, i.fas.fa-plus {
     left: -38px;
     z-index: 10;
     width: 60px;
-    height:50px;
-    background-color:rgba(255, 255, 255, 0.3); 
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.3);
     cursor: pointer;
-    border-radius: 5px;;
+    border-radius: 5px;
+    ;
 }
 
-i.fas.fa-chevron-right, i.fas.fa-chevron-left {
+i.fas.fa-chevron-right,
+i.fas.fa-chevron-left {
     color: #F1F1F1;
     font-size: 1.5rem;
 }
-
-
 
 
 /*---------- Petite barre du haut dans l'aside à droite (sous-menu permanent)-----------*/
@@ -364,6 +364,30 @@ input.inputRechercher {
 .photoProfilGrande {
     display: flex;
     justify-content: center;
+}
+
+
+/* Hover sur les svg de la barre d'icones violette de l'image (coeur/commentaire/message)*/
+
+
+/* Icone "coeur" */
+
+#Icon_awesome-heart-2:hover {
+    fill: #FAC815;
+}
+
+
+/* Icone "commentaire" */
+
+#Icon_awesome-comment:hover {
+    fill: #FAC815;
+}
+
+
+/* Icone "message" */
+
+#Icon_ionic-ios-send:hover {
+    fill: #FAC815;
 }
 
 
