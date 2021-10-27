@@ -369,31 +369,37 @@
 
                             <div>
                                 <!-- Div du commentaire Commentaires récents -->
-                                <!-- Svg du fond jaune du commentaire -->
-                                <svg class="svgCommentaireAlerte" xmlns="http://www.w3.org/2000/svg" width="294.537" height="149.963" viewBox="0 0 294.537 149.963">
-                                    <g id="Groupe_1719" data-name="Groupe 1719" transform="translate(0 0)">
-                                        <rect id="Rectangle_1657" data-name="Rectangle 1657" width="294.537" height="129.128" rx="13" transform="translate(0 0)" fill="#fac815" />
-                                        <path id="Tracé_1140" data-name="Tracé 1140" d="M157,512.165,183,540l-5.5-29.5Z" transform="translate(-132 -390.037)" fill="#fac815" />
-                                    </g>
-                                </svg>
-                                <div class="blocTexteCommentaire">
-                                    <p class="auteurCommentaire">Justine Roy</p>
+                                <div class="container">
+                                    <div class=" row">
 
-                                    <!-- Icone "ouvrir" pour voir les 18 commentaires + texte dans un flexbox -->
-                                    <div class="d-flex">
-                                        <svg class="align-self-center" xmlns="http://www.w3.org/2000/svg" width="14.871" height="8.503" viewBox="0 0 14.871 8.503">
-                                            <path id="Icon_ionic-ios-arrow-down" data-name="Icon ionic-ios-arrow-down" d="M13.626,17.186l5.623-5.628a1.058,1.058,0,0,1,1.5,0,1.072,1.072,0,0,1,0,1.505L14.379,19.44a1.061,1.061,0,0,1-1.466.031L6.5,13.068A1.063,1.063,0,1,1,8,11.563Z" transform="translate(-6.188 -11.246)" fill="#3f50a7" />
-                                        </svg>
-                                        <p class="sousTitreCommentaire align-self-center">Voir les 18 commentaires</p>
-                                    </div>
-                                    <p class="texteCommentaireAlerte">
-
-                                        Un lieu vraiment chaleureux, très chouette pour venir travailler. Et en plus on peut venir y recycler ses bouteilles en verre ! (J'ai pensé à toi @Maureen ^^) !
-                                    </p>
-                                    <div class="d-flex">
-                                        <div class="commentaireNouveaute">
-                                            Totalement d'accord, j'ai une amie qui y travaille, d'ailleurs.
+                                        <div class="commentaireNouveaute col align-self-start bgJaune">
+                                            Un lieu vraiment chaleureux, très chouette pour venir travailler. Et en plus on peut venir y recycler ses bouteilles en verre ! (J'ai pensé à toi @Majdi ^^) !
                                         </div>
+
+                                        <p class="auteurCommentaire">Héléna</p>
+                                        <div class="d-flex flex-column">
+                                            <div class="commentaireNouveaute col bgJaune">
+                                                Totalement d'accord, j'ai une amie qui y travaille, d'ailleurs. J'y vais tout le temps.
+                                            </div>
+                                            <p class="commentaireAuteur">Majdi</p>
+                                        </div>
+                                        <div class="d-flex">
+                                            <div class="d-flex flex-column">
+                                                <div class="commentaireNouveaute col align-self-end
+                                                 bgViolet">
+                                                    Cool, on ira ensemble la prochaine fois ? Tu viendra @Héléna ?
+                                                </div>
+                                                <p class="commentaireAuteurSession"><?= $_SESSION['pseudo']; ?></p>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex flex-column">
+                                            <div class="commentaireNouveaute col bgJaune">
+                                                Avec plaisir !
+                                            </div>
+                                            <p class="commentaireAuteur">Héléna</p>
+
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>
