@@ -32,7 +32,7 @@
   <div class="d-flex justify-content-lg-between divBtnResponsiveAccueil">
     <!-- Boutons En flex -->
     <div class="mb-sm-5">
-      <button class=" btnAccueil btnViolet"><a href="?section=carte">Partager avec ma communauté</a></button> <!-- TODO rajouter les liens -->
+      <button class=" btnAccueil btnViolet"><a href="?section=carte">Partager avec ma communauté</a></button> 
     </div>
 
     <div class="mb-sm-5">

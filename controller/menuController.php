@@ -4,8 +4,6 @@
 
 /* $_SESSION["nom"] = "Manon"; */
 
-/* TODO ne fonctionne pas - rentre tjs dans al boucle edit-profil */
-/* voir avec le router : où mettre la page "inscriptionProfilController ? dans connecté ou non-connecté ? */
 
 /* faire un switch ou else if */
 // nom +  accueil
