@@ -11,6 +11,7 @@
                 <form action="#" method="post">
                     <div class="row align-items-center justify-content-evenly">
                         <div class="ajoutImageEdit d-flex justify-content-end align-items-end">
+                            <img src="public/images/uploads/<?= $_SESSION['image']; ?>" alt="" >
                             <div class="iconPhoto d-flex justify-content-center align-items-center">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="15" height="13" viewBox="0 0 22.5 20.25">
                                     <g id="Group_1596" data-name="Group 1596" transform="translate(0 -1)">

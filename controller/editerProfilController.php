@@ -8,7 +8,7 @@ if (isset($_SESSION)) {
     // il/elle est connecté
     include('view/menu/menu-co.php'); 
     var_dump('je suis dans la boulce du if');
-    var_dump($_SESSION);
+    var_dump($_SESSION['image']);
     
 } else { // si tu n'es pas connecté
     include('view/menu/menu-nonco.php'); 
@@ -18,7 +18,6 @@ if (isset($_SESSION)) {
 
 include('view/page/editerProfil.php');
 include('view/html/footer.php');
-
 
 
     
