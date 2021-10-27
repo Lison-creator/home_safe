@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="public/css/accueilResponsive.css"> <!-- placer ici pour que le css responsive prenne effet uniquement sur cette page - bouton inscription et connection devrait être différent -->
 
-<section class="container container-sm accueilResponsive">
+<section class="container container-sm container-md accueilResponsive">
   <div class="titreAccueil mb-sm-5">
     <div class="logo">
       <svg xmlns="http://www.w3.org/2000/svg" width="102.109" height="147.125" viewBox="0 0 102.109 147.125">
