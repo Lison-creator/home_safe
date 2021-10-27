@@ -116,7 +116,7 @@ input[type=checkbox] {
 /*************************** Favicon oeil*/
 div.oeil{
     z-index: 2;
-    top: 260px;
+    top: 259px;
     right: 75px;
     opacity: 0.7;
     
@@ -124,8 +124,8 @@ div.oeil{
 
 div.oeilInscription{
     z-index: 2;
-    bottom: 204px;
-    left: 730px;
+    bottom: 171px;
+    left: 658px;
     opacity: 0.7;
 }
 

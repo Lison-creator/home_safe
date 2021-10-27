@@ -13,7 +13,7 @@ $msgErreurInscription = "";
 
 // avant de soumettre quoi que ce soit dans le formulaire
 if (isset($_POST)){
-    var_dump('coucou');
+    /* var_dump('coucou'); */
 
         // si le form est soumis (une variable post nom)
     if ((isset($_POST["pseudo"])) && (isset($_POST["email"])) && (isset($_POST["mdp"]))) {

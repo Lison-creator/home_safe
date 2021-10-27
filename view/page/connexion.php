@@ -10,7 +10,7 @@
         <div class="col-4 offset-2 formulaireConnection">
             <!-- Ne prend pas toute la page car l'autre col c'est pour le logo -->
 
-            <h2 class="text-uppercase mb-2 mt-5 text-center ombrageText">Home Safe</h2> <!-- TODO rajout d'un ombrage = voir avec les filles si ok -->
+            <h2 class="text-uppercase mb-2 mt-1 text-center ombrageText">Home Safe</h2> <!-- TODO rajout d'un ombrage = voir avec les filles si ok -->
             <h3 class="text-center mb-5 ombrageText">Rejoins Home Safe et ta communauté <br>pour des trajets sécures dans Bruxelles !</h3>
 
             <div class="fondFormulaire">

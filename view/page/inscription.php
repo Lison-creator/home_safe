@@ -10,7 +10,7 @@
         <div class="col-4 offset-2 formulaireConnection">
             <!-- Ne prend pas toute la page car l'autre col c'est pour le logo -->
 
-            <h2 class="text-uppercase mb-2 mt-5 text-center ombrageText">Home Safe</h2>
+            <h2 class="text-uppercase mb-2 mt-1 text-center ombrageText">Home Safe</h2>
             <h3 class="text-center mb-5 ombrageText">Rejoins Home Safe et ta communauté <br>pour des trajets sécures dans Bruxelles !</h3>
 
             <div class="fondFormulaire">
@@ -42,7 +42,7 @@
 
                         <label for="motDePasseConnection" id="labelConnectionMdp" namespace>Mot de passe</label><br>
                         <input type="password" name="mdp" id="motDePasseConnection" pattern="{[A-Za-z0-9]{8,}"><br>
-                        <div class="position-absolute oeilInscription">
+                        <div class="position-fixed oeilInscription">
                             <i class="fas fa-eye oeilChange" id="btnOeil" onClick="montrerMdp('motDePasseConnection', this)"></i>
                         </div>
                         <div class="row m-auto">
