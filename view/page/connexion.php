@@ -35,15 +35,17 @@
                 <div class="row">
                     <form action="#" method="post" class="col-11 offset-1 position-relative">
                         <label for="pseudo" id="labelConnectionPseudo">Pseudo</label><br>
-                        <input type="text" name="pseudo" id="pseudo" placeholder="Chatshimi"><br> <!-- TODO mettre un focus avec du javascript -->
+                        <input type="text" name="pseudo" id="pseudo" placeholder="Chatshimi" required ><br> <!-- TODO mettre un focus avec du javascript -->
 
                         <label for="email" id="labelConnectionEmail">E-mail</label><br>
-                        <input type="mail" name="email" id="email" placeholder="Chatshimi@email.be"><br>
+                        <input type="mail" name="email" id="email" placeholder="Chatshimi@email.be" required ><br>
 
                         <label for="motDePasseConnection" id="labelConnectionMdp" namespace>Mot de passe</label><br>
-                        <input type="password" name="mdp" id="motDePasseConnection" pattern="{[A-Za-z0-9]{8,}" class="mb-1"><br>
-                        <div class="position-absolute oeil">
-                            <i class="fas fa-eye oeilChange" id="btnOeil" onClick="montrerMdp('motDePasseConnection', this)"></i>
+                        <div class="d-flex">
+                            <div class="position-absolute oeil d-flex justify-content-center align-self-center">
+                                <i class="fas fa-eye oeilChange" id="btnOeil" onClick="montrerMdp('motDePasseConnection', this)"></i>
+                            </div>
+                            <input type="password" name="mdp" id="motDePasseConnection" pattern="{[A-Za-z0-9]{8,}" required ><br>
                         </div>
                         <div class="row">
                             <div class="col-11 text-center mt-1 mb-4">
