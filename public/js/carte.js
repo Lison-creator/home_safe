@@ -87,13 +87,18 @@ const marqueurPolice = L.icon({
 
 let exemple =
 `
-<h3>Parvis de Saint-Gilles</h3>
-<div style="text-align-center">
-<img width="150" height"150" src="parvis.jpg">
+<div class="conteneurPopUp">
+
+    <div><i class="fas fa-map-marker-alt"></i>
+    </div>
+
+    <div>
+        <div>lorem Ipsum - description du commissariat</div>
+        <div><h3>Commissariat de quartier vieux-marché</h3></div>
+    </div>
+
 </div>
-
 `
-
 L.marker([50.8367837, 4.3445671], { icon: marqueurPolice }).addTo(maCarte).bindPopup(exemple);
 
 
