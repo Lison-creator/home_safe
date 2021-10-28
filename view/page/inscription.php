@@ -36,7 +36,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <form action="index.php?section=inscription" method="POST" class="col-11 offset-1">
+                    <form action="index.php?section=inscriptionProfil" method="POST" class="col-11 offset-1">
                         <label for="pseudo" id="labelConnectionPseudo">Pseudo</label><br>
                         <input type="text" name="pseudo" id="pseudo" placeholder="Chatshimi" required ><br> <!-- TODO mettre un focus avec du javascript -->
 

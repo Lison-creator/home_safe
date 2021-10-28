@@ -50,7 +50,7 @@ if (isset($_POST)){
                // var_dump($_SESSION);
                 
                 header("Location:?section=inscriptionProfil");
-               // var_dump("inscriptionProfil");
+               var_dump("inscriptionProfil");
             } 
             
             else {
