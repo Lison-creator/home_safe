@@ -77,8 +77,8 @@ if (isset($_GET['section'])) {
     } else {
         // il n'est pas connecté
         switch ($_GET["section"]) {
-            case 'accueil':
-                include("controller/accueilController.php");
+            case 'accueilNonCo':
+                include("controller/accueilNonCoController.php");
                 break;
             case 'association':
                 include("controller/associationController.php");
@@ -109,6 +109,6 @@ if (isset($_GET['section'])) {
         }
     }
 } else {
-    include("controller/accueilController.php");
+    include("controller/accueilNonCoController.php");
     /*   var_dump("je suis rentrée dans case: je suis nulle part help !"); */
 }
