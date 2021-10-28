@@ -30,7 +30,7 @@
                         <label for="ad_cp" class="editerCP mt-4 col-8">Ton code postal</label>
                         <div class="infoCP col-4 mt-4">Cliquer sur la liste déroulante pour voir<br>les différentes communes sur Bruxelles.</div>
                     </div>
-                    <select name="ad_cp" id="ad_cp" class="zipCodes">
+                    <select name="ad_cp" id="ad_cp_edit" class="zipCodes">
                         <option value="1000">1000 Bruxelles</option>
                         <option value="1020">1020 Laeken</option>
                         <option value="1030">1030 Schaerbeek</option>

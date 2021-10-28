@@ -1,27 +1,34 @@
 /********* carré noir de la page inscriptiOnProfil*/
 
-.formulaireAvatar, .formulaireEditerProfil {/* TODO même css que les pages Inscription, Connection à rajouter dans le css ? */
+.formulaireAvatar,
+.formulaireEditerProfil {
+    /* TODO même css que les pages Inscription, Connection à rajouter dans le css ? */
     border: 2px solid #282828;
     border-radius: 10px;
     background-color: #282828;
     width: 80%;
-    box-shadow:2px 3px 5px RGBA(19, 19, 19, 1); /* TODO vérifier si l'ombre est identique chez nous toutes */
-    margin:auto;
+    box-shadow: 2px 3px 5px RGBA(19, 19, 19, 1);
+    /* TODO vérifier si l'ombre est identique chez nous toutes */
+    margin: auto;
 }
+
 
 /********** typographies */
 
-.ajoutAvatar, .ajoutZip, .editerBio {
+.ajoutAvatar,
+.ajoutZip,
+.editerBio {
     font-family: 'coco';
     color: #FAC815;
 }
 
-.editerPseudo, .editerCP {
+.editerPseudo,
+.editerCP {
     font-family: 'coco';
     color: #95509B;
 }
 
-div>#imageChoisie{
+div>#imageChoisie {
     font-family: 'ubuntuBold';
     color: #FAC815;
 }
@@ -36,6 +43,7 @@ div>#imageChoisie{
     text-align: left;
 }
 
+
 /********** la partie de l'avatar*/
 
 .importerImage {
@@ -47,14 +55,15 @@ div>#imageChoisie{
     cursor: pointer;
     font-family: 'ubuntuLight';
     color: #3F50A7;
-    background-size: cover; /* Merci Maureen ! + nécessaire pour que la taille de l'image importée en css se fixe à la taille du cercle */
+    background-size: cover;
+    /* Merci Maureen ! + nécessaire pour que la taille de l'image importée en css se fixe à la taille du cercle */
 }
 
-.cacheAppareil{
+.cacheAppareil {
     visibility: visible;
 }
 
-.visibleAppareil{
+.visibleAppareil {
     visibility: hidden;
 }
 
@@ -65,9 +74,11 @@ div>#imageChoisie{
     background-color: #F1F1F1;
 }
 
+
 /********** la partie de la droplist avec les zip*/
 
-select.zipCodes { /* TODO A voir si Lison en a besoin aussi */
+select.zipCodes {
+    /* TODO A voir si Lison en a besoin aussi */
     background-color: #F1F1F1;
     border-radius: 20px 20px 20px 20px;
     border: 4px solid RGBA(255, 255, 255, 0.5);
@@ -85,13 +96,16 @@ select.zipCodes { /* TODO A voir si Lison en a besoin aussi */
     font-size: 12px;
 }
 
+
 /********** la partie bio */
 
-.editBio, .editCP {
+.editBio,
+.editCP {
     width: 90%;
 }
 
-#pseudoEdit, #ad_cp {
+#pseudoEdit,
+#ad_cp_edit {
     width: 50%;
 }
 
@@ -106,6 +120,7 @@ textarea.editerTextBio {
     font-size: 12px;
 }
 
+
 /********** les boutons & icones */
 
 .btnSauvegarder {
@@ -116,7 +131,8 @@ textarea.editerTextBio {
     width: 200px;
 }
 
-.btnChangerAvatar, .btnSupprimerAvatar {
+.btnChangerAvatar,
+.btnSupprimerAvatar {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -132,9 +148,10 @@ textarea.editerTextBio {
     left: 5px;
 }
 
+
 /********** le menu */
 
-.menuEditer{
+.menuEditer {
     position: absolute;
     z-index: 2;
     top: 250px;
