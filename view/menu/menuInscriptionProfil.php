@@ -30,7 +30,7 @@
 <nav class="menuPermanent">
   <ul class="passeDevant">
     <li class="collapse blocNav">
-      <div class="navJaune d-flex justify-content-center"><a href="?section=accueil" class="nav-link" id="register">Accueil</a></div>
+      <div class="navJaune d-flex justify-content-center"><a href="?section=accueilNonCo" class="nav-link" id="register">Accueil</a></div>
     </li>
     <li class="collapse blocNav">
       <div class="navBleu d-flex justify-content-center"><a href="?section=association" class="nav-link" id="association">A propos</a></div>
