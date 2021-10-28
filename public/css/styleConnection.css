@@ -59,15 +59,40 @@ a.lienPageConnection {
 }
 
 .blockHover:hover a.lienPageConnection,
-.blockHover:active a.lienPageConnection,
 .blockHover:focus a.lienPageConnection {
     /* je mets le hover sur tout le div donc mettre avant le a */
     color: #3F50A7;
 }
 
+.blockHover a:focus{
+    color: #3F50A7;
+}
+
 .blockHover:hover .soulignement,
-.blockHover:active .soulignement,
 .blockHover:focus .soulignement {
+    /* je mets le hover sur tout le div donc mettre avant la class soulignement */
+    background-color: #FAC815;
+}
+
+.blockHover:visited a.lienPageConnection{
+    /* je mets le hover sur tout le div donc mettre avant le a */
+    color: #3F50A7;
+}
+
+
+.blockHover:visited .soulignement {
+    /* je mets le hover sur tout le div donc mettre avant la class soulignement */
+    background-color: #FAC815;
+}
+
+
+.blockHover:active a.lienPageConnection{
+    /* je mets le hover sur tout le div donc mettre avant le a */
+    color: #3F50A7;
+}
+
+
+.blockHover:active .soulignement {
     /* je mets le hover sur tout le div donc mettre avant la class soulignement */
     background-color: #FAC815;
 }

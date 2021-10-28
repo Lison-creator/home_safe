@@ -53,7 +53,7 @@
                         <div class="row m-auto">
                             <div class="col-11 offset-1 mt-4" >
                                 <input required type="checkbox" id="accepter" name="accepter" class="me-3 checkboxColor"><!-- me-3 avec bootstrap pour faire une marge autour mais qui reste alignée/centrée par rapport à l'élément à côté -->
-                                <label for="accepter" class="accepter">J'accepte <span><a class="lienTermesEtCondition" href="?section=termes">les termes et les conditions d'utilisation </a> </span></label>
+                                <label for="accepter" class="accepter">J'accepte <span><a class="lienTermesEtCondition" href="?section=termes" target="_blank">les termes et les conditions d'utilisation </a> </span></label>
                             </div>
                         </div>
                         <div class="col-11 text-center mt-3 mb-4">

@@ -8,7 +8,7 @@
 
     <nav class="flex-menu-contact">
         <div class="logoTermes">
-            <a href="?section=accueil"> <svg xmlns="http://www.w3.org/2000/svg" width="40.25" height="58" viewBox="0 0 165.121 237.918">
+            <a href="?section=accueilNonCo"> <svg xmlns="http://www.w3.org/2000/svg" width="40.25" height="58" viewBox="0 0 165.121 237.918">
                 <g id="Group_1743" data-name="Group 1743" transform="translate(-451.765 643.243)">
                     <path id="Path_1120" data-name="Path 1120" d="M615.232-559.907A80.912,80.912,0,0,0,532.3-640.793a81.182,81.182,0,0,0-78.874,79.383c-.388,21.4,24.672,60.39,26.215,63.062l15.69,27.177,35.5,61.489a4.031,4.031,0,0,0,6.982,0l35.5-61.489,15.681-27.161C590.559-501.043,615.232-539.138,615.232-559.907Z" fill="#282828" />
                     <g id="Group_1591" data-name="Group 1591">
