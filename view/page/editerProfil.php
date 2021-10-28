@@ -1,6 +1,6 @@
 <div class="container-fluid">
     <div class="titrePseudo">
-        <h3 class="ombrageText editerTitre"><?= $_SESSION['pseudo']; ?> / Modifier mon profil</h3> <!-- Est-ce qu'on garde le nom? Ou on mets le pseudo? -->
+        <h3 class="ombrageText editerTitre"><!-- <?= $_SESSION['pseudo']; ?> --> / Modifier mon profil</h3> <!-- Est-ce qu'on garde le nom? Ou on mets le pseudo? -->
     </div>
     <div class="formulaireEditerProfil">
         <div class="row">

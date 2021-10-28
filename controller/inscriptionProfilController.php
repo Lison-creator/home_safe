@@ -26,9 +26,9 @@ if (isset($_POST["ad_cp"])) {
     $imagesDossier = 'public/images/uploads/';
     $lienImage = $imagesDossier . basename($_FILES["image"]["name"]);
 
-    /* echo $fichierTemporaire;
+    echo $fichierTemporaire;
     echo $imagesDossier;
-    echo $nomImage;  */
+    echo $lienImage; 
 
     //function for saving the uploaded images in a specific folder
     /*  move_uploaded_file($fichierTemporaire, $imagesDossier.$nomImage); */
