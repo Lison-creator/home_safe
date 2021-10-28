@@ -264,6 +264,8 @@
                             </svg>
 
                         </div>
+                        <hr> <!-- Ligne droite -->
+                        <hr> <!-- Ligne droite -->
                         <!-- Fin du nouveau lieu -->
 
                         <!-- Nouveau lieu ! -->
