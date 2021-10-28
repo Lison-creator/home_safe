@@ -11,6 +11,7 @@
                 <form action="#" method="post">
                     <div class="row align-items-center justify-content-evenly">
                         <div class="ajoutImageEdit d-flex justify-content-end align-items-end">
+                            <img src="public/images/uploads/<?php $_POST["image"] ?>">
                             <div class="iconPhoto d-flex justify-content-center align-items-center">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="15" height="13" viewBox="0 0 22.5 20.25">
                                     <g id="Group_1596" data-name="Group 1596" transform="translate(0 -1)">
@@ -24,7 +25,7 @@
                         <label for="supprimerImage" class="btnViolet btnSupprimerAvatar">Supprimer</label>
                     </div>
                     <label for="pseudo" class="editerPseudo">Pseudo</label><br>
-                    <input type="text" name="pseudo" id="pseudo"><br>
+                    <input type="text" name="pseudo" id="pseudoEdit" value="<?= $_SESSION['pseudo']; ?>"><br>
                     <div class="row editCP">
                         <label for="ad_cp" class="editerCP mt-4 col-8">Ton code postal</label>
                         <div class="infoCP col-4 mt-4">Cliquer sur la liste déroulante pour voir<br>les différentes communes sur Bruxelles.</div>
@@ -43,7 +44,7 @@
                         <label for="bio" class="editerBio mt-4 col-10">Bio</label>
                         <div class="infoBio col-2 mt-4">1500 caractères max</div>
                     </div>
-                    <textarea name="bio" id="bio" class="editerBio"></textarea>
+                    <textarea name="bio" id="bio" class="editerTextBio"></textarea>
                     <div class="row m-auto">
                         <div class="col-12 text-center mt-5 mb-3">
                             <input type="submit" value="Sauvegarder" class="btnJaune btnSauvegarder">

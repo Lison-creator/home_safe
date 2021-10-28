@@ -184,8 +184,6 @@
 
 
 
-
-
     /*  supprime un thé
         public function deleteTea($id)
         {
@@ -205,5 +203,6 @@
             }
         }  */
 
+    }
 
-    ?>
+?>
