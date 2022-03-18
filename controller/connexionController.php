@@ -4,10 +4,11 @@
 include("models/Utilisateur.php");
 
 
+
 // si la variable de session count n'existe pas
 if (!isset($_SESSION["count"])) {
     // alors la créer et initialiser à 0
-    $_SESSION["count"] = 0;
+    $_SESSION["count"] = 1;
 }
 // initialiser la variable pour ne pas avoir d'erreur
 $msgError = "";
