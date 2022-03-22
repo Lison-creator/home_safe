@@ -110,5 +110,5 @@ if (isset($_GET['section'])) {
     }
 } else {
     include("controller/accueilController.php");
-    /*   var_dump("je suis rentrée dans case: je suis nulle part help !"); */
+      /* var_dump("je suis rentrée dans case: je suis nulle part help !"); */
 }

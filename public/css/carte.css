@@ -710,7 +710,71 @@ div.leaflet-popup-content-wrapper{
 }
 
 
+/*--- Panneau "Communauté"--- */
+
+.groupInfos {
+    padding-top: 10px;
+}
+
+
+/*--- Panneau "Favoris"--- */
+
+
+
+
+
+
+
+
+
+/*---------------- Carte*/
+
+#map{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+}
+
+/* template pop window - lieux */
+
+.leaflet-container{/* texte en général */
+    font-family: 'ubuntu';
+}
+
+
+.leaflet-popup-content-wrapper{
+    background: #FAC815;
+    color: #282828;
+    font-family: 'ubuntu';
+}
+
+.leaflet-container a.leaflet-popup-close-button{/* petit croix pour fermer le pop up */
+    color: #3F50A7;
+}
+
+
+.leaflet-popup-content-wrapper, .leaflet-popup-tip { /* petite losange chelou et relou */
+    background: #FAC815;
+}
+
+.conteneurPopUp{
+    display: flex;
+    align-self: center;
+}
+
+.conteneurPopUp div{
+    align-self: center;
+}
+//TODO /* Ca fout la merde ! */
+
+.conteneurPopUp div:last-child{
+    margin-left: 15px;
+}
+
+
 .conteneurPopUp div i {
     color: #282828;
     font-size: 40px;
 }
+

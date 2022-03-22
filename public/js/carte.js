@@ -16,6 +16,9 @@ var gl = L.mapboxGL({
     style: 'mapbox://styles/mvanhoren/cktofojxp17q317lwgj1v9woy'
 }).addTo(maCarte);
 
+var draggable = new L.Draggable(elementToDrag);
+draggable.enable(); 
+
 //ajouter des marqueurs
 
 //création d'un marqueur 
@@ -81,7 +84,7 @@ const marqueurPolice = L.icon({
     /*  shadowSize:   [50, 64], */ // size of the shadow
     iconAnchor: [0, 0], // point of the icon which will correspond to marker's location
     /* shadowAnchor: [4, 62], */  // the same for the shadow
-    popupAnchor: [-3, -76] // point from which the popup should open relative to the iconAnchor
+    popupAnchor: [0, -7] // point from which the popup should open relative to the iconAnchor
 });
 
 
@@ -92,13 +95,6 @@ let exemple =
     <div><i class="fas fa-map-marker-alt"></i>
     </div>
 
-    <div>
-        <div>lorem Ipsum - description du commissariat</div>
-        <div><h3>Commissariat de quartier vieux-marché</h3></div>
-    </div>
-
-</div>
-`
 L.marker([50.8367837, 4.3445671], { icon: marqueurPolice }).addTo(maCarte).bindPopup(exemple);
 
 
